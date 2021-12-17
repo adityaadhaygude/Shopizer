@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="9" passed="9">
+  <reporter-output>
+  </reporter-output>
+  <suite name="shopizer tests" duration-ms="23469" started-at="2021-12-17T12:24:47Z" finished-at="2021-12-17T12:25:10Z">
+    <groups>
+    </groups>
+    <test name="Shopizer ChromeTests" duration-ms="23469" started-at="2021-12-17T12:24:47Z" finished-at="2021-12-17T12:25:10Z">
+      <class name="testcases.RegistrationTest">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:testcases.RegistrationTest@74294adb]" name="setup" is-config="true" duration-ms="6313" started-at="2021-12-17T17:54:47Z" finished-at="2021-12-17T17:54:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="TC14_verifyPasswordsMismatchError()[pri:0, instance:testcases.RegistrationTest@74294adb]" name="TC14_verifyPasswordsMismatchError" duration-ms="2976" started-at="2021-12-17T17:54:53Z" finished-at="2021-12-17T17:54:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC14_verifyPasswordsMismatchError -->
+        <test-method status="PASS" signature="TC1_verifyAllFieldsPresent()[pri:0, instance:testcases.RegistrationTest@74294adb]" name="TC1_verifyAllFieldsPresent" duration-ms="1004" started-at="2021-12-17T17:54:57Z" finished-at="2021-12-17T17:54:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC1_verifyAllFieldsPresent -->
+        <test-method status="PASS" signature="TC3_verifyAllLabels()[pri:0, instance:testcases.RegistrationTest@74294adb]" name="TC3_verifyAllLabels" duration-ms="1109" started-at="2021-12-17T17:54:58Z" finished-at="2021-12-17T17:54:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC3_verifyAllLabels -->
+        <test-method status="PASS" signature="TC4_verifyPageLoadsWithoutData()[pri:0, instance:testcases.RegistrationTest@74294adb]" name="TC4_verifyPageLoadsWithoutData" duration-ms="1176" started-at="2021-12-17T17:54:59Z" finished-at="2021-12-17T17:55:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC4_verifyPageLoadsWithoutData -->
+        <test-method status="PASS" signature="TC5_verifyTabFunctionality()[pri:0, instance:testcases.RegistrationTest@74294adb]" name="TC5_verifyTabFunctionality" duration-ms="400" started-at="2021-12-17T17:55:01Z" finished-at="2021-12-17T17:55:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC5_verifyTabFunctionality -->
+        <test-method status="PASS" signature="TC6_registerWithoutData()[pri:0, instance:testcases.RegistrationTest@74294adb]" name="TC6_registerWithoutData" duration-ms="517" started-at="2021-12-17T17:55:02Z" finished-at="2021-12-17T17:55:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC6_registerWithoutData -->
+        <test-method status="PASS" signature="TC7_registrationWithValidData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.RegistrationTest@74294adb]" name="TC7_registrationWithValidData" duration-ms="1925" started-at="2021-12-17T17:55:04Z" data-provider="registrationData" finished-at="2021-12-17T17:55:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Jeremiah]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Hart]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Maharashtra]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[oechslin@sbcglobal.net]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Abcd@126]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Abcd@126]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC7_registrationWithValidData -->
+        <test-method status="PASS" signature="TC7_registrationWithValidData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.RegistrationTest@74294adb]" name="TC7_registrationWithValidData" duration-ms="1652" started-at="2021-12-17T17:55:06Z" data-provider="registrationData" finished-at="2021-12-17T17:55:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Jaylon]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pugh]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Maharashtra]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[goresky@aol.com]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Abcd@127]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Abcd@127]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC7_registrationWithValidData -->
+        <test-method status="PASS" signature="TC8_verifyEnterFunctionality()[pri:0, instance:testcases.RegistrationTest@74294adb]" name="TC8_verifyEnterFunctionality" duration-ms="1370" started-at="2021-12-17T17:55:08Z" finished-at="2021-12-17T17:55:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC8_verifyEnterFunctionality -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:testcases.RegistrationTest@74294adb]" name="teardown" is-config="true" duration-ms="192" started-at="2021-12-17T17:55:10Z" finished-at="2021-12-17T17:55:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testcases.RegistrationTest -->
+    </test> <!-- Shopizer ChromeTests -->
+  </suite> <!-- shopizer tests -->
+</testng-results>

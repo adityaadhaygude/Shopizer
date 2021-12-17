@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="shopizer tests">
+
+	<listeners>
+		<listener class-name="pages.BaseClass" />
+	</listeners>
+
+	<!-- ChromeTest -->
+	<test name="Shopizer ChromeTests">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			
+			<class name="testcases.RegistrationTest"  />
+			
+		</classes>
+	</test>
+
+	<!--FirefoxTest  
+	<test name="Shopizer FirefoxTests">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="testcases.HomeTest" />
+			<class name="testcases.RegistrationTest"  />
+			<class name="testcases.SigninTest" />
+			<class name="testcases.DashboardTest" />
+			<class name="testcases.CategoryTest" />
+			<class name="testcases.IndividualTest" />
+			<class name="testcases.CartTest" />
+			<class name="testcases.CheckoutTest"/>  
+		</classes>
+	</test> -->
+
+</suite> 

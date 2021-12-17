@@ -1,0 +1,6063 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>karatemaven.GetManufacturer</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">15</div>
+      <div id="nav-fail" class="bg-danger">2</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2021-12-17 06:13:11 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:13]"><span>[1:13]</span> <span>Get all manufacturers for all items in a given category with category id 1</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:24]"><span>[2:24]</span> <span>Delete a manufacturer item from the list of manufacturers with id 160</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3.1:36]"><span>[3.1:36]</span> <span>Delete a user from given details.</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4:42]"><span>[4:42]</span> <span>Get the List of manufacturers by store</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[5:52]"><span>[5:52]</span> <span>Get the List of manufacturers by store but with the incorrect URL</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[6:64]"><span>[6:64]</span> <span>Get a single manufacturer ID 222 by store</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[7:74]"><span>[7:74]</span> <span>Create a new manufacturer item</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[8.1:88]"><span>[8.1:88]</span> <span>create a user from given details.</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[8.2:88]"><span>[8.2:88]</span> <span>create a user from given details.</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[8.3:88]"><span>[8.3:88]</span> <span>create a user from given details.</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[8.4:88]"><span>[8.4:88]</span> <span>create a user from given details.</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[9:92]"><span>[9:92]</span> <span>Update list of the items</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[10:111]"><span>[10:111]</span> <span>Check if manufacturer code already exists with valid administrator account</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[11:125]"><span>[11:125]</span> <span>Check if  manufacturer code already exists without valid administrator account</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[12:137]"><span>[12:137]</span> <span>Check if manufacturer code already exists but with incorrect name</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[13:149]"><span>[13:149]</span> <span>Check if manufacturer code already exists with limited access to the admin control</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[14:162]"><span>[14:162]</span> <span>Get a list of manufacturers by store with valid administrator account</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">karatemaven/GetManufacturer.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Shopizer Manufacturer / Brand management resource</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:13]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">getcall1</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:13]</span>
+                <span class="scenario-name">Get all manufacturers for all items in a given category with category id 1</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>76</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:13]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:13]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:13]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def one = read(&#39;KarateTestCases.csv&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:13]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def two = read(&#39;CreateTestCases.csv&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:13]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def data = karate.append(one,two)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">55</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/category/1/manufacturers/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.18">18:13:10.039 request:
+1 &gt; GET http://localhost:8080/api/v1/category/1/manufacturers
+1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:13:10.047 response time in milliseconds: 7
+1 &lt; 200
+1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Fri, 17 Dec 2021 12:43:10 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+[{&quot;id&quot;:54,&quot;code&quot;:&quot;beach&quot;,&quot;order&quot;:0,&quot;description&quot;:{&quot;id&quot;:754,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Beach&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;beach&quot;,&quot;keyWords&quot;:null,&quot;highlights&quot;:null,&quot;metaDescription&quot;:null,&quot;title&quot;:null}},{&quot;id&quot;:55,&quot;code&quot;:&quot;courier&quot;,&quot;order&quot;:0,&quot;description&quot;:{&quot;id&quot;:755,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Courier&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;courier&quot;,&quot;keyWords&quot;:null,&quot;highlights&quot;:null,&quot;metaDescription&quot;:null,&quot;title&quot;:null}},{&quot;id&quot;:51,&quot;code&quot;:&quot;retro&quot;,&quot;order&quot;:0,&quot;description&quot;:{&quot;id&quot;:751,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Retro&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;retro&quot;,&quot;keyWords&quot;:null,&quot;highlights&quot;:null,&quot;metaDescription&quot;:null,&quot;title&quot;:null}}]
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.20">18:13:10.049 [print] [
+  {
+    &quot;id&quot;: 54,
+    &quot;code&quot;: &quot;beach&quot;,
+    &quot;order&quot;: 0,
+    &quot;description&quot;: {
+      &quot;id&quot;: 754,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;name&quot;: &quot;Beach&quot;,
+      &quot;description&quot;: &quot;&quot;,
+      &quot;friendlyUrl&quot;: &quot;beach&quot;,
+      &quot;keyWords&quot;: null,
+      &quot;highlights&quot;: null,
+      &quot;metaDescription&quot;: null,
+      &quot;title&quot;: null
+    }
+  },
+  {
+    &quot;id&quot;: 55,
+    &quot;code&quot;: &quot;courier&quot;,
+    &quot;order&quot;: 0,
+    &quot;description&quot;: {
+      &quot;id&quot;: 755,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;name&quot;: &quot;Courier&quot;,
+      &quot;description&quot;: &quot;&quot;,
+      &quot;friendlyUrl&quot;: &quot;courier&quot;,
+      &quot;keyWords&quot;: null,
+      &quot;highlights&quot;: null,
+      &quot;metaDescription&quot;: null,
+      &quot;title&quot;: null
+    }
+  },
+  {
+    &quot;id&quot;: 51,
+    &quot;code&quot;: &quot;retro&quot;,
+    &quot;order&quot;: 0,
+    &quot;description&quot;: {
+      &quot;id&quot;: 751,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;name&quot;: &quot;Retro&quot;,
+      &quot;description&quot;: &quot;&quot;,
+      &quot;friendlyUrl&quot;: &quot;retro&quot;,
+      &quot;keyWords&quot;: null,
+      &quot;highlights&quot;: null,
+      &quot;metaDescription&quot;: null,
+      &quot;title&quot;: null
+    }
+  }
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:24]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">deletecall1</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:24]</span>
+                <span class="scenario-name">Delete a manufacturer item from the list of manufacturers with id 160</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>4</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:24]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def one = read(&#39;KarateTestCases.csv&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def two = read(&#39;CreateTestCases.csv&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def data = karate.append(one,two)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3.1:36]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3.1:36]</span>
+                <span class="scenario-name">Delete a user from given details.</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>14</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3.1:36]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3.1:36]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3.1:36]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def one = read(&#39;KarateTestCases.csv&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3.1:36]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def two = read(&#39;CreateTestCases.csv&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3.1:36]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def data = karate.append(one,two)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;http://localhost:8080/api/v1/manufacturer/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;242&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;id&quot;:242}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method DELETE</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.31">18:13:10.084 request:
+1 &gt; DELETE http://localhost:8080/api/v1/manufacturer/242
+1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 10
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;id&quot;:242}
+
+18:13:10.090 response time in milliseconds: 6
+1 &lt; 200
+1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Content-Length: 0
+1 &lt; Date: Fri, 17 Dec 2021 12:43:10 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.33">18:13:10.091 [print]  
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:42]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">ath</a><a class="badge badge-primary" href="karate-tags.html">failing</a><a class="badge badge-primary" href="karate-tags.html">ith</a><a class="badge badge-primary" href="karate-tags.html">getcall2</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:42]</span>
+                <span class="scenario-name">Get the List of manufacturers by store</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>13</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:42]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:42]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:42]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def one = read(&#39;KarateTestCases.csv&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:42]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def two = read(&#39;CreateTestCases.csv&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:42]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def data = karate.append(one,two)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.43">
+      <div class="step-ref passed">43</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;http://localhost:8080/api/v1/manufacturers/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.45">
+      <div class="step-ref passed">45</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.47">
+      <div class="step-ref passed">47</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.47">18:13:10.100 request:
+1 &gt; GET http://localhost:8080/api/v1/manufacturers/
+1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:13:10.106 response time in milliseconds: 5
+1 &lt; 200
+1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Fri, 17 Dec 2021 12:43:10 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;totalPages&quot;:2,&quot;number&quot;:0,&quot;recordsTotal&quot;:12,&quot;recordsFiltered&quot;:0,&quot;manufacturers&quot;:[{&quot;id&quot;:1,&quot;code&quot;:&quot;DEFAULT&quot;,&quot;order&quot;:0,&quot;description&quot;:{&quot;id&quot;:600,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;DEFAULT&quot;,&quot;description&quot;:&quot;DEFAULT&quot;,&quot;friendlyUrl&quot;:null,&quot;keyWords&quot;:null,&quot;highlights&quot;:null,&quot;metaDescription&quot;:null,&quot;title&quot;:null}},{&quot;id&quot;:50,&quot;code&quot;:&quot;chic&quot;,&quot;order&quot;:0,&quot;description&quot;:{&quot;id&quot;:750,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Chic&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:null,&quot;keyWords&quot;:null,&quot;highlights&quot;:null,&quot;metaDescription&quot;:null,&quot;title&quot;:&quot;chic&quot;}},{&quot;id&quot;:51,&quot;code&quot;:&quot;retro&quot;,&quot;order&quot;:0,&quot;description&quot;:{&quot;id&quot;:751,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Retro&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:null,&quot;keyWords&quot;:null,&quot;highlights&quot;:null,&quot;metaDescription&quot;:null,&quot;title&quot;:&quot;&quot;}},{&quot;id&quot;:52,&quot;code&quot;:&quot;vintage&quot;,&quot;order&quot;:0,&quot;description&quot;:{&quot;id&quot;:752,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Vintage&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:null,&quot;keyWords&quot;:null,&quot;highlights&quot;:null,&quot;metaDescription&quot;:null,&quot;title&quot;:&quot;&quot;}},{&quot;id&quot;:54,&quot;code&quot;:&quot;beach&quot;,&quot;order&quot;:0,&quot;description&quot;:{&quot;id&quot;:754,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Beach&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:null,&quot;keyWords&quot;:null,&quot;highlights&quot;:null,&quot;metaDescription&quot;:null,&quot;title&quot;:&quot;&quot;}},{&quot;id&quot;:55,&quot;code&quot;:&quot;courier&quot;,&quot;order&quot;:0,&quot;description&quot;:{&quot;id&quot;:755,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Courier&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:null,&quot;keyWords&quot;:null,&quot;highlights&quot;:null,&quot;metaDescription&quot;:null,&quot;title&quot;:&quot;&quot;}},{&quot;id&quot;:220,&quot;code&quot;:&quot;6431243&quot;,&quot;order&quot;:0,&quot;description&quot;:{&quot;id&quot;:1,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;bags&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:null,&quot;keyWords&quot;:null,&quot;highlights&quot;:null,&quot;metaDescription&quot;:null,&quot;title&quot;:&quot;&quot;}},{&quot;id&quot;:221,&quot;code&quot;:&quot;35234&quot;,&quot;order&quot;:0,&quot;description&quot;:{&quot;id&quot;:3,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;bags&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:null,&quot;keyWords&quot;:null,&quot;highlights&quot;:null,&quot;metaDescription&quot;:null,&quot;title&quot;:&quot;&quot;}},{&quot;id&quot;:222,&quot;code&quot;:&quot;67856y&quot;,&quot;order&quot;:0,&quot;description&quot;:{&quot;id&quot;:6,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;bags&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:null,&quot;keyWords&quot;:null,&quot;highlights&quot;:null,&quot;metaDescription&quot;:null,&quot;title&quot;:&quot;&quot;}},{&quot;id&quot;:239,&quot;code&quot;:&quot;454522222&quot;,&quot;order&quot;:0,&quot;description&quot;:{&quot;id&quot;:15,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;bags&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:null,&quot;keyWords&quot;:null,&quot;highlights&quot;:null,&quot;metaDescription&quot;:null,&quot;title&quot;:&quot;&quot;}}]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.48">
+      <div class="step-ref passed">48</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.49">
+      <div class="step-ref passed">49</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.49">18:13:10.107 [print] {
+  &quot;totalPages&quot;: 2,
+  &quot;number&quot;: 0,
+  &quot;recordsTotal&quot;: 12,
+  &quot;recordsFiltered&quot;: 0,
+  &quot;manufacturers&quot;: [
+    {
+      &quot;id&quot;: 1,
+      &quot;code&quot;: &quot;DEFAULT&quot;,
+      &quot;order&quot;: 0,
+      &quot;description&quot;: {
+        &quot;id&quot;: 600,
+        &quot;language&quot;: &quot;en&quot;,
+        &quot;name&quot;: &quot;DEFAULT&quot;,
+        &quot;description&quot;: &quot;DEFAULT&quot;,
+        &quot;friendlyUrl&quot;: null,
+        &quot;keyWords&quot;: null,
+        &quot;highlights&quot;: null,
+        &quot;metaDescription&quot;: null,
+        &quot;title&quot;: null
+      }
+    },
+    {
+      &quot;id&quot;: 50,
+      &quot;code&quot;: &quot;chic&quot;,
+      &quot;order&quot;: 0,
+      &quot;description&quot;: {
+        &quot;id&quot;: 750,
+        &quot;language&quot;: &quot;en&quot;,
+        &quot;name&quot;: &quot;Chic&quot;,
+        &quot;description&quot;: &quot;&quot;,
+        &quot;friendlyUrl&quot;: null,
+        &quot;keyWords&quot;: null,
+        &quot;highlights&quot;: null,
+        &quot;metaDescription&quot;: null,
+        &quot;title&quot;: &quot;chic&quot;
+      }
+    },
+    {
+      &quot;id&quot;: 51,
+      &quot;code&quot;: &quot;retro&quot;,
+      &quot;order&quot;: 0,
+      &quot;description&quot;: {
+        &quot;id&quot;: 751,
+        &quot;language&quot;: &quot;en&quot;,
+        &quot;name&quot;: &quot;Retro&quot;,
+        &quot;description&quot;: &quot;&quot;,
+        &quot;friendlyUrl&quot;: null,
+        &quot;keyWords&quot;: null,
+        &quot;highlights&quot;: null,
+        &quot;metaDescription&quot;: null,
+        &quot;title&quot;: &quot;&quot;
+      }
+    },
+    {
+      &quot;id&quot;: 52,
+      &quot;code&quot;: &quot;vintage&quot;,
+      &quot;order&quot;: 0,
+      &quot;description&quot;: {
+        &quot;id&quot;: 752,
+        &quot;language&quot;: &quot;en&quot;,
+        &quot;name&quot;: &quot;Vintage&quot;,
+        &quot;description&quot;: &quot;&quot;,
+        &quot;friendlyUrl&quot;: null,
+        &quot;keyWords&quot;: null,
+        &quot;highlights&quot;: null,
+        &quot;metaDescription&quot;: null,
+        &quot;title&quot;: &quot;&quot;
+      }
+    },
+    {
+      &quot;id&quot;: 54,
+      &quot;code&quot;: &quot;beach&quot;,
+      &quot;order&quot;: 0,
+      &quot;description&quot;: {
+        &quot;id&quot;: 754,
+        &quot;language&quot;: &quot;en&quot;,
+        &quot;name&quot;: &quot;Beach&quot;,
+        &quot;description&quot;: &quot;&quot;,
+        &quot;friendlyUrl&quot;: null,
+        &quot;keyWords&quot;: null,
+        &quot;highlights&quot;: null,
+        &quot;metaDescription&quot;: null,
+        &quot;title&quot;: &quot;&quot;
+      }
+    },
+    {
+      &quot;id&quot;: 55,
+      &quot;code&quot;: &quot;courier&quot;,
+      &quot;order&quot;: 0,
+      &quot;description&quot;: {
+        &quot;id&quot;: 755,
+        &quot;language&quot;: &quot;en&quot;,
+        &quot;name&quot;: &quot;Courier&quot;,
+        &quot;description&quot;: &quot;&quot;,
+        &quot;friendlyUrl&quot;: null,
+        &quot;keyWords&quot;: null,
+        &quot;highlights&quot;: null,
+        &quot;metaDescription&quot;: null,
+        &quot;title&quot;: &quot;&quot;
+      }
+    },
+    {
+      &quot;id&quot;: 220,
+      &quot;code&quot;: &quot;6431243&quot;,
+      &quot;order&quot;: 0,
+      &quot;description&quot;: {
+        &quot;id&quot;: 1,
+        &quot;language&quot;: &quot;en&quot;,
+        &quot;name&quot;: &quot;bags&quot;,
+        &quot;description&quot;: &quot;&quot;,
+        &quot;friendlyUrl&quot;: null,
+        &quot;keyWords&quot;: null,
+        &quot;highlights&quot;: null,
+        &quot;metaDescription&quot;: null,
+        &quot;title&quot;: &quot;&quot;
+      }
+    },
+    {
+      &quot;id&quot;: 221,
+      &quot;code&quot;: &quot;35234&quot;,
+      &quot;order&quot;: 0,
+      &quot;description&quot;: {
+        &quot;id&quot;: 3,
+        &quot;language&quot;: &quot;en&quot;,
+        &quot;name&quot;: &quot;bags&quot;,
+        &quot;description&quot;: &quot;&quot;,
+        &quot;friendlyUrl&quot;: null,
+        &quot;keyWords&quot;: null,
+        &quot;highlights&quot;: null,
+        &quot;metaDescription&quot;: null,
+        &quot;title&quot;: &quot;&quot;
+      }
+    },
+    {
+      &quot;id&quot;: 222,
+      &quot;code&quot;: &quot;67856y&quot;,
+      &quot;order&quot;: 0,
+      &quot;description&quot;: {
+        &quot;id&quot;: 6,
+        &quot;language&quot;: &quot;en&quot;,
+        &quot;name&quot;: &quot;bags&quot;,
+        &quot;description&quot;: &quot;&quot;,
+        &quot;friendlyUrl&quot;: null,
+        &quot;keyWords&quot;: null,
+        &quot;highlights&quot;: null,
+        &quot;metaDescription&quot;: null,
+        &quot;title&quot;: &quot;&quot;
+      }
+    },
+    {
+      &quot;id&quot;: 239,
+      &quot;code&quot;: &quot;454522222&quot;,
+      &quot;order&quot;: 0,
+      &quot;description&quot;: {
+        &quot;id&quot;: 15,
+        &quot;language&quot;: &quot;en&quot;,
+        &quot;name&quot;: &quot;bags&quot;,
+        &quot;description&quot;: &quot;&quot;,
+        &quot;friendlyUrl&quot;: null,
+        &quot;keyWords&quot;: null,
+        &quot;highlights&quot;: null,
+        &quot;metaDescription&quot;: null,
+        &quot;title&quot;: &quot;&quot;
+      }
+    }
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:52]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">getcall3</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:52]</span>
+                <span class="scenario-name">Get the List of manufacturers by store but with the incorrect URL</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>13</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5:52]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5:52]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:52]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def one = read(&#39;KarateTestCases.csv&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:52]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def two = read(&#39;CreateTestCases.csv&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:52]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def data = karate.append(one,two)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.53">
+      <div class="step-ref passed">53</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/manufacturers/kk&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.55">
+      <div class="step-ref passed">55</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.57">
+      <div class="step-ref passed">57</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.57">18:13:10.116 request:
+1 &gt; GET http://localhost:8080/api/v1/manufacturers/kk
+1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:13:10.122 response time in milliseconds: 6
+1 &lt; 500
+1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Fri, 17 Dec 2021 12:43:10 GMT
+1 &lt; Connection: close
+{&quot;errorCode&quot;:null,&quot;message&quot;:&quot;Failed to convert value of type &#39;java.lang.String&#39; to required type &#39;java.lang.Long&#39;; nested exception is java.lang.NumberFormatException: For input string: \&quot;kk\&quot;&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.58">
+      <div class="step-ref passed">58</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 500</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.59">
+      <div class="step-ref passed">59</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.59">18:13:10.123 [print] {
+  &quot;errorCode&quot;: null,
+  &quot;message&quot;: &quot;Failed to convert value of type &#39;java.lang.String&#39; to required type &#39;java.lang.Long&#39;; nested exception is java.lang.NumberFormatException: For input string: \&quot;kk\&quot;&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[6:64]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">getcall4</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[6:64]</span>
+                <span class="scenario-name">Get a single manufacturer ID 222 by store</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>13</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[6:64]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[6:64]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:64]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def one = read(&#39;KarateTestCases.csv&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:64]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def two = read(&#39;CreateTestCases.csv&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:64]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def data = karate.append(one,two)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.65">
+      <div class="step-ref passed">65</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/manufacturers/222&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.67">
+      <div class="step-ref passed">67</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.68">
+      <div class="step-ref passed">68</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.69">
+      <div class="step-ref passed">69</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.69">18:13:10.135 request:
+1 &gt; GET http://localhost:8080/api/v1/manufacturers/222
+1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
+1 &gt; Content-Type: application/json
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:13:10.138 response time in milliseconds: 3
+1 &lt; 200
+1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Fri, 17 Dec 2021 12:43:10 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;id&quot;:222,&quot;code&quot;:&quot;67856y&quot;,&quot;order&quot;:0,&quot;description&quot;:{&quot;id&quot;:6,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;bags&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:null,&quot;keyWords&quot;:null,&quot;highlights&quot;:null,&quot;metaDescription&quot;:null,&quot;title&quot;:&quot;&quot;}}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.70">
+      <div class="step-ref passed">70</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.71">
+      <div class="step-ref passed">71</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.71">18:13:10.139 [print] {
+  &quot;id&quot;: 222,
+  &quot;code&quot;: &quot;67856y&quot;,
+  &quot;order&quot;: 0,
+  &quot;description&quot;: {
+    &quot;id&quot;: 6,
+    &quot;language&quot;: &quot;en&quot;,
+    &quot;name&quot;: &quot;bags&quot;,
+    &quot;description&quot;: &quot;&quot;,
+    &quot;friendlyUrl&quot;: null,
+    &quot;keyWords&quot;: null,
+    &quot;highlights&quot;: null,
+    &quot;metaDescription&quot;: null,
+    &quot;title&quot;: &quot;&quot;
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[7:74]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">postcall1</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[7:74]</span>
+                <span class="scenario-name">Create a new manufacturer item</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>4</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[7:74]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[7:74]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[7:74]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def one = read(&#39;KarateTestCases.csv&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[7:74]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def two = read(&#39;CreateTestCases.csv&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[7:74]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def data = karate.append(one,two)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[8.1:88]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[8.1:88]</span>
+                <span class="scenario-name">create a user from given details.</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>245</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[8.1:88]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[8.1:88]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[8.1:88]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def one = read(&#39;KarateTestCases.csv&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[8.1:88]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def two = read(&#39;CreateTestCases.csv&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[8.1:88]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def data = karate.append(one,two)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.76">
+      <div class="step-ref passed">76</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url  &#39;http://localhost:8080/api/v1/private/manufacturer&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.79">
+      <div class="step-ref passed">79</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.80">
+      <div class="step-ref passed">80</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.81">
+      <div class="step-ref passed">81</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;code&quot;:blueyyy, &quot;name&quot;:&lt;name&gt;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.83">
+      <div class="step-ref passed">83</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">239</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.83">18:13:10.165 request:
+1 &gt; POST http://localhost:8080/api/v1/private/manufacturer
+1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 34
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;code&quot;:&quot;blueyyy&quot;,&quot;name&quot;:&quot;&lt;name&gt;&quot;}
+
+18:13:10.402 response time in milliseconds: 236
+1 &lt; 201
+1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Fri, 17 Dec 2021 12:43:10 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+1 &lt; Set-Cookie: JSESSIONID=494B0FBCE50FB552ADB0603EFF1E174B; Domain=localhost
+{&quot;id&quot;:243,&quot;code&quot;:&quot;blueyyy&quot;,&quot;order&quot;:0,&quot;descriptions&quot;:[]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.84">
+      <div class="step-ref passed">84</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.85">
+      <div class="step-ref passed">85</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.85">18:13:10.403 [print] {
+  &quot;id&quot;: 243,
+  &quot;code&quot;: &quot;blueyyy&quot;,
+  &quot;order&quot;: 0,
+  &quot;descriptions&quot;: [
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[8.2:88]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[8.2:88]</span>
+                <span class="scenario-name">create a user from given details.</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>13</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[8.2:88]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[8.2:88]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[8.2:88]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def one = read(&#39;KarateTestCases.csv&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[8.2:88]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def two = read(&#39;CreateTestCases.csv&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[8.2:88]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def data = karate.append(one,two)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.76">
+      <div class="step-ref passed">76</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url  &#39;http://localhost:8080/api/v1/private/manufacturer&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.79">
+      <div class="step-ref passed">79</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.80">
+      <div class="step-ref passed">80</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.81">
+      <div class="step-ref passed">81</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;code&quot;:helloyy, &quot;name&quot;:&lt;name&gt;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.83">
+      <div class="step-ref passed">83</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.83">18:13:10.414 request:
+1 &gt; POST http://localhost:8080/api/v1/private/manufacturer
+1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Cookie: JSESSIONID=494B0FBCE50FB552ADB0603EFF1E174B
+1 &gt; Content-Length: 34
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;code&quot;:&quot;helloyy&quot;,&quot;name&quot;:&quot;&lt;name&gt;&quot;}
+
+18:13:10.419 response time in milliseconds: 5
+1 &lt; 201
+1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Fri, 17 Dec 2021 12:43:10 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;id&quot;:244,&quot;code&quot;:&quot;helloyy&quot;,&quot;order&quot;:0,&quot;descriptions&quot;:[]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.84">
+      <div class="step-ref passed">84</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.85">
+      <div class="step-ref passed">85</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.85">18:13:10.420 [print] {
+  &quot;id&quot;: 244,
+  &quot;code&quot;: &quot;helloyy&quot;,
+  &quot;order&quot;: 0,
+  &quot;descriptions&quot;: [
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[8.3:88]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[8.3:88]</span>
+                <span class="scenario-name">create a user from given details.</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>14</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[8.3:88]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[8.3:88]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[8.3:88]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def one = read(&#39;KarateTestCases.csv&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[8.3:88]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def two = read(&#39;CreateTestCases.csv&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[8.3:88]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def data = karate.append(one,two)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.76">
+      <div class="step-ref passed">76</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url  &#39;http://localhost:8080/api/v1/private/manufacturer&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.79">
+      <div class="step-ref passed">79</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.80">
+      <div class="step-ref passed">80</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.81">
+      <div class="step-ref passed">81</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;code&quot;:hieyy, &quot;name&quot;:&lt;name&gt;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.83">
+      <div class="step-ref passed">83</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.83">18:13:10.431 request:
+1 &gt; POST http://localhost:8080/api/v1/private/manufacturer
+1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Cookie: JSESSIONID=494B0FBCE50FB552ADB0603EFF1E174B
+1 &gt; Content-Length: 32
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;code&quot;:&quot;hieyy&quot;,&quot;name&quot;:&quot;&lt;name&gt;&quot;}
+
+18:13:10.437 response time in milliseconds: 6
+1 &lt; 201
+1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Fri, 17 Dec 2021 12:43:10 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;id&quot;:245,&quot;code&quot;:&quot;hieyy&quot;,&quot;order&quot;:0,&quot;descriptions&quot;:[]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.84">
+      <div class="step-ref passed">84</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.85">
+      <div class="step-ref passed">85</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.85">18:13:10.437 [print] {
+  &quot;id&quot;: 245,
+  &quot;code&quot;: &quot;hieyy&quot;,
+  &quot;order&quot;: 0,
+  &quot;descriptions&quot;: [
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[8.4:88]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[8.4:88]</span>
+                <span class="scenario-name">create a user from given details.</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>13</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[8.4:88]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[8.4:88]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[8.4:88]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def one = read(&#39;KarateTestCases.csv&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[8.4:88]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def two = read(&#39;CreateTestCases.csv&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[8.4:88]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def data = karate.append(one,two)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.76">
+      <div class="step-ref passed">76</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url  &#39;http://localhost:8080/api/v1/private/manufacturer&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.79">
+      <div class="step-ref passed">79</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.80">
+      <div class="step-ref passed">80</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.81">
+      <div class="step-ref passed">81</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;code&quot;:greenyy, &quot;name&quot;:&lt;name&gt;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.83">
+      <div class="step-ref passed">83</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="4.83">18:13:10.447 request:
+1 &gt; POST http://localhost:8080/api/v1/private/manufacturer
+1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Cookie: JSESSIONID=494B0FBCE50FB552ADB0603EFF1E174B
+1 &gt; Content-Length: 34
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;code&quot;:&quot;greenyy&quot;,&quot;name&quot;:&quot;&lt;name&gt;&quot;}
+
+18:13:10.454 response time in milliseconds: 7
+1 &lt; 201
+1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Fri, 17 Dec 2021 12:43:10 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;id&quot;:246,&quot;code&quot;:&quot;greenyy&quot;,&quot;order&quot;:0,&quot;descriptions&quot;:[]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.84">
+      <div class="step-ref passed">84</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.85">
+      <div class="step-ref passed">85</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="4.85">18:13:10.454 [print] {
+  &quot;id&quot;: 246,
+  &quot;code&quot;: &quot;greenyy&quot;,
+  &quot;order&quot;: 0,
+  &quot;descriptions&quot;: [
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[9:92]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">putcall1</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[9:92]</span>
+                <span class="scenario-name">Update list of the items</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>226</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[9:92]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[9:92]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[9:92]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def one = read(&#39;KarateTestCases.csv&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[9:92]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def two = read(&#39;CreateTestCases.csv&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[9:92]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def data = karate.append(one,two)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.94">
+      <div class="step-ref passed">94</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;http://localhost:8080/api/v1/private/manufacturer/221&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.95">
+      <div class="step-ref passed">95</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;&lt;id&gt;&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.97">
+      <div class="step-ref passed">97</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.98">
+      <div class="step-ref passed">98</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.99">
+      <div class="step-ref passed">99</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;code&quot;: &quot;ct&quot;,&quot;name&quot;: &quot;bags&quot;, &quot;visible&quot;: true}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.103">
+      <div class="step-ref passed">103</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method PUT</span>
+      </div>
+    </div>
+    <div class="time-cell passed">221</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.103">18:13:10.464 request:
+1 &gt; PUT http://localhost:8080/api/v1/private/manufacturer/221/%3Cid%3E
+1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 42
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;code&quot;:&quot;ct&quot;,&quot;name&quot;:&quot;bags&quot;,&quot;visible&quot;:true}
+
+18:13:10.682 response time in milliseconds: 218
+1 &lt; 404
+1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Fri, 17 Dec 2021 12:43:10 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+1 &lt; Set-Cookie: JSESSIONID=1231C63A840FCBFE918E7DD4EE7A077E; Domain=localhost
+{&quot;timestamp&quot;:&quot;2021-12-17T12:43:10.681+0000&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;path&quot;:&quot;/api/v1/private/manufacturer/221/%3Cid%3E&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.104">
+      <div class="step-ref failed">104</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.104">18:13:10.683 classpath:karatemaven/GetManufacturer.feature:104
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 218, url: http://localhost:8080/api/v1/private/manufacturer/221/%3Cid%3E, response: 
+{&quot;timestamp&quot;:&quot;2021-12-17T12:43:10.681+0000&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;path&quot;:&quot;/api/v1/private/manufacturer/221/%3Cid%3E&quot;}
+classpath:karatemaven/GetManufacturer.feature:104
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.105">
+      <div class="step-ref skipped">105</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[10:111]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">getcall5</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[10:111]</span>
+                <span class="scenario-name">Check if manufacturer code already exists with valid administrator account</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>211</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[10:111]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[10:111]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[10:111]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def one = read(&#39;KarateTestCases.csv&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[10:111]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def two = read(&#39;CreateTestCases.csv&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[10:111]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def data = karate.append(one,two)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.112">
+      <div class="step-ref passed">112</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/private/manufacturer/unique&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.114">
+      <div class="step-ref passed">114</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.115">
+      <div class="step-ref passed">115</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.116">
+      <div class="step-ref passed">116</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param code = &#39;chic&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.118">
+      <div class="step-ref passed">118</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">205</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.118">18:13:10.691 request:
+1 &gt; GET http://localhost:8080/api/v1/private/manufacturer/unique?code=chic
+1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
+1 &gt; Content-Type: application/json
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:13:10.895 response time in milliseconds: 204
+1 &lt; 200
+1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Fri, 17 Dec 2021 12:43:10 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+1 &lt; Set-Cookie: JSESSIONID=A8EF039DC82361B6D2FE1474498ABF00; Domain=localhost
+{&quot;exists&quot;:true}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.119">
+      <div class="step-ref passed">119</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.120">
+      <div class="step-ref passed">120</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.exists == true</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.121">
+      <div class="step-ref passed">121</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.121">18:13:10.896 [print] {
+  &quot;exists&quot;: true
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[11:125]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">getcall6</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[11:125]</span>
+                <span class="scenario-name">Check if  manufacturer code already exists without valid administrator account</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>103</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[11:125]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[11:125]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[11:125]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def one = read(&#39;KarateTestCases.csv&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[11:125]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def two = read(&#39;CreateTestCases.csv&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[11:125]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def data = karate.append(one,two)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.126">
+      <div class="step-ref passed">126</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/private/manufacturer/unique&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.128">
+      <div class="step-ref passed">128</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shoper.com&#39;, password: &#39;paword&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.129">
+      <div class="step-ref passed">129</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.130">
+      <div class="step-ref passed">130</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param code = &#39;chic&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.132">
+      <div class="step-ref passed">132</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">98</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.132">18:13:10.904 request:
+1 &gt; GET http://localhost:8080/api/v1/private/manufacturer/unique?code=chic
+1 &gt; Authorization: Basic YWRtaW5Ac2hvcGVyLmNvbTpwYXdvcmQ=
+1 &gt; Content-Type: application/json
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:13:11.001 response time in milliseconds: 97
+1 &lt; 401
+1 &lt; WWW-Authenticate: Basic realm=&quot;api-admin-realm&quot;
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Fri, 17 Dec 2021 12:43:10 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;timestamp&quot;:&quot;2021-12-17T12:43:11.000+0000&quot;,&quot;status&quot;:401,&quot;error&quot;:&quot;Unauthorized&quot;,&quot;path&quot;:&quot;/api/v1/private/manufacturer/unique&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.133">
+      <div class="step-ref passed">133</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 401</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.134">
+      <div class="step-ref passed">134</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.134">18:13:11.002 [print] {
+  &quot;timestamp&quot;: &quot;2021-12-17T12:43:11.000+0000&quot;,
+  &quot;status&quot;: 401,
+  &quot;error&quot;: &quot;Unauthorized&quot;,
+  &quot;path&quot;: &quot;/api/v1/private/manufacturer/unique&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[12:137]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">getcall7</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[12:137]</span>
+                <span class="scenario-name">Check if manufacturer code already exists but with incorrect name</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>201</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[12:137]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[12:137]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[12:137]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def one = read(&#39;KarateTestCases.csv&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[12:137]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def two = read(&#39;CreateTestCases.csv&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[12:137]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def data = karate.append(one,two)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.138">
+      <div class="step-ref passed">138</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/private/manufacturrer/unique&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.140">
+      <div class="step-ref passed">140</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.141">
+      <div class="step-ref passed">141</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.142">
+      <div class="step-ref passed">142</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param code = &#39;chic&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.144">
+      <div class="step-ref passed">144</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">196</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.144">18:13:11.010 request:
+1 &gt; GET http://localhost:8080/api/v1/private/manufacturrer/unique?code=chic
+1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
+1 &gt; Content-Type: application/json
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:13:11.205 response time in milliseconds: 195
+1 &lt; 404
+1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Fri, 17 Dec 2021 12:43:11 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+1 &lt; Set-Cookie: JSESSIONID=D2D5E674D80F0965D5438E6BF5B9FB99; Domain=localhost
+{&quot;timestamp&quot;:&quot;2021-12-17T12:43:11.204+0000&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;path&quot;:&quot;/api/v1/private/manufacturrer/unique&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.145">
+      <div class="step-ref passed">145</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 404</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.146">
+      <div class="step-ref passed">146</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.146">18:13:11.205 [print] {
+  &quot;timestamp&quot;: &quot;2021-12-17T12:43:11.204+0000&quot;,
+  &quot;status&quot;: 404,
+  &quot;error&quot;: &quot;Not Found&quot;,
+  &quot;path&quot;: &quot;/api/v1/private/manufacturrer/unique&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[13:149]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">fail</a><a class="badge badge-primary" href="karate-tags.html">getcall8</a><a class="badge badge-primary" href="karate-tags.html">estcase</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[13:149]</span>
+                <span class="scenario-name">Check if manufacturer code already exists with limited access to the admin control</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>107</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[13:149]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[13:149]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[13:149]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def one = read(&#39;KarateTestCases.csv&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[13:149]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def two = read(&#39;CreateTestCases.csv&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[13:149]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def data = karate.append(one,two)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.150">
+      <div class="step-ref passed">150</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/private/manufacturer/unique&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.152">
+      <div class="step-ref passed">152</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;test&#39;, password: &#39;test@123&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.153">
+      <div class="step-ref passed">153</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.154">
+      <div class="step-ref passed">154</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param code = &#39;chic&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.156">
+      <div class="step-ref passed">156</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">102</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.156">18:13:11.214 request:
+1 &gt; GET http://localhost:8080/api/v1/private/manufacturer/unique?code=chic
+1 &gt; Authorization: Basic dGVzdDp0ZXN0QDEyMw==
+1 &gt; Content-Type: application/json
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:13:11.315 response time in milliseconds: 101
+1 &lt; 200
+1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Fri, 17 Dec 2021 12:43:11 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+1 &lt; Set-Cookie: JSESSIONID=3BD12714778A38EFDA19577754FAFFB3; Domain=localhost
+{&quot;exists&quot;:true}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.157">
+      <div class="step-ref failed">157</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 403</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.157">18:13:11.315 classpath:karatemaven/GetManufacturer.feature:157
+Then status 403
+status code was: 200, expected: 403, response time in milliseconds: 101, url: http://localhost:8080/api/v1/private/manufacturer/unique?code=chic, response: 
+{&quot;exists&quot;:true}
+classpath:karatemaven/GetManufacturer.feature:157
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.158">
+      <div class="step-ref skipped">158</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[14:162]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">getcall9</a><a class="badge badge-primary" href="karate-tags.html">ath</a><a class="badge badge-primary" href="karate-tags.html">failing</a><a class="badge badge-primary" href="karate-tags.html">ith</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[14:162]</span>
+                <span class="scenario-name">Get a list of manufacturers by store with valid administrator account</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>199</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[14:162]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[14:162]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[14:162]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def one = read(&#39;KarateTestCases.csv&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[14:162]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def two = read(&#39;CreateTestCases.csv&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[14:162]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def data = karate.append(one,two)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.163">
+      <div class="step-ref passed">163</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;http://localhost:8080/api/v1/private/manufacturers/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.165">
+      <div class="step-ref passed">165</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.166">
+      <div class="step-ref passed">166</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.169">
+      <div class="step-ref passed">169</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">194</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.169">18:13:11.324 request:
+1 &gt; GET http://localhost:8080/api/v1/private/manufacturers/
+1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
+1 &gt; Content-Type: application/json
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:13:11.516 response time in milliseconds: 192
+1 &lt; 200
+1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Fri, 17 Dec 2021 12:43:11 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+1 &lt; Set-Cookie: JSESSIONID=3B0165E3EAA88454D6283281CD1FB498; Domain=localhost
+{&quot;totalPages&quot;:2,&quot;number&quot;:0,&quot;recordsTotal&quot;:12,&quot;recordsFiltered&quot;:0,&quot;manufacturers&quot;:[{&quot;id&quot;:1,&quot;code&quot;:&quot;DEFAULT&quot;,&quot;order&quot;:0,&quot;description&quot;:{&quot;id&quot;:600,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;DEFAULT&quot;,&quot;description&quot;:&quot;DEFAULT&quot;,&quot;friendlyUrl&quot;:null,&quot;keyWords&quot;:null,&quot;highlights&quot;:null,&quot;metaDescription&quot;:null,&quot;title&quot;:null}},{&quot;id&quot;:50,&quot;code&quot;:&quot;chic&quot;,&quot;order&quot;:0,&quot;description&quot;:{&quot;id&quot;:750,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Chic&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:null,&quot;keyWords&quot;:null,&quot;highlights&quot;:null,&quot;metaDescription&quot;:null,&quot;title&quot;:&quot;chic&quot;}},{&quot;id&quot;:51,&quot;code&quot;:&quot;retro&quot;,&quot;order&quot;:0,&quot;description&quot;:{&quot;id&quot;:751,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Retro&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:null,&quot;keyWords&quot;:null,&quot;highlights&quot;:null,&quot;metaDescription&quot;:null,&quot;title&quot;:&quot;&quot;}},{&quot;id&quot;:52,&quot;code&quot;:&quot;vintage&quot;,&quot;order&quot;:0,&quot;description&quot;:{&quot;id&quot;:752,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Vintage&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:null,&quot;keyWords&quot;:null,&quot;highlights&quot;:null,&quot;metaDescription&quot;:null,&quot;title&quot;:&quot;&quot;}},{&quot;id&quot;:54,&quot;code&quot;:&quot;beach&quot;,&quot;order&quot;:0,&quot;description&quot;:{&quot;id&quot;:754,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Beach&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:null,&quot;keyWords&quot;:null,&quot;highlights&quot;:null,&quot;metaDescription&quot;:null,&quot;title&quot;:&quot;&quot;}},{&quot;id&quot;:55,&quot;code&quot;:&quot;courier&quot;,&quot;order&quot;:0,&quot;description&quot;:{&quot;id&quot;:755,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Courier&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:null,&quot;keyWords&quot;:null,&quot;highlights&quot;:null,&quot;metaDescription&quot;:null,&quot;title&quot;:&quot;&quot;}},{&quot;id&quot;:220,&quot;code&quot;:&quot;6431243&quot;,&quot;order&quot;:0,&quot;description&quot;:{&quot;id&quot;:1,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;bags&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:null,&quot;keyWords&quot;:null,&quot;highlights&quot;:null,&quot;metaDescription&quot;:null,&quot;title&quot;:&quot;&quot;}},{&quot;id&quot;:221,&quot;code&quot;:&quot;35234&quot;,&quot;order&quot;:0,&quot;description&quot;:{&quot;id&quot;:3,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;bags&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:null,&quot;keyWords&quot;:null,&quot;highlights&quot;:null,&quot;metaDescription&quot;:null,&quot;title&quot;:&quot;&quot;}},{&quot;id&quot;:222,&quot;code&quot;:&quot;67856y&quot;,&quot;order&quot;:0,&quot;description&quot;:{&quot;id&quot;:6,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;bags&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:null,&quot;keyWords&quot;:null,&quot;highlights&quot;:null,&quot;metaDescription&quot;:null,&quot;title&quot;:&quot;&quot;}},{&quot;id&quot;:239,&quot;code&quot;:&quot;454522222&quot;,&quot;order&quot;:0,&quot;description&quot;:{&quot;id&quot;:15,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;bags&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:null,&quot;keyWords&quot;:null,&quot;highlights&quot;:null,&quot;metaDescription&quot;:null,&quot;title&quot;:&quot;&quot;}}]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.170">
+      <div class="step-ref passed">170</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.171">
+      <div class="step-ref passed">171</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.171">18:13:11.517 [print] {
+  &quot;totalPages&quot;: 2,
+  &quot;number&quot;: 0,
+  &quot;recordsTotal&quot;: 12,
+  &quot;recordsFiltered&quot;: 0,
+  &quot;manufacturers&quot;: [
+    {
+      &quot;id&quot;: 1,
+      &quot;code&quot;: &quot;DEFAULT&quot;,
+      &quot;order&quot;: 0,
+      &quot;description&quot;: {
+        &quot;id&quot;: 600,
+        &quot;language&quot;: &quot;en&quot;,
+        &quot;name&quot;: &quot;DEFAULT&quot;,
+        &quot;description&quot;: &quot;DEFAULT&quot;,
+        &quot;friendlyUrl&quot;: null,
+        &quot;keyWords&quot;: null,
+        &quot;highlights&quot;: null,
+        &quot;metaDescription&quot;: null,
+        &quot;title&quot;: null
+      }
+    },
+    {
+      &quot;id&quot;: 50,
+      &quot;code&quot;: &quot;chic&quot;,
+      &quot;order&quot;: 0,
+      &quot;description&quot;: {
+        &quot;id&quot;: 750,
+        &quot;language&quot;: &quot;en&quot;,
+        &quot;name&quot;: &quot;Chic&quot;,
+        &quot;description&quot;: &quot;&quot;,
+        &quot;friendlyUrl&quot;: null,
+        &quot;keyWords&quot;: null,
+        &quot;highlights&quot;: null,
+        &quot;metaDescription&quot;: null,
+        &quot;title&quot;: &quot;chic&quot;
+      }
+    },
+    {
+      &quot;id&quot;: 51,
+      &quot;code&quot;: &quot;retro&quot;,
+      &quot;order&quot;: 0,
+      &quot;description&quot;: {
+        &quot;id&quot;: 751,
+        &quot;language&quot;: &quot;en&quot;,
+        &quot;name&quot;: &quot;Retro&quot;,
+        &quot;description&quot;: &quot;&quot;,
+        &quot;friendlyUrl&quot;: null,
+        &quot;keyWords&quot;: null,
+        &quot;highlights&quot;: null,
+        &quot;metaDescription&quot;: null,
+        &quot;title&quot;: &quot;&quot;
+      }
+    },
+    {
+      &quot;id&quot;: 52,
+      &quot;code&quot;: &quot;vintage&quot;,
+      &quot;order&quot;: 0,
+      &quot;description&quot;: {
+        &quot;id&quot;: 752,
+        &quot;language&quot;: &quot;en&quot;,
+        &quot;name&quot;: &quot;Vintage&quot;,
+        &quot;description&quot;: &quot;&quot;,
+        &quot;friendlyUrl&quot;: null,
+        &quot;keyWords&quot;: null,
+        &quot;highlights&quot;: null,
+        &quot;metaDescription&quot;: null,
+        &quot;title&quot;: &quot;&quot;
+      }
+    },
+    {
+      &quot;id&quot;: 54,
+      &quot;code&quot;: &quot;beach&quot;,
+      &quot;order&quot;: 0,
+      &quot;description&quot;: {
+        &quot;id&quot;: 754,
+        &quot;language&quot;: &quot;en&quot;,
+        &quot;name&quot;: &quot;Beach&quot;,
+        &quot;description&quot;: &quot;&quot;,
+        &quot;friendlyUrl&quot;: null,
+        &quot;keyWords&quot;: null,
+        &quot;highlights&quot;: null,
+        &quot;metaDescription&quot;: null,
+        &quot;title&quot;: &quot;&quot;
+      }
+    },
+    {
+      &quot;id&quot;: 55,
+      &quot;code&quot;: &quot;courier&quot;,
+      &quot;order&quot;: 0,
+      &quot;description&quot;: {
+        &quot;id&quot;: 755,
+        &quot;language&quot;: &quot;en&quot;,
+        &quot;name&quot;: &quot;Courier&quot;,
+        &quot;description&quot;: &quot;&quot;,
+        &quot;friendlyUrl&quot;: null,
+        &quot;keyWords&quot;: null,
+        &quot;highlights&quot;: null,
+        &quot;metaDescription&quot;: null,
+        &quot;title&quot;: &quot;&quot;
+      }
+    },
+    {
+      &quot;id&quot;: 220,
+      &quot;code&quot;: &quot;6431243&quot;,
+      &quot;order&quot;: 0,
+      &quot;description&quot;: {
+        &quot;id&quot;: 1,
+        &quot;language&quot;: &quot;en&quot;,
+        &quot;name&quot;: &quot;bags&quot;,
+        &quot;description&quot;: &quot;&quot;,
+        &quot;friendlyUrl&quot;: null,
+        &quot;keyWords&quot;: null,
+        &quot;highlights&quot;: null,
+        &quot;metaDescription&quot;: null,
+        &quot;title&quot;: &quot;&quot;
+      }
+    },
+    {
+      &quot;id&quot;: 221,
+      &quot;code&quot;: &quot;35234&quot;,
+      &quot;order&quot;: 0,
+      &quot;description&quot;: {
+        &quot;id&quot;: 3,
+        &quot;language&quot;: &quot;en&quot;,
+        &quot;name&quot;: &quot;bags&quot;,
+        &quot;description&quot;: &quot;&quot;,
+        &quot;friendlyUrl&quot;: null,
+        &quot;keyWords&quot;: null,
+        &quot;highlights&quot;: null,
+        &quot;metaDescription&quot;: null,
+        &quot;title&quot;: &quot;&quot;
+      }
+    },
+    {
+      &quot;id&quot;: 222,
+      &quot;code&quot;: &quot;67856y&quot;,
+      &quot;order&quot;: 0,
+      &quot;description&quot;: {
+        &quot;id&quot;: 6,
+        &quot;language&quot;: &quot;en&quot;,
+        &quot;name&quot;: &quot;bags&quot;,
+        &quot;description&quot;: &quot;&quot;,
+        &quot;friendlyUrl&quot;: null,
+        &quot;keyWords&quot;: null,
+        &quot;highlights&quot;: null,
+        &quot;metaDescription&quot;: null,
+        &quot;title&quot;: &quot;&quot;
+      }
+    },
+    {
+      &quot;id&quot;: 239,
+      &quot;code&quot;: &quot;454522222&quot;,
+      &quot;order&quot;: 0,
+      &quot;description&quot;: {
+        &quot;id&quot;: 15,
+        &quot;language&quot;: &quot;en&quot;,
+        &quot;name&quot;: &quot;bags&quot;,
+        &quot;description&quot;: &quot;&quot;,
+        &quot;friendlyUrl&quot;: null,
+        &quot;keyWords&quot;: null,
+        &quot;highlights&quot;: null,
+        &quot;metaDescription&quot;: null,
+        &quot;title&quot;: &quot;&quot;
+      }
+    }
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

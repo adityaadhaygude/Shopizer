@@ -1,0 +1,4866 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>karatemaven.Product display and managment resource</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">9</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2021-12-17 06:13:12 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:10]"><span>[1:10]</span> <span>Get A product by valid Id and valid authentication</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:19]"><span>[2:19]</span> <span>Get A product by invalid Id and valid authentication</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:28]"><span>[3:28]</span> <span>Get A product by valid Id and without authorization</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4:39]"><span>[4:39]</span> <span>Get A product by valid Friendly URL</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[5:49]"><span>[5:49]</span> <span>Add product with Id 8 to Category with Id 1</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[6:57]"><span>[6:57]</span> <span>Add product with Id 8 to Category with Id 1 with limited access to admin</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[7:69]"><span>[7:69]</span> <span>Delete product with Id 10 from Category with Id 1</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[8:80]"><span>[8:80]</span> <span>Update quantity of product with product Id 10</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[9:93]"><span>[9:93]</span> <span>Check Product code already exist</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[10:108]"><span>[10:108]</span> <span>Get List Of all products</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">karatemaven/Product display and managment resource.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Shopizer Product Display and Management Resource</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:10]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:10]</span>
+                <span class="scenario-name">Get A product by valid Id and valid authentication</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>15</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:10]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:10]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/api/v1/products/10&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">12</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.14">18:13:11.732 request:
+1 &gt; GET http://localhost:8080/api/v1/products/10
+1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
+1 &gt; Content-Type: application/json
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:13:11.741 response time in milliseconds: 9
+1 &lt; 200
+1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Fri, 17 Dec 2021 12:43:11 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;id&quot;:10,&quot;price&quot;:60.00,&quot;quantity&quot;:30,&quot;sku&quot;:&quot;NK022&quot;,&quot;productShipeable&quot;:true,&quot;preOrder&quot;:false,&quot;productVirtual&quot;:false,&quot;quantityOrderMaximum&quot;:1,&quot;quantityOrderMinimum&quot;:1,&quot;productIsFree&quot;:false,&quot;available&quot;:true,&quot;visible&quot;:true,&quot;productSpecifications&quot;:{&quot;height&quot;:18.00,&quot;weight&quot;:2.00,&quot;length&quot;:10.00,&quot;width&quot;:22.00,&quot;model&quot;:null,&quot;manufacturer&quot;:null,&quot;dimensionUnitOfMeasure&quot;:null,&quot;weightUnitOfMeasure&quot;:null},&quot;rating&quot;:0.0,&quot;ratingCount&quot;:0,&quot;sortOrder&quot;:0,&quot;dateAvailable&quot;:&quot;2019-03-06&quot;,&quot;refSku&quot;:&quot;NK022&quot;,&quot;creationDate&quot;:&quot;2019-03-06&quot;,&quot;rentalDuration&quot;:0,&quot;rentalPeriod&quot;:0,&quot;description&quot;:{&quot;id&quot;:868,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Vintage courier bag&quot;,&quot;description&quot;:&quot;&lt;p&gt;\r\n\tVintage courier bag&lt;/p&gt;\r\n&quot;,&quot;friendlyUrl&quot;:&quot;vintage-courier-bag&quot;,&quot;keyWords&quot;:&quot;&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage courier bag&quot;},&quot;productPrice&quot;:{&quot;id&quot;:10,&quot;originalPrice&quot;:&quot;$60.00&quot;,&quot;finalPrice&quot;:&quot;$60.00&quot;,&quot;discounted&quot;:false,&quot;description&quot;:{&quot;id&quot;:819,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:null,&quot;description&quot;:null,&quot;friendlyUrl&quot;:null,&quot;keyWords&quot;:null,&quot;highlights&quot;:null,&quot;metaDescription&quot;:null,&quot;title&quot;:null,&quot;priceAppender&quot;:null}},&quot;finalPrice&quot;:&quot;$60.00&quot;,&quot;originalPrice&quot;:&quot;$60.00&quot;,&quot;discounted&quot;:false,&quot;image&quot;:{&quot;id&quot;:100,&quot;imageName&quot;:&quot;image2.jpg&quot;,&quot;imageUrl&quot;:&quot;http://localhost:8080/static/products/DEFAULT/NK022/SMALL/image2.jpg&quot;,&quot;externalUrl&quot;:null,&quot;videoUrl&quot;:null,&quot;imageType&quot;:0,&quot;defaultImage&quot;:true},&quot;images&quot;:[{&quot;id&quot;:100,&quot;imageName&quot;:&quot;image2.jpg&quot;,&quot;imageUrl&quot;:&quot;http://localhost:8080/static/products/DEFAULT/NK022/SMALL/image2.jpg&quot;,&quot;externalUrl&quot;:null,&quot;videoUrl&quot;:null,&quot;imageType&quot;:0,&quot;defaultImage&quot;:true}],&quot;manufacturer&quot;:{&quot;id&quot;:55,&quot;code&quot;:&quot;courier&quot;,&quot;order&quot;:0,&quot;description&quot;:{&quot;id&quot;:0,&quot;language&quot;:null,&quot;name&quot;:&quot;Courier&quot;,&quot;description&quot;:null,&quot;friendlyUrl&quot;:null,&quot;keyWords&quot;:null,&quot;highlights&quot;:null,&quot;metaDescription&quot;:null,&quot;title&quot;:null}},&quot;attributes&quot;:[],&quot;options&quot;:[],&quot;properties&quot;:[],&quot;categories&quot;:[{&quot;id&quot;:1,&quot;code&quot;:&quot;beachbags&quot;,&quot;sortOrder&quot;:10,&quot;visible&quot;:true,&quot;featured&quot;:false,&quot;lineage&quot;:&quot;/1&quot;,&quot;depth&quot;:0,&quot;parent&quot;:null,&quot;description&quot;:{&quot;id&quot;:1,&quot;language&quot;:null,&quot;name&quot;:&quot;Beach bags&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;beach-bags&quot;,&quot;keyWords&quot;:&quot;&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage Bags - Beach bags&quot;},&quot;productCount&quot;:0,&quot;store&quot;:null,&quot;children&quot;:[]},{&quot;id&quot;:2,&quot;code&quot;:&quot;handbags&quot;,&quot;sortOrder&quot;:0,&quot;visible&quot;:true,&quot;featured&quot;:false,&quot;lineage&quot;:&quot;/2&quot;,&quot;depth&quot;:0,&quot;parent&quot;:null,&quot;description&quot;:{&quot;id&quot;:2,&quot;language&quot;:null,&quot;name&quot;:&quot;Handbags&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;handbags&quot;,&quot;keyWords&quot;:&quot;&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage Bags - Handbags&quot;},&quot;productCount&quot;:0,&quot;store&quot;:null,&quot;children&quot;:[]}],&quot;type&quot;:{&quot;id&quot;:1,&quot;code&quot;:&quot;GENERAL&quot;,&quot;visible&quot;:false,&quot;allowAddToCart&quot;:false,&quot;description&quot;:null},&quot;canBePurchased&quot;:true,&quot;owner&quot;:null}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.16">18:13:11.742 [print] {
+  &quot;id&quot;: 10,
+  &quot;price&quot;: 60.0,
+  &quot;quantity&quot;: 30,
+  &quot;sku&quot;: &quot;NK022&quot;,
+  &quot;productShipeable&quot;: true,
+  &quot;preOrder&quot;: false,
+  &quot;productVirtual&quot;: false,
+  &quot;quantityOrderMaximum&quot;: 1,
+  &quot;quantityOrderMinimum&quot;: 1,
+  &quot;productIsFree&quot;: false,
+  &quot;available&quot;: true,
+  &quot;visible&quot;: true,
+  &quot;productSpecifications&quot;: {
+    &quot;height&quot;: 18.0,
+    &quot;weight&quot;: 2.0,
+    &quot;length&quot;: 10.0,
+    &quot;width&quot;: 22.0,
+    &quot;model&quot;: null,
+    &quot;manufacturer&quot;: null,
+    &quot;dimensionUnitOfMeasure&quot;: null,
+    &quot;weightUnitOfMeasure&quot;: null
+  },
+  &quot;rating&quot;: 0.0,
+  &quot;ratingCount&quot;: 0,
+  &quot;sortOrder&quot;: 0,
+  &quot;dateAvailable&quot;: &quot;2019-03-06&quot;,
+  &quot;refSku&quot;: &quot;NK022&quot;,
+  &quot;creationDate&quot;: &quot;2019-03-06&quot;,
+  &quot;rentalDuration&quot;: 0,
+  &quot;rentalPeriod&quot;: 0,
+  &quot;description&quot;: {
+    &quot;id&quot;: 868,
+    &quot;language&quot;: &quot;en&quot;,
+    &quot;name&quot;: &quot;Vintage courier bag&quot;,
+    &quot;description&quot;: &quot;&lt;p&gt;\r\n\tVintage courier bag&lt;/p&gt;\r\n&quot;,
+    &quot;friendlyUrl&quot;: &quot;vintage-courier-bag&quot;,
+    &quot;keyWords&quot;: &quot;&quot;,
+    &quot;highlights&quot;: &quot;&quot;,
+    &quot;metaDescription&quot;: &quot;&quot;,
+    &quot;title&quot;: &quot;Vintage courier bag&quot;
+  },
+  &quot;productPrice&quot;: {
+    &quot;id&quot;: 10,
+    &quot;originalPrice&quot;: &quot;$60.00&quot;,
+    &quot;finalPrice&quot;: &quot;$60.00&quot;,
+    &quot;discounted&quot;: false,
+    &quot;description&quot;: {
+      &quot;id&quot;: 819,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;name&quot;: null,
+      &quot;description&quot;: null,
+      &quot;friendlyUrl&quot;: null,
+      &quot;keyWords&quot;: null,
+      &quot;highlights&quot;: null,
+      &quot;metaDescription&quot;: null,
+      &quot;title&quot;: null,
+      &quot;priceAppender&quot;: null
+    }
+  },
+  &quot;finalPrice&quot;: &quot;$60.00&quot;,
+  &quot;originalPrice&quot;: &quot;$60.00&quot;,
+  &quot;discounted&quot;: false,
+  &quot;image&quot;: {
+    &quot;id&quot;: 100,
+    &quot;imageName&quot;: &quot;image2.jpg&quot;,
+    &quot;imageUrl&quot;: &quot;http://localhost:8080/static/products/DEFAULT/NK022/SMALL/image2.jpg&quot;,
+    &quot;externalUrl&quot;: null,
+    &quot;videoUrl&quot;: null,
+    &quot;imageType&quot;: 0,
+    &quot;defaultImage&quot;: true
+  },
+  &quot;images&quot;: [
+    {
+      &quot;id&quot;: 100,
+      &quot;imageName&quot;: &quot;image2.jpg&quot;,
+      &quot;imageUrl&quot;: &quot;http://localhost:8080/static/products/DEFAULT/NK022/SMALL/image2.jpg&quot;,
+      &quot;externalUrl&quot;: null,
+      &quot;videoUrl&quot;: null,
+      &quot;imageType&quot;: 0,
+      &quot;defaultImage&quot;: true
+    }
+  ],
+  &quot;manufacturer&quot;: {
+    &quot;id&quot;: 55,
+    &quot;code&quot;: &quot;courier&quot;,
+    &quot;order&quot;: 0,
+    &quot;description&quot;: {
+      &quot;id&quot;: 0,
+      &quot;language&quot;: null,
+      &quot;name&quot;: &quot;Courier&quot;,
+      &quot;description&quot;: null,
+      &quot;friendlyUrl&quot;: null,
+      &quot;keyWords&quot;: null,
+      &quot;highlights&quot;: null,
+      &quot;metaDescription&quot;: null,
+      &quot;title&quot;: null
+    }
+  },
+  &quot;attributes&quot;: [
+  ],
+  &quot;options&quot;: [
+  ],
+  &quot;properties&quot;: [
+  ],
+  &quot;categories&quot;: [
+    {
+      &quot;id&quot;: 1,
+      &quot;code&quot;: &quot;beachbags&quot;,
+      &quot;sortOrder&quot;: 10,
+      &quot;visible&quot;: true,
+      &quot;featured&quot;: false,
+      &quot;lineage&quot;: &quot;/1&quot;,
+      &quot;depth&quot;: 0,
+      &quot;parent&quot;: null,
+      &quot;description&quot;: {
+        &quot;id&quot;: 1,
+        &quot;language&quot;: null,
+        &quot;name&quot;: &quot;Beach bags&quot;,
+        &quot;description&quot;: &quot;&quot;,
+        &quot;friendlyUrl&quot;: &quot;beach-bags&quot;,
+        &quot;keyWords&quot;: &quot;&quot;,
+        &quot;highlights&quot;: &quot;&quot;,
+        &quot;metaDescription&quot;: &quot;&quot;,
+        &quot;title&quot;: &quot;Vintage Bags - Beach bags&quot;
+      },
+      &quot;productCount&quot;: 0,
+      &quot;store&quot;: null,
+      &quot;children&quot;: [
+      ]
+    },
+    {
+      &quot;id&quot;: 2,
+      &quot;code&quot;: &quot;handbags&quot;,
+      &quot;sortOrder&quot;: 0,
+      &quot;visible&quot;: true,
+      &quot;featured&quot;: false,
+      &quot;lineage&quot;: &quot;/2&quot;,
+      &quot;depth&quot;: 0,
+      &quot;parent&quot;: null,
+      &quot;description&quot;: {
+        &quot;id&quot;: 2,
+        &quot;language&quot;: null,
+        &quot;name&quot;: &quot;Handbags&quot;,
+        &quot;description&quot;: &quot;&quot;,
+        &quot;friendlyUrl&quot;: &quot;handbags&quot;,
+        &quot;keyWords&quot;: &quot;&quot;,
+        &quot;highlights&quot;: &quot;&quot;,
+        &quot;metaDescription&quot;: &quot;&quot;,
+        &quot;title&quot;: &quot;Vintage Bags - Handbags&quot;
+      },
+      &quot;productCount&quot;: 0,
+      &quot;store&quot;: null,
+      &quot;children&quot;: [
+      ]
+    }
+  ],
+  &quot;type&quot;: {
+    &quot;id&quot;: 1,
+    &quot;code&quot;: &quot;GENERAL&quot;,
+    &quot;visible&quot;: false,
+    &quot;allowAddToCart&quot;: false,
+    &quot;description&quot;: null
+  },
+  &quot;canBePurchased&quot;: true,
+  &quot;owner&quot;: null
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:19]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:19]</span>
+                <span class="scenario-name">Get A product by invalid Id and valid authentication</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>9</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:19]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/products/15&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.23">18:13:11.747 request:
+1 &gt; GET http://localhost:8080/api/v1/products/15
+1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
+1 &gt; Content-Type: application/json
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:13:11.753 response time in milliseconds: 6
+1 &lt; 404
+1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Fri, 17 Dec 2021 12:43:11 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;errorCode&quot;:&quot;404&quot;,&quot;message&quot;:&quot;Product [15] not found&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 404</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.25">18:13:11.754 [print] {
+  &quot;errorCode&quot;: &quot;404&quot;,
+  &quot;message&quot;: &quot;Product [15] not found&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:28]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:28]</span>
+                <span class="scenario-name">Get A product by valid Id and without authorization</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>138</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:28]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:28]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) {}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">15</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/private/products/10&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">123</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.32">18:13:11.773 request:
+1 &gt; GET http://localhost:8080/api/v1/private/products/10
+1 &gt; Authorization: Basic dW5kZWZpbmVkOnVuZGVmaW5lZA==
+1 &gt; Content-Type: application/json
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:13:11.895 response time in milliseconds: 121
+1 &lt; 401
+1 &lt; WWW-Authenticate: Basic realm=&quot;api-admin-realm&quot;
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Fri, 17 Dec 2021 12:43:11 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;timestamp&quot;:&quot;2021-12-17T12:43:11.893+0000&quot;,&quot;status&quot;:401,&quot;error&quot;:&quot;Unauthorized&quot;,&quot;path&quot;:&quot;/api/v1/private/products/10&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 401</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.34">18:13:11.895 [print] {
+  &quot;timestamp&quot;: &quot;2021-12-17T12:43:11.893+0000&quot;,
+  &quot;status&quot;: 401,
+  &quot;error&quot;: &quot;Unauthorized&quot;,
+  &quot;path&quot;: &quot;/api/v1/private/products/10&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:39]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:39]</span>
+                <span class="scenario-name">Get A product by valid Friendly URL</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>14</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:39]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:39]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.40">
+      <div class="step-ref passed">40</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/products/friendly/multi-use-hand-bag&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.41">
+      <div class="step-ref passed">41</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.43">
+      <div class="step-ref passed">43</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">11</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.43">18:13:11.902 request:
+1 &gt; GET http://localhost:8080/api/products/friendly/multi-use-hand-bag
+1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
+1 &gt; Content-Type: application/json
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:13:11.910 response time in milliseconds: 8
+1 &lt; 200
+1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Fri, 17 Dec 2021 12:43:11 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;id&quot;:5,&quot;price&quot;:49.00,&quot;quantity&quot;:9,&quot;sku&quot;:&quot;NK028&quot;,&quot;productShipeable&quot;:true,&quot;preOrder&quot;:false,&quot;productVirtual&quot;:false,&quot;quantityOrderMaximum&quot;:1,&quot;quantityOrderMinimum&quot;:1,&quot;productIsFree&quot;:false,&quot;available&quot;:true,&quot;visible&quot;:true,&quot;productSpecifications&quot;:{&quot;height&quot;:18.00,&quot;weight&quot;:1.00,&quot;length&quot;:5.00,&quot;width&quot;:29.00,&quot;model&quot;:null,&quot;manufacturer&quot;:null,&quot;dimensionUnitOfMeasure&quot;:null,&quot;weightUnitOfMeasure&quot;:null},&quot;rating&quot;:0.0,&quot;ratingCount&quot;:0,&quot;sortOrder&quot;:2,&quot;dateAvailable&quot;:&quot;2019-03-06&quot;,&quot;refSku&quot;:&quot;NK028&quot;,&quot;creationDate&quot;:&quot;2019-03-06&quot;,&quot;rentalDuration&quot;:0,&quot;rentalPeriod&quot;:0,&quot;description&quot;:{&quot;id&quot;:858,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Multi use hand bag&quot;,&quot;description&quot;:&quot;&lt;p&gt;\r\n\tMulti use hand bag vintage bag&lt;/p&gt;\r\n&quot;,&quot;friendlyUrl&quot;:&quot;multi-use-hand-bag&quot;,&quot;keyWords&quot;:&quot;&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Multi use hand bag&quot;},&quot;productPrice&quot;:{&quot;id&quot;:5,&quot;originalPrice&quot;:&quot;$65.00&quot;,&quot;finalPrice&quot;:&quot;$49.00&quot;,&quot;discounted&quot;:true,&quot;description&quot;:{&quot;id&quot;:808,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:null,&quot;description&quot;:null,&quot;friendlyUrl&quot;:null,&quot;keyWords&quot;:null,&quot;highlights&quot;:null,&quot;metaDescription&quot;:null,&quot;title&quot;:null,&quot;priceAppender&quot;:null}},&quot;finalPrice&quot;:&quot;$49.00&quot;,&quot;originalPrice&quot;:&quot;$65.00&quot;,&quot;discounted&quot;:true,&quot;image&quot;:{&quot;id&quot;:104,&quot;imageName&quot;:&quot;image7.jpg&quot;,&quot;imageUrl&quot;:&quot;http://localhost:8080/static/products/DEFAULT/NK028/SMALL/image7.jpg&quot;,&quot;externalUrl&quot;:null,&quot;videoUrl&quot;:null,&quot;imageType&quot;:0,&quot;defaultImage&quot;:true},&quot;images&quot;:[{&quot;id&quot;:104,&quot;imageName&quot;:&quot;image7.jpg&quot;,&quot;imageUrl&quot;:&quot;http://localhost:8080/static/products/DEFAULT/NK028/SMALL/image7.jpg&quot;,&quot;externalUrl&quot;:null,&quot;videoUrl&quot;:null,&quot;imageType&quot;:0,&quot;defaultImage&quot;:true}],&quot;manufacturer&quot;:{&quot;id&quot;:52,&quot;code&quot;:&quot;vintage&quot;,&quot;order&quot;:0,&quot;description&quot;:{&quot;id&quot;:0,&quot;language&quot;:null,&quot;name&quot;:&quot;Vintage&quot;,&quot;description&quot;:null,&quot;friendlyUrl&quot;:null,&quot;keyWords&quot;:null,&quot;highlights&quot;:null,&quot;metaDescription&quot;:null,&quot;title&quot;:null}},&quot;attributes&quot;:[],&quot;options&quot;:[],&quot;properties&quot;:[],&quot;categories&quot;:[{&quot;id&quot;:2,&quot;code&quot;:&quot;handbags&quot;,&quot;sortOrder&quot;:0,&quot;visible&quot;:true,&quot;featured&quot;:false,&quot;lineage&quot;:&quot;/2&quot;,&quot;depth&quot;:0,&quot;parent&quot;:null,&quot;description&quot;:{&quot;id&quot;:2,&quot;language&quot;:null,&quot;name&quot;:&quot;Handbags&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;handbags&quot;,&quot;keyWords&quot;:&quot;&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage Bags - Handbags&quot;},&quot;productCount&quot;:0,&quot;store&quot;:null,&quot;children&quot;:[]}],&quot;type&quot;:{&quot;id&quot;:1,&quot;code&quot;:&quot;GENERAL&quot;,&quot;visible&quot;:false,&quot;allowAddToCart&quot;:false,&quot;description&quot;:null},&quot;canBePurchased&quot;:true,&quot;owner&quot;:null}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.44">
+      <div class="step-ref passed">44</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.45">
+      <div class="step-ref passed">45</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.45">18:13:11.911 [print] {
+  &quot;id&quot;: 5,
+  &quot;price&quot;: 49.0,
+  &quot;quantity&quot;: 9,
+  &quot;sku&quot;: &quot;NK028&quot;,
+  &quot;productShipeable&quot;: true,
+  &quot;preOrder&quot;: false,
+  &quot;productVirtual&quot;: false,
+  &quot;quantityOrderMaximum&quot;: 1,
+  &quot;quantityOrderMinimum&quot;: 1,
+  &quot;productIsFree&quot;: false,
+  &quot;available&quot;: true,
+  &quot;visible&quot;: true,
+  &quot;productSpecifications&quot;: {
+    &quot;height&quot;: 18.0,
+    &quot;weight&quot;: 1.0,
+    &quot;length&quot;: 5.0,
+    &quot;width&quot;: 29.0,
+    &quot;model&quot;: null,
+    &quot;manufacturer&quot;: null,
+    &quot;dimensionUnitOfMeasure&quot;: null,
+    &quot;weightUnitOfMeasure&quot;: null
+  },
+  &quot;rating&quot;: 0.0,
+  &quot;ratingCount&quot;: 0,
+  &quot;sortOrder&quot;: 2,
+  &quot;dateAvailable&quot;: &quot;2019-03-06&quot;,
+  &quot;refSku&quot;: &quot;NK028&quot;,
+  &quot;creationDate&quot;: &quot;2019-03-06&quot;,
+  &quot;rentalDuration&quot;: 0,
+  &quot;rentalPeriod&quot;: 0,
+  &quot;description&quot;: {
+    &quot;id&quot;: 858,
+    &quot;language&quot;: &quot;en&quot;,
+    &quot;name&quot;: &quot;Multi use hand bag&quot;,
+    &quot;description&quot;: &quot;&lt;p&gt;\r\n\tMulti use hand bag vintage bag&lt;/p&gt;\r\n&quot;,
+    &quot;friendlyUrl&quot;: &quot;multi-use-hand-bag&quot;,
+    &quot;keyWords&quot;: &quot;&quot;,
+    &quot;highlights&quot;: &quot;&quot;,
+    &quot;metaDescription&quot;: &quot;&quot;,
+    &quot;title&quot;: &quot;Multi use hand bag&quot;
+  },
+  &quot;productPrice&quot;: {
+    &quot;id&quot;: 5,
+    &quot;originalPrice&quot;: &quot;$65.00&quot;,
+    &quot;finalPrice&quot;: &quot;$49.00&quot;,
+    &quot;discounted&quot;: true,
+    &quot;description&quot;: {
+      &quot;id&quot;: 808,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;name&quot;: null,
+      &quot;description&quot;: null,
+      &quot;friendlyUrl&quot;: null,
+      &quot;keyWords&quot;: null,
+      &quot;highlights&quot;: null,
+      &quot;metaDescription&quot;: null,
+      &quot;title&quot;: null,
+      &quot;priceAppender&quot;: null
+    }
+  },
+  &quot;finalPrice&quot;: &quot;$49.00&quot;,
+  &quot;originalPrice&quot;: &quot;$65.00&quot;,
+  &quot;discounted&quot;: true,
+  &quot;image&quot;: {
+    &quot;id&quot;: 104,
+    &quot;imageName&quot;: &quot;image7.jpg&quot;,
+    &quot;imageUrl&quot;: &quot;http://localhost:8080/static/products/DEFAULT/NK028/SMALL/image7.jpg&quot;,
+    &quot;externalUrl&quot;: null,
+    &quot;videoUrl&quot;: null,
+    &quot;imageType&quot;: 0,
+    &quot;defaultImage&quot;: true
+  },
+  &quot;images&quot;: [
+    {
+      &quot;id&quot;: 104,
+      &quot;imageName&quot;: &quot;image7.jpg&quot;,
+      &quot;imageUrl&quot;: &quot;http://localhost:8080/static/products/DEFAULT/NK028/SMALL/image7.jpg&quot;,
+      &quot;externalUrl&quot;: null,
+      &quot;videoUrl&quot;: null,
+      &quot;imageType&quot;: 0,
+      &quot;defaultImage&quot;: true
+    }
+  ],
+  &quot;manufacturer&quot;: {
+    &quot;id&quot;: 52,
+    &quot;code&quot;: &quot;vintage&quot;,
+    &quot;order&quot;: 0,
+    &quot;description&quot;: {
+      &quot;id&quot;: 0,
+      &quot;language&quot;: null,
+      &quot;name&quot;: &quot;Vintage&quot;,
+      &quot;description&quot;: null,
+      &quot;friendlyUrl&quot;: null,
+      &quot;keyWords&quot;: null,
+      &quot;highlights&quot;: null,
+      &quot;metaDescription&quot;: null,
+      &quot;title&quot;: null
+    }
+  },
+  &quot;attributes&quot;: [
+  ],
+  &quot;options&quot;: [
+  ],
+  &quot;properties&quot;: [
+  ],
+  &quot;categories&quot;: [
+    {
+      &quot;id&quot;: 2,
+      &quot;code&quot;: &quot;handbags&quot;,
+      &quot;sortOrder&quot;: 0,
+      &quot;visible&quot;: true,
+      &quot;featured&quot;: false,
+      &quot;lineage&quot;: &quot;/2&quot;,
+      &quot;depth&quot;: 0,
+      &quot;parent&quot;: null,
+      &quot;description&quot;: {
+        &quot;id&quot;: 2,
+        &quot;language&quot;: null,
+        &quot;name&quot;: &quot;Handbags&quot;,
+        &quot;description&quot;: &quot;&quot;,
+        &quot;friendlyUrl&quot;: &quot;handbags&quot;,
+        &quot;keyWords&quot;: &quot;&quot;,
+        &quot;highlights&quot;: &quot;&quot;,
+        &quot;metaDescription&quot;: &quot;&quot;,
+        &quot;title&quot;: &quot;Vintage Bags - Handbags&quot;
+      },
+      &quot;productCount&quot;: 0,
+      &quot;store&quot;: null,
+      &quot;children&quot;: [
+      ]
+    }
+  ],
+  &quot;type&quot;: {
+    &quot;id&quot;: 1,
+    &quot;code&quot;: &quot;GENERAL&quot;,
+    &quot;visible&quot;: false,
+    &quot;allowAddToCart&quot;: false,
+    &quot;description&quot;: null
+  },
+  &quot;canBePurchased&quot;: true,
+  &quot;owner&quot;: null
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:49]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:49]</span>
+                <span class="scenario-name">Add product with Id 8 to Category with Id 1</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>255</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5:49]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5:49]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.50">
+      <div class="step-ref passed">50</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/private/product/8/category/1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.51">
+      <div class="step-ref passed">51</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.52">
+      <div class="step-ref passed">52</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.53">
+      <div class="step-ref passed">53</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">251</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.53">18:13:11.919 request:
+1 &gt; POST http://localhost:8080/api/v1/private/product/8/category/1
+1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
+1 &gt; Content-Type: application/json
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:13:12.168 response time in milliseconds: 249
+1 &lt; 201
+1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Fri, 17 Dec 2021 12:43:11 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+1 &lt; Set-Cookie: JSESSIONID=E0FBA85F2E6952159CB42AC786E87492; Domain=localhost
+{&quot;id&quot;:8,&quot;price&quot;:78.00,&quot;quantity&quot;:23,&quot;sku&quot;:&quot;NK124&quot;,&quot;productShipeable&quot;:true,&quot;preOrder&quot;:false,&quot;productVirtual&quot;:false,&quot;quantityOrderMaximum&quot;:1,&quot;quantityOrderMinimum&quot;:1,&quot;productIsFree&quot;:false,&quot;available&quot;:true,&quot;visible&quot;:true,&quot;productSpecifications&quot;:{&quot;height&quot;:18.00,&quot;weight&quot;:2.00,&quot;length&quot;:4.00,&quot;width&quot;:20.00,&quot;model&quot;:null,&quot;manufacturer&quot;:null,&quot;dimensionUnitOfMeasure&quot;:null,&quot;weightUnitOfMeasure&quot;:null},&quot;rating&quot;:0.0,&quot;ratingCount&quot;:0,&quot;sortOrder&quot;:3,&quot;dateAvailable&quot;:&quot;2019-03-06&quot;,&quot;refSku&quot;:&quot;NK124&quot;,&quot;creationDate&quot;:&quot;2019-03-06&quot;,&quot;rentalDuration&quot;:0,&quot;rentalPeriod&quot;:0,&quot;description&quot;:{&quot;id&quot;:864,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Vintage laptop bag&quot;,&quot;description&quot;:&quot;&lt;p&gt;\r\n\tVintage laptop bag&lt;/p&gt;\r\n&quot;,&quot;friendlyUrl&quot;:&quot;vintage-laptop-bag&quot;,&quot;keyWords&quot;:&quot;&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage laptop bag&quot;},&quot;productPrice&quot;:{&quot;id&quot;:8,&quot;originalPrice&quot;:&quot;$78.00&quot;,&quot;finalPrice&quot;:&quot;$78.00&quot;,&quot;discounted&quot;:false,&quot;description&quot;:{&quot;id&quot;:815,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:null,&quot;description&quot;:null,&quot;friendlyUrl&quot;:null,&quot;keyWords&quot;:null,&quot;highlights&quot;:null,&quot;metaDescription&quot;:null,&quot;title&quot;:null,&quot;priceAppender&quot;:null}},&quot;finalPrice&quot;:&quot;$78.00&quot;,&quot;originalPrice&quot;:&quot;$78.00&quot;,&quot;discounted&quot;:false,&quot;image&quot;:{&quot;id&quot;:107,&quot;imageName&quot;:&quot;image6.jpg&quot;,&quot;imageUrl&quot;:&quot;http://localhost:8080/static/products/DEFAULT/NK124/SMALL/image6.jpg&quot;,&quot;externalUrl&quot;:null,&quot;videoUrl&quot;:null,&quot;imageType&quot;:0,&quot;defaultImage&quot;:true},&quot;images&quot;:[{&quot;id&quot;:107,&quot;imageName&quot;:&quot;image6.jpg&quot;,&quot;imageUrl&quot;:&quot;http://localhost:8080/static/products/DEFAULT/NK124/SMALL/image6.jpg&quot;,&quot;externalUrl&quot;:null,&quot;videoUrl&quot;:null,&quot;imageType&quot;:0,&quot;defaultImage&quot;:true}],&quot;manufacturer&quot;:{&quot;id&quot;:52,&quot;code&quot;:&quot;vintage&quot;,&quot;order&quot;:0,&quot;description&quot;:{&quot;id&quot;:0,&quot;language&quot;:null,&quot;name&quot;:&quot;Vintage&quot;,&quot;description&quot;:null,&quot;friendlyUrl&quot;:null,&quot;keyWords&quot;:null,&quot;highlights&quot;:null,&quot;metaDescription&quot;:null,&quot;title&quot;:null}},&quot;attributes&quot;:[],&quot;options&quot;:[],&quot;properties&quot;:[],&quot;categories&quot;:[{&quot;id&quot;:1,&quot;code&quot;:&quot;beachbags&quot;,&quot;sortOrder&quot;:10,&quot;visible&quot;:true,&quot;featured&quot;:false,&quot;lineage&quot;:&quot;/1&quot;,&quot;depth&quot;:0,&quot;parent&quot;:null,&quot;description&quot;:{&quot;id&quot;:1,&quot;language&quot;:null,&quot;name&quot;:&quot;Beach bags&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;beach-bags&quot;,&quot;keyWords&quot;:&quot;&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage Bags - Beach bags&quot;},&quot;productCount&quot;:0,&quot;store&quot;:null,&quot;children&quot;:[]},{&quot;id&quot;:3,&quot;code&quot;:&quot;laptop&quot;,&quot;sortOrder&quot;:20,&quot;visible&quot;:true,&quot;featured&quot;:false,&quot;lineage&quot;:&quot;/3&quot;,&quot;depth&quot;:0,&quot;parent&quot;:null,&quot;description&quot;:{&quot;id&quot;:3,&quot;language&quot;:null,&quot;name&quot;:&quot;Laptop Bags&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;laptop-bags&quot;,&quot;keyWords&quot;:&quot;&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage Bags - Laptop bags&quot;},&quot;productCount&quot;:0,&quot;store&quot;:null,&quot;children&quot;:[]}],&quot;type&quot;:{&quot;id&quot;:1,&quot;code&quot;:&quot;GENERAL&quot;,&quot;visible&quot;:false,&quot;allowAddToCart&quot;:false,&quot;description&quot;:null},&quot;canBePurchased&quot;:true,&quot;owner&quot;:null}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.54">
+      <div class="step-ref passed">54</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.55">
+      <div class="step-ref passed">55</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.55">18:13:12.169 [print] {
+  &quot;id&quot;: 8,
+  &quot;price&quot;: 78.0,
+  &quot;quantity&quot;: 23,
+  &quot;sku&quot;: &quot;NK124&quot;,
+  &quot;productShipeable&quot;: true,
+  &quot;preOrder&quot;: false,
+  &quot;productVirtual&quot;: false,
+  &quot;quantityOrderMaximum&quot;: 1,
+  &quot;quantityOrderMinimum&quot;: 1,
+  &quot;productIsFree&quot;: false,
+  &quot;available&quot;: true,
+  &quot;visible&quot;: true,
+  &quot;productSpecifications&quot;: {
+    &quot;height&quot;: 18.0,
+    &quot;weight&quot;: 2.0,
+    &quot;length&quot;: 4.0,
+    &quot;width&quot;: 20.0,
+    &quot;model&quot;: null,
+    &quot;manufacturer&quot;: null,
+    &quot;dimensionUnitOfMeasure&quot;: null,
+    &quot;weightUnitOfMeasure&quot;: null
+  },
+  &quot;rating&quot;: 0.0,
+  &quot;ratingCount&quot;: 0,
+  &quot;sortOrder&quot;: 3,
+  &quot;dateAvailable&quot;: &quot;2019-03-06&quot;,
+  &quot;refSku&quot;: &quot;NK124&quot;,
+  &quot;creationDate&quot;: &quot;2019-03-06&quot;,
+  &quot;rentalDuration&quot;: 0,
+  &quot;rentalPeriod&quot;: 0,
+  &quot;description&quot;: {
+    &quot;id&quot;: 864,
+    &quot;language&quot;: &quot;en&quot;,
+    &quot;name&quot;: &quot;Vintage laptop bag&quot;,
+    &quot;description&quot;: &quot;&lt;p&gt;\r\n\tVintage laptop bag&lt;/p&gt;\r\n&quot;,
+    &quot;friendlyUrl&quot;: &quot;vintage-laptop-bag&quot;,
+    &quot;keyWords&quot;: &quot;&quot;,
+    &quot;highlights&quot;: &quot;&quot;,
+    &quot;metaDescription&quot;: &quot;&quot;,
+    &quot;title&quot;: &quot;Vintage laptop bag&quot;
+  },
+  &quot;productPrice&quot;: {
+    &quot;id&quot;: 8,
+    &quot;originalPrice&quot;: &quot;$78.00&quot;,
+    &quot;finalPrice&quot;: &quot;$78.00&quot;,
+    &quot;discounted&quot;: false,
+    &quot;description&quot;: {
+      &quot;id&quot;: 815,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;name&quot;: null,
+      &quot;description&quot;: null,
+      &quot;friendlyUrl&quot;: null,
+      &quot;keyWords&quot;: null,
+      &quot;highlights&quot;: null,
+      &quot;metaDescription&quot;: null,
+      &quot;title&quot;: null,
+      &quot;priceAppender&quot;: null
+    }
+  },
+  &quot;finalPrice&quot;: &quot;$78.00&quot;,
+  &quot;originalPrice&quot;: &quot;$78.00&quot;,
+  &quot;discounted&quot;: false,
+  &quot;image&quot;: {
+    &quot;id&quot;: 107,
+    &quot;imageName&quot;: &quot;image6.jpg&quot;,
+    &quot;imageUrl&quot;: &quot;http://localhost:8080/static/products/DEFAULT/NK124/SMALL/image6.jpg&quot;,
+    &quot;externalUrl&quot;: null,
+    &quot;videoUrl&quot;: null,
+    &quot;imageType&quot;: 0,
+    &quot;defaultImage&quot;: true
+  },
+  &quot;images&quot;: [
+    {
+      &quot;id&quot;: 107,
+      &quot;imageName&quot;: &quot;image6.jpg&quot;,
+      &quot;imageUrl&quot;: &quot;http://localhost:8080/static/products/DEFAULT/NK124/SMALL/image6.jpg&quot;,
+      &quot;externalUrl&quot;: null,
+      &quot;videoUrl&quot;: null,
+      &quot;imageType&quot;: 0,
+      &quot;defaultImage&quot;: true
+    }
+  ],
+  &quot;manufacturer&quot;: {
+    &quot;id&quot;: 52,
+    &quot;code&quot;: &quot;vintage&quot;,
+    &quot;order&quot;: 0,
+    &quot;description&quot;: {
+      &quot;id&quot;: 0,
+      &quot;language&quot;: null,
+      &quot;name&quot;: &quot;Vintage&quot;,
+      &quot;description&quot;: null,
+      &quot;friendlyUrl&quot;: null,
+      &quot;keyWords&quot;: null,
+      &quot;highlights&quot;: null,
+      &quot;metaDescription&quot;: null,
+      &quot;title&quot;: null
+    }
+  },
+  &quot;attributes&quot;: [
+  ],
+  &quot;options&quot;: [
+  ],
+  &quot;properties&quot;: [
+  ],
+  &quot;categories&quot;: [
+    {
+      &quot;id&quot;: 1,
+      &quot;code&quot;: &quot;beachbags&quot;,
+      &quot;sortOrder&quot;: 10,
+      &quot;visible&quot;: true,
+      &quot;featured&quot;: false,
+      &quot;lineage&quot;: &quot;/1&quot;,
+      &quot;depth&quot;: 0,
+      &quot;parent&quot;: null,
+      &quot;description&quot;: {
+        &quot;id&quot;: 1,
+        &quot;language&quot;: null,
+        &quot;name&quot;: &quot;Beach bags&quot;,
+        &quot;description&quot;: &quot;&quot;,
+        &quot;friendlyUrl&quot;: &quot;beach-bags&quot;,
+        &quot;keyWords&quot;: &quot;&quot;,
+        &quot;highlights&quot;: &quot;&quot;,
+        &quot;metaDescription&quot;: &quot;&quot;,
+        &quot;title&quot;: &quot;Vintage Bags - Beach bags&quot;
+      },
+      &quot;productCount&quot;: 0,
+      &quot;store&quot;: null,
+      &quot;children&quot;: [
+      ]
+    },
+    {
+      &quot;id&quot;: 3,
+      &quot;code&quot;: &quot;laptop&quot;,
+      &quot;sortOrder&quot;: 20,
+      &quot;visible&quot;: true,
+      &quot;featured&quot;: false,
+      &quot;lineage&quot;: &quot;/3&quot;,
+      &quot;depth&quot;: 0,
+      &quot;parent&quot;: null,
+      &quot;description&quot;: {
+        &quot;id&quot;: 3,
+        &quot;language&quot;: null,
+        &quot;name&quot;: &quot;Laptop Bags&quot;,
+        &quot;description&quot;: &quot;&quot;,
+        &quot;friendlyUrl&quot;: &quot;laptop-bags&quot;,
+        &quot;keyWords&quot;: &quot;&quot;,
+        &quot;highlights&quot;: &quot;&quot;,
+        &quot;metaDescription&quot;: &quot;&quot;,
+        &quot;title&quot;: &quot;Vintage Bags - Laptop bags&quot;
+      },
+      &quot;productCount&quot;: 0,
+      &quot;store&quot;: null,
+      &quot;children&quot;: [
+      ]
+    }
+  ],
+  &quot;type&quot;: {
+    &quot;id&quot;: 1,
+    &quot;code&quot;: &quot;GENERAL&quot;,
+    &quot;visible&quot;: false,
+    &quot;allowAddToCart&quot;: false,
+    &quot;description&quot;: null
+  },
+  &quot;canBePurchased&quot;: true,
+  &quot;owner&quot;: null
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[6:57]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[6:57]</span>
+                <span class="scenario-name">Add product with Id 8 to Category with Id 1 with limited access to admin</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>135</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[6:57]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[6:57]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.58">
+      <div class="step-ref passed">58</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/private/product/8/category/1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.59">
+      <div class="step-ref passed">59</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;test&#39;, password: &#39;test@123&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.60">
+      <div class="step-ref passed">60</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.61">
+      <div class="step-ref passed">61</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">133</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.61">18:13:12.174 request:
+1 &gt; POST http://localhost:8080/api/v1/private/product/8/category/1
+1 &gt; Authorization: Basic dGVzdDp0ZXN0QDEyMw==
+1 &gt; Content-Type: application/json
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:13:12.306 response time in milliseconds: 132
+1 &lt; 503
+1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Fri, 17 Dec 2021 12:43:12 GMT
+1 &lt; Connection: close
+1 &lt; Set-Cookie: JSESSIONID=40DC5FAD2721B47FDFFDACE1ACBE464E; Domain=localhost
+{&quot;timestamp&quot;:&quot;2021-12-17T12:43:12.305+0000&quot;,&quot;status&quot;:503,&quot;error&quot;:&quot;Service Unavailable&quot;,&quot;path&quot;:&quot;/api/v1/private/product/8/category/1&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.62">
+      <div class="step-ref failed">62</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 403</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.62">18:13:12.307 classpath:karatemaven/Product display and managment resource.feature:62
+Then status 403
+status code was: 503, expected: 403, response time in milliseconds: 132, url: http://localhost:8080/api/v1/private/product/8/category/1, response: 
+{&quot;timestamp&quot;:&quot;2021-12-17T12:43:12.305+0000&quot;,&quot;status&quot;:503,&quot;error&quot;:&quot;Service Unavailable&quot;,&quot;path&quot;:&quot;/api/v1/private/product/8/category/1&quot;}
+classpath:karatemaven/Product display and managment resource.feature:62
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.63">
+      <div class="step-ref skipped">63</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[7:69]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[7:69]</span>
+                <span class="scenario-name">Delete product with Id 10 from Category with Id 1</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>217</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[7:69]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[7:69]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.70">
+      <div class="step-ref passed">70</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/private/product/10/category/1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.71">
+      <div class="step-ref passed">71</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.72">
+      <div class="step-ref passed">72</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.73">
+      <div class="step-ref passed">73</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method DELETE</span>
+      </div>
+    </div>
+    <div class="time-cell passed">215</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.73">18:13:12.312 request:
+1 &gt; DELETE http://localhost:8080/api/v1/private/product/10/category/1
+1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
+1 &gt; Content-Type: application/json
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:13:12.525 response time in milliseconds: 213
+1 &lt; 200
+1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Fri, 17 Dec 2021 12:43:12 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+1 &lt; Set-Cookie: JSESSIONID=148FBD2203220A3D2A60D44E961D5376; Domain=localhost
+{&quot;id&quot;:10,&quot;price&quot;:60.00,&quot;quantity&quot;:30,&quot;sku&quot;:&quot;NK022&quot;,&quot;productShipeable&quot;:true,&quot;preOrder&quot;:false,&quot;productVirtual&quot;:false,&quot;quantityOrderMaximum&quot;:1,&quot;quantityOrderMinimum&quot;:1,&quot;productIsFree&quot;:false,&quot;available&quot;:true,&quot;visible&quot;:true,&quot;productSpecifications&quot;:{&quot;height&quot;:18.00,&quot;weight&quot;:2.00,&quot;length&quot;:10.00,&quot;width&quot;:22.00,&quot;model&quot;:null,&quot;manufacturer&quot;:null,&quot;dimensionUnitOfMeasure&quot;:null,&quot;weightUnitOfMeasure&quot;:null},&quot;rating&quot;:0.0,&quot;ratingCount&quot;:0,&quot;sortOrder&quot;:0,&quot;dateAvailable&quot;:&quot;2019-03-06&quot;,&quot;refSku&quot;:&quot;NK022&quot;,&quot;creationDate&quot;:&quot;2019-03-06&quot;,&quot;rentalDuration&quot;:0,&quot;rentalPeriod&quot;:0,&quot;description&quot;:{&quot;id&quot;:868,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Vintage courier bag&quot;,&quot;description&quot;:&quot;&lt;p&gt;\r\n\tVintage courier bag&lt;/p&gt;\r\n&quot;,&quot;friendlyUrl&quot;:&quot;vintage-courier-bag&quot;,&quot;keyWords&quot;:&quot;&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage courier bag&quot;},&quot;productPrice&quot;:{&quot;id&quot;:10,&quot;originalPrice&quot;:&quot;$60.00&quot;,&quot;finalPrice&quot;:&quot;$60.00&quot;,&quot;discounted&quot;:false,&quot;description&quot;:{&quot;id&quot;:819,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:null,&quot;description&quot;:null,&quot;friendlyUrl&quot;:null,&quot;keyWords&quot;:null,&quot;highlights&quot;:null,&quot;metaDescription&quot;:null,&quot;title&quot;:null,&quot;priceAppender&quot;:null}},&quot;finalPrice&quot;:&quot;$60.00&quot;,&quot;originalPrice&quot;:&quot;$60.00&quot;,&quot;discounted&quot;:false,&quot;image&quot;:{&quot;id&quot;:100,&quot;imageName&quot;:&quot;image2.jpg&quot;,&quot;imageUrl&quot;:&quot;http://localhost:8080/static/products/DEFAULT/NK022/SMALL/image2.jpg&quot;,&quot;externalUrl&quot;:null,&quot;videoUrl&quot;:null,&quot;imageType&quot;:0,&quot;defaultImage&quot;:true},&quot;images&quot;:[{&quot;id&quot;:100,&quot;imageName&quot;:&quot;image2.jpg&quot;,&quot;imageUrl&quot;:&quot;http://localhost:8080/static/products/DEFAULT/NK022/SMALL/image2.jpg&quot;,&quot;externalUrl&quot;:null,&quot;videoUrl&quot;:null,&quot;imageType&quot;:0,&quot;defaultImage&quot;:true}],&quot;manufacturer&quot;:{&quot;id&quot;:55,&quot;code&quot;:&quot;courier&quot;,&quot;order&quot;:0,&quot;description&quot;:{&quot;id&quot;:0,&quot;language&quot;:null,&quot;name&quot;:&quot;Courier&quot;,&quot;description&quot;:null,&quot;friendlyUrl&quot;:null,&quot;keyWords&quot;:null,&quot;highlights&quot;:null,&quot;metaDescription&quot;:null,&quot;title&quot;:null}},&quot;attributes&quot;:[],&quot;options&quot;:[],&quot;properties&quot;:[],&quot;categories&quot;:[{&quot;id&quot;:2,&quot;code&quot;:&quot;handbags&quot;,&quot;sortOrder&quot;:0,&quot;visible&quot;:true,&quot;featured&quot;:false,&quot;lineage&quot;:&quot;/2&quot;,&quot;depth&quot;:0,&quot;parent&quot;:null,&quot;description&quot;:{&quot;id&quot;:2,&quot;language&quot;:null,&quot;name&quot;:&quot;Handbags&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;handbags&quot;,&quot;keyWords&quot;:&quot;&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage Bags - Handbags&quot;},&quot;productCount&quot;:0,&quot;store&quot;:null,&quot;children&quot;:[]}],&quot;type&quot;:{&quot;id&quot;:1,&quot;code&quot;:&quot;GENERAL&quot;,&quot;visible&quot;:false,&quot;allowAddToCart&quot;:false,&quot;description&quot;:null},&quot;canBePurchased&quot;:true,&quot;owner&quot;:null}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.74">
+      <div class="step-ref passed">74</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.75">
+      <div class="step-ref passed">75</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.75">18:13:12.526 [print] {
+  &quot;id&quot;: 10,
+  &quot;price&quot;: 60.0,
+  &quot;quantity&quot;: 30,
+  &quot;sku&quot;: &quot;NK022&quot;,
+  &quot;productShipeable&quot;: true,
+  &quot;preOrder&quot;: false,
+  &quot;productVirtual&quot;: false,
+  &quot;quantityOrderMaximum&quot;: 1,
+  &quot;quantityOrderMinimum&quot;: 1,
+  &quot;productIsFree&quot;: false,
+  &quot;available&quot;: true,
+  &quot;visible&quot;: true,
+  &quot;productSpecifications&quot;: {
+    &quot;height&quot;: 18.0,
+    &quot;weight&quot;: 2.0,
+    &quot;length&quot;: 10.0,
+    &quot;width&quot;: 22.0,
+    &quot;model&quot;: null,
+    &quot;manufacturer&quot;: null,
+    &quot;dimensionUnitOfMeasure&quot;: null,
+    &quot;weightUnitOfMeasure&quot;: null
+  },
+  &quot;rating&quot;: 0.0,
+  &quot;ratingCount&quot;: 0,
+  &quot;sortOrder&quot;: 0,
+  &quot;dateAvailable&quot;: &quot;2019-03-06&quot;,
+  &quot;refSku&quot;: &quot;NK022&quot;,
+  &quot;creationDate&quot;: &quot;2019-03-06&quot;,
+  &quot;rentalDuration&quot;: 0,
+  &quot;rentalPeriod&quot;: 0,
+  &quot;description&quot;: {
+    &quot;id&quot;: 868,
+    &quot;language&quot;: &quot;en&quot;,
+    &quot;name&quot;: &quot;Vintage courier bag&quot;,
+    &quot;description&quot;: &quot;&lt;p&gt;\r\n\tVintage courier bag&lt;/p&gt;\r\n&quot;,
+    &quot;friendlyUrl&quot;: &quot;vintage-courier-bag&quot;,
+    &quot;keyWords&quot;: &quot;&quot;,
+    &quot;highlights&quot;: &quot;&quot;,
+    &quot;metaDescription&quot;: &quot;&quot;,
+    &quot;title&quot;: &quot;Vintage courier bag&quot;
+  },
+  &quot;productPrice&quot;: {
+    &quot;id&quot;: 10,
+    &quot;originalPrice&quot;: &quot;$60.00&quot;,
+    &quot;finalPrice&quot;: &quot;$60.00&quot;,
+    &quot;discounted&quot;: false,
+    &quot;description&quot;: {
+      &quot;id&quot;: 819,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;name&quot;: null,
+      &quot;description&quot;: null,
+      &quot;friendlyUrl&quot;: null,
+      &quot;keyWords&quot;: null,
+      &quot;highlights&quot;: null,
+      &quot;metaDescription&quot;: null,
+      &quot;title&quot;: null,
+      &quot;priceAppender&quot;: null
+    }
+  },
+  &quot;finalPrice&quot;: &quot;$60.00&quot;,
+  &quot;originalPrice&quot;: &quot;$60.00&quot;,
+  &quot;discounted&quot;: false,
+  &quot;image&quot;: {
+    &quot;id&quot;: 100,
+    &quot;imageName&quot;: &quot;image2.jpg&quot;,
+    &quot;imageUrl&quot;: &quot;http://localhost:8080/static/products/DEFAULT/NK022/SMALL/image2.jpg&quot;,
+    &quot;externalUrl&quot;: null,
+    &quot;videoUrl&quot;: null,
+    &quot;imageType&quot;: 0,
+    &quot;defaultImage&quot;: true
+  },
+  &quot;images&quot;: [
+    {
+      &quot;id&quot;: 100,
+      &quot;imageName&quot;: &quot;image2.jpg&quot;,
+      &quot;imageUrl&quot;: &quot;http://localhost:8080/static/products/DEFAULT/NK022/SMALL/image2.jpg&quot;,
+      &quot;externalUrl&quot;: null,
+      &quot;videoUrl&quot;: null,
+      &quot;imageType&quot;: 0,
+      &quot;defaultImage&quot;: true
+    }
+  ],
+  &quot;manufacturer&quot;: {
+    &quot;id&quot;: 55,
+    &quot;code&quot;: &quot;courier&quot;,
+    &quot;order&quot;: 0,
+    &quot;description&quot;: {
+      &quot;id&quot;: 0,
+      &quot;language&quot;: null,
+      &quot;name&quot;: &quot;Courier&quot;,
+      &quot;description&quot;: null,
+      &quot;friendlyUrl&quot;: null,
+      &quot;keyWords&quot;: null,
+      &quot;highlights&quot;: null,
+      &quot;metaDescription&quot;: null,
+      &quot;title&quot;: null
+    }
+  },
+  &quot;attributes&quot;: [
+  ],
+  &quot;options&quot;: [
+  ],
+  &quot;properties&quot;: [
+  ],
+  &quot;categories&quot;: [
+    {
+      &quot;id&quot;: 2,
+      &quot;code&quot;: &quot;handbags&quot;,
+      &quot;sortOrder&quot;: 0,
+      &quot;visible&quot;: true,
+      &quot;featured&quot;: false,
+      &quot;lineage&quot;: &quot;/2&quot;,
+      &quot;depth&quot;: 0,
+      &quot;parent&quot;: null,
+      &quot;description&quot;: {
+        &quot;id&quot;: 2,
+        &quot;language&quot;: null,
+        &quot;name&quot;: &quot;Handbags&quot;,
+        &quot;description&quot;: &quot;&quot;,
+        &quot;friendlyUrl&quot;: &quot;handbags&quot;,
+        &quot;keyWords&quot;: &quot;&quot;,
+        &quot;highlights&quot;: &quot;&quot;,
+        &quot;metaDescription&quot;: &quot;&quot;,
+        &quot;title&quot;: &quot;Vintage Bags - Handbags&quot;
+      },
+      &quot;productCount&quot;: 0,
+      &quot;store&quot;: null,
+      &quot;children&quot;: [
+      ]
+    }
+  ],
+  &quot;type&quot;: {
+    &quot;id&quot;: 1,
+    &quot;code&quot;: &quot;GENERAL&quot;,
+    &quot;visible&quot;: false,
+    &quot;allowAddToCart&quot;: false,
+    &quot;description&quot;: null
+  },
+  &quot;canBePurchased&quot;: true,
+  &quot;owner&quot;: null
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[8:80]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[8:80]</span>
+                <span class="scenario-name">Update quantity of product with product Id 10</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>228</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[8:80]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[8:80]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.81">
+      <div class="step-ref passed">81</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/private/product/10&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.82">
+      <div class="step-ref passed">82</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.83">
+      <div class="step-ref passed">83</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.84">
+      <div class="step-ref passed">84</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;available&quot;: true,&quot;price&quot;: &quot;60.00&quot;,&quot;productShipeable&quot;: true,&quot;quantity&quot;: 30}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.85">
+      <div class="step-ref passed">85</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method PATCH</span>
+      </div>
+    </div>
+    <div class="time-cell passed">225</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.85">18:13:12.532 request:
+1 &gt; PATCH http://localhost:8080/api/v1/private/product/10
+1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 72
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;available&quot;:true,&quot;price&quot;:&quot;60.00&quot;,&quot;productShipeable&quot;:true,&quot;quantity&quot;:30}
+
+18:13:12.756 response time in milliseconds: 224
+1 &lt; 200
+1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Length: 0
+1 &lt; Date: Fri, 17 Dec 2021 12:43:12 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+1 &lt; Set-Cookie: JSESSIONID=B7F1E0C7A880E1254B77985CC84F4290; Domain=localhost
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.86">
+      <div class="step-ref passed">86</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.87">
+      <div class="step-ref passed">87</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.87">18:13:12.756 [print]  
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[9:93]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[9:93]</span>
+                <span class="scenario-name">Check Product code already exist</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>208</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[9:93]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[9:93]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.94">
+      <div class="step-ref passed">94</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/private/product/unique&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.95">
+      <div class="step-ref passed">95</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.96">
+      <div class="step-ref passed">96</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.97">
+      <div class="step-ref passed">97</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param code = &#39;NK022&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.99">
+      <div class="step-ref passed">99</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">204</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.99">18:13:12.762 request:
+1 &gt; GET http://localhost:8080/api/v1/private/product/unique?code=NK022
+1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
+1 &gt; Content-Type: application/json
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:13:12.965 response time in milliseconds: 203
+1 &lt; 200
+1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Fri, 17 Dec 2021 12:43:12 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+1 &lt; Set-Cookie: JSESSIONID=5D05FB3E20B62A7A4AA493181C588825; Domain=localhost
+{&quot;exists&quot;:true}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.100">
+      <div class="step-ref passed">100</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.101">
+      <div class="step-ref passed">101</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.exists == true</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.102">
+      <div class="step-ref passed">102</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.102">18:13:12.966 [print] {
+  &quot;exists&quot;: true
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[10:108]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[10:108]</span>
+                <span class="scenario-name">Get List Of all products</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>19</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[10:108]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[10:108]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.109">
+      <div class="step-ref passed">109</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/products&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.110">
+      <div class="step-ref passed">110</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.111">
+      <div class="step-ref passed">111</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.113">
+      <div class="step-ref passed">113</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">13</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.113">18:13:12.971 request:
+1 &gt; GET http://localhost:8080/api/v1/products
+1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
+1 &gt; Content-Type: application/json
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:13:12.982 response time in milliseconds: 11
+1 &lt; 200
+1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Fri, 17 Dec 2021 12:43:12 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;totalPages&quot;:1,&quot;number&quot;:11,&quot;recordsTotal&quot;:11,&quot;recordsFiltered&quot;:0,&quot;products&quot;:[{&quot;id&quot;:10,&quot;price&quot;:60.00,&quot;quantity&quot;:30,&quot;sku&quot;:&quot;NK022&quot;,&quot;productShipeable&quot;:true,&quot;preOrder&quot;:false,&quot;productVirtual&quot;:false,&quot;quantityOrderMaximum&quot;:1,&quot;quantityOrderMinimum&quot;:1,&quot;productIsFree&quot;:false,&quot;available&quot;:true,&quot;visible&quot;:true,&quot;productSpecifications&quot;:{&quot;height&quot;:18.00,&quot;weight&quot;:2.00,&quot;length&quot;:10.00,&quot;width&quot;:22.00,&quot;model&quot;:null,&quot;manufacturer&quot;:null,&quot;dimensionUnitOfMeasure&quot;:null,&quot;weightUnitOfMeasure&quot;:null},&quot;rating&quot;:0.0,&quot;ratingCount&quot;:0,&quot;sortOrder&quot;:0,&quot;dateAvailable&quot;:&quot;2019-03-06&quot;,&quot;refSku&quot;:&quot;NK022&quot;,&quot;creationDate&quot;:&quot;2019-03-06&quot;,&quot;rentalDuration&quot;:0,&quot;rentalPeriod&quot;:0,&quot;description&quot;:{&quot;id&quot;:868,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Vintage courier bag&quot;,&quot;description&quot;:&quot;&lt;p&gt;\r\n\tVintage courier bag&lt;/p&gt;\r\n&quot;,&quot;friendlyUrl&quot;:&quot;vintage-courier-bag&quot;,&quot;keyWords&quot;:&quot;&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage courier bag&quot;},&quot;productPrice&quot;:{&quot;id&quot;:10,&quot;originalPrice&quot;:&quot;$60.00&quot;,&quot;finalPrice&quot;:&quot;$60.00&quot;,&quot;discounted&quot;:false,&quot;description&quot;:{&quot;id&quot;:819,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:null,&quot;description&quot;:null,&quot;friendlyUrl&quot;:null,&quot;keyWords&quot;:null,&quot;highlights&quot;:null,&quot;metaDescription&quot;:null,&quot;title&quot;:null,&quot;priceAppender&quot;:null}},&quot;finalPrice&quot;:&quot;$60.00&quot;,&quot;originalPrice&quot;:&quot;$60.00&quot;,&quot;discounted&quot;:false,&quot;image&quot;:{&quot;id&quot;:100,&quot;imageName&quot;:&quot;image2.jpg&quot;,&quot;imageUrl&quot;:&quot;http://localhost:8080/static/products/DEFAULT/NK022/SMALL/image2.jpg&quot;,&quot;externalUrl&quot;:null,&quot;videoUrl&quot;:null,&quot;imageType&quot;:0,&quot;defaultImage&quot;:true},&quot;images&quot;:[{&quot;id&quot;:100,&quot;imageName&quot;:&quot;image2.jpg&quot;,&quot;imageUrl&quot;:&quot;http://localhost:8080/static/products/DEFAULT/NK022/SMALL/image2.jpg&quot;,&quot;externalUrl&quot;:null,&quot;videoUrl&quot;:null,&quot;imageType&quot;:0,&quot;defaultImage&quot;:true}],&quot;manufacturer&quot;:{&quot;id&quot;:55,&quot;code&quot;:&quot;courier&quot;,&quot;order&quot;:0,&quot;description&quot;:{&quot;id&quot;:0,&quot;language&quot;:null,&quot;name&quot;:&quot;Courier&quot;,&quot;description&quot;:null,&quot;friendlyUrl&quot;:null,&quot;keyWords&quot;:null,&quot;highlights&quot;:null,&quot;metaDescription&quot;:null,&quot;title&quot;:null}},&quot;attributes&quot;:[],&quot;options&quot;:[],&quot;properties&quot;:[],&quot;categories&quot;:[{&quot;id&quot;:2,&quot;code&quot;:&quot;handbags&quot;,&quot;sortOrder&quot;:0,&quot;visible&quot;:true,&quot;featured&quot;:false,&quot;lineage&quot;:&quot;/2&quot;,&quot;depth&quot;:0,&quot;parent&quot;:null,&quot;description&quot;:{&quot;id&quot;:2,&quot;language&quot;:null,&quot;name&quot;:&quot;Handbags&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;handbags&quot;,&quot;keyWords&quot;:&quot;&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage Bags - Handbags&quot;},&quot;productCount&quot;:0,&quot;store&quot;:null,&quot;children&quot;:[]}],&quot;type&quot;:{&quot;id&quot;:1,&quot;code&quot;:&quot;GENERAL&quot;,&quot;visible&quot;:false,&quot;allowAddToCart&quot;:false,&quot;description&quot;:null},&quot;canBePurchased&quot;:true,&quot;owner&quot;:null},{&quot;id&quot;:50,&quot;price&quot;:0.00,&quot;quantity&quot;:0,&quot;sku&quot;:&quot;sku100&quot;,&quot;productShipeable&quot;:false,&quot;preOrder&quot;:false,&quot;productVirtual&quot;:false,&quot;quantityOrderMaximum&quot;:0,&quot;quantityOrderMinimum&quot;:0,&quot;productIsFree&quot;:false,&quot;available&quot;:true,&quot;visible&quot;:true,&quot;productSpecifications&quot;:{&quot;height&quot;:null,&quot;weight&quot;:null,&quot;length&quot;:null,&quot;width&quot;:null,&quot;model&quot;:null,&quot;manufacturer&quot;:null,&quot;dimensionUnitOfMeasure&quot;:null,&quot;weightUnitOfMeasure&quot;:null},&quot;rating&quot;:0.0,&quot;ratingCount&quot;:0,&quot;sortOrder&quot;:0,&quot;dateAvailable&quot;:&quot;2021-12-17&quot;,&quot;refSku&quot;:&quot;&quot;,&quot;creationDate&quot;:&quot;2021-12-17&quot;,&quot;rentalDuration&quot;:0,&quot;rentalPeriod&quot;:0,&quot;description&quot;:{&quot;id&quot;:2,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;demotestproduct&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;demotestproduct&quot;,&quot;keyWords&quot;:&quot;&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;demotestproduct&quot;},&quot;productPrice&quot;:{&quot;id&quot;:50,&quot;originalPrice&quot;:&quot;$0.00&quot;,&quot;finalPrice&quot;:&quot;$0.00&quot;,&quot;discounted&quot;:false,&quot;description&quot;:{&quot;id&quot;:1,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:null,&quot;description&quot;:null,&quot;friendlyUrl&quot;:null,&quot;keyWords&quot;:null,&quot;highlights&quot;:null,&quot;metaDescription&quot;:null,&quot;title&quot;:null,&quot;priceAppender&quot;:null}},&quot;finalPrice&quot;:&quot;$0.00&quot;,&quot;originalPrice&quot;:&quot;$0.00&quot;,&quot;discounted&quot;:false,&quot;image&quot;:null,&quot;images&quot;:[],&quot;manufacturer&quot;:{&quot;id&quot;:1,&quot;code&quot;:&quot;DEFAULT&quot;,&quot;order&quot;:0,&quot;description&quot;:{&quot;id&quot;:0,&quot;language&quot;:null,&quot;name&quot;:&quot;DEFAULT&quot;,&quot;description&quot;:null,&quot;friendlyUrl&quot;:null,&quot;keyWords&quot;:null,&quot;highlights&quot;:null,&quot;metaDescription&quot;:null,&quot;title&quot;:null}},&quot;attributes&quot;:[],&quot;options&quot;:[],&quot;properties&quot;:[{&quot;id&quot;:3,&quot;code&quot;:&quot;453&quot;,&quot;type&quot;:&quot;text&quot;,&quot;readOnly&quot;:false,&quot;property&quot;:{&quot;id&quot;:3,&quot;code&quot;:&quot;453&quot;,&quot;type&quot;:null,&quot;readOnly&quot;:false,&quot;name&quot;:&quot;beach21&quot;,&quot;lang&quot;:null,&quot;optionValues&quot;:[]},&quot;propertyValue&quot;:{&quot;id&quot;:3,&quot;code&quot;:null,&quot;name&quot;:&quot;&quot;,&quot;defaultValue&quot;:false,&quot;sortOrder&quot;:0,&quot;image&quot;:null,&quot;values&quot;:[]}}],&quot;categories&quot;:[],&quot;type&quot;:{&quot;id&quot;:1,&quot;code&quot;:&quot;GENERAL&quot;,&quot;visible&quot;:false,&quot;allowAddToCart&quot;:false,&quot;description&quot;:null},&quot;canBePurchased&quot;:false,&quot;owner&quot;:null},{&quot;id&quot;:4,&quot;price&quot;:60.00,&quot;quantity&quot;:13,&quot;sku&quot;:&quot;NK035&quot;,&quot;productShipeable&quot;:true,&quot;preOrder&quot;:false,&quot;productVirtual&quot;:false,&quot;quantityOrderMaximum&quot;:1,&quot;quantityOrderMinimum&quot;:1,&quot;productIsFree&quot;:false,&quot;available&quot;:true,&quot;visible&quot;:true,&quot;productSpecifications&quot;:{&quot;height&quot;:17.00,&quot;weight&quot;:1.00,&quot;length&quot;:4.00,&quot;width&quot;:28.00,&quot;model&quot;:null,&quot;manufacturer&quot;:null,&quot;dimensionUnitOfMeasure&quot;:null,&quot;weightUnitOfMeasure&quot;:null},&quot;rating&quot;:0.0,&quot;ratingCount&quot;:0,&quot;sortOrder&quot;:1,&quot;dateAvailable&quot;:&quot;2019-03-06&quot;,&quot;refSku&quot;:&quot;NK035&quot;,&quot;creationDate&quot;:&quot;2019-03-06&quot;,&quot;rentalDuration&quot;:0,&quot;rentalPeriod&quot;:0,&quot;description&quot;:{&quot;id&quot;:856,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Chic vintage DeVille&quot;,&quot;description&quot;:&quot;&lt;p&gt;\r\n\tChic vintage DeVille&lt;/p&gt;\r\n&quot;,&quot;friendlyUrl&quot;:&quot;chic-vintage-deville&quot;,&quot;keyWords&quot;:&quot;&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Chic vintage DeVille&quot;},&quot;productPrice&quot;:{&quot;id&quot;:4,&quot;originalPrice&quot;:&quot;$88.00&quot;,&quot;finalPrice&quot;:&quot;$60.00&quot;,&quot;discounted&quot;:true,&quot;description&quot;:{&quot;id&quot;:806,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:null,&quot;description&quot;:null,&quot;friendlyUrl&quot;:null,&quot;keyWords&quot;:null,&quot;highlights&quot;:null,&quot;metaDescription&quot;:null,&quot;title&quot;:null,&quot;priceAppender&quot;:null}},&quot;finalPrice&quot;:&quot;$60.00&quot;,&quot;originalPrice&quot;:&quot;$88.00&quot;,&quot;discounted&quot;:true,&quot;image&quot;:{&quot;id&quot;:101,&quot;imageName&quot;:&quot;image9.jpg&quot;,&quot;imageUrl&quot;:&quot;http://localhost:8080/static/products/DEFAULT/NK035/SMALL/image9.jpg&quot;,&quot;externalUrl&quot;:null,&quot;videoUrl&quot;:null,&quot;imageType&quot;:0,&quot;defaultImage&quot;:true},&quot;images&quot;:[{&quot;id&quot;:101,&quot;imageName&quot;:&quot;image9.jpg&quot;,&quot;imageUrl&quot;:&quot;http://localhost:8080/static/products/DEFAULT/NK035/SMALL/image9.jpg&quot;,&quot;externalUrl&quot;:null,&quot;videoUrl&quot;:null,&quot;imageType&quot;:0,&quot;defaultImage&quot;:true}],&quot;manufacturer&quot;:{&quot;id&quot;:50,&quot;code&quot;:&quot;chic&quot;,&quot;order&quot;:0,&quot;description&quot;:{&quot;id&quot;:0,&quot;language&quot;:null,&quot;name&quot;:&quot;Chic&quot;,&quot;description&quot;:null,&quot;friendlyUrl&quot;:null,&quot;keyWords&quot;:null,&quot;highlights&quot;:null,&quot;metaDescription&quot;:null,&quot;title&quot;:null}},&quot;attributes&quot;:[],&quot;options&quot;:[],&quot;properties&quot;:[],&quot;categories&quot;:[{&quot;id&quot;:2,&quot;code&quot;:&quot;handbags&quot;,&quot;sortOrder&quot;:0,&quot;visible&quot;:true,&quot;featured&quot;:false,&quot;lineage&quot;:&quot;/2&quot;,&quot;depth&quot;:0,&quot;parent&quot;:null,&quot;description&quot;:{&quot;id&quot;:2,&quot;language&quot;:null,&quot;name&quot;:&quot;Handbags&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;handbags&quot;,&quot;keyWords&quot;:&quot;&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage Bags - Handbags&quot;},&quot;productCount&quot;:0,&quot;store&quot;:null,&quot;children&quot;:[]}],&quot;type&quot;:{&quot;id&quot;:1,&quot;code&quot;:&quot;GENERAL&quot;,&quot;visible&quot;:false,&quot;allowAddToCart&quot;:false,&quot;description&quot;:null},&quot;canBePurchased&quot;:true,&quot;owner&quot;:null},{&quot;id&quot;:2,&quot;price&quot;:62.00,&quot;quantity&quot;:12,&quot;sku&quot;:&quot;NK125&quot;,&quot;productShipeable&quot;:true,&quot;preOrder&quot;:false,&quot;productVirtual&quot;:false,&quot;quantityOrderMaximum&quot;:1,&quot;quantityOrderMinimum&quot;:1,&quot;productIsFree&quot;:false,&quot;available&quot;:true,&quot;visible&quot;:true,&quot;productSpecifications&quot;:{&quot;height&quot;:17.00,&quot;weight&quot;:1.00,&quot;length&quot;:4.00,&quot;width&quot;:28.00,&quot;model&quot;:null,&quot;manufacturer&quot;:null,&quot;dimensionUnitOfMeasure&quot;:null,&quot;weightUnitOfMeasure&quot;:null},&quot;rating&quot;:0.0,&quot;ratingCount&quot;:0,&quot;sortOrder&quot;:2,&quot;dateAvailable&quot;:&quot;2019-03-06&quot;,&quot;refSku&quot;:&quot;NK125&quot;,&quot;creationDate&quot;:&quot;2019-03-06&quot;,&quot;rentalDuration&quot;:0,&quot;rentalPeriod&quot;:0,&quot;description&quot;:{&quot;id&quot;:853,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Vintage exotik carry bag&quot;,&quot;description&quot;:&quot;&lt;p&gt;\r\n\tVintage exotik carry bag&lt;/p&gt;\r\n&quot;,&quot;friendlyUrl&quot;:&quot;vintage-exotik-carry-bag&quot;,&quot;keyWords&quot;:&quot;&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage exotik carry bag&quot;},&quot;productPrice&quot;:{&quot;id&quot;:2,&quot;originalPrice&quot;:&quot;$62.00&quot;,&quot;finalPrice&quot;:&quot;$62.00&quot;,&quot;discounted&quot;:false,&quot;description&quot;:{&quot;id&quot;:803,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:null,&quot;description&quot;:null,&quot;friendlyUrl&quot;:null,&quot;keyWords&quot;:null,&quot;highlights&quot;:null,&quot;metaDescription&quot;:null,&quot;title&quot;:null,&quot;priceAppender&quot;:null}},&quot;finalPrice&quot;:&quot;$62.00&quot;,&quot;originalPrice&quot;:&quot;$62.00&quot;,&quot;discounted&quot;:false,&quot;image&quot;:{&quot;id&quot;:102,&quot;imageName&quot;:&quot;image1.jpg&quot;,&quot;imageUrl&quot;:&quot;http://localhost:8080/static/products/DEFAULT/NK125/SMALL/image1.jpg&quot;,&quot;externalUrl&quot;:null,&quot;videoUrl&quot;:null,&quot;imageType&quot;:0,&quot;defaultImage&quot;:true},&quot;images&quot;:[{&quot;id&quot;:103,&quot;imageName&quot;:&quot;image4.jpg&quot;,&quot;imageUrl&quot;:&quot;http://localhost:8080/static/products/DEFAULT/NK125/SMALL/image4.jpg&quot;,&quot;externalUrl&quot;:null,&quot;videoUrl&quot;:null,&quot;imageType&quot;:0,&quot;defaultImage&quot;:false},{&quot;id&quot;:102,&quot;imageName&quot;:&quot;image1.jpg&quot;,&quot;imageUrl&quot;:&quot;http://localhost:8080/static/products/DEFAULT/NK125/SMALL/image1.jpg&quot;,&quot;externalUrl&quot;:null,&quot;videoUrl&quot;:null,&quot;imageType&quot;:0,&quot;defaultImage&quot;:true}],&quot;manufacturer&quot;:{&quot;id&quot;:52,&quot;code&quot;:&quot;vintage&quot;,&quot;order&quot;:0,&quot;description&quot;:{&quot;id&quot;:0,&quot;language&quot;:null,&quot;name&quot;:&quot;Vintage&quot;,&quot;description&quot;:null,&quot;friendlyUrl&quot;:null,&quot;keyWords&quot;:null,&quot;highlights&quot;:null,&quot;metaDescription&quot;:null,&quot;title&quot;:null}},&quot;attributes&quot;:[],&quot;options&quot;:[],&quot;properties&quot;:[],&quot;categories&quot;:[{&quot;id&quot;:2,&quot;code&quot;:&quot;handbags&quot;,&quot;sortOrder&quot;:0,&quot;visible&quot;:true,&quot;featured&quot;:false,&quot;lineage&quot;:&quot;/2&quot;,&quot;depth&quot;:0,&quot;parent&quot;:null,&quot;description&quot;:{&quot;id&quot;:2,&quot;language&quot;:null,&quot;name&quot;:&quot;Handbags&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;handbags&quot;,&quot;keyWords&quot;:&quot;&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage Bags - Handbags&quot;},&quot;productCount&quot;:0,&quot;store&quot;:null,&quot;children&quot;:[]}],&quot;type&quot;:{&quot;id&quot;:1,&quot;code&quot;:&quot;GENERAL&quot;,&quot;visible&quot;:false,&quot;allowAddToCart&quot;:false,&quot;description&quot;:null},&quot;canBePurchased&quot;:true,&quot;owner&quot;:null},{&quot;id&quot;:5,&quot;price&quot;:49.00,&quot;quantity&quot;:9,&quot;sku&quot;:&quot;NK028&quot;,&quot;productShipeable&quot;:true,&quot;preOrder&quot;:false,&quot;productVirtual&quot;:false,&quot;quantityOrderMaximum&quot;:1,&quot;quantityOrderMinimum&quot;:1,&quot;productIsFree&quot;:false,&quot;available&quot;:true,&quot;visible&quot;:true,&quot;productSpecifications&quot;:{&quot;height&quot;:18.00,&quot;weight&quot;:1.00,&quot;length&quot;:5.00,&quot;width&quot;:29.00,&quot;model&quot;:null,&quot;manufacturer&quot;:null,&quot;dimensionUnitOfMeasure&quot;:null,&quot;weightUnitOfMeasure&quot;:null},&quot;rating&quot;:0.0,&quot;ratingCount&quot;:0,&quot;sortOrder&quot;:2,&quot;dateAvailable&quot;:&quot;2019-03-06&quot;,&quot;refSku&quot;:&quot;NK028&quot;,&quot;creationDate&quot;:&quot;2019-03-06&quot;,&quot;rentalDuration&quot;:0,&quot;rentalPeriod&quot;:0,&quot;description&quot;:{&quot;id&quot;:858,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Multi use hand bag&quot;,&quot;description&quot;:&quot;&lt;p&gt;\r\n\tMulti use hand bag vintage bag&lt;/p&gt;\r\n&quot;,&quot;friendlyUrl&quot;:&quot;multi-use-hand-bag&quot;,&quot;keyWords&quot;:&quot;&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Multi use hand bag&quot;},&quot;productPrice&quot;:{&quot;id&quot;:5,&quot;originalPrice&quot;:&quot;$65.00&quot;,&quot;finalPrice&quot;:&quot;$49.00&quot;,&quot;discounted&quot;:true,&quot;description&quot;:{&quot;id&quot;:808,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:null,&quot;description&quot;:null,&quot;friendlyUrl&quot;:null,&quot;keyWords&quot;:null,&quot;highlights&quot;:null,&quot;metaDescription&quot;:null,&quot;title&quot;:null,&quot;priceAppender&quot;:null}},&quot;finalPrice&quot;:&quot;$49.00&quot;,&quot;originalPrice&quot;:&quot;$65.00&quot;,&quot;discounted&quot;:true,&quot;image&quot;:{&quot;id&quot;:104,&quot;imageName&quot;:&quot;image7.jpg&quot;,&quot;imageUrl&quot;:&quot;http://localhost:8080/static/products/DEFAULT/NK028/SMALL/image7.jpg&quot;,&quot;externalUrl&quot;:null,&quot;videoUrl&quot;:null,&quot;imageType&quot;:0,&quot;defaultImage&quot;:true},&quot;images&quot;:[{&quot;id&quot;:104,&quot;imageName&quot;:&quot;image7.jpg&quot;,&quot;imageUrl&quot;:&quot;http://localhost:8080/static/products/DEFAULT/NK028/SMALL/image7.jpg&quot;,&quot;externalUrl&quot;:null,&quot;videoUrl&quot;:null,&quot;imageType&quot;:0,&quot;defaultImage&quot;:true}],&quot;manufacturer&quot;:{&quot;id&quot;:52,&quot;code&quot;:&quot;vintage&quot;,&quot;order&quot;:0,&quot;description&quot;:{&quot;id&quot;:0,&quot;language&quot;:null,&quot;name&quot;:&quot;Vintage&quot;,&quot;description&quot;:null,&quot;friendlyUrl&quot;:null,&quot;keyWords&quot;:null,&quot;highlights&quot;:null,&quot;metaDescription&quot;:null,&quot;title&quot;:null}},&quot;attributes&quot;:[],&quot;options&quot;:[],&quot;properties&quot;:[],&quot;categories&quot;:[{&quot;id&quot;:2,&quot;code&quot;:&quot;handbags&quot;,&quot;sortOrder&quot;:0,&quot;visible&quot;:true,&quot;featured&quot;:false,&quot;lineage&quot;:&quot;/2&quot;,&quot;depth&quot;:0,&quot;parent&quot;:null,&quot;description&quot;:{&quot;id&quot;:2,&quot;language&quot;:null,&quot;name&quot;:&quot;Handbags&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;handbags&quot;,&quot;keyWords&quot;:&quot;&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage Bags - Handbags&quot;},&quot;productCount&quot;:0,&quot;store&quot;:null,&quot;children&quot;:[]}],&quot;type&quot;:{&quot;id&quot;:1,&quot;code&quot;:&quot;GENERAL&quot;,&quot;visible&quot;:false,&quot;allowAddToCart&quot;:false,&quot;description&quot;:null},&quot;canBePurchased&quot;:true,&quot;owner&quot;:null},{&quot;id&quot;:3,&quot;price&quot;:69.00,&quot;quantity&quot;:18,&quot;sku&quot;:&quot;NK089&quot;,&quot;productShipeable&quot;:true,&quot;preOrder&quot;:false,&quot;productVirtual&quot;:false,&quot;quantityOrderMaximum&quot;:1,&quot;quantityOrderMinimum&quot;:1,&quot;productIsFree&quot;:false,&quot;available&quot;:true,&quot;visible&quot;:true,&quot;productSpecifications&quot;:{&quot;height&quot;:20.00,&quot;weight&quot;:1.00,&quot;length&quot;:4.00,&quot;width&quot;:30.00,&quot;model&quot;:null,&quot;manufacturer&quot;:null,&quot;dimensionUnitOfMeasure&quot;:null,&quot;weightUnitOfMeasure&quot;:null},&quot;rating&quot;:0.0,&quot;ratingCount&quot;:0,&quot;sortOrder&quot;:3,&quot;dateAvailable&quot;:&quot;2019-03-06&quot;,&quot;refSku&quot;:&quot;NK089&quot;,&quot;creationDate&quot;:&quot;2019-03-06&quot;,&quot;rentalDuration&quot;:0,&quot;rentalPeriod&quot;:0,&quot;description&quot;:{&quot;id&quot;:854,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Vintage bag&quot;,&quot;description&quot;:&quot;&lt;p&gt;\r\n\tVintage handbag&lt;/p&gt;\r\n&quot;,&quot;friendlyUrl&quot;:&quot;vintage-bag&quot;,&quot;keyWords&quot;:&quot;&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage bag&quot;},&quot;productPrice&quot;:{&quot;id&quot;:3,&quot;originalPrice&quot;:&quot;$69.00&quot;,&quot;finalPrice&quot;:&quot;$69.00&quot;,&quot;discounted&quot;:false,&quot;description&quot;:{&quot;id&quot;:804,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:null,&quot;description&quot;:null,&quot;friendlyUrl&quot;:null,&quot;keyWords&quot;:null,&quot;highlights&quot;:null,&quot;metaDescription&quot;:null,&quot;title&quot;:null,&quot;priceAppender&quot;:null}},&quot;finalPrice&quot;:&quot;$69.00&quot;,&quot;originalPrice&quot;:&quot;$69.00&quot;,&quot;discounted&quot;:false,&quot;image&quot;:{&quot;id&quot;:105,&quot;imageName&quot;:&quot;image4.1.jpg&quot;,&quot;imageUrl&quot;:&quot;http://localhost:8080/static/products/DEFAULT/NK089/SMALL/image4.1.jpg&quot;,&quot;externalUrl&quot;:null,&quot;videoUrl&quot;:null,&quot;imageType&quot;:0,&quot;defaultImage&quot;:true},&quot;images&quot;:[{&quot;id&quot;:105,&quot;imageName&quot;:&quot;image4.1.jpg&quot;,&quot;imageUrl&quot;:&quot;http://localhost:8080/static/products/DEFAULT/NK089/SMALL/image4.1.jpg&quot;,&quot;externalUrl&quot;:null,&quot;videoUrl&quot;:null,&quot;imageType&quot;:0,&quot;defaultImage&quot;:true},{&quot;id&quot;:106,&quot;imageName&quot;:&quot;image4.jpg&quot;,&quot;imageUrl&quot;:&quot;http://localhost:8080/static/products/DEFAULT/NK089/SMALL/image4.jpg&quot;,&quot;externalUrl&quot;:null,&quot;videoUrl&quot;:null,&quot;imageType&quot;:0,&quot;defaultImage&quot;:false}],&quot;manufacturer&quot;:{&quot;id&quot;:52,&quot;code&quot;:&quot;vintage&quot;,&quot;order&quot;:0,&quot;description&quot;:{&quot;id&quot;:0,&quot;language&quot;:null,&quot;name&quot;:&quot;Vintage&quot;,&quot;description&quot;:null,&quot;friendlyUrl&quot;:null,&quot;keyWords&quot;:null,&quot;highlights&quot;:null,&quot;metaDescription&quot;:null,&quot;title&quot;:null}},&quot;attributes&quot;:[],&quot;options&quot;:[],&quot;properties&quot;:[],&quot;categories&quot;:[{&quot;id&quot;:2,&quot;code&quot;:&quot;handbags&quot;,&quot;sortOrder&quot;:0,&quot;visible&quot;:true,&quot;featured&quot;:false,&quot;lineage&quot;:&quot;/2&quot;,&quot;depth&quot;:0,&quot;parent&quot;:null,&quot;description&quot;:{&quot;id&quot;:2,&quot;language&quot;:null,&quot;name&quot;:&quot;Handbags&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;handbags&quot;,&quot;keyWords&quot;:&quot;&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage Bags - Handbags&quot;},&quot;productCount&quot;:0,&quot;store&quot;:null,&quot;children&quot;:[]}],&quot;type&quot;:{&quot;id&quot;:1,&quot;code&quot;:&quot;GENERAL&quot;,&quot;visible&quot;:false,&quot;allowAddToCart&quot;:false,&quot;description&quot;:null},&quot;canBePurchased&quot;:true,&quot;owner&quot;:null},{&quot;id&quot;:8,&quot;price&quot;:78.00,&quot;quantity&quot;:23,&quot;sku&quot;:&quot;NK124&quot;,&quot;productShipeable&quot;:true,&quot;preOrder&quot;:false,&quot;productVirtual&quot;:false,&quot;quantityOrderMaximum&quot;:1,&quot;quantityOrderMinimum&quot;:1,&quot;productIsFree&quot;:false,&quot;available&quot;:true,&quot;visible&quot;:true,&quot;productSpecifications&quot;:{&quot;height&quot;:18.00,&quot;weight&quot;:2.00,&quot;length&quot;:4.00,&quot;width&quot;:20.00,&quot;model&quot;:null,&quot;manufacturer&quot;:null,&quot;dimensionUnitOfMeasure&quot;:null,&quot;weightUnitOfMeasure&quot;:null},&quot;rating&quot;:0.0,&quot;ratingCount&quot;:0,&quot;sortOrder&quot;:3,&quot;dateAvailable&quot;:&quot;2019-03-06&quot;,&quot;refSku&quot;:&quot;NK124&quot;,&quot;creationDate&quot;:&quot;2019-03-06&quot;,&quot;rentalDuration&quot;:0,&quot;rentalPeriod&quot;:0,&quot;description&quot;:{&quot;id&quot;:864,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Vintage laptop bag&quot;,&quot;description&quot;:&quot;&lt;p&gt;\r\n\tVintage laptop bag&lt;/p&gt;\r\n&quot;,&quot;friendlyUrl&quot;:&quot;vintage-laptop-bag&quot;,&quot;keyWords&quot;:&quot;&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage laptop bag&quot;},&quot;productPrice&quot;:{&quot;id&quot;:8,&quot;originalPrice&quot;:&quot;$78.00&quot;,&quot;finalPrice&quot;:&quot;$78.00&quot;,&quot;discounted&quot;:false,&quot;description&quot;:{&quot;id&quot;:815,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:null,&quot;description&quot;:null,&quot;friendlyUrl&quot;:null,&quot;keyWords&quot;:null,&quot;highlights&quot;:null,&quot;metaDescription&quot;:null,&quot;title&quot;:null,&quot;priceAppender&quot;:null}},&quot;finalPrice&quot;:&quot;$78.00&quot;,&quot;originalPrice&quot;:&quot;$78.00&quot;,&quot;discounted&quot;:false,&quot;image&quot;:{&quot;id&quot;:107,&quot;imageName&quot;:&quot;image6.jpg&quot;,&quot;imageUrl&quot;:&quot;http://localhost:8080/static/products/DEFAULT/NK124/SMALL/image6.jpg&quot;,&quot;externalUrl&quot;:null,&quot;videoUrl&quot;:null,&quot;imageType&quot;:0,&quot;defaultImage&quot;:true},&quot;images&quot;:[{&quot;id&quot;:107,&quot;imageName&quot;:&quot;image6.jpg&quot;,&quot;imageUrl&quot;:&quot;http://localhost:8080/static/products/DEFAULT/NK124/SMALL/image6.jpg&quot;,&quot;externalUrl&quot;:null,&quot;videoUrl&quot;:null,&quot;imageType&quot;:0,&quot;defaultImage&quot;:true}],&quot;manufacturer&quot;:{&quot;id&quot;:52,&quot;code&quot;:&quot;vintage&quot;,&quot;order&quot;:0,&quot;description&quot;:{&quot;id&quot;:0,&quot;language&quot;:null,&quot;name&quot;:&quot;Vintage&quot;,&quot;description&quot;:null,&quot;friendlyUrl&quot;:null,&quot;keyWords&quot;:null,&quot;highlights&quot;:null,&quot;metaDescription&quot;:null,&quot;title&quot;:null}},&quot;attributes&quot;:[],&quot;options&quot;:[],&quot;properties&quot;:[],&quot;categories&quot;:[{&quot;id&quot;:1,&quot;code&quot;:&quot;beachbags&quot;,&quot;sortOrder&quot;:10,&quot;visible&quot;:true,&quot;featured&quot;:false,&quot;lineage&quot;:&quot;/1&quot;,&quot;depth&quot;:0,&quot;parent&quot;:null,&quot;description&quot;:{&quot;id&quot;:1,&quot;language&quot;:null,&quot;name&quot;:&quot;Beach bags&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;beach-bags&quot;,&quot;keyWords&quot;:&quot;&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage Bags - Beach bags&quot;},&quot;productCount&quot;:0,&quot;store&quot;:null,&quot;children&quot;:[]},{&quot;id&quot;:3,&quot;code&quot;:&quot;laptop&quot;,&quot;sortOrder&quot;:20,&quot;visible&quot;:true,&quot;featured&quot;:false,&quot;lineage&quot;:&quot;/3&quot;,&quot;depth&quot;:0,&quot;parent&quot;:null,&quot;description&quot;:{&quot;id&quot;:3,&quot;language&quot;:null,&quot;name&quot;:&quot;Laptop Bags&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;laptop-bags&quot;,&quot;keyWords&quot;:&quot;&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage Bags - Laptop bags&quot;},&quot;productCount&quot;:0,&quot;store&quot;:null,&quot;children&quot;:[]}],&quot;type&quot;:{&quot;id&quot;:1,&quot;code&quot;:&quot;GENERAL&quot;,&quot;visible&quot;:false,&quot;allowAddToCart&quot;:false,&quot;description&quot;:null},&quot;canBePurchased&quot;:true,&quot;owner&quot;:null},{&quot;id&quot;:7,&quot;price&quot;:60.00,&quot;quantity&quot;:15,&quot;sku&quot;:&quot;NK095&quot;,&quot;productShipeable&quot;:true,&quot;preOrder&quot;:false,&quot;productVirtual&quot;:false,&quot;quantityOrderMaximum&quot;:1,&quot;quantityOrderMinimum&quot;:1,&quot;productIsFree&quot;:false,&quot;available&quot;:true,&quot;visible&quot;:true,&quot;productSpecifications&quot;:{&quot;height&quot;:20.00,&quot;weight&quot;:1.00,&quot;length&quot;:8.00,&quot;width&quot;:30.00,&quot;model&quot;:null,&quot;manufacturer&quot;:null,&quot;dimensionUnitOfMeasure&quot;:null,&quot;weightUnitOfMeasure&quot;:null},&quot;rating&quot;:0.0,&quot;ratingCount&quot;:0,&quot;sortOrder&quot;:4,&quot;dateAvailable&quot;:&quot;2019-03-06&quot;,&quot;refSku&quot;:&quot;NK095&quot;,&quot;creationDate&quot;:&quot;2019-03-06&quot;,&quot;rentalDuration&quot;:0,&quot;rentalPeriod&quot;:0,&quot;description&quot;:{&quot;id&quot;:862,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Vintage beach bag&quot;,&quot;description&quot;:&quot;&lt;p&gt;\r\n\tVintage beach bag&lt;/p&gt;\r\n&quot;,&quot;friendlyUrl&quot;:&quot;vintage-beach-bag&quot;,&quot;keyWords&quot;:&quot;&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage beach bag&quot;},&quot;productPrice&quot;:{&quot;id&quot;:7,&quot;originalPrice&quot;:&quot;$60.00&quot;,&quot;finalPrice&quot;:&quot;$60.00&quot;,&quot;discounted&quot;:false,&quot;description&quot;:{&quot;id&quot;:813,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:null,&quot;description&quot;:null,&quot;friendlyUrl&quot;:null,&quot;keyWords&quot;:null,&quot;highlights&quot;:null,&quot;metaDescription&quot;:null,&quot;title&quot;:null,&quot;priceAppender&quot;:null}},&quot;finalPrice&quot;:&quot;$60.00&quot;,&quot;originalPrice&quot;:&quot;$60.00&quot;,&quot;discounted&quot;:false,&quot;image&quot;:{&quot;id&quot;:108,&quot;imageName&quot;:&quot;image8.jpg&quot;,&quot;imageUrl&quot;:&quot;http://localhost:8080/static/products/DEFAULT/NK095/SMALL/image8.jpg&quot;,&quot;externalUrl&quot;:null,&quot;videoUrl&quot;:null,&quot;imageType&quot;:0,&quot;defaultImage&quot;:true},&quot;images&quot;:[{&quot;id&quot;:108,&quot;imageName&quot;:&quot;image8.jpg&quot;,&quot;imageUrl&quot;:&quot;http://localhost:8080/static/products/DEFAULT/NK095/SMALL/image8.jpg&quot;,&quot;externalUrl&quot;:null,&quot;videoUrl&quot;:null,&quot;imageType&quot;:0,&quot;defaultImage&quot;:true}],&quot;manufacturer&quot;:{&quot;id&quot;:54,&quot;code&quot;:&quot;beach&quot;,&quot;order&quot;:0,&quot;description&quot;:{&quot;id&quot;:0,&quot;language&quot;:null,&quot;name&quot;:&quot;Beach&quot;,&quot;description&quot;:null,&quot;friendlyUrl&quot;:null,&quot;keyWords&quot;:null,&quot;highlights&quot;:null,&quot;metaDescription&quot;:null,&quot;title&quot;:null}},&quot;attributes&quot;:[],&quot;options&quot;:[],&quot;properties&quot;:[],&quot;categories&quot;:[{&quot;id&quot;:1,&quot;code&quot;:&quot;beachbags&quot;,&quot;sortOrder&quot;:10,&quot;visible&quot;:true,&quot;featured&quot;:false,&quot;lineage&quot;:&quot;/1&quot;,&quot;depth&quot;:0,&quot;parent&quot;:null,&quot;description&quot;:{&quot;id&quot;:1,&quot;language&quot;:null,&quot;name&quot;:&quot;Beach bags&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;beach-bags&quot;,&quot;keyWords&quot;:&quot;&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage Bags - Beach bags&quot;},&quot;productCount&quot;:0,&quot;store&quot;:null,&quot;children&quot;:[]}],&quot;type&quot;:{&quot;id&quot;:1,&quot;code&quot;:&quot;GENERAL&quot;,&quot;visible&quot;:false,&quot;allowAddToCart&quot;:false,&quot;description&quot;:null},&quot;canBePurchased&quot;:true,&quot;owner&quot;:null},{&quot;id&quot;:9,&quot;price&quot;:74.00,&quot;quantity&quot;:15,&quot;sku&quot;:&quot;NK019&quot;,&quot;productShipeable&quot;:true,&quot;preOrder&quot;:false,&quot;productVirtual&quot;:false,&quot;quantityOrderMaximum&quot;:1,&quot;quantityOrderMinimum&quot;:1,&quot;productIsFree&quot;:false,&quot;available&quot;:true,&quot;visible&quot;:true,&quot;productSpecifications&quot;:{&quot;height&quot;:17.00,&quot;weight&quot;:2.00,&quot;length&quot;:5.00,&quot;width&quot;:28.00,&quot;model&quot;:null,&quot;manufacturer&quot;:null,&quot;dimensionUnitOfMeasure&quot;:null,&quot;weightUnitOfMeasure&quot;:null},&quot;rating&quot;:0.0,&quot;ratingCount&quot;:0,&quot;sortOrder&quot;:4,&quot;dateAvailable&quot;:&quot;2019-03-06&quot;,&quot;refSku&quot;:&quot;NK019&quot;,&quot;creationDate&quot;:&quot;2019-03-06&quot;,&quot;rentalDuration&quot;:0,&quot;rentalPeriod&quot;:0,&quot;description&quot;:{&quot;id&quot;:867,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Vintage chic handbag&quot;,&quot;description&quot;:&quot;&lt;p&gt;\r\n\tVintage chic handbag with leather bands&lt;/p&gt;\r\n&quot;,&quot;friendlyUrl&quot;:&quot;vintage-chic-handbag&quot;,&quot;keyWords&quot;:&quot;&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage chic handbag&quot;},&quot;productPrice&quot;:{&quot;id&quot;:9,&quot;originalPrice&quot;:&quot;$82.00&quot;,&quot;finalPrice&quot;:&quot;$74.00&quot;,&quot;discounted&quot;:true,&quot;description&quot;:{&quot;id&quot;:816,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:null,&quot;description&quot;:null,&quot;friendlyUrl&quot;:null,&quot;keyWords&quot;:null,&quot;highlights&quot;:null,&quot;metaDescription&quot;:null,&quot;title&quot;:null,&quot;priceAppender&quot;:null}},&quot;finalPrice&quot;:&quot;$74.00&quot;,&quot;originalPrice&quot;:&quot;$82.00&quot;,&quot;discounted&quot;:true,&quot;image&quot;:{&quot;id&quot;:110,&quot;imageName&quot;:&quot;image11.jpg&quot;,&quot;imageUrl&quot;:&quot;http://localhost:8080/static/products/DEFAULT/NK019/SMALL/image11.jpg&quot;,&quot;externalUrl&quot;:null,&quot;videoUrl&quot;:null,&quot;imageType&quot;:0,&quot;defaultImage&quot;:true},&quot;images&quot;:[{&quot;id&quot;:110,&quot;imageName&quot;:&quot;image11.jpg&quot;,&quot;imageUrl&quot;:&quot;http://localhost:8080/static/products/DEFAULT/NK019/SMALL/image11.jpg&quot;,&quot;externalUrl&quot;:null,&quot;videoUrl&quot;:null,&quot;imageType&quot;:0,&quot;defaultImage&quot;:true}],&quot;manufacturer&quot;:{&quot;id&quot;:50,&quot;code&quot;:&quot;chic&quot;,&quot;order&quot;:0,&quot;description&quot;:{&quot;id&quot;:0,&quot;language&quot;:null,&quot;name&quot;:&quot;Chic&quot;,&quot;description&quot;:null,&quot;friendlyUrl&quot;:null,&quot;keyWords&quot;:null,&quot;highlights&quot;:null,&quot;metaDescription&quot;:null,&quot;title&quot;:null}},&quot;attributes&quot;:[],&quot;options&quot;:[],&quot;properties&quot;:[],&quot;categories&quot;:[{&quot;id&quot;:2,&quot;code&quot;:&quot;handbags&quot;,&quot;sortOrder&quot;:0,&quot;visible&quot;:true,&quot;featured&quot;:false,&quot;lineage&quot;:&quot;/2&quot;,&quot;depth&quot;:0,&quot;parent&quot;:null,&quot;description&quot;:{&quot;id&quot;:2,&quot;language&quot;:null,&quot;name&quot;:&quot;Handbags&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;handbags&quot;,&quot;keyWords&quot;:&quot;&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage Bags - Handbags&quot;},&quot;productCount&quot;:0,&quot;store&quot;:null,&quot;children&quot;:[]}],&quot;type&quot;:{&quot;id&quot;:1,&quot;code&quot;:&quot;GENERAL&quot;,&quot;visible&quot;:false,&quot;allowAddToCart&quot;:false,&quot;description&quot;:null},&quot;canBePurchased&quot;:true,&quot;owner&quot;:null},{&quot;id&quot;:6,&quot;price&quot;:68.00,&quot;quantity&quot;:9,&quot;sku&quot;:&quot;NK033&quot;,&quot;productShipeable&quot;:true,&quot;preOrder&quot;:false,&quot;productVirtual&quot;:false,&quot;quantityOrderMaximum&quot;:1,&quot;quantityOrderMinimum&quot;:1,&quot;productIsFree&quot;:false,&quot;available&quot;:true,&quot;visible&quot;:true,&quot;productSpecifications&quot;:{&quot;height&quot;:19.00,&quot;weight&quot;:1.00,&quot;length&quot;:4.00,&quot;width&quot;:27.00,&quot;model&quot;:null,&quot;manufacturer&quot;:null,&quot;dimensionUnitOfMeasure&quot;:null,&quot;weightUnitOfMeasure&quot;:null},&quot;rating&quot;:0.0,&quot;ratingCount&quot;:0,&quot;sortOrder&quot;:5,&quot;dateAvailable&quot;:&quot;2019-03-06&quot;,&quot;refSku&quot;:&quot;NK033&quot;,&quot;creationDate&quot;:&quot;2019-03-06&quot;,&quot;rentalDuration&quot;:0,&quot;rentalPeriod&quot;:0,&quot;description&quot;:{&quot;id&quot;:861,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Vintage bag with leather bands&quot;,&quot;description&quot;:&quot;&lt;p&gt;\r\n\tVintage bag with leather bands&lt;/p&gt;\r\n&quot;,&quot;friendlyUrl&quot;:&quot;vintage-bag-with-leather-bands&quot;,&quot;keyWords&quot;:&quot;&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage bag with leather bands&quot;},&quot;productPrice&quot;:{&quot;id&quot;:6,&quot;originalPrice&quot;:&quot;$68.00&quot;,&quot;finalPrice&quot;:&quot;$68.00&quot;,&quot;discounted&quot;:false,&quot;description&quot;:{&quot;id&quot;:810,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:null,&quot;description&quot;:null,&quot;friendlyUrl&quot;:null,&quot;keyWords&quot;:null,&quot;highlights&quot;:null,&quot;metaDescription&quot;:null,&quot;title&quot;:null,&quot;priceAppender&quot;:null}},&quot;finalPrice&quot;:&quot;$68.00&quot;,&quot;originalPrice&quot;:&quot;$68.00&quot;,&quot;discounted&quot;:false,&quot;image&quot;:{&quot;id&quot;:111,&quot;imageName&quot;:&quot;image5.jpg&quot;,&quot;imageUrl&quot;:&quot;http://localhost:8080/static/products/DEFAULT/NK033/SMALL/image5.jpg&quot;,&quot;externalUrl&quot;:null,&quot;videoUrl&quot;:null,&quot;imageType&quot;:0,&quot;defaultImage&quot;:true},&quot;images&quot;:[{&quot;id&quot;:111,&quot;imageName&quot;:&quot;image5.jpg&quot;,&quot;imageUrl&quot;:&quot;http://localhost:8080/static/products/DEFAULT/NK033/SMALL/image5.jpg&quot;,&quot;externalUrl&quot;:null,&quot;videoUrl&quot;:null,&quot;imageType&quot;:0,&quot;defaultImage&quot;:true}],&quot;manufacturer&quot;:{&quot;id&quot;:51,&quot;code&quot;:&quot;retro&quot;,&quot;order&quot;:0,&quot;description&quot;:{&quot;id&quot;:0,&quot;language&quot;:null,&quot;name&quot;:&quot;Retro&quot;,&quot;description&quot;:null,&quot;friendlyUrl&quot;:null,&quot;keyWords&quot;:null,&quot;highlights&quot;:null,&quot;metaDescription&quot;:null,&quot;title&quot;:null}},&quot;attributes&quot;:[],&quot;options&quot;:[],&quot;properties&quot;:[],&quot;categories&quot;:[{&quot;id&quot;:4,&quot;code&quot;:&quot;bags&quot;,&quot;sortOrder&quot;:30,&quot;visible&quot;:true,&quot;featured&quot;:false,&quot;lineage&quot;:&quot;/4&quot;,&quot;depth&quot;:0,&quot;parent&quot;:null,&quot;description&quot;:{&quot;id&quot;:4,&quot;language&quot;:null,&quot;name&quot;:&quot;Bags&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;bags&quot;,&quot;keyWords&quot;:&quot;&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage Bags - Bags&quot;},&quot;productCount&quot;:0,&quot;store&quot;:null,&quot;children&quot;:[]}],&quot;type&quot;:{&quot;id&quot;:1,&quot;code&quot;:&quot;GENERAL&quot;,&quot;visible&quot;:false,&quot;allowAddToCart&quot;:false,&quot;description&quot;:null},&quot;canBePurchased&quot;:true,&quot;owner&quot;:null},{&quot;id&quot;:1,&quot;price&quot;:48.00,&quot;quantity&quot;:20,&quot;sku&quot;:&quot;NK071&quot;,&quot;productShipeable&quot;:true,&quot;preOrder&quot;:false,&quot;productVirtual&quot;:false,&quot;quantityOrderMaximum&quot;:1,&quot;quantityOrderMinimum&quot;:1,&quot;productIsFree&quot;:false,&quot;available&quot;:true,&quot;visible&quot;:true,&quot;productSpecifications&quot;:{&quot;height&quot;:20.00,&quot;weight&quot;:1.00,&quot;length&quot;:4.00,&quot;width&quot;:30.00,&quot;model&quot;:null,&quot;manufacturer&quot;:null,&quot;dimensionUnitOfMeasure&quot;:null,&quot;weightUnitOfMeasure&quot;:null},&quot;rating&quot;:0.0,&quot;ratingCount&quot;:0,&quot;sortOrder&quot;:8,&quot;dateAvailable&quot;:&quot;2019-03-06&quot;,&quot;refSku&quot;:&quot;NK071&quot;,&quot;creationDate&quot;:&quot;2019-03-06&quot;,&quot;rentalDuration&quot;:0,&quot;rentalPeriod&quot;:0,&quot;description&quot;:{&quot;id&quot;:850,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Retro style bag&quot;,&quot;description&quot;:&quot;&lt;p&gt;\r\n\tRetro style bag with leather stripe&lt;/p&gt;\r\n&quot;,&quot;friendlyUrl&quot;:&quot;retro-style-bag&quot;,&quot;keyWords&quot;:&quot;&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Retro style bag&quot;},&quot;productPrice&quot;:{&quot;id&quot;:1,&quot;originalPrice&quot;:&quot;$48.00&quot;,&quot;finalPrice&quot;:&quot;$48.00&quot;,&quot;discounted&quot;:false,&quot;description&quot;:{&quot;id&quot;:801,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:null,&quot;description&quot;:null,&quot;friendlyUrl&quot;:null,&quot;keyWords&quot;:null,&quot;highlights&quot;:null,&quot;metaDescription&quot;:null,&quot;title&quot;:null,&quot;priceAppender&quot;:null}},&quot;finalPrice&quot;:&quot;$48.00&quot;,&quot;originalPrice&quot;:&quot;$48.00&quot;,&quot;discounted&quot;:false,&quot;image&quot;:{&quot;id&quot;:112,&quot;imageName&quot;:&quot;image3.jpg&quot;,&quot;imageUrl&quot;:&quot;http://localhost:8080/static/products/DEFAULT/NK071/SMALL/image3.jpg&quot;,&quot;externalUrl&quot;:null,&quot;videoUrl&quot;:null,&quot;imageType&quot;:0,&quot;defaultImage&quot;:true},&quot;images&quot;:[{&quot;id&quot;:112,&quot;imageName&quot;:&quot;image3.jpg&quot;,&quot;imageUrl&quot;:&quot;http://localhost:8080/static/products/DEFAULT/NK071/SMALL/image3.jpg&quot;,&quot;externalUrl&quot;:null,&quot;videoUrl&quot;:null,&quot;imageType&quot;:0,&quot;defaultImage&quot;:true}],&quot;manufacturer&quot;:{&quot;id&quot;:51,&quot;code&quot;:&quot;retro&quot;,&quot;order&quot;:0,&quot;description&quot;:{&quot;id&quot;:0,&quot;language&quot;:null,&quot;name&quot;:&quot;Retro&quot;,&quot;description&quot;:null,&quot;friendlyUrl&quot;:null,&quot;keyWords&quot;:null,&quot;highlights&quot;:null,&quot;metaDescription&quot;:null,&quot;title&quot;:null}},&quot;attributes&quot;:[],&quot;options&quot;:[],&quot;properties&quot;:[],&quot;categories&quot;:[{&quot;id&quot;:1,&quot;code&quot;:&quot;beachbags&quot;,&quot;sortOrder&quot;:10,&quot;visible&quot;:true,&quot;featured&quot;:false,&quot;lineage&quot;:&quot;/1&quot;,&quot;depth&quot;:0,&quot;parent&quot;:null,&quot;description&quot;:{&quot;id&quot;:1,&quot;language&quot;:null,&quot;name&quot;:&quot;Beach bags&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;beach-bags&quot;,&quot;keyWords&quot;:&quot;&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage Bags - Beach bags&quot;},&quot;productCount&quot;:0,&quot;store&quot;:null,&quot;children&quot;:[]}],&quot;type&quot;:{&quot;id&quot;:1,&quot;code&quot;:&quot;GENERAL&quot;,&quot;visible&quot;:false,&quot;allowAddToCart&quot;:false,&quot;description&quot;:null},&quot;canBePurchased&quot;:true,&quot;owner&quot;:null}]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.114">
+      <div class="step-ref passed">114</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.115">
+      <div class="step-ref passed">115</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.115">18:13:12.987 [print] {
+  &quot;totalPages&quot;: 1,
+  &quot;number&quot;: 11,
+  &quot;recordsTotal&quot;: 11,
+  &quot;recordsFiltered&quot;: 0,
+  &quot;products&quot;: [
+    {
+      &quot;id&quot;: 10,
+      &quot;price&quot;: 60.0,
+      &quot;quantity&quot;: 30,
+      &quot;sku&quot;: &quot;NK022&quot;,
+      &quot;productShipeable&quot;: true,
+      &quot;preOrder&quot;: false,
+      &quot;productVirtual&quot;: false,
+      &quot;quantityOrderMaximum&quot;: 1,
+      &quot;quantityOrderMinimum&quot;: 1,
+      &quot;productIsFree&quot;: false,
+      &quot;available&quot;: true,
+      &quot;visible&quot;: true,
+      &quot;productSpecifications&quot;: {
+        &quot;height&quot;: 18.0,
+        &quot;weight&quot;: 2.0,
+        &quot;length&quot;: 10.0,
+        &quot;width&quot;: 22.0,
+        &quot;model&quot;: null,
+        &quot;manufacturer&quot;: null,
+        &quot;dimensionUnitOfMeasure&quot;: null,
+        &quot;weightUnitOfMeasure&quot;: null
+      },
+      &quot;rating&quot;: 0.0,
+      &quot;ratingCount&quot;: 0,
+      &quot;sortOrder&quot;: 0,
+      &quot;dateAvailable&quot;: &quot;2019-03-06&quot;,
+      &quot;refSku&quot;: &quot;NK022&quot;,
+      &quot;creationDate&quot;: &quot;2019-03-06&quot;,
+      &quot;rentalDuration&quot;: 0,
+      &quot;rentalPeriod&quot;: 0,
+      &quot;description&quot;: {
+        &quot;id&quot;: 868,
+        &quot;language&quot;: &quot;en&quot;,
+        &quot;name&quot;: &quot;Vintage courier bag&quot;,
+        &quot;description&quot;: &quot;&lt;p&gt;\r\n\tVintage courier bag&lt;/p&gt;\r\n&quot;,
+        &quot;friendlyUrl&quot;: &quot;vintage-courier-bag&quot;,
+        &quot;keyWords&quot;: &quot;&quot;,
+        &quot;highlights&quot;: &quot;&quot;,
+        &quot;metaDescription&quot;: &quot;&quot;,
+        &quot;title&quot;: &quot;Vintage courier bag&quot;
+      },
+      &quot;productPrice&quot;: {
+        &quot;id&quot;: 10,
+        &quot;originalPrice&quot;: &quot;$60.00&quot;,
+        &quot;finalPrice&quot;: &quot;$60.00&quot;,
+        &quot;discounted&quot;: false,
+        &quot;description&quot;: {
+          &quot;id&quot;: 819,
+          &quot;language&quot;: &quot;en&quot;,
+          &quot;name&quot;: null,
+          &quot;description&quot;: null,
+          &quot;friendlyUrl&quot;: null,
+          &quot;keyWords&quot;: null,
+          &quot;highlights&quot;: null,
+          &quot;metaDescription&quot;: null,
+          &quot;title&quot;: null,
+          &quot;priceAppender&quot;: null
+        }
+      },
+      &quot;finalPrice&quot;: &quot;$60.00&quot;,
+      &quot;originalPrice&quot;: &quot;$60.00&quot;,
+      &quot;discounted&quot;: false,
+      &quot;image&quot;: {
+        &quot;id&quot;: 100,
+        &quot;imageName&quot;: &quot;image2.jpg&quot;,
+        &quot;imageUrl&quot;: &quot;http://localhost:8080/static/products/DEFAULT/NK022/SMALL/image2.jpg&quot;,
+        &quot;externalUrl&quot;: null,
+        &quot;videoUrl&quot;: null,
+        &quot;imageType&quot;: 0,
+        &quot;defaultImage&quot;: true
+      },
+      &quot;images&quot;: [
+        {
+          &quot;id&quot;: 100,
+          &quot;imageName&quot;: &quot;image2.jpg&quot;,
+          &quot;imageUrl&quot;: &quot;http://localhost:8080/static/products/DEFAULT/NK022/SMALL/image2.jpg&quot;,
+          &quot;externalUrl&quot;: null,
+          &quot;videoUrl&quot;: null,
+          &quot;imageType&quot;: 0,
+          &quot;defaultImage&quot;: true
+        }
+      ],
+      &quot;manufacturer&quot;: {
+        &quot;id&quot;: 55,
+        &quot;code&quot;: &quot;courier&quot;,
+        &quot;order&quot;: 0,
+        &quot;description&quot;: {
+          &quot;id&quot;: 0,
+          &quot;language&quot;: null,
+          &quot;name&quot;: &quot;Courier&quot;,
+          &quot;description&quot;: null,
+          &quot;friendlyUrl&quot;: null,
+          &quot;keyWords&quot;: null,
+          &quot;highlights&quot;: null,
+          &quot;metaDescription&quot;: null,
+          &quot;title&quot;: null
+        }
+      },
+      &quot;attributes&quot;: [
+      ],
+      &quot;options&quot;: [
+      ],
+      &quot;properties&quot;: [
+      ],
+      &quot;categories&quot;: [
+        {
+          &quot;id&quot;: 2,
+          &quot;code&quot;: &quot;handbags&quot;,
+          &quot;sortOrder&quot;: 0,
+          &quot;visible&quot;: true,
+          &quot;featured&quot;: false,
+          &quot;lineage&quot;: &quot;/2&quot;,
+          &quot;depth&quot;: 0,
+          &quot;parent&quot;: null,
+          &quot;description&quot;: {
+            &quot;id&quot;: 2,
+            &quot;language&quot;: null,
+            &quot;name&quot;: &quot;Handbags&quot;,
+            &quot;description&quot;: &quot;&quot;,
+            &quot;friendlyUrl&quot;: &quot;handbags&quot;,
+            &quot;keyWords&quot;: &quot;&quot;,
+            &quot;highlights&quot;: &quot;&quot;,
+            &quot;metaDescription&quot;: &quot;&quot;,
+            &quot;title&quot;: &quot;Vintage Bags - Handbags&quot;
+          },
+          &quot;productCount&quot;: 0,
+          &quot;store&quot;: null,
+          &quot;children&quot;: [
+          ]
+        }
+      ],
+      &quot;type&quot;: {
+        &quot;id&quot;: 1,
+        &quot;code&quot;: &quot;GENERAL&quot;,
+        &quot;visible&quot;: false,
+        &quot;allowAddToCart&quot;: false,
+        &quot;description&quot;: null
+      },
+      &quot;canBePurchased&quot;: true,
+      &quot;owner&quot;: null
+    },
+    {
+      &quot;id&quot;: 50,
+      &quot;price&quot;: 0.0,
+      &quot;quantity&quot;: 0,
+      &quot;sku&quot;: &quot;sku100&quot;,
+      &quot;productShipeable&quot;: false,
+      &quot;preOrder&quot;: false,
+      &quot;productVirtual&quot;: false,
+      &quot;quantityOrderMaximum&quot;: 0,
+      &quot;quantityOrderMinimum&quot;: 0,
+      &quot;productIsFree&quot;: false,
+      &quot;available&quot;: true,
+      &quot;visible&quot;: true,
+      &quot;productSpecifications&quot;: {
+        &quot;height&quot;: null,
+        &quot;weight&quot;: null,
+        &quot;length&quot;: null,
+        &quot;width&quot;: null,
+        &quot;model&quot;: null,
+        &quot;manufacturer&quot;: null,
+        &quot;dimensionUnitOfMeasure&quot;: null,
+        &quot;weightUnitOfMeasure&quot;: null
+      },
+      &quot;rating&quot;: 0.0,
+      &quot;ratingCount&quot;: 0,
+      &quot;sortOrder&quot;: 0,
+      &quot;dateAvailable&quot;: &quot;2021-12-17&quot;,
+      &quot;refSku&quot;: &quot;&quot;,
+      &quot;creationDate&quot;: &quot;2021-12-17&quot;,
+      &quot;rentalDuration&quot;: 0,
+      &quot;rentalPeriod&quot;: 0,
+      &quot;description&quot;: {
+        &quot;id&quot;: 2,
+        &quot;language&quot;: &quot;en&quot;,
+        &quot;name&quot;: &quot;demotestproduct&quot;,
+        &quot;description&quot;: &quot;&quot;,
+        &quot;friendlyUrl&quot;: &quot;demotestproduct&quot;,
+        &quot;keyWords&quot;: &quot;&quot;,
+        &quot;highlights&quot;: &quot;&quot;,
+        &quot;metaDescription&quot;: &quot;&quot;,
+        &quot;title&quot;: &quot;demotestproduct&quot;
+      },
+      &quot;productPrice&quot;: {
+        &quot;id&quot;: 50,
+        &quot;originalPrice&quot;: &quot;$0.00&quot;,
+        &quot;finalPrice&quot;: &quot;$0.00&quot;,
+        &quot;discounted&quot;: false,
+        &quot;description&quot;: {
+          &quot;id&quot;: 1,
+          &quot;language&quot;: &quot;en&quot;,
+          &quot;name&quot;: null,
+          &quot;description&quot;: null,
+          &quot;friendlyUrl&quot;: null,
+          &quot;keyWords&quot;: null,
+          &quot;highlights&quot;: null,
+          &quot;metaDescription&quot;: null,
+          &quot;title&quot;: null,
+          &quot;priceAppender&quot;: null
+        }
+      },
+      &quot;finalPrice&quot;: &quot;$0.00&quot;,
+      &quot;originalPrice&quot;: &quot;$0.00&quot;,
+      &quot;discounted&quot;: false,
+      &quot;image&quot;: null,
+      &quot;images&quot;: [
+      ],
+      &quot;manufacturer&quot;: {
+        &quot;id&quot;: 1,
+        &quot;code&quot;: &quot;DEFAULT&quot;,
+        &quot;order&quot;: 0,
+        &quot;description&quot;: {
+          &quot;id&quot;: 0,
+          &quot;language&quot;: null,
+          &quot;name&quot;: &quot;DEFAULT&quot;,
+          &quot;description&quot;: null,
+          &quot;friendlyUrl&quot;: null,
+          &quot;keyWords&quot;: null,
+          &quot;highlights&quot;: null,
+          &quot;metaDescription&quot;: null,
+          &quot;title&quot;: null
+        }
+      },
+      &quot;attributes&quot;: [
+      ],
+      &quot;options&quot;: [
+      ],
+      &quot;properties&quot;: [
+        {
+          &quot;id&quot;: 3,
+          &quot;code&quot;: &quot;453&quot;,
+          &quot;type&quot;: &quot;text&quot;,
+          &quot;readOnly&quot;: false,
+          &quot;property&quot;: {
+            &quot;id&quot;: 3,
+            &quot;code&quot;: &quot;453&quot;,
+            &quot;type&quot;: null,
+            &quot;readOnly&quot;: false,
+            &quot;name&quot;: &quot;beach21&quot;,
+            &quot;lang&quot;: null,
+            &quot;optionValues&quot;: [
+            ]
+          },
+          &quot;propertyValue&quot;: {
+            &quot;id&quot;: 3,
+            &quot;code&quot;: null,
+            &quot;name&quot;: &quot;&quot;,
+            &quot;defaultValue&quot;: false,
+            &quot;sortOrder&quot;: 0,
+            &quot;image&quot;: null,
+            &quot;values&quot;: [
+            ]
+          }
+        }
+      ],
+      &quot;categories&quot;: [
+      ],
+      &quot;type&quot;: {
+        &quot;id&quot;: 1,
+        &quot;code&quot;: &quot;GENERAL&quot;,
+        &quot;visible&quot;: false,
+        &quot;allowAddToCart&quot;: false,
+        &quot;description&quot;: null
+      },
+      &quot;canBePurchased&quot;: false,
+      &quot;owner&quot;: null
+    },
+    {
+      &quot;id&quot;: 4,
+      &quot;price&quot;: 60.0,
+      &quot;quantity&quot;: 13,
+      &quot;sku&quot;: &quot;NK035&quot;,
+      &quot;productShipeable&quot;: true,
+      &quot;preOrder&quot;: false,
+      &quot;productVirtual&quot;: false,
+      &quot;quantityOrderMaximum&quot;: 1,
+      &quot;quantityOrderMinimum&quot;: 1,
+      &quot;productIsFree&quot;: false,
+      &quot;available&quot;: true,
+      &quot;visible&quot;: true,
+      &quot;productSpecifications&quot;: {
+        &quot;height&quot;: 17.0,
+        &quot;weight&quot;: 1.0,
+        &quot;length&quot;: 4.0,
+        &quot;width&quot;: 28.0,
+        &quot;model&quot;: null,
+        &quot;manufacturer&quot;: null,
+        &quot;dimensionUnitOfMeasure&quot;: null,
+        &quot;weightUnitOfMeasure&quot;: null
+      },
+      &quot;rating&quot;: 0.0,
+      &quot;ratingCount&quot;: 0,
+      &quot;sortOrder&quot;: 1,
+      &quot;dateAvailable&quot;: &quot;2019-03-06&quot;,
+      &quot;refSku&quot;: &quot;NK035&quot;,
+      &quot;creationDate&quot;: &quot;2019-03-06&quot;,
+      &quot;rentalDuration&quot;: 0,
+      &quot;rentalPeriod&quot;: 0,
+      &quot;description&quot;: {
+        &quot;id&quot;: 856,
+        &quot;language&quot;: &quot;en&quot;,
+        &quot;name&quot;: &quot;Chic vintage DeVille&quot;,
+        &quot;description&quot;: &quot;&lt;p&gt;\r\n\tChic vintage DeVille&lt;/p&gt;\r\n&quot;,
+        &quot;friendlyUrl&quot;: &quot;chic-vintage-deville&quot;,
+        &quot;keyWords&quot;: &quot;&quot;,
+        &quot;highlights&quot;: &quot;&quot;,
+        &quot;metaDescription&quot;: &quot;&quot;,
+        &quot;title&quot;: &quot;Chic vintage DeVille&quot;
+      },
+      &quot;productPrice&quot;: {
+        &quot;id&quot;: 4,
+        &quot;originalPrice&quot;: &quot;$88.00&quot;,
+        &quot;finalPrice&quot;: &quot;$60.00&quot;,
+        &quot;discounted&quot;: true,
+        &quot;description&quot;: {
+          &quot;id&quot;: 806,
+          &quot;language&quot;: &quot;en&quot;,
+          &quot;name&quot;: null,
+          &quot;description&quot;: null,
+          &quot;friendlyUrl&quot;: null,
+          &quot;keyWords&quot;: null,
+          &quot;highlights&quot;: null,
+          &quot;metaDescription&quot;: null,
+          &quot;title&quot;: null,
+          &quot;priceAppender&quot;: null
+        }
+      },
+      &quot;finalPrice&quot;: &quot;$60.00&quot;,
+      &quot;originalPrice&quot;: &quot;$88.00&quot;,
+      &quot;discounted&quot;: true,
+      &quot;image&quot;: {
+        &quot;id&quot;: 101,
+        &quot;imageName&quot;: &quot;image9.jpg&quot;,
+        &quot;imageUrl&quot;: &quot;http://localhost:8080/static/products/DEFAULT/NK035/SMALL/image9.jpg&quot;,
+        &quot;externalUrl&quot;: null,
+        &quot;videoUrl&quot;: null,
+        &quot;imageType&quot;: 0,
+        &quot;defaultImage&quot;: true
+      },
+      &quot;images&quot;: [
+        {
+          &quot;id&quot;: 101,
+          &quot;imageName&quot;: &quot;image9.jpg&quot;,
+          &quot;imageUrl&quot;: &quot;http://localhost:8080/static/products/DEFAULT/NK035/SMALL/image9.jpg&quot;,
+          &quot;externalUrl&quot;: null,
+          &quot;videoUrl&quot;: null,
+          &quot;imageType&quot;: 0,
+          &quot;defaultImage&quot;: true
+        }
+      ],
+      &quot;manufacturer&quot;: {
+        &quot;id&quot;: 50,
+        &quot;code&quot;: &quot;chic&quot;,
+        &quot;order&quot;: 0,
+        &quot;description&quot;: {
+          &quot;id&quot;: 0,
+          &quot;language&quot;: null,
+          &quot;name&quot;: &quot;Chic&quot;,
+          &quot;description&quot;: null,
+          &quot;friendlyUrl&quot;: null,
+          &quot;keyWords&quot;: null,
+          &quot;highlights&quot;: null,
+          &quot;metaDescription&quot;: null,
+          &quot;title&quot;: null
+        }
+      },
+      &quot;attributes&quot;: [
+      ],
+      &quot;options&quot;: [
+      ],
+      &quot;properties&quot;: [
+      ],
+      &quot;categories&quot;: [
+        {
+          &quot;id&quot;: 2,
+          &quot;code&quot;: &quot;handbags&quot;,
+          &quot;sortOrder&quot;: 0,
+          &quot;visible&quot;: true,
+          &quot;featured&quot;: false,
+          &quot;lineage&quot;: &quot;/2&quot;,
+          &quot;depth&quot;: 0,
+          &quot;parent&quot;: null,
+          &quot;description&quot;: {
+            &quot;id&quot;: 2,
+            &quot;language&quot;: null,
+            &quot;name&quot;: &quot;Handbags&quot;,
+            &quot;description&quot;: &quot;&quot;,
+            &quot;friendlyUrl&quot;: &quot;handbags&quot;,
+            &quot;keyWords&quot;: &quot;&quot;,
+            &quot;highlights&quot;: &quot;&quot;,
+            &quot;metaDescription&quot;: &quot;&quot;,
+            &quot;title&quot;: &quot;Vintage Bags - Handbags&quot;
+          },
+          &quot;productCount&quot;: 0,
+          &quot;store&quot;: null,
+          &quot;children&quot;: [
+          ]
+        }
+      ],
+      &quot;type&quot;: {
+        &quot;id&quot;: 1,
+        &quot;code&quot;: &quot;GENERAL&quot;,
+        &quot;visible&quot;: false,
+        &quot;allowAddToCart&quot;: false,
+        &quot;description&quot;: null
+      },
+      &quot;canBePurchased&quot;: true,
+      &quot;owner&quot;: null
+    },
+    {
+      &quot;id&quot;: 2,
+      &quot;price&quot;: 62.0,
+      &quot;quantity&quot;: 12,
+      &quot;sku&quot;: &quot;NK125&quot;,
+      &quot;productShipeable&quot;: true,
+      &quot;preOrder&quot;: false,
+      &quot;productVirtual&quot;: false,
+      &quot;quantityOrderMaximum&quot;: 1,
+      &quot;quantityOrderMinimum&quot;: 1,
+      &quot;productIsFree&quot;: false,
+      &quot;available&quot;: true,
+      &quot;visible&quot;: true,
+      &quot;productSpecifications&quot;: {
+        &quot;height&quot;: 17.0,
+        &quot;weight&quot;: 1.0,
+        &quot;length&quot;: 4.0,
+        &quot;width&quot;: 28.0,
+        &quot;model&quot;: null,
+        &quot;manufacturer&quot;: null,
+        &quot;dimensionUnitOfMeasure&quot;: null,
+        &quot;weightUnitOfMeasure&quot;: null
+      },
+      &quot;rating&quot;: 0.0,
+      &quot;ratingCount&quot;: 0,
+      &quot;sortOrder&quot;: 2,
+      &quot;dateAvailable&quot;: &quot;2019-03-06&quot;,
+      &quot;refSku&quot;: &quot;NK125&quot;,
+      &quot;creationDate&quot;: &quot;2019-03-06&quot;,
+      &quot;rentalDuration&quot;: 0,
+      &quot;rentalPeriod&quot;: 0,
+      &quot;description&quot;: {
+        &quot;id&quot;: 853,
+        &quot;language&quot;: &quot;en&quot;,
+        &quot;name&quot;: &quot;Vintage exotik carry bag&quot;,
+        &quot;description&quot;: &quot;&lt;p&gt;\r\n\tVintage exotik carry bag&lt;/p&gt;\r\n&quot;,
+        &quot;friendlyUrl&quot;: &quot;vintage-exotik-carry-bag&quot;,
+        &quot;keyWords&quot;: &quot;&quot;,
+        &quot;highlights&quot;: &quot;&quot;,
+        &quot;metaDescription&quot;: &quot;&quot;,
+        &quot;title&quot;: &quot;Vintage exotik carry bag&quot;
+      },
+      &quot;productPrice&quot;: {
+        &quot;id&quot;: 2,
+        &quot;originalPrice&quot;: &quot;$62.00&quot;,
+        &quot;finalPrice&quot;: &quot;$62.00&quot;,
+        &quot;discounted&quot;: false,
+        &quot;description&quot;: {
+          &quot;id&quot;: 803,
+          &quot;language&quot;: &quot;en&quot;,
+          &quot;name&quot;: null,
+          &quot;description&quot;: null,
+          &quot;friendlyUrl&quot;: null,
+          &quot;keyWords&quot;: null,
+          &quot;highlights&quot;: null,
+          &quot;metaDescription&quot;: null,
+          &quot;title&quot;: null,
+          &quot;priceAppender&quot;: null
+        }
+      },
+      &quot;finalPrice&quot;: &quot;$62.00&quot;,
+      &quot;originalPrice&quot;: &quot;$62.00&quot;,
+      &quot;discounted&quot;: false,
+      &quot;image&quot;: {
+        &quot;id&quot;: 102,
+        &quot;imageName&quot;: &quot;image1.jpg&quot;,
+        &quot;imageUrl&quot;: &quot;http://localhost:8080/static/products/DEFAULT/NK125/SMALL/image1.jpg&quot;,
+        &quot;externalUrl&quot;: null,
+        &quot;videoUrl&quot;: null,
+        &quot;imageType&quot;: 0,
+        &quot;defaultImage&quot;: true
+      },
+      &quot;images&quot;: [
+        {
+          &quot;id&quot;: 103,
+          &quot;imageName&quot;: &quot;image4.jpg&quot;,
+          &quot;imageUrl&quot;: &quot;http://localhost:8080/static/products/DEFAULT/NK125/SMALL/image4.jpg&quot;,
+          &quot;externalUrl&quot;: null,
+          &quot;videoUrl&quot;: null,
+          &quot;imageType&quot;: 0,
+          &quot;defaultImage&quot;: false
+        },
+        {
+          &quot;id&quot;: 102,
+          &quot;imageName&quot;: &quot;image1.jpg&quot;,
+          &quot;imageUrl&quot;: &quot;http://localhost:8080/static/products/DEFAULT/NK125/SMALL/image1.jpg&quot;,
+          &quot;externalUrl&quot;: null,
+          &quot;videoUrl&quot;: null,
+          &quot;imageType&quot;: 0,
+          &quot;defaultImage&quot;: true
+        }
+      ],
+      &quot;manufacturer&quot;: {
+        &quot;id&quot;: 52,
+        &quot;code&quot;: &quot;vintage&quot;,
+        &quot;order&quot;: 0,
+        &quot;description&quot;: {
+          &quot;id&quot;: 0,
+          &quot;language&quot;: null,
+          &quot;name&quot;: &quot;Vintage&quot;,
+          &quot;description&quot;: null,
+          &quot;friendlyUrl&quot;: null,
+          &quot;keyWords&quot;: null,
+          &quot;highlights&quot;: null,
+          &quot;metaDescription&quot;: null,
+          &quot;title&quot;: null
+        }
+      },
+      &quot;attributes&quot;: [
+      ],
+      &quot;options&quot;: [
+      ],
+      &quot;properties&quot;: [
+      ],
+      &quot;categories&quot;: [
+        {
+          &quot;id&quot;: 2,
+          &quot;code&quot;: &quot;handbags&quot;,
+          &quot;sortOrder&quot;: 0,
+          &quot;visible&quot;: true,
+          &quot;featured&quot;: false,
+          &quot;lineage&quot;: &quot;/2&quot;,
+          &quot;depth&quot;: 0,
+          &quot;parent&quot;: null,
+          &quot;description&quot;: {
+            &quot;id&quot;: 2,
+            &quot;language&quot;: null,
+            &quot;name&quot;: &quot;Handbags&quot;,
+            &quot;description&quot;: &quot;&quot;,
+            &quot;friendlyUrl&quot;: &quot;handbags&quot;,
+            &quot;keyWords&quot;: &quot;&quot;,
+            &quot;highlights&quot;: &quot;&quot;,
+            &quot;metaDescription&quot;: &quot;&quot;,
+            &quot;title&quot;: &quot;Vintage Bags - Handbags&quot;
+          },
+          &quot;productCount&quot;: 0,
+          &quot;store&quot;: null,
+          &quot;children&quot;: [
+          ]
+        }
+      ],
+      &quot;type&quot;: {
+        &quot;id&quot;: 1,
+        &quot;code&quot;: &quot;GENERAL&quot;,
+        &quot;visible&quot;: false,
+        &quot;allowAddToCart&quot;: false,
+        &quot;description&quot;: null
+      },
+      &quot;canBePurchased&quot;: true,
+      &quot;owner&quot;: null
+    },
+    {
+      &quot;id&quot;: 5,
+      &quot;price&quot;: 49.0,
+      &quot;quantity&quot;: 9,
+      &quot;sku&quot;: &quot;NK028&quot;,
+      &quot;productShipeable&quot;: true,
+      &quot;preOrder&quot;: false,
+      &quot;productVirtual&quot;: false,
+      &quot;quantityOrderMaximum&quot;: 1,
+      &quot;quantityOrderMinimum&quot;: 1,
+      &quot;productIsFree&quot;: false,
+      &quot;available&quot;: true,
+      &quot;visible&quot;: true,
+      &quot;productSpecifications&quot;: {
+        &quot;height&quot;: 18.0,
+        &quot;weight&quot;: 1.0,
+        &quot;length&quot;: 5.0,
+        &quot;width&quot;: 29.0,
+        &quot;model&quot;: null,
+        &quot;manufacturer&quot;: null,
+        &quot;dimensionUnitOfMeasure&quot;: null,
+        &quot;weightUnitOfMeasure&quot;: null
+      },
+      &quot;rating&quot;: 0.0,
+      &quot;ratingCount&quot;: 0,
+      &quot;sortOrder&quot;: 2,
+      &quot;dateAvailable&quot;: &quot;2019-03-06&quot;,
+      &quot;refSku&quot;: &quot;NK028&quot;,
+      &quot;creationDate&quot;: &quot;2019-03-06&quot;,
+      &quot;rentalDuration&quot;: 0,
+      &quot;rentalPeriod&quot;: 0,
+      &quot;description&quot;: {
+        &quot;id&quot;: 858,
+        &quot;language&quot;: &quot;en&quot;,
+        &quot;name&quot;: &quot;Multi use hand bag&quot;,
+        &quot;description&quot;: &quot;&lt;p&gt;\r\n\tMulti use hand bag vintage bag&lt;/p&gt;\r\n&quot;,
+        &quot;friendlyUrl&quot;: &quot;multi-use-hand-bag&quot;,
+        &quot;keyWords&quot;: &quot;&quot;,
+        &quot;highlights&quot;: &quot;&quot;,
+        &quot;metaDescription&quot;: &quot;&quot;,
+        &quot;title&quot;: &quot;Multi use hand bag&quot;
+      },
+      &quot;productPrice&quot;: {
+        &quot;id&quot;: 5,
+        &quot;originalPrice&quot;: &quot;$65.00&quot;,
+        &quot;finalPrice&quot;: &quot;$49.00&quot;,
+        &quot;discounted&quot;: true,
+        &quot;description&quot;: {
+          &quot;id&quot;: 808,
+          &quot;language&quot;: &quot;en&quot;,
+          &quot;name&quot;: null,
+          &quot;description&quot;: null,
+          &quot;friendlyUrl&quot;: null,
+          &quot;keyWords&quot;: null,
+          &quot;highlights&quot;: null,
+          &quot;metaDescription&quot;: null,
+          &quot;title&quot;: null,
+          &quot;priceAppender&quot;: null
+        }
+      },
+      &quot;finalPrice&quot;: &quot;$49.00&quot;,
+      &quot;originalPrice&quot;: &quot;$65.00&quot;,
+      &quot;discounted&quot;: true,
+      &quot;image&quot;: {
+        &quot;id&quot;: 104,
+        &quot;imageName&quot;: &quot;image7.jpg&quot;,
+        &quot;imageUrl&quot;: &quot;http://localhost:8080/static/products/DEFAULT/NK028/SMALL/image7.jpg&quot;,
+        &quot;externalUrl&quot;: null,
+        &quot;videoUrl&quot;: null,
+        &quot;imageType&quot;: 0,
+        &quot;defaultImage&quot;: true
+      },
+      &quot;images&quot;: [
+        {
+          &quot;id&quot;: 104,
+          &quot;imageName&quot;: &quot;image7.jpg&quot;,
+          &quot;imageUrl&quot;: &quot;http://localhost:8080/static/products/DEFAULT/NK028/SMALL/image7.jpg&quot;,
+          &quot;externalUrl&quot;: null,
+          &quot;videoUrl&quot;: null,
+          &quot;imageType&quot;: 0,
+          &quot;defaultImage&quot;: true
+        }
+      ],
+      &quot;manufacturer&quot;: {
+        &quot;id&quot;: 52,
+        &quot;code&quot;: &quot;vintage&quot;,
+        &quot;order&quot;: 0,
+        &quot;description&quot;: {
+          &quot;id&quot;: 0,
+          &quot;language&quot;: null,
+          &quot;name&quot;: &quot;Vintage&quot;,
+          &quot;description&quot;: null,
+          &quot;friendlyUrl&quot;: null,
+          &quot;keyWords&quot;: null,
+          &quot;highlights&quot;: null,
+          &quot;metaDescription&quot;: null,
+          &quot;title&quot;: null
+        }
+      },
+      &quot;attributes&quot;: [
+      ],
+      &quot;options&quot;: [
+      ],
+      &quot;properties&quot;: [
+      ],
+      &quot;categories&quot;: [
+        {
+          &quot;id&quot;: 2,
+          &quot;code&quot;: &quot;handbags&quot;,
+          &quot;sortOrder&quot;: 0,
+          &quot;visible&quot;: true,
+          &quot;featured&quot;: false,
+          &quot;lineage&quot;: &quot;/2&quot;,
+          &quot;depth&quot;: 0,
+          &quot;parent&quot;: null,
+          &quot;description&quot;: {
+            &quot;id&quot;: 2,
+            &quot;language&quot;: null,
+            &quot;name&quot;: &quot;Handbags&quot;,
+            &quot;description&quot;: &quot;&quot;,
+            &quot;friendlyUrl&quot;: &quot;handbags&quot;,
+            &quot;keyWords&quot;: &quot;&quot;,
+            &quot;highlights&quot;: &quot;&quot;,
+            &quot;metaDescription&quot;: &quot;&quot;,
+            &quot;title&quot;: &quot;Vintage Bags - Handbags&quot;
+          },
+          &quot;productCount&quot;: 0,
+          &quot;store&quot;: null,
+          &quot;children&quot;: [
+          ]
+        }
+      ],
+      &quot;type&quot;: {
+        &quot;id&quot;: 1,
+        &quot;code&quot;: &quot;GENERAL&quot;,
+        &quot;visible&quot;: false,
+        &quot;allowAddToCart&quot;: false,
+        &quot;description&quot;: null
+      },
+      &quot;canBePurchased&quot;: true,
+      &quot;owner&quot;: null
+    },
+    {
+      &quot;id&quot;: 3,
+      &quot;price&quot;: 69.0,
+      &quot;quantity&quot;: 18,
+      &quot;sku&quot;: &quot;NK089&quot;,
+      &quot;productShipeable&quot;: true,
+      &quot;preOrder&quot;: false,
+      &quot;productVirtual&quot;: false,
+      &quot;quantityOrderMaximum&quot;: 1,
+      &quot;quantityOrderMinimum&quot;: 1,
+      &quot;productIsFree&quot;: false,
+      &quot;available&quot;: true,
+      &quot;visible&quot;: true,
+      &quot;productSpecifications&quot;: {
+        &quot;height&quot;: 20.0,
+        &quot;weight&quot;: 1.0,
+        &quot;length&quot;: 4.0,
+        &quot;width&quot;: 30.0,
+        &quot;model&quot;: null,
+        &quot;manufacturer&quot;: null,
+        &quot;dimensionUnitOfMeasure&quot;: null,
+        &quot;weightUnitOfMeasure&quot;: null
+      },
+      &quot;rating&quot;: 0.0,
+      &quot;ratingCount&quot;: 0,
+      &quot;sortOrder&quot;: 3,
+      &quot;dateAvailable&quot;: &quot;2019-03-06&quot;,
+      &quot;refSku&quot;: &quot;NK089&quot;,
+      &quot;creationDate&quot;: &quot;2019-03-06&quot;,
+      &quot;rentalDuration&quot;: 0,
+      &quot;rentalPeriod&quot;: 0,
+      &quot;description&quot;: {
+        &quot;id&quot;: 854,
+        &quot;language&quot;: &quot;en&quot;,
+        &quot;name&quot;: &quot;Vintage bag&quot;,
+        &quot;description&quot;: &quot;&lt;p&gt;\r\n\tVintage handbag&lt;/p&gt;\r\n&quot;,
+        &quot;friendlyUrl&quot;: &quot;vintage-bag&quot;,
+        &quot;keyWords&quot;: &quot;&quot;,
+        &quot;highlights&quot;: &quot;&quot;,
+        &quot;metaDescription&quot;: &quot;&quot;,
+        &quot;title&quot;: &quot;Vintage bag&quot;
+      },
+      &quot;productPrice&quot;: {
+        &quot;id&quot;: 3,
+        &quot;originalPrice&quot;: &quot;$69.00&quot;,
+        &quot;finalPrice&quot;: &quot;$69.00&quot;,
+        &quot;discounted&quot;: false,
+        &quot;description&quot;: {
+          &quot;id&quot;: 804,
+          &quot;language&quot;: &quot;en&quot;,
+          &quot;name&quot;: null,
+          &quot;description&quot;: null,
+          &quot;friendlyUrl&quot;: null,
+          &quot;keyWords&quot;: null,
+          &quot;highlights&quot;: null,
+          &quot;metaDescription&quot;: null,
+          &quot;title&quot;: null,
+          &quot;priceAppender&quot;: null
+        }
+      },
+      &quot;finalPrice&quot;: &quot;$69.00&quot;,
+      &quot;originalPrice&quot;: &quot;$69.00&quot;,
+      &quot;discounted&quot;: false,
+      &quot;image&quot;: {
+        &quot;id&quot;: 105,
+        &quot;imageName&quot;: &quot;image4.1.jpg&quot;,
+        &quot;imageUrl&quot;: &quot;http://localhost:8080/static/products/DEFAULT/NK089/SMALL/image4.1.jpg&quot;,
+        &quot;externalUrl&quot;: null,
+        &quot;videoUrl&quot;: null,
+        &quot;imageType&quot;: 0,
+        &quot;defaultImage&quot;: true
+      },
+      &quot;images&quot;: [
+        {
+          &quot;id&quot;: 105,
+          &quot;imageName&quot;: &quot;image4.1.jpg&quot;,
+          &quot;imageUrl&quot;: &quot;http://localhost:8080/static/products/DEFAULT/NK089/SMALL/image4.1.jpg&quot;,
+          &quot;externalUrl&quot;: null,
+          &quot;videoUrl&quot;: null,
+          &quot;imageType&quot;: 0,
+          &quot;defaultImage&quot;: true
+        },
+        {
+          &quot;id&quot;: 106,
+          &quot;imageName&quot;: &quot;image4.jpg&quot;,
+          &quot;imageUrl&quot;: &quot;http://localhost:8080/static/products/DEFAULT/NK089/SMALL/image4.jpg&quot;,
+          &quot;externalUrl&quot;: null,
+          &quot;videoUrl&quot;: null,
+          &quot;imageType&quot;: 0,
+          &quot;defaultImage&quot;: false
+        }
+      ],
+      &quot;manufacturer&quot;: {
+        &quot;id&quot;: 52,
+        &quot;code&quot;: &quot;vintage&quot;,
+        &quot;order&quot;: 0,
+        &quot;description&quot;: {
+          &quot;id&quot;: 0,
+          &quot;language&quot;: null,
+          &quot;name&quot;: &quot;Vintage&quot;,
+          &quot;description&quot;: null,
+          &quot;friendlyUrl&quot;: null,
+          &quot;keyWords&quot;: null,
+          &quot;highlights&quot;: null,
+          &quot;metaDescription&quot;: null,
+          &quot;title&quot;: null
+        }
+      },
+      &quot;attributes&quot;: [
+      ],
+      &quot;options&quot;: [
+      ],
+      &quot;properties&quot;: [
+      ],
+      &quot;categories&quot;: [
+        {
+          &quot;id&quot;: 2,
+          &quot;code&quot;: &quot;handbags&quot;,
+          &quot;sortOrder&quot;: 0,
+          &quot;visible&quot;: true,
+          &quot;featured&quot;: false,
+          &quot;lineage&quot;: &quot;/2&quot;,
+          &quot;depth&quot;: 0,
+          &quot;parent&quot;: null,
+          &quot;description&quot;: {
+            &quot;id&quot;: 2,
+            &quot;language&quot;: null,
+            &quot;name&quot;: &quot;Handbags&quot;,
+            &quot;description&quot;: &quot;&quot;,
+            &quot;friendlyUrl&quot;: &quot;handbags&quot;,
+            &quot;keyWords&quot;: &quot;&quot;,
+            &quot;highlights&quot;: &quot;&quot;,
+            &quot;metaDescription&quot;: &quot;&quot;,
+            &quot;title&quot;: &quot;Vintage Bags - Handbags&quot;
+          },
+          &quot;productCount&quot;: 0,
+          &quot;store&quot;: null,
+          &quot;children&quot;: [
+          ]
+        }
+      ],
+      &quot;type&quot;: {
+        &quot;id&quot;: 1,
+        &quot;code&quot;: &quot;GENERAL&quot;,
+        &quot;visible&quot;: false,
+        &quot;allowAddToCart&quot;: false,
+        &quot;description&quot;: null
+      },
+      &quot;canBePurchased&quot;: true,
+      &quot;owner&quot;: null
+    },
+    {
+      &quot;id&quot;: 8,
+      &quot;price&quot;: 78.0,
+      &quot;quantity&quot;: 23,
+      &quot;sku&quot;: &quot;NK124&quot;,
+      &quot;productShipeable&quot;: true,
+      &quot;preOrder&quot;: false,
+      &quot;productVirtual&quot;: false,
+      &quot;quantityOrderMaximum&quot;: 1,
+      &quot;quantityOrderMinimum&quot;: 1,
+      &quot;productIsFree&quot;: false,
+      &quot;available&quot;: true,
+      &quot;visible&quot;: true,
+      &quot;productSpecifications&quot;: {
+        &quot;height&quot;: 18.0,
+        &quot;weight&quot;: 2.0,
+        &quot;length&quot;: 4.0,
+        &quot;width&quot;: 20.0,
+        &quot;model&quot;: null,
+        &quot;manufacturer&quot;: null,
+        &quot;dimensionUnitOfMeasure&quot;: null,
+        &quot;weightUnitOfMeasure&quot;: null
+      },
+      &quot;rating&quot;: 0.0,
+      &quot;ratingCount&quot;: 0,
+      &quot;sortOrder&quot;: 3,
+      &quot;dateAvailable&quot;: &quot;2019-03-06&quot;,
+      &quot;refSku&quot;: &quot;NK124&quot;,
+      &quot;creationDate&quot;: &quot;2019-03-06&quot;,
+      &quot;rentalDuration&quot;: 0,
+      &quot;rentalPeriod&quot;: 0,
+      &quot;description&quot;: {
+        &quot;id&quot;: 864,
+        &quot;language&quot;: &quot;en&quot;,
+        &quot;name&quot;: &quot;Vintage laptop bag&quot;,
+        &quot;description&quot;: &quot;&lt;p&gt;\r\n\tVintage laptop bag&lt;/p&gt;\r\n&quot;,
+        &quot;friendlyUrl&quot;: &quot;vintage-laptop-bag&quot;,
+        &quot;keyWords&quot;: &quot;&quot;,
+        &quot;highlights&quot;: &quot;&quot;,
+        &quot;metaDescription&quot;: &quot;&quot;,
+        &quot;title&quot;: &quot;Vintage laptop bag&quot;
+      },
+      &quot;productPrice&quot;: {
+        &quot;id&quot;: 8,
+        &quot;originalPrice&quot;: &quot;$78.00&quot;,
+        &quot;finalPrice&quot;: &quot;$78.00&quot;,
+        &quot;discounted&quot;: false,
+        &quot;description&quot;: {
+          &quot;id&quot;: 815,
+          &quot;language&quot;: &quot;en&quot;,
+          &quot;name&quot;: null,
+          &quot;description&quot;: null,
+          &quot;friendlyUrl&quot;: null,
+          &quot;keyWords&quot;: null,
+          &quot;highlights&quot;: null,
+          &quot;metaDescription&quot;: null,
+          &quot;title&quot;: null,
+          &quot;priceAppender&quot;: null
+        }
+      },
+      &quot;finalPrice&quot;: &quot;$78.00&quot;,
+      &quot;originalPrice&quot;: &quot;$78.00&quot;,
+      &quot;discounted&quot;: false,
+      &quot;image&quot;: {
+        &quot;id&quot;: 107,
+        &quot;imageName&quot;: &quot;image6.jpg&quot;,
+        &quot;imageUrl&quot;: &quot;http://localhost:8080/static/products/DEFAULT/NK124/SMALL/image6.jpg&quot;,
+        &quot;externalUrl&quot;: null,
+        &quot;videoUrl&quot;: null,
+        &quot;imageType&quot;: 0,
+        &quot;defaultImage&quot;: true
+      },
+      &quot;images&quot;: [
+        {
+          &quot;id&quot;: 107,
+          &quot;imageName&quot;: &quot;image6.jpg&quot;,
+          &quot;imageUrl&quot;: &quot;http://localhost:8080/static/products/DEFAULT/NK124/SMALL/image6.jpg&quot;,
+          &quot;externalUrl&quot;: null,
+          &quot;videoUrl&quot;: null,
+          &quot;imageType&quot;: 0,
+          &quot;defaultImage&quot;: true
+        }
+      ],
+      &quot;manufacturer&quot;: {
+        &quot;id&quot;: 52,
+        &quot;code&quot;: &quot;vintage&quot;,
+        &quot;order&quot;: 0,
+        &quot;description&quot;: {
+          &quot;id&quot;: 0,
+          &quot;language&quot;: null,
+          &quot;name&quot;: &quot;Vintage&quot;,
+          &quot;description&quot;: null,
+          &quot;friendlyUrl&quot;: null,
+          &quot;keyWords&quot;: null,
+          &quot;highlights&quot;: null,
+          &quot;metaDescription&quot;: null,
+          &quot;title&quot;: null
+        }
+      },
+      &quot;attributes&quot;: [
+      ],
+      &quot;options&quot;: [
+      ],
+      &quot;properties&quot;: [
+      ],
+      &quot;categories&quot;: [
+        {
+          &quot;id&quot;: 1,
+          &quot;code&quot;: &quot;beachbags&quot;,
+          &quot;sortOrder&quot;: 10,
+          &quot;visible&quot;: true,
+          &quot;featured&quot;: false,
+          &quot;lineage&quot;: &quot;/1&quot;,
+          &quot;depth&quot;: 0,
+          &quot;parent&quot;: null,
+          &quot;description&quot;: {
+            &quot;id&quot;: 1,
+            &quot;language&quot;: null,
+            &quot;name&quot;: &quot;Beach bags&quot;,
+            &quot;description&quot;: &quot;&quot;,
+            &quot;friendlyUrl&quot;: &quot;beach-bags&quot;,
+            &quot;keyWords&quot;: &quot;&quot;,
+            &quot;highlights&quot;: &quot;&quot;,
+            &quot;metaDescription&quot;: &quot;&quot;,
+            &quot;title&quot;: &quot;Vintage Bags - Beach bags&quot;
+          },
+          &quot;productCount&quot;: 0,
+          &quot;store&quot;: null,
+          &quot;children&quot;: [
+          ]
+        },
+        {
+          &quot;id&quot;: 3,
+          &quot;code&quot;: &quot;laptop&quot;,
+          &quot;sortOrder&quot;: 20,
+          &quot;visible&quot;: true,
+          &quot;featured&quot;: false,
+          &quot;lineage&quot;: &quot;/3&quot;,
+          &quot;depth&quot;: 0,
+          &quot;parent&quot;: null,
+          &quot;description&quot;: {
+            &quot;id&quot;: 3,
+            &quot;language&quot;: null,
+            &quot;name&quot;: &quot;Laptop Bags&quot;,
+            &quot;description&quot;: &quot;&quot;,
+            &quot;friendlyUrl&quot;: &quot;laptop-bags&quot;,
+            &quot;keyWords&quot;: &quot;&quot;,
+            &quot;highlights&quot;: &quot;&quot;,
+            &quot;metaDescription&quot;: &quot;&quot;,
+            &quot;title&quot;: &quot;Vintage Bags - Laptop bags&quot;
+          },
+          &quot;productCount&quot;: 0,
+          &quot;store&quot;: null,
+          &quot;children&quot;: [
+          ]
+        }
+      ],
+      &quot;type&quot;: {
+        &quot;id&quot;: 1,
+        &quot;code&quot;: &quot;GENERAL&quot;,
+        &quot;visible&quot;: false,
+        &quot;allowAddToCart&quot;: false,
+        &quot;description&quot;: null
+      },
+      &quot;canBePurchased&quot;: true,
+      &quot;owner&quot;: null
+    },
+    {
+      &quot;id&quot;: 7,
+      &quot;price&quot;: 60.0,
+      &quot;quantity&quot;: 15,
+      &quot;sku&quot;: &quot;NK095&quot;,
+      &quot;productShipeable&quot;: true,
+      &quot;preOrder&quot;: false,
+      &quot;productVirtual&quot;: false,
+      &quot;quantityOrderMaximum&quot;: 1,
+      &quot;quantityOrderMinimum&quot;: 1,
+      &quot;productIsFree&quot;: false,
+      &quot;available&quot;: true,
+      &quot;visible&quot;: true,
+      &quot;productSpecifications&quot;: {
+        &quot;height&quot;: 20.0,
+        &quot;weight&quot;: 1.0,
+        &quot;length&quot;: 8.0,
+        &quot;width&quot;: 30.0,
+        &quot;model&quot;: null,
+        &quot;manufacturer&quot;: null,
+        &quot;dimensionUnitOfMeasure&quot;: null,
+        &quot;weightUnitOfMeasure&quot;: null
+      },
+      &quot;rating&quot;: 0.0,
+      &quot;ratingCount&quot;: 0,
+      &quot;sortOrder&quot;: 4,
+      &quot;dateAvailable&quot;: &quot;2019-03-06&quot;,
+      &quot;refSku&quot;: &quot;NK095&quot;,
+      &quot;creationDate&quot;: &quot;2019-03-06&quot;,
+      &quot;rentalDuration&quot;: 0,
+      &quot;rentalPeriod&quot;: 0,
+      &quot;description&quot;: {
+        &quot;id&quot;: 862,
+        &quot;language&quot;: &quot;en&quot;,
+        &quot;name&quot;: &quot;Vintage beach bag&quot;,
+        &quot;description&quot;: &quot;&lt;p&gt;\r\n\tVintage beach bag&lt;/p&gt;\r\n&quot;,
+        &quot;friendlyUrl&quot;: &quot;vintage-beach-bag&quot;,
+        &quot;keyWords&quot;: &quot;&quot;,
+        &quot;highlights&quot;: &quot;&quot;,
+        &quot;metaDescription&quot;: &quot;&quot;,
+        &quot;title&quot;: &quot;Vintage beach bag&quot;
+      },
+      &quot;productPrice&quot;: {
+        &quot;id&quot;: 7,
+        &quot;originalPrice&quot;: &quot;$60.00&quot;,
+        &quot;finalPrice&quot;: &quot;$60.00&quot;,
+        &quot;discounted&quot;: false,
+        &quot;description&quot;: {
+          &quot;id&quot;: 813,
+          &quot;language&quot;: &quot;en&quot;,
+          &quot;name&quot;: null,
+          &quot;description&quot;: null,
+          &quot;friendlyUrl&quot;: null,
+          &quot;keyWords&quot;: null,
+          &quot;highlights&quot;: null,
+          &quot;metaDescription&quot;: null,
+          &quot;title&quot;: null,
+          &quot;priceAppender&quot;: null
+        }
+      },
+      &quot;finalPrice&quot;: &quot;$60.00&quot;,
+      &quot;originalPrice&quot;: &quot;$60.00&quot;,
+      &quot;discounted&quot;: false,
+      &quot;image&quot;: {
+        &quot;id&quot;: 108,
+        &quot;imageName&quot;: &quot;image8.jpg&quot;,
+        &quot;imageUrl&quot;: &quot;http://localhost:8080/static/products/DEFAULT/NK095/SMALL/image8.jpg&quot;,
+        &quot;externalUrl&quot;: null,
+        &quot;videoUrl&quot;: null,
+        &quot;imageType&quot;: 0,
+        &quot;defaultImage&quot;: true
+      },
+      &quot;images&quot;: [
+        {
+          &quot;id&quot;: 108,
+          &quot;imageName&quot;: &quot;image8.jpg&quot;,
+          &quot;imageUrl&quot;: &quot;http://localhost:8080/static/products/DEFAULT/NK095/SMALL/image8.jpg&quot;,
+          &quot;externalUrl&quot;: null,
+          &quot;videoUrl&quot;: null,
+          &quot;imageType&quot;: 0,
+          &quot;defaultImage&quot;: true
+        }
+      ],
+      &quot;manufacturer&quot;: {
+        &quot;id&quot;: 54,
+        &quot;code&quot;: &quot;beach&quot;,
+        &quot;order&quot;: 0,
+        &quot;description&quot;: {
+          &quot;id&quot;: 0,
+          &quot;language&quot;: null,
+          &quot;name&quot;: &quot;Beach&quot;,
+          &quot;description&quot;: null,
+          &quot;friendlyUrl&quot;: null,
+          &quot;keyWords&quot;: null,
+          &quot;highlights&quot;: null,
+          &quot;metaDescription&quot;: null,
+          &quot;title&quot;: null
+        }
+      },
+      &quot;attributes&quot;: [
+      ],
+      &quot;options&quot;: [
+      ],
+      &quot;properties&quot;: [
+      ],
+      &quot;categories&quot;: [
+        {
+          &quot;id&quot;: 1,
+          &quot;code&quot;: &quot;beachbags&quot;,
+          &quot;sortOrder&quot;: 10,
+          &quot;visible&quot;: true,
+          &quot;featured&quot;: false,
+          &quot;lineage&quot;: &quot;/1&quot;,
+          &quot;depth&quot;: 0,
+          &quot;parent&quot;: null,
+          &quot;description&quot;: {
+            &quot;id&quot;: 1,
+            &quot;language&quot;: null,
+            &quot;name&quot;: &quot;Beach bags&quot;,
+            &quot;description&quot;: &quot;&quot;,
+            &quot;friendlyUrl&quot;: &quot;beach-bags&quot;,
+            &quot;keyWords&quot;: &quot;&quot;,
+            &quot;highlights&quot;: &quot;&quot;,
+            &quot;metaDescription&quot;: &quot;&quot;,
+            &quot;title&quot;: &quot;Vintage Bags - Beach bags&quot;
+          },
+          &quot;productCount&quot;: 0,
+          &quot;store&quot;: null,
+          &quot;children&quot;: [
+          ]
+        }
+      ],
+      &quot;type&quot;: {
+        &quot;id&quot;: 1,
+        &quot;code&quot;: &quot;GENERAL&quot;,
+        &quot;visible&quot;: false,
+        &quot;allowAddToCart&quot;: false,
+        &quot;description&quot;: null
+      },
+      &quot;canBePurchased&quot;: true,
+      &quot;owner&quot;: null
+    },
+    {
+      &quot;id&quot;: 9,
+      &quot;price&quot;: 74.0,
+      &quot;quantity&quot;: 15,
+      &quot;sku&quot;: &quot;NK019&quot;,
+      &quot;productShipeable&quot;: true,
+      &quot;preOrder&quot;: false,
+      &quot;productVirtual&quot;: false,
+      &quot;quantityOrderMaximum&quot;: 1,
+      &quot;quantityOrderMinimum&quot;: 1,
+      &quot;productIsFree&quot;: false,
+      &quot;available&quot;: true,
+      &quot;visible&quot;: true,
+      &quot;productSpecifications&quot;: {
+        &quot;height&quot;: 17.0,
+        &quot;weight&quot;: 2.0,
+        &quot;length&quot;: 5.0,
+        &quot;width&quot;: 28.0,
+        &quot;model&quot;: null,
+        &quot;manufacturer&quot;: null,
+        &quot;dimensionUnitOfMeasure&quot;: null,
+        &quot;weightUnitOfMeasure&quot;: null
+      },
+      &quot;rating&quot;: 0.0,
+      &quot;ratingCount&quot;: 0,
+      &quot;sortOrder&quot;: 4,
+      &quot;dateAvailable&quot;: &quot;2019-03-06&quot;,
+      &quot;refSku&quot;: &quot;NK019&quot;,
+      &quot;creationDate&quot;: &quot;2019-03-06&quot;,
+      &quot;rentalDuration&quot;: 0,
+      &quot;rentalPeriod&quot;: 0,
+      &quot;description&quot;: {
+        &quot;id&quot;: 867,
+        &quot;language&quot;: &quot;en&quot;,
+        &quot;name&quot;: &quot;Vintage chic handbag&quot;,
+        &quot;description&quot;: &quot;&lt;p&gt;\r\n\tVintage chic handbag with leather bands&lt;/p&gt;\r\n&quot;,
+        &quot;friendlyUrl&quot;: &quot;vintage-chic-handbag&quot;,
+        &quot;keyWords&quot;: &quot;&quot;,
+        &quot;highlights&quot;: &quot;&quot;,
+        &quot;metaDescription&quot;: &quot;&quot;,
+        &quot;title&quot;: &quot;Vintage chic handbag&quot;
+      },
+      &quot;productPrice&quot;: {
+        &quot;id&quot;: 9,
+        &quot;originalPrice&quot;: &quot;$82.00&quot;,
+        &quot;finalPrice&quot;: &quot;$74.00&quot;,
+        &quot;discounted&quot;: true,
+        &quot;description&quot;: {
+          &quot;id&quot;: 816,
+          &quot;language&quot;: &quot;en&quot;,
+          &quot;name&quot;: null,
+          &quot;description&quot;: null,
+          &quot;friendlyUrl&quot;: null,
+          &quot;keyWords&quot;: null,
+          &quot;highlights&quot;: null,
+          &quot;metaDescription&quot;: null,
+          &quot;title&quot;: null,
+          &quot;priceAppender&quot;: null
+        }
+      },
+      &quot;finalPrice&quot;: &quot;$74.00&quot;,
+      &quot;originalPrice&quot;: &quot;$82.00&quot;,
+      &quot;discounted&quot;: true,
+      &quot;image&quot;: {
+        &quot;id&quot;: 110,
+        &quot;imageName&quot;: &quot;image11.jpg&quot;,
+        &quot;imageUrl&quot;: &quot;http://localhost:8080/static/products/DEFAULT/NK019/SMALL/image11.jpg&quot;,
+        &quot;externalUrl&quot;: null,
+        &quot;videoUrl&quot;: null,
+        &quot;imageType&quot;: 0,
+        &quot;defaultImage&quot;: true
+      },
+      &quot;images&quot;: [
+        {
+          &quot;id&quot;: 110,
+          &quot;imageName&quot;: &quot;image11.jpg&quot;,
+          &quot;imageUrl&quot;: &quot;http://localhost:8080/static/products/DEFAULT/NK019/SMALL/image11.jpg&quot;,
+          &quot;externalUrl&quot;: null,
+          &quot;videoUrl&quot;: null,
+          &quot;imageType&quot;: 0,
+          &quot;defaultImage&quot;: true
+        }
+      ],
+      &quot;manufacturer&quot;: {
+        &quot;id&quot;: 50,
+        &quot;code&quot;: &quot;chic&quot;,
+        &quot;order&quot;: 0,
+        &quot;description&quot;: {
+          &quot;id&quot;: 0,
+          &quot;language&quot;: null,
+          &quot;name&quot;: &quot;Chic&quot;,
+          &quot;description&quot;: null,
+          &quot;friendlyUrl&quot;: null,
+          &quot;keyWords&quot;: null,
+          &quot;highlights&quot;: null,
+          &quot;metaDescription&quot;: null,
+          &quot;title&quot;: null
+        }
+      },
+      &quot;attributes&quot;: [
+      ],
+      &quot;options&quot;: [
+      ],
+      &quot;properties&quot;: [
+      ],
+      &quot;categories&quot;: [
+        {
+          &quot;id&quot;: 2,
+          &quot;code&quot;: &quot;handbags&quot;,
+          &quot;sortOrder&quot;: 0,
+          &quot;visible&quot;: true,
+          &quot;featured&quot;: false,
+          &quot;lineage&quot;: &quot;/2&quot;,
+          &quot;depth&quot;: 0,
+          &quot;parent&quot;: null,
+          &quot;description&quot;: {
+            &quot;id&quot;: 2,
+            &quot;language&quot;: null,
+            &quot;name&quot;: &quot;Handbags&quot;,
+            &quot;description&quot;: &quot;&quot;,
+            &quot;friendlyUrl&quot;: &quot;handbags&quot;,
+            &quot;keyWords&quot;: &quot;&quot;,
+            &quot;highlights&quot;: &quot;&quot;,
+            &quot;metaDescription&quot;: &quot;&quot;,
+            &quot;title&quot;: &quot;Vintage Bags - Handbags&quot;
+          },
+          &quot;productCount&quot;: 0,
+          &quot;store&quot;: null,
+          &quot;children&quot;: [
+          ]
+        }
+      ],
+      &quot;type&quot;: {
+        &quot;id&quot;: 1,
+        &quot;code&quot;: &quot;GENERAL&quot;,
+        &quot;visible&quot;: false,
+        &quot;allowAddToCart&quot;: false,
+        &quot;description&quot;: null
+      },
+      &quot;canBePurchased&quot;: true,
+      &quot;owner&quot;: null
+    },
+    {
+      &quot;id&quot;: 6,
+      &quot;price&quot;: 68.0,
+      &quot;quantity&quot;: 9,
+      &quot;sku&quot;: &quot;NK033&quot;,
+      &quot;productShipeable&quot;: true,
+      &quot;preOrder&quot;: false,
+      &quot;productVirtual&quot;: false,
+      &quot;quantityOrderMaximum&quot;: 1,
+      &quot;quantityOrderMinimum&quot;: 1,
+      &quot;productIsFree&quot;: false,
+      &quot;available&quot;: true,
+      &quot;visible&quot;: true,
+      &quot;productSpecifications&quot;: {
+        &quot;height&quot;: 19.0,
+        &quot;weight&quot;: 1.0,
+        &quot;length&quot;: 4.0,
+        &quot;width&quot;: 27.0,
+        &quot;model&quot;: null,
+        &quot;manufacturer&quot;: null,
+        &quot;dimensionUnitOfMeasure&quot;: null,
+        &quot;weightUnitOfMeasure&quot;: null
+      },
+      &quot;rating&quot;: 0.0,
+      &quot;ratingCount&quot;: 0,
+      &quot;sortOrder&quot;: 5,
+      &quot;dateAvailable&quot;: &quot;2019-03-06&quot;,
+      &quot;refSku&quot;: &quot;NK033&quot;,
+      &quot;creationDate&quot;: &quot;2019-03-06&quot;,
+      &quot;rentalDuration&quot;: 0,
+      &quot;rentalPeriod&quot;: 0,
+      &quot;description&quot;: {
+        &quot;id&quot;: 861,
+        &quot;language&quot;: &quot;en&quot;,
+        &quot;name&quot;: &quot;Vintage bag with leather bands&quot;,
+        &quot;description&quot;: &quot;&lt;p&gt;\r\n\tVintage bag with leather bands&lt;/p&gt;\r\n&quot;,
+        &quot;friendlyUrl&quot;: &quot;vintage-bag-with-leather-bands&quot;,
+        &quot;keyWords&quot;: &quot;&quot;,
+        &quot;highlights&quot;: &quot;&quot;,
+        &quot;metaDescription&quot;: &quot;&quot;,
+        &quot;title&quot;: &quot;Vintage bag with leather bands&quot;
+      },
+      &quot;productPrice&quot;: {
+        &quot;id&quot;: 6,
+        &quot;originalPrice&quot;: &quot;$68.00&quot;,
+        &quot;finalPrice&quot;: &quot;$68.00&quot;,
+        &quot;discounted&quot;: false,
+        &quot;description&quot;: {
+          &quot;id&quot;: 810,
+          &quot;language&quot;: &quot;en&quot;,
+          &quot;name&quot;: null,
+          &quot;description&quot;: null,
+          &quot;friendlyUrl&quot;: null,
+          &quot;keyWords&quot;: null,
+          &quot;highlights&quot;: null,
+          &quot;metaDescription&quot;: null,
+          &quot;title&quot;: null,
+          &quot;priceAppender&quot;: null
+        }
+      },
+      &quot;finalPrice&quot;: &quot;$68.00&quot;,
+      &quot;originalPrice&quot;: &quot;$68.00&quot;,
+      &quot;discounted&quot;: false,
+      &quot;image&quot;: {
+        &quot;id&quot;: 111,
+        &quot;imageName&quot;: &quot;image5.jpg&quot;,
+        &quot;imageUrl&quot;: &quot;http://localhost:8080/static/products/DEFAULT/NK033/SMALL/image5.jpg&quot;,
+        &quot;externalUrl&quot;: null,
+        &quot;videoUrl&quot;: null,
+        &quot;imageType&quot;: 0,
+        &quot;defaultImage&quot;: true
+      },
+      &quot;images&quot;: [
+        {
+          &quot;id&quot;: 111,
+          &quot;imageName&quot;: &quot;image5.jpg&quot;,
+          &quot;imageUrl&quot;: &quot;http://localhost:8080/static/products/DEFAULT/NK033/SMALL/image5.jpg&quot;,
+          &quot;externalUrl&quot;: null,
+          &quot;videoUrl&quot;: null,
+          &quot;imageType&quot;: 0,
+          &quot;defaultImage&quot;: true
+        }
+      ],
+      &quot;manufacturer&quot;: {
+        &quot;id&quot;: 51,
+        &quot;code&quot;: &quot;retro&quot;,
+        &quot;order&quot;: 0,
+        &quot;description&quot;: {
+          &quot;id&quot;: 0,
+          &quot;language&quot;: null,
+          &quot;name&quot;: &quot;Retro&quot;,
+          &quot;description&quot;: null,
+          &quot;friendlyUrl&quot;: null,
+          &quot;keyWords&quot;: null,
+          &quot;highlights&quot;: null,
+          &quot;metaDescription&quot;: null,
+          &quot;title&quot;: null
+        }
+      },
+      &quot;attributes&quot;: [
+      ],
+      &quot;options&quot;: [
+      ],
+      &quot;properties&quot;: [
+      ],
+      &quot;categories&quot;: [
+        {
+          &quot;id&quot;: 4,
+          &quot;code&quot;: &quot;bags&quot;,
+          &quot;sortOrder&quot;: 30,
+          &quot;visible&quot;: true,
+          &quot;featured&quot;: false,
+          &quot;lineage&quot;: &quot;/4&quot;,
+          &quot;depth&quot;: 0,
+          &quot;parent&quot;: null,
+          &quot;description&quot;: {
+            &quot;id&quot;: 4,
+            &quot;language&quot;: null,
+            &quot;name&quot;: &quot;Bags&quot;,
+            &quot;description&quot;: &quot;&quot;,
+            &quot;friendlyUrl&quot;: &quot;bags&quot;,
+            &quot;keyWords&quot;: &quot;&quot;,
+            &quot;highlights&quot;: &quot;&quot;,
+            &quot;metaDescription&quot;: &quot;&quot;,
+            &quot;title&quot;: &quot;Vintage Bags - Bags&quot;
+          },
+          &quot;productCount&quot;: 0,
+          &quot;store&quot;: null,
+          &quot;children&quot;: [
+          ]
+        }
+      ],
+      &quot;type&quot;: {
+        &quot;id&quot;: 1,
+        &quot;code&quot;: &quot;GENERAL&quot;,
+        &quot;visible&quot;: false,
+        &quot;allowAddToCart&quot;: false,
+        &quot;description&quot;: null
+      },
+      &quot;canBePurchased&quot;: true,
+      &quot;owner&quot;: null
+    },
+    {
+      &quot;id&quot;: 1,
+      &quot;price&quot;: 48.0,
+      &quot;quantity&quot;: 20,
+      &quot;sku&quot;: &quot;NK071&quot;,
+      &quot;productShipeable&quot;: true,
+      &quot;preOrder&quot;: false,
+      &quot;productVirtual&quot;: false,
+      &quot;quantityOrderMaximum&quot;: 1,
+      &quot;quantityOrderMinimum&quot;: 1,
+      &quot;productIsFree&quot;: false,
+      &quot;available&quot;: true,
+      &quot;visible&quot;: true,
+      &quot;productSpecifications&quot;: {
+        &quot;height&quot;: 20.0,
+        &quot;weight&quot;: 1.0,
+        &quot;length&quot;: 4.0,
+        &quot;width&quot;: 30.0,
+        &quot;model&quot;: null,
+        &quot;manufacturer&quot;: null,
+        &quot;dimensionUnitOfMeasure&quot;: null,
+        &quot;weightUnitOfMeasure&quot;: null
+      },
+      &quot;rating&quot;: 0.0,
+      &quot;ratingCount&quot;: 0,
+      &quot;sortOrder&quot;: 8,
+      &quot;dateAvailable&quot;: &quot;2019-03-06&quot;,
+      &quot;refSku&quot;: &quot;NK071&quot;,
+      &quot;creationDate&quot;: &quot;2019-03-06&quot;,
+      &quot;rentalDuration&quot;: 0,
+      &quot;rentalPeriod&quot;: 0,
+      &quot;description&quot;: {
+        &quot;id&quot;: 850,
+        &quot;language&quot;: &quot;en&quot;,
+        &quot;name&quot;: &quot;Retro style bag&quot;,
+        &quot;description&quot;: &quot;&lt;p&gt;\r\n\tRetro style bag with leather stripe&lt;/p&gt;\r\n&quot;,
+        &quot;friendlyUrl&quot;: &quot;retro-style-bag&quot;,
+        &quot;keyWords&quot;: &quot;&quot;,
+        &quot;highlights&quot;: &quot;&quot;,
+        &quot;metaDescription&quot;: &quot;&quot;,
+        &quot;title&quot;: &quot;Retro style bag&quot;
+      },
+      &quot;productPrice&quot;: {
+        &quot;id&quot;: 1,
+        &quot;originalPrice&quot;: &quot;$48.00&quot;,
+        &quot;finalPrice&quot;: &quot;$48.00&quot;,
+        &quot;discounted&quot;: false,
+        &quot;description&quot;: {
+          &quot;id&quot;: 801,
+          &quot;language&quot;: &quot;en&quot;,
+          &quot;name&quot;: null,
+          &quot;description&quot;: null,
+          &quot;friendlyUrl&quot;: null,
+          &quot;keyWords&quot;: null,
+          &quot;highlights&quot;: null,
+          &quot;metaDescription&quot;: null,
+          &quot;title&quot;: null,
+          &quot;priceAppender&quot;: null
+        }
+      },
+      &quot;finalPrice&quot;: &quot;$48.00&quot;,
+      &quot;originalPrice&quot;: &quot;$48.00&quot;,
+      &quot;discounted&quot;: false,
+      &quot;image&quot;: {
+        &quot;id&quot;: 112,
+        &quot;imageName&quot;: &quot;image3.jpg&quot;,
+        &quot;imageUrl&quot;: &quot;http://localhost:8080/static/products/DEFAULT/NK071/SMALL/image3.jpg&quot;,
+        &quot;externalUrl&quot;: null,
+        &quot;videoUrl&quot;: null,
+        &quot;imageType&quot;: 0,
+        &quot;defaultImage&quot;: true
+      },
+      &quot;images&quot;: [
+        {
+          &quot;id&quot;: 112,
+          &quot;imageName&quot;: &quot;image3.jpg&quot;,
+          &quot;imageUrl&quot;: &quot;http://localhost:8080/static/products/DEFAULT/NK071/SMALL/image3.jpg&quot;,
+          &quot;externalUrl&quot;: null,
+          &quot;videoUrl&quot;: null,
+          &quot;imageType&quot;: 0,
+          &quot;defaultImage&quot;: true
+        }
+      ],
+      &quot;manufacturer&quot;: {
+        &quot;id&quot;: 51,
+        &quot;code&quot;: &quot;retro&quot;,
+        &quot;order&quot;: 0,
+        &quot;description&quot;: {
+          &quot;id&quot;: 0,
+          &quot;language&quot;: null,
+          &quot;name&quot;: &quot;Retro&quot;,
+          &quot;description&quot;: null,
+          &quot;friendlyUrl&quot;: null,
+          &quot;keyWords&quot;: null,
+          &quot;highlights&quot;: null,
+          &quot;metaDescription&quot;: null,
+          &quot;title&quot;: null
+        }
+      },
+      &quot;attributes&quot;: [
+      ],
+      &quot;options&quot;: [
+      ],
+      &quot;properties&quot;: [
+      ],
+      &quot;categories&quot;: [
+        {
+          &quot;id&quot;: 1,
+          &quot;code&quot;: &quot;beachbags&quot;,
+          &quot;sortOrder&quot;: 10,
+          &quot;visible&quot;: true,
+          &quot;featured&quot;: false,
+          &quot;lineage&quot;: &quot;/1&quot;,
+          &quot;depth&quot;: 0,
+          &quot;parent&quot;: null,
+          &quot;description&quot;: {
+            &quot;id&quot;: 1,
+            &quot;language&quot;: null,
+            &quot;name&quot;: &quot;Beach bags&quot;,
+            &quot;description&quot;: &quot;&quot;,
+            &quot;friendlyUrl&quot;: &quot;beach-bags&quot;,
+            &quot;keyWords&quot;: &quot;&quot;,
+            &quot;highlights&quot;: &quot;&quot;,
+            &quot;metaDescription&quot;: &quot;&quot;,
+            &quot;title&quot;: &quot;Vintage Bags - Beach bags&quot;
+          },
+          &quot;productCount&quot;: 0,
+          &quot;store&quot;: null,
+          &quot;children&quot;: [
+          ]
+        }
+      ],
+      &quot;type&quot;: {
+        &quot;id&quot;: 1,
+        &quot;code&quot;: &quot;GENERAL&quot;,
+        &quot;visible&quot;: false,
+        &quot;allowAddToCart&quot;: false,
+        &quot;description&quot;: null
+      },
+      &quot;canBePurchased&quot;: true,
+      &quot;owner&quot;: null
+    }
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [shopizer tests]">
+  <listeners>
+    <listener class-name="pages.BaseClass"/>
+  </listeners>
+  <test name="Shopizer ChromeTests(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testcases.RegistrationTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="TC8_verifyEnterFunctionality"/>
+          <include name="TC7_registrationWithValidData" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- testcases.RegistrationTest -->
+    </classes>
+  </test> <!-- Shopizer ChromeTests(failed) -->
+</suite> <!-- Failed suite [shopizer tests] -->

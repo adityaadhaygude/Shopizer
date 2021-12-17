@@ -1,0 +1,3920 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>karatemaven.Category management resource</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">11</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2021-12-17 06:13:03 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:9]"><span>[1:9]</span> <span>Get all categories</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:17]"><span>[2:17]</span> <span>Get a category with id 50</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:26]"><span>[3:26]</span> <span>Check category code is already existing</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4:38]"><span>[4:38]</span> <span>Create a new category with valid authentication</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[5:48]"><span>[5:48]</span> <span>Create a new category with invalid authentication</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[6:59]"><span>[6:59]</span> <span>Update a category with valid authentication</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[7:69]"><span>[7:69]</span> <span>Update a category with invalid authentication</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[8:79]"><span>[8:79]</span> <span>Update a category with wrong path and valid authentication</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[9:89]"><span>[9:89]</span> <span>Update a category with wrong Id and valid authentication</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[10:100]"><span>[10:100]</span> <span>Update a category with id 50</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[11:110]"><span>[11:110]</span> <span>delete a category of given id with valid authentication</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[12:119]"><span>[12:119]</span> <span>delete a category of given id with invalid authentication</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">karatemaven/Category management resource.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Shopizer category management resources</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:9]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">getcall1</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:9]</span>
+                <span class="scenario-name">Get all categories</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>13</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:9]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:9]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:9]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def codeId = &quot;backpack4&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/category&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">18:13:01.967 request:
+1 &gt; GET http://localhost:8080/api/v1/category
+1 &gt; Content-Type: application/json
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:13:01.974 response time in milliseconds: 7
+1 &lt; 200
+1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Fri, 17 Dec 2021 12:43:01 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;totalPages&quot;:1,&quot;number&quot;:8,&quot;recordsTotal&quot;:8,&quot;recordsFiltered&quot;:0,&quot;categories&quot;:[{&quot;id&quot;:2,&quot;code&quot;:&quot;handbags&quot;,&quot;sortOrder&quot;:0,&quot;visible&quot;:true,&quot;featured&quot;:false,&quot;lineage&quot;:&quot;/2&quot;,&quot;depth&quot;:0,&quot;parent&quot;:null,&quot;description&quot;:{&quot;id&quot;:701,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Handbags&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;handbags&quot;,&quot;keyWords&quot;:&quot;&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage Bags - Handbags&quot;},&quot;productCount&quot;:0,&quot;store&quot;:&quot;DEFAULT&quot;,&quot;children&quot;:[]},{&quot;id&quot;:1,&quot;code&quot;:&quot;beachbags&quot;,&quot;sortOrder&quot;:10,&quot;visible&quot;:true,&quot;featured&quot;:false,&quot;lineage&quot;:&quot;/1&quot;,&quot;depth&quot;:0,&quot;parent&quot;:null,&quot;description&quot;:{&quot;id&quot;:700,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Beach bags&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;beach-bags&quot;,&quot;keyWords&quot;:&quot;&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage Bags - Beach bags&quot;},&quot;productCount&quot;:0,&quot;store&quot;:&quot;DEFAULT&quot;,&quot;children&quot;:[]},{&quot;id&quot;:3,&quot;code&quot;:&quot;laptop&quot;,&quot;sortOrder&quot;:20,&quot;visible&quot;:true,&quot;featured&quot;:false,&quot;lineage&quot;:&quot;/3&quot;,&quot;depth&quot;:0,&quot;parent&quot;:null,&quot;description&quot;:{&quot;id&quot;:702,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Laptop Bags&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;laptop-bags&quot;,&quot;keyWords&quot;:&quot;&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage Bags - Laptop bags&quot;},&quot;productCount&quot;:0,&quot;store&quot;:&quot;DEFAULT&quot;,&quot;children&quot;:[]},{&quot;id&quot;:50,&quot;code&quot;:&quot;backpackbags&quot;,&quot;sortOrder&quot;:30,&quot;visible&quot;:false,&quot;featured&quot;:false,&quot;lineage&quot;:&quot;/50/&quot;,&quot;depth&quot;:0,&quot;parent&quot;:null,&quot;description&quot;:{&quot;id&quot;:1,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Backpack Bags&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;backpackbags&quot;,&quot;keyWords&quot;:null,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage Bags - Backpack Bags&quot;},&quot;productCount&quot;:0,&quot;store&quot;:&quot;DEFAULT&quot;,&quot;children&quot;:[]},{&quot;id&quot;:4,&quot;code&quot;:&quot;bags&quot;,&quot;sortOrder&quot;:30,&quot;visible&quot;:true,&quot;featured&quot;:false,&quot;lineage&quot;:&quot;/4&quot;,&quot;depth&quot;:0,&quot;parent&quot;:null,&quot;description&quot;:{&quot;id&quot;:703,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Bags&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;bags&quot;,&quot;keyWords&quot;:&quot;&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage Bags - Bags&quot;},&quot;productCount&quot;:0,&quot;store&quot;:&quot;DEFAULT&quot;,&quot;children&quot;:[]},{&quot;id&quot;:51,&quot;code&quot;:&quot;backpacks2&quot;,&quot;sortOrder&quot;:40,&quot;visible&quot;:true,&quot;featured&quot;:false,&quot;lineage&quot;:&quot;/51/&quot;,&quot;depth&quot;:0,&quot;parent&quot;:null,&quot;description&quot;:{&quot;id&quot;:2,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Backpacks&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;backpacks&quot;,&quot;keyWords&quot;:null,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage Bags - Backpacks&quot;},&quot;productCount&quot;:0,&quot;store&quot;:&quot;DEFAULT&quot;,&quot;children&quot;:[]},{&quot;id&quot;:106,&quot;code&quot;:&quot;backpacks10&quot;,&quot;sortOrder&quot;:40,&quot;visible&quot;:true,&quot;featured&quot;:false,&quot;lineage&quot;:&quot;/106/&quot;,&quot;depth&quot;:0,&quot;parent&quot;:null,&quot;description&quot;:{&quot;id&quot;:14,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Backpacks&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;backpacks&quot;,&quot;keyWords&quot;:null,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage Bags - Backpacks&quot;},&quot;productCount&quot;:0,&quot;store&quot;:&quot;DEFAULT&quot;,&quot;children&quot;:[]},{&quot;id&quot;:107,&quot;code&quot;:&quot;testbag&quot;,&quot;sortOrder&quot;:40,&quot;visible&quot;:true,&quot;featured&quot;:false,&quot;lineage&quot;:&quot;/107/&quot;,&quot;depth&quot;:0,&quot;parent&quot;:null,&quot;description&quot;:{&quot;id&quot;:15,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Backpacks&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;test&quot;,&quot;keyWords&quot;:null,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage Bags - Backpacks&quot;},&quot;productCount&quot;:0,&quot;store&quot;:&quot;DEFAULT&quot;,&quot;children&quot;:[]}]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.14">18:13:01.977 [print] {
+  &quot;totalPages&quot;: 1,
+  &quot;number&quot;: 8,
+  &quot;recordsTotal&quot;: 8,
+  &quot;recordsFiltered&quot;: 0,
+  &quot;categories&quot;: [
+    {
+      &quot;id&quot;: 2,
+      &quot;code&quot;: &quot;handbags&quot;,
+      &quot;sortOrder&quot;: 0,
+      &quot;visible&quot;: true,
+      &quot;featured&quot;: false,
+      &quot;lineage&quot;: &quot;/2&quot;,
+      &quot;depth&quot;: 0,
+      &quot;parent&quot;: null,
+      &quot;description&quot;: {
+        &quot;id&quot;: 701,
+        &quot;language&quot;: &quot;en&quot;,
+        &quot;name&quot;: &quot;Handbags&quot;,
+        &quot;description&quot;: &quot;&quot;,
+        &quot;friendlyUrl&quot;: &quot;handbags&quot;,
+        &quot;keyWords&quot;: &quot;&quot;,
+        &quot;highlights&quot;: &quot;&quot;,
+        &quot;metaDescription&quot;: &quot;&quot;,
+        &quot;title&quot;: &quot;Vintage Bags - Handbags&quot;
+      },
+      &quot;productCount&quot;: 0,
+      &quot;store&quot;: &quot;DEFAULT&quot;,
+      &quot;children&quot;: [
+      ]
+    },
+    {
+      &quot;id&quot;: 1,
+      &quot;code&quot;: &quot;beachbags&quot;,
+      &quot;sortOrder&quot;: 10,
+      &quot;visible&quot;: true,
+      &quot;featured&quot;: false,
+      &quot;lineage&quot;: &quot;/1&quot;,
+      &quot;depth&quot;: 0,
+      &quot;parent&quot;: null,
+      &quot;description&quot;: {
+        &quot;id&quot;: 700,
+        &quot;language&quot;: &quot;en&quot;,
+        &quot;name&quot;: &quot;Beach bags&quot;,
+        &quot;description&quot;: &quot;&quot;,
+        &quot;friendlyUrl&quot;: &quot;beach-bags&quot;,
+        &quot;keyWords&quot;: &quot;&quot;,
+        &quot;highlights&quot;: &quot;&quot;,
+        &quot;metaDescription&quot;: &quot;&quot;,
+        &quot;title&quot;: &quot;Vintage Bags - Beach bags&quot;
+      },
+      &quot;productCount&quot;: 0,
+      &quot;store&quot;: &quot;DEFAULT&quot;,
+      &quot;children&quot;: [
+      ]
+    },
+    {
+      &quot;id&quot;: 3,
+      &quot;code&quot;: &quot;laptop&quot;,
+      &quot;sortOrder&quot;: 20,
+      &quot;visible&quot;: true,
+      &quot;featured&quot;: false,
+      &quot;lineage&quot;: &quot;/3&quot;,
+      &quot;depth&quot;: 0,
+      &quot;parent&quot;: null,
+      &quot;description&quot;: {
+        &quot;id&quot;: 702,
+        &quot;language&quot;: &quot;en&quot;,
+        &quot;name&quot;: &quot;Laptop Bags&quot;,
+        &quot;description&quot;: &quot;&quot;,
+        &quot;friendlyUrl&quot;: &quot;laptop-bags&quot;,
+        &quot;keyWords&quot;: &quot;&quot;,
+        &quot;highlights&quot;: &quot;&quot;,
+        &quot;metaDescription&quot;: &quot;&quot;,
+        &quot;title&quot;: &quot;Vintage Bags - Laptop bags&quot;
+      },
+      &quot;productCount&quot;: 0,
+      &quot;store&quot;: &quot;DEFAULT&quot;,
+      &quot;children&quot;: [
+      ]
+    },
+    {
+      &quot;id&quot;: 50,
+      &quot;code&quot;: &quot;backpackbags&quot;,
+      &quot;sortOrder&quot;: 30,
+      &quot;visible&quot;: false,
+      &quot;featured&quot;: false,
+      &quot;lineage&quot;: &quot;/50/&quot;,
+      &quot;depth&quot;: 0,
+      &quot;parent&quot;: null,
+      &quot;description&quot;: {
+        &quot;id&quot;: 1,
+        &quot;language&quot;: &quot;en&quot;,
+        &quot;name&quot;: &quot;Backpack Bags&quot;,
+        &quot;description&quot;: &quot;&quot;,
+        &quot;friendlyUrl&quot;: &quot;backpackbags&quot;,
+        &quot;keyWords&quot;: null,
+        &quot;highlights&quot;: &quot;&quot;,
+        &quot;metaDescription&quot;: &quot;&quot;,
+        &quot;title&quot;: &quot;Vintage Bags - Backpack Bags&quot;
+      },
+      &quot;productCount&quot;: 0,
+      &quot;store&quot;: &quot;DEFAULT&quot;,
+      &quot;children&quot;: [
+      ]
+    },
+    {
+      &quot;id&quot;: 4,
+      &quot;code&quot;: &quot;bags&quot;,
+      &quot;sortOrder&quot;: 30,
+      &quot;visible&quot;: true,
+      &quot;featured&quot;: false,
+      &quot;lineage&quot;: &quot;/4&quot;,
+      &quot;depth&quot;: 0,
+      &quot;parent&quot;: null,
+      &quot;description&quot;: {
+        &quot;id&quot;: 703,
+        &quot;language&quot;: &quot;en&quot;,
+        &quot;name&quot;: &quot;Bags&quot;,
+        &quot;description&quot;: &quot;&quot;,
+        &quot;friendlyUrl&quot;: &quot;bags&quot;,
+        &quot;keyWords&quot;: &quot;&quot;,
+        &quot;highlights&quot;: &quot;&quot;,
+        &quot;metaDescription&quot;: &quot;&quot;,
+        &quot;title&quot;: &quot;Vintage Bags - Bags&quot;
+      },
+      &quot;productCount&quot;: 0,
+      &quot;store&quot;: &quot;DEFAULT&quot;,
+      &quot;children&quot;: [
+      ]
+    },
+    {
+      &quot;id&quot;: 51,
+      &quot;code&quot;: &quot;backpacks2&quot;,
+      &quot;sortOrder&quot;: 40,
+      &quot;visible&quot;: true,
+      &quot;featured&quot;: false,
+      &quot;lineage&quot;: &quot;/51/&quot;,
+      &quot;depth&quot;: 0,
+      &quot;parent&quot;: null,
+      &quot;description&quot;: {
+        &quot;id&quot;: 2,
+        &quot;language&quot;: &quot;en&quot;,
+        &quot;name&quot;: &quot;Backpacks&quot;,
+        &quot;description&quot;: &quot;&quot;,
+        &quot;friendlyUrl&quot;: &quot;backpacks&quot;,
+        &quot;keyWords&quot;: null,
+        &quot;highlights&quot;: &quot;&quot;,
+        &quot;metaDescription&quot;: &quot;&quot;,
+        &quot;title&quot;: &quot;Vintage Bags - Backpacks&quot;
+      },
+      &quot;productCount&quot;: 0,
+      &quot;store&quot;: &quot;DEFAULT&quot;,
+      &quot;children&quot;: [
+      ]
+    },
+    {
+      &quot;id&quot;: 106,
+      &quot;code&quot;: &quot;backpacks10&quot;,
+      &quot;sortOrder&quot;: 40,
+      &quot;visible&quot;: true,
+      &quot;featured&quot;: false,
+      &quot;lineage&quot;: &quot;/106/&quot;,
+      &quot;depth&quot;: 0,
+      &quot;parent&quot;: null,
+      &quot;description&quot;: {
+        &quot;id&quot;: 14,
+        &quot;language&quot;: &quot;en&quot;,
+        &quot;name&quot;: &quot;Backpacks&quot;,
+        &quot;description&quot;: &quot;&quot;,
+        &quot;friendlyUrl&quot;: &quot;backpacks&quot;,
+        &quot;keyWords&quot;: null,
+        &quot;highlights&quot;: &quot;&quot;,
+        &quot;metaDescription&quot;: &quot;&quot;,
+        &quot;title&quot;: &quot;Vintage Bags - Backpacks&quot;
+      },
+      &quot;productCount&quot;: 0,
+      &quot;store&quot;: &quot;DEFAULT&quot;,
+      &quot;children&quot;: [
+      ]
+    },
+    {
+      &quot;id&quot;: 107,
+      &quot;code&quot;: &quot;testbag&quot;,
+      &quot;sortOrder&quot;: 40,
+      &quot;visible&quot;: true,
+      &quot;featured&quot;: false,
+      &quot;lineage&quot;: &quot;/107/&quot;,
+      &quot;depth&quot;: 0,
+      &quot;parent&quot;: null,
+      &quot;description&quot;: {
+        &quot;id&quot;: 15,
+        &quot;language&quot;: &quot;en&quot;,
+        &quot;name&quot;: &quot;Backpacks&quot;,
+        &quot;description&quot;: &quot;&quot;,
+        &quot;friendlyUrl&quot;: &quot;test&quot;,
+        &quot;keyWords&quot;: null,
+        &quot;highlights&quot;: &quot;&quot;,
+        &quot;metaDescription&quot;: &quot;&quot;,
+        &quot;title&quot;: &quot;Vintage Bags - Backpacks&quot;
+      },
+      &quot;productCount&quot;: 0,
+      &quot;store&quot;: &quot;DEFAULT&quot;,
+      &quot;children&quot;: [
+      ]
+    }
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:17]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">getcall2</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:17]</span>
+                <span class="scenario-name">Get a category with id 50</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>11</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:17]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:17]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:17]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def codeId = &quot;backpack4&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/category/50&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.20">18:13:01.983 request:
+1 &gt; GET http://localhost:8080/api/v1/category/50
+1 &gt; Content-Type: application/json
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:13:01.990 response time in milliseconds: 6
+1 &lt; 200
+1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Fri, 17 Dec 2021 12:43:01 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;id&quot;:50,&quot;code&quot;:&quot;backpackbags&quot;,&quot;sortOrder&quot;:30,&quot;visible&quot;:false,&quot;featured&quot;:false,&quot;lineage&quot;:&quot;/50/&quot;,&quot;depth&quot;:0,&quot;parent&quot;:null,&quot;description&quot;:{&quot;id&quot;:1,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Backpack Bags&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;backpackbags&quot;,&quot;keyWords&quot;:null,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage Bags - Backpack Bags&quot;},&quot;productCount&quot;:0,&quot;store&quot;:&quot;DEFAULT&quot;,&quot;children&quot;:[]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.22">18:13:01.991 [print] {
+  &quot;id&quot;: 50,
+  &quot;code&quot;: &quot;backpackbags&quot;,
+  &quot;sortOrder&quot;: 30,
+  &quot;visible&quot;: false,
+  &quot;featured&quot;: false,
+  &quot;lineage&quot;: &quot;/50/&quot;,
+  &quot;depth&quot;: 0,
+  &quot;parent&quot;: null,
+  &quot;description&quot;: {
+    &quot;id&quot;: 1,
+    &quot;language&quot;: &quot;en&quot;,
+    &quot;name&quot;: &quot;Backpack Bags&quot;,
+    &quot;description&quot;: &quot;&quot;,
+    &quot;friendlyUrl&quot;: &quot;backpackbags&quot;,
+    &quot;keyWords&quot;: null,
+    &quot;highlights&quot;: &quot;&quot;,
+    &quot;metaDescription&quot;: &quot;&quot;,
+    &quot;title&quot;: &quot;Vintage Bags - Backpack Bags&quot;
+  },
+  &quot;productCount&quot;: 0,
+  &quot;store&quot;: &quot;DEFAULT&quot;,
+  &quot;children&quot;: [
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:26]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">getcall3</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:26]</span>
+                <span class="scenario-name">Check category code is already existing</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>233</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:26]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:26]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:26]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def codeId = &quot;backpack4&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/private/category/unique&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param code = &#39;handbags&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">224</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.31">18:13:02.005 request:
+1 &gt; GET http://localhost:8080/api/v1/private/category/unique?code=handbags
+1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
+1 &gt; Content-Type: application/json
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:13:02.227 response time in milliseconds: 221
+1 &lt; 200
+1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Fri, 17 Dec 2021 12:43:01 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+1 &lt; Set-Cookie: JSESSIONID=48DE53C14E6518044E6B62170E78D99C; Domain=localhost
+{&quot;exists&quot;:true}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.exists == true</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.34">18:13:02.230 [print] {
+  &quot;exists&quot;: true
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:38]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">postcall1</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:38]</span>
+                <span class="scenario-name">Create a new category with valid authentication</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>224</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:38]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:38]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:38]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def codeId = &quot;backpack4&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.39">
+      <div class="step-ref passed">39</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/private/category&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.40">
+      <div class="step-ref passed">40</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.41">
+      <div class="step-ref passed">41</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;children&quot;: [],&quot;code&quot;:&quot;backpacks11&quot; ,&quot;depth&quot;: 0,&quot;descriptions&quot;: [{&quot;description&quot;: &quot;&quot;,&quot;friendlyUrl&quot;: &quot;backpacks&quot;,&quot;highlights&quot;: &quot;&quot;,&quot;id&quot;: 704, &quot;keyWords&quot;: &quot;&quot;,&quot;language&quot;: &quot;en&quot;,&quot;metaDescription&quot;: &quot;&quot;,&quot;name&quot;: &quot;Backpacks&quot;,&quot;title&quot;: &quot;Vintage Bags - Backpacks&quot;}],&quot;featured&quot;: false,&quot;lineage&quot;: &quot;/5&quot;,&quot;parent&quot;: {&quot;code&quot;: null},&quot;sortOrder&quot;: 40,&quot;visible&quot;: true}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.43">
+      <div class="step-ref passed">43</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">220</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.43">18:13:02.239 request:
+1 &gt; POST http://localhost:8080/api/v1/private/category
+1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 324
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;children&quot;:[],&quot;code&quot;:&quot;backpacks11&quot;,&quot;depth&quot;:0,&quot;descriptions&quot;:[{&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;backpacks&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;id&quot;:704,&quot;keyWords&quot;:&quot;&quot;,&quot;language&quot;:&quot;en&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;name&quot;:&quot;Backpacks&quot;,&quot;title&quot;:&quot;Vintage Bags - Backpacks&quot;}],&quot;featured&quot;:false,&quot;lineage&quot;:&quot;\/5&quot;,&quot;parent&quot;:{&quot;code&quot;:null},&quot;sortOrder&quot;:40,&quot;visible&quot;:true}
+
+18:13:02.456 response time in milliseconds: 217
+1 &lt; 201
+1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Fri, 17 Dec 2021 12:43:01 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+1 &lt; Set-Cookie: JSESSIONID=15952CA57BF757BB2BDC1AA3B217D83A; Domain=localhost
+{&quot;id&quot;:108,&quot;code&quot;:&quot;backpacks11&quot;,&quot;sortOrder&quot;:40,&quot;visible&quot;:true,&quot;featured&quot;:false,&quot;lineage&quot;:&quot;/5&quot;,&quot;depth&quot;:0,&quot;parent&quot;:{&quot;id&quot;:0,&quot;code&quot;:null},&quot;descriptions&quot;:[{&quot;id&quot;:704,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Backpacks&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;backpacks&quot;,&quot;keyWords&quot;:&quot;&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage Bags - Backpacks&quot;}],&quot;children&quot;:[]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.44">
+      <div class="step-ref passed">44</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.45">
+      <div class="step-ref passed">45</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.45">18:13:02.457 [print] {
+  &quot;id&quot;: 108,
+  &quot;code&quot;: &quot;backpacks11&quot;,
+  &quot;sortOrder&quot;: 40,
+  &quot;visible&quot;: true,
+  &quot;featured&quot;: false,
+  &quot;lineage&quot;: &quot;/5&quot;,
+  &quot;depth&quot;: 0,
+  &quot;parent&quot;: {
+    &quot;id&quot;: 0,
+    &quot;code&quot;: null
+  },
+  &quot;descriptions&quot;: [
+    {
+      &quot;id&quot;: 704,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;name&quot;: &quot;Backpacks&quot;,
+      &quot;description&quot;: &quot;&quot;,
+      &quot;friendlyUrl&quot;: &quot;backpacks&quot;,
+      &quot;keyWords&quot;: &quot;&quot;,
+      &quot;highlights&quot;: &quot;&quot;,
+      &quot;metaDescription&quot;: &quot;&quot;,
+      &quot;title&quot;: &quot;Vintage Bags - Backpacks&quot;
+    }
+  ],
+  &quot;children&quot;: [
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:48]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">postcall2</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:48]</span>
+                <span class="scenario-name">Create a new category with invalid authentication</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>109</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5:48]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5:48]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:48]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def codeId = &quot;backpack4&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.49">
+      <div class="step-ref passed">49</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/private/category&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.50">
+      <div class="step-ref passed">50</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin.com&#39;, password: &#39;password&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.51">
+      <div class="step-ref passed">51</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.52">
+      <div class="step-ref passed">52</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;children&quot;: [],&quot;code&quot;: &quot;backpacks&quot;,&quot;depth&quot;: 0,&quot;descriptions&quot;: [{&quot;description&quot;: &quot;&quot;,&quot;friendlyUrl&quot;: &quot;backpacks&quot;,&quot;highlights&quot;: &quot;&quot;,&quot;id&quot;: 704, &quot;keyWords&quot;: &quot;&quot;,&quot;language&quot;: &quot;en&quot;,&quot;metaDescription&quot;: &quot;&quot;,&quot;name&quot;: &quot;Backpacks&quot;,&quot;title&quot;: &quot;Vintage Bags - Backpacks&quot;}],&quot;featured&quot;: false,&quot;id&quot;: 50,&quot;lineage&quot;: &quot;/50&quot;,&quot;parent&quot;: {&quot;code&quot;: null},&quot;sortOrder&quot;: 30,&quot;visible&quot;: true}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.53">
+      <div class="step-ref passed">53</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">106</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.53">18:13:02.464 request:
+1 &gt; POST http://localhost:8080/api/v1/private/category
+1 &gt; Authorization: Basic YWRtaW4uY29tOnBhc3N3b3Jk
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 331
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;children&quot;:[],&quot;code&quot;:&quot;backpacks&quot;,&quot;depth&quot;:0,&quot;descriptions&quot;:[{&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;backpacks&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;id&quot;:704,&quot;keyWords&quot;:&quot;&quot;,&quot;language&quot;:&quot;en&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;name&quot;:&quot;Backpacks&quot;,&quot;title&quot;:&quot;Vintage Bags - Backpacks&quot;}],&quot;featured&quot;:false,&quot;id&quot;:50,&quot;lineage&quot;:&quot;\/50&quot;,&quot;parent&quot;:{&quot;code&quot;:null},&quot;sortOrder&quot;:30,&quot;visible&quot;:true}
+
+18:13:02.568 response time in milliseconds: 104
+1 &lt; 401
+1 &lt; WWW-Authenticate: Basic realm=&quot;api-admin-realm&quot;
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Fri, 17 Dec 2021 12:43:01 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;timestamp&quot;:&quot;2021-12-17T12:43:02.567+0000&quot;,&quot;status&quot;:401,&quot;error&quot;:&quot;Unauthorized&quot;,&quot;path&quot;:&quot;/api/v1/private/category&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.54">
+      <div class="step-ref passed">54</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 401</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.55">
+      <div class="step-ref passed">55</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.55">18:13:02.569 [print] {
+  &quot;timestamp&quot;: &quot;2021-12-17T12:43:02.567+0000&quot;,
+  &quot;status&quot;: 401,
+  &quot;error&quot;: &quot;Unauthorized&quot;,
+  &quot;path&quot;: &quot;/api/v1/private/category&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[6:59]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">putcall1</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[6:59]</span>
+                <span class="scenario-name">Update a category with valid authentication</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>215</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[6:59]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[6:59]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:59]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def codeId = &quot;backpack4&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.60">
+      <div class="step-ref passed">60</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/private/category/50&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.61">
+      <div class="step-ref passed">61</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.62">
+      <div class="step-ref passed">62</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.63">
+      <div class="step-ref passed">63</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {  &quot;children&quot;: [],  &quot;code&quot;: &quot;backpackbags&quot;,  &quot;depth&quot;: 0,  &quot;descriptions&quot;: [    {      &quot;description&quot;: &quot;&quot;,      &quot;friendlyUrl&quot;: &quot;backpackbags&quot;,      &quot;highlights&quot;: &quot;&quot;,      &quot;id&quot;: 703,      &quot;keyWords&quot;: &quot;&quot;,      &quot;language&quot;: &quot;en&quot;,      &quot;metaDescription&quot;: &quot;&quot;,      &quot;name&quot;: &quot;Backpack Bags&quot;,      &quot;title&quot;: &quot;Vintage Bags - Backpack Bags&quot;    }  ],  &quot;featured&quot;: false,  &quot;id&quot;: 0,  &quot;lineage&quot;: &quot;/4&quot;,  &quot;parent&quot;: {    &quot;code&quot;: &quot;string&quot;  },  &quot;sortOrder&quot;: 30,  &quot;visible&quot;: true}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.64">
+      <div class="step-ref passed">64</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method PUT</span>
+      </div>
+    </div>
+    <div class="time-cell passed">210</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.64">18:13:02.578 request:
+1 &gt; PUT http://localhost:8080/api/v1/private/category/50
+1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 347
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;children&quot;:[],&quot;code&quot;:&quot;backpackbags&quot;,&quot;depth&quot;:0,&quot;descriptions&quot;:[{&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;backpackbags&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;id&quot;:703,&quot;keyWords&quot;:&quot;&quot;,&quot;language&quot;:&quot;en&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;name&quot;:&quot;Backpack Bags&quot;,&quot;title&quot;:&quot;Vintage Bags - Backpack Bags&quot;}],&quot;featured&quot;:false,&quot;id&quot;:0,&quot;lineage&quot;:&quot;\/4&quot;,&quot;parent&quot;:{&quot;code&quot;:&quot;string&quot;},&quot;sortOrder&quot;:30,&quot;visible&quot;:true}
+
+18:13:02.786 response time in milliseconds: 207
+1 &lt; 200
+1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Fri, 17 Dec 2021 12:43:01 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+1 &lt; Set-Cookie: JSESSIONID=306372A14A4C8434B10B439B3AA7441B; Domain=localhost
+{&quot;id&quot;:50,&quot;code&quot;:&quot;backpackbags&quot;,&quot;sortOrder&quot;:30,&quot;visible&quot;:true,&quot;featured&quot;:false,&quot;lineage&quot;:&quot;/4&quot;,&quot;depth&quot;:0,&quot;parent&quot;:{&quot;id&quot;:0,&quot;code&quot;:&quot;string&quot;},&quot;descriptions&quot;:[{&quot;id&quot;:703,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Backpack Bags&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;backpackbags&quot;,&quot;keyWords&quot;:&quot;&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage Bags - Backpack Bags&quot;}],&quot;children&quot;:[]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.65">
+      <div class="step-ref passed">65</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.66">
+      <div class="step-ref passed">66</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.66">18:13:02.787 [print] {
+  &quot;id&quot;: 50,
+  &quot;code&quot;: &quot;backpackbags&quot;,
+  &quot;sortOrder&quot;: 30,
+  &quot;visible&quot;: true,
+  &quot;featured&quot;: false,
+  &quot;lineage&quot;: &quot;/4&quot;,
+  &quot;depth&quot;: 0,
+  &quot;parent&quot;: {
+    &quot;id&quot;: 0,
+    &quot;code&quot;: &quot;string&quot;
+  },
+  &quot;descriptions&quot;: [
+    {
+      &quot;id&quot;: 703,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;name&quot;: &quot;Backpack Bags&quot;,
+      &quot;description&quot;: &quot;&quot;,
+      &quot;friendlyUrl&quot;: &quot;backpackbags&quot;,
+      &quot;keyWords&quot;: &quot;&quot;,
+      &quot;highlights&quot;: &quot;&quot;,
+      &quot;metaDescription&quot;: &quot;&quot;,
+      &quot;title&quot;: &quot;Vintage Bags - Backpack Bags&quot;
+    }
+  ],
+  &quot;children&quot;: [
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[7:69]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">putcall2</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[7:69]</span>
+                <span class="scenario-name">Update a category with invalid authentication</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>108</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[7:69]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[7:69]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[7:69]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def codeId = &quot;backpack4&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.70">
+      <div class="step-ref passed">70</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/private/category/50&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.71">
+      <div class="step-ref passed">71</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin.com&#39;, password: &#39;password&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.72">
+      <div class="step-ref passed">72</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.73">
+      <div class="step-ref passed">73</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {  &quot;children&quot;: [],  &quot;code&quot;: &quot;backpackbags&quot;,  &quot;depth&quot;: 0,  &quot;descriptions&quot;: [    {      &quot;description&quot;: &quot;&quot;,      &quot;friendlyUrl&quot;: &quot;backpackbags&quot;,      &quot;highlights&quot;: &quot;&quot;,      &quot;id&quot;: 703,      &quot;keyWords&quot;: &quot;&quot;,      &quot;language&quot;: &quot;en&quot;,      &quot;metaDescription&quot;: &quot;&quot;,      &quot;name&quot;: &quot;Backpack Bags&quot;,      &quot;title&quot;: &quot;Vintage Bags - Backpack Bags&quot;    }  ],  &quot;featured&quot;: false,  &quot;id&quot;: 0,  &quot;lineage&quot;: &quot;/4&quot;,  &quot;parent&quot;: {    &quot;code&quot;: &quot;string&quot;  },  &quot;sortOrder&quot;: 30,  &quot;visible&quot;: true}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.74">
+      <div class="step-ref passed">74</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method PUT</span>
+      </div>
+    </div>
+    <div class="time-cell passed">104</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.74">18:13:02.796 request:
+1 &gt; PUT http://localhost:8080/api/v1/private/category/50
+1 &gt; Authorization: Basic YWRtaW4uY29tOnBhc3N3b3Jk
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 347
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;children&quot;:[],&quot;code&quot;:&quot;backpackbags&quot;,&quot;depth&quot;:0,&quot;descriptions&quot;:[{&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;backpackbags&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;id&quot;:703,&quot;keyWords&quot;:&quot;&quot;,&quot;language&quot;:&quot;en&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;name&quot;:&quot;Backpack Bags&quot;,&quot;title&quot;:&quot;Vintage Bags - Backpack Bags&quot;}],&quot;featured&quot;:false,&quot;id&quot;:0,&quot;lineage&quot;:&quot;\/4&quot;,&quot;parent&quot;:{&quot;code&quot;:&quot;string&quot;},&quot;sortOrder&quot;:30,&quot;visible&quot;:true}
+
+18:13:02.898 response time in milliseconds: 102
+1 &lt; 401
+1 &lt; WWW-Authenticate: Basic realm=&quot;api-admin-realm&quot;
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Fri, 17 Dec 2021 12:43:01 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;timestamp&quot;:&quot;2021-12-17T12:43:02.896+0000&quot;,&quot;status&quot;:401,&quot;error&quot;:&quot;Unauthorized&quot;,&quot;path&quot;:&quot;/api/v1/private/category/50&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.75">
+      <div class="step-ref passed">75</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 401</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.76">
+      <div class="step-ref passed">76</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.76">18:13:02.898 [print] {
+  &quot;timestamp&quot;: &quot;2021-12-17T12:43:02.896+0000&quot;,
+  &quot;status&quot;: 401,
+  &quot;error&quot;: &quot;Unauthorized&quot;,
+  &quot;path&quot;: &quot;/api/v1/private/category/50&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[8:79]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">putcall3</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[8:79]</span>
+                <span class="scenario-name">Update a category with wrong path and valid authentication</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>213</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[8:79]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[8:79]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[8:79]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def codeId = &quot;backpack4&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.80">
+      <div class="step-ref passed">80</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/private/Category/50&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.81">
+      <div class="step-ref passed">81</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.82">
+      <div class="step-ref passed">82</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.83">
+      <div class="step-ref passed">83</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {  &quot;children&quot;: [],  &quot;code&quot;: &quot;backpackbags&quot;,  &quot;depth&quot;: 0,  &quot;descriptions&quot;: [    {      &quot;description&quot;: &quot;&quot;,      &quot;friendlyUrl&quot;: &quot;backpackbags&quot;,      &quot;highlights&quot;: &quot;&quot;,      &quot;id&quot;: 703,      &quot;keyWords&quot;: &quot;&quot;,      &quot;language&quot;: &quot;en&quot;,      &quot;metaDescription&quot;: &quot;&quot;,      &quot;name&quot;: &quot;Backpack Bags&quot;,      &quot;title&quot;: &quot;Vintage Bags - Backpack Bags&quot;    }  ],  &quot;featured&quot;: false,  &quot;id&quot;: 0,  &quot;lineage&quot;: &quot;/4&quot;,  &quot;parent&quot;: {    &quot;code&quot;: &quot;string&quot;  },  &quot;sortOrder&quot;: 30,  &quot;visible&quot;: true}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.84">
+      <div class="step-ref passed">84</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method PUT</span>
+      </div>
+    </div>
+    <div class="time-cell passed">210</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.84">18:13:02.905 request:
+1 &gt; PUT http://localhost:8080/api/v1/private/Category/50
+1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 347
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;children&quot;:[],&quot;code&quot;:&quot;backpackbags&quot;,&quot;depth&quot;:0,&quot;descriptions&quot;:[{&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;backpackbags&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;id&quot;:703,&quot;keyWords&quot;:&quot;&quot;,&quot;language&quot;:&quot;en&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;name&quot;:&quot;Backpack Bags&quot;,&quot;title&quot;:&quot;Vintage Bags - Backpack Bags&quot;}],&quot;featured&quot;:false,&quot;id&quot;:0,&quot;lineage&quot;:&quot;\/4&quot;,&quot;parent&quot;:{&quot;code&quot;:&quot;string&quot;},&quot;sortOrder&quot;:30,&quot;visible&quot;:true}
+
+18:13:03.113 response time in milliseconds: 208
+1 &lt; 404
+1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Fri, 17 Dec 2021 12:43:03 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+1 &lt; Set-Cookie: JSESSIONID=E0A0F6CB3966585E2BA3AB0E1C04D1C9; Domain=localhost
+{&quot;timestamp&quot;:&quot;2021-12-17T12:43:03.110+0000&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;path&quot;:&quot;/api/v1/private/Category/50&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.85">
+      <div class="step-ref passed">85</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 404</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.86">
+      <div class="step-ref passed">86</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.86">18:13:03.114 [print] {
+  &quot;timestamp&quot;: &quot;2021-12-17T12:43:03.110+0000&quot;,
+  &quot;status&quot;: 404,
+  &quot;error&quot;: &quot;Not Found&quot;,
+  &quot;path&quot;: &quot;/api/v1/private/Category/50&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[9:89]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">putcall4</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[9:89]</span>
+                <span class="scenario-name">Update a category with wrong Id and valid authentication</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>202</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[9:89]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[9:89]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[9:89]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def codeId = &quot;backpack4&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.90">
+      <div class="step-ref passed">90</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/private/category/7&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.91">
+      <div class="step-ref passed">91</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.92">
+      <div class="step-ref passed">92</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.93">
+      <div class="step-ref passed">93</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {  &quot;children&quot;: [],  &quot;code&quot;: &quot;backpackbags&quot;,  &quot;depth&quot;: 0,  &quot;descriptions&quot;: [    {      &quot;description&quot;: &quot;&quot;,      &quot;friendlyUrl&quot;: &quot;backpackbags&quot;,      &quot;highlights&quot;: &quot;&quot;,      &quot;id&quot;: 703,      &quot;keyWords&quot;: &quot;&quot;,      &quot;language&quot;: &quot;en&quot;,      &quot;metaDescription&quot;: &quot;&quot;,      &quot;name&quot;: &quot;Backpack Bags&quot;,      &quot;title&quot;: &quot;Vintage Bags - Backpack Bags&quot;    }  ],  &quot;featured&quot;: false,  &quot;id&quot;: 0,  &quot;lineage&quot;: &quot;/4&quot;,  &quot;parent&quot;: {    &quot;code&quot;: &quot;string&quot;  },  &quot;sortOrder&quot;: 30,  &quot;visible&quot;: true}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.94">
+      <div class="step-ref passed">94</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method PUT</span>
+      </div>
+    </div>
+    <div class="time-cell passed">199</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.94">18:13:03.120 request:
+1 &gt; PUT http://localhost:8080/api/v1/private/category/7
+1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 347
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;children&quot;:[],&quot;code&quot;:&quot;backpackbags&quot;,&quot;depth&quot;:0,&quot;descriptions&quot;:[{&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;backpackbags&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;id&quot;:703,&quot;keyWords&quot;:&quot;&quot;,&quot;language&quot;:&quot;en&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;name&quot;:&quot;Backpack Bags&quot;,&quot;title&quot;:&quot;Vintage Bags - Backpack Bags&quot;}],&quot;featured&quot;:false,&quot;id&quot;:0,&quot;lineage&quot;:&quot;\/4&quot;,&quot;parent&quot;:{&quot;code&quot;:&quot;string&quot;},&quot;sortOrder&quot;:30,&quot;visible&quot;:true}
+
+18:13:03.317 response time in milliseconds: 197
+1 &lt; 400
+1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Fri, 17 Dec 2021 12:43:03 GMT
+1 &lt; Connection: close
+1 &lt; Set-Cookie: JSESSIONID=478E6070C5E6838279B343CE4F8A12DA; Domain=localhost
+{&quot;errorCode&quot;:null,&quot;message&quot;:&quot;com.salesmanager.core.business.exception.ConversionException: javax.persistence.EntityNotFoundException: Unable to find com.salesmanager.core.model.catalog.category.Category with id 7&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.95">
+      <div class="step-ref failed">95</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 404</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.95">18:13:03.318 classpath:karatemaven/Category management resource.feature:95
+Then status 404
+status code was: 400, expected: 404, response time in milliseconds: 197, url: http://localhost:8080/api/v1/private/category/7, response: 
+{&quot;errorCode&quot;:null,&quot;message&quot;:&quot;com.salesmanager.core.business.exception.ConversionException: javax.persistence.EntityNotFoundException: Unable to find com.salesmanager.core.model.catalog.category.Category with id 7&quot;}
+classpath:karatemaven/Category management resource.feature:95
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.96">
+      <div class="step-ref skipped">96</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[10:100]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">patchcall1</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[10:100]</span>
+                <span class="scenario-name">Update a category with id 50</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>213</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[10:100]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[10:100]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[10:100]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def codeId = &quot;backpack4&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.101">
+      <div class="step-ref passed">101</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/private/category/50/visible&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.102">
+      <div class="step-ref passed">102</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.103">
+      <div class="step-ref passed">103</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.104">
+      <div class="step-ref passed">104</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;code&quot;: &quot;bags&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.105">
+      <div class="step-ref passed">105</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method PATCH</span>
+      </div>
+    </div>
+    <div class="time-cell passed">210</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.105">18:13:03.325 request:
+1 &gt; PATCH http://localhost:8080/api/v1/private/category/50/visible
+1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 15
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;code&quot;:&quot;bags&quot;}
+
+18:13:03.534 response time in milliseconds: 209
+1 &lt; 200
+1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Length: 0
+1 &lt; Date: Fri, 17 Dec 2021 12:43:03 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+1 &lt; Set-Cookie: JSESSIONID=2B987537C23FDFAC45FAF39B90E827BA; Domain=localhost
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.106">
+      <div class="step-ref passed">106</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.107">
+      <div class="step-ref passed">107</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.107">18:13:03.535 [print]  
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[11:110]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[11:110]</span>
+                <span class="scenario-name">delete a category of given id with valid authentication</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>224</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[11:110]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[11:110]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[11:110]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def codeId = &quot;backpack4&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.111">
+      <div class="step-ref passed">111</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/private/category/107&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.112">
+      <div class="step-ref passed">112</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.113">
+      <div class="step-ref passed">113</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.114">
+      <div class="step-ref passed">114</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method DELETE</span>
+      </div>
+    </div>
+    <div class="time-cell passed">220</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.114">18:13:03.543 request:
+1 &gt; DELETE http://localhost:8080/api/v1/private/category/107
+1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
+1 &gt; Content-Type: application/json
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:13:03.760 response time in milliseconds: 217
+1 &lt; 200
+1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Length: 0
+1 &lt; Date: Fri, 17 Dec 2021 12:43:03 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+1 &lt; Set-Cookie: JSESSIONID=7445DCF0E7C69BD1D4346E9047EF7A76; Domain=localhost
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.115">
+      <div class="step-ref passed">115</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.116">
+      <div class="step-ref passed">116</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.116">18:13:03.761 [print]  
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[12:119]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[12:119]</span>
+                <span class="scenario-name">delete a category of given id with invalid authentication</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>111</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[12:119]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[12:119]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[12:119]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def codeId = &quot;backpack4&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.120">
+      <div class="step-ref passed">120</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/private/category/105&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.121">
+      <div class="step-ref passed">121</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin.com&#39;, password: &#39;password&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.122">
+      <div class="step-ref passed">122</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.123">
+      <div class="step-ref passed">123</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method DELETE</span>
+      </div>
+    </div>
+    <div class="time-cell passed">108</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.123">18:13:03.768 request:
+1 &gt; DELETE http://localhost:8080/api/v1/private/category/105
+1 &gt; Authorization: Basic YWRtaW4uY29tOnBhc3N3b3Jk
+1 &gt; Content-Type: application/json
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:13:03.874 response time in milliseconds: 106
+1 &lt; 401
+1 &lt; WWW-Authenticate: Basic realm=&quot;api-admin-realm&quot;
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Fri, 17 Dec 2021 12:43:03 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;timestamp&quot;:&quot;2021-12-17T12:43:03.873+0000&quot;,&quot;status&quot;:401,&quot;error&quot;:&quot;Unauthorized&quot;,&quot;path&quot;:&quot;/api/v1/private/category/105&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.124">
+      <div class="step-ref passed">124</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 401</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.125">
+      <div class="step-ref passed">125</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.125">18:13:03.875 [print] {
+  &quot;timestamp&quot;: &quot;2021-12-17T12:43:03.873+0000&quot;,
+  &quot;status&quot;: 401,
+  &quot;error&quot;: &quot;Unauthorized&quot;,
+  &quot;path&quot;: &quot;/api/v1/private/category/105&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

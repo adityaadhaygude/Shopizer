@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [RegistrationTests]">
+  <listeners>
+    <listener class-name="pages.BaseClass"/>
+  </listeners>
+  <test name="ChromeTest(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="testcases.CartTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="TC3_cancelItem"/>
+          <include name="TC4_checkContinueShopping"/>
+          <include name="setup"/>
+          <include name="TC1_modifyQuantity"/>
+          <include name="TC5_orderConfirmCheckout"/>
+          <include name="TC2_checkRecalculateButton"/>
+        </methods>
+      </class> <!-- testcases.CartTest -->
+      <class name="testcases.RegistrationTest">
+        <methods>
+          <include name="TC1_verifyAllFieldsPresent"/>
+          <include name="teardown"/>
+          <include name="TC6_registerWithoutData"/>
+          <include name="setup"/>
+          <include name="TC5_verifyTabFunctionality"/>
+        </methods>
+      </class> <!-- testcases.RegistrationTest -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test name="FirefoxTest(failed)">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="testcases.CategoryTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="selectCategory"/>
+          <include name="selectCollection"/>
+          <include name="sortByName"/>
+          <include name="setup"/>
+          <include name="sortByPrice"/>
+          <include name="productLink"/>
+          <include name="addToCart"/>
+        </methods>
+      </class> <!-- testcases.CategoryTest -->
+      <class name="testcases.RegistrationTest">
+        <methods>
+          <include name="TC1_verifyAllFieldsPresent"/>
+          <include name="teardown"/>
+          <include name="TC6_registerWithoutData"/>
+          <include name="setup"/>
+          <include name="TC5_verifyTabFunctionality"/>
+        </methods>
+      </class> <!-- testcases.RegistrationTest -->
+      <class name="testcases.SigninTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="TC4_verifyTabFunctionality"/>
+          <include name="TC5_verifySigninWithValidData"/>
+          <include name="TC1_verifyAllFieldsPresent"/>
+          <include name="TC3_verifySigninPageLoadsWithoutData"/>
+          <include name="TC6_verifyEnterfunctionality"/>
+          <include name="TC2_verifyAllLabels"/>
+          <include name="TC7_verifyTheRegisterButton"/>
+        </methods>
+      </class> <!-- testcases.SigninTest -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [RegistrationTests] -->
