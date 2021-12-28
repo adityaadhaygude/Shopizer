@@ -22,20 +22,20 @@
       <img src="karate-logo.svg" alt="Karate"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">10</div>
-      <div id="nav-fail" class="bg-danger">4</div>
+      <div id="nav-pass" class="bg-success">8</div>
+      <div id="nav-fail" class="bg-danger">6</div>
     </div>
   </div>
   <div id="nav-type">
     <div>Scenarios</div>
   </div>         
   <div id="nav-date">
-    <div>2021-12-17 06:13:00 PM</div>
+    <div>2021-12-21 01:53:58 PM</div>
   </div>        
 </div>
 
         <div class="nav-container">
-          <div class="nav-item passed">
+          <div class="nav-item failed">
             <a href="#[1:9]"><span>[1:9]</span> <span>Create a new catalog with valid authentication</span></a>
           </div>
           <div class="nav-item passed">
@@ -59,7 +59,7 @@
           <div class="nav-item failed">
             <a href="#[8:82]"><span>[8:82]</span> <span>Add a catalog entry to catalog</span></a>
           </div>
-          <div class="nav-item passed">
+          <div class="nav-item failed">
             <a href="#[9:93]"><span>[9:93]</span> <span>delete a catalog of given id</span></a>
           </div>
           <div class="nav-item passed">
@@ -100,8 +100,8 @@
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>1099</span>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1877</span>
             </div>
           </div>
           <div class="step-row">
@@ -124,7 +124,7 @@
         <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">114</div>
+    <div class="time-cell passed">187</div>
   </div>
 
    
@@ -152,7 +152,7 @@
         <span>*</span>&nbsp;<span>def helper = Java.type(&#39;karatemaven.JavaFunctions&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">66</div>
+    <div class="time-cell passed">113</div>
   </div>
 
    
@@ -180,7 +180,7 @@
         <span>Given</span>&nbsp;<span>path &#39;api/v1/private/catalog&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -208,7 +208,7 @@
         <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">158</div>
+    <div class="time-cell passed">255</div>
   </div>
 
    
@@ -236,7 +236,7 @@
         <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -264,7 +264,7 @@
         <span>And</span>&nbsp;<span>request {&quot;code&quot;: &quot;Leno bags 1010&quot;,&quot;defaultCatalog&quot;: true,&quot;visible&quot;: true}</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -292,7 +292,7 @@
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">744</div>
+    <div class="time-cell passed">1320</div>
   </div>
 
    
@@ -301,7 +301,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.14">18:12:57.850 request:
+  <div class="preformatted" data-parent="0.14">13:53:55.051 request:
 1 &gt; POST http://localhost:8080/api/v1/private/catalog
 1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
 1 &gt; Content-Type: application/json; charset=UTF-8
@@ -312,8 +312,8 @@
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;code&quot;:&quot;Leno bags 1010&quot;,&quot;defaultCatalog&quot;:true,&quot;visible&quot;:true}
 
-18:12:58.032 response time in milliseconds: 176
-1 &lt; 200
+13:53:55.372 response time in milliseconds: 311
+1 &lt; 400
 1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
@@ -326,11 +326,10 @@
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Fri, 17 Dec 2021 12:42:58 GMT
-1 &lt; Keep-Alive: timeout=60
-1 &lt; Connection: keep-alive
-1 &lt; Set-Cookie: JSESSIONID=A6D639B949C24E37017FD84306093D41; Domain=localhost
-{&quot;id&quot;:80,&quot;visible&quot;:true,&quot;defaultCatalog&quot;:true,&quot;code&quot;:&quot;Leno bags 1010&quot;,&quot;creationDate&quot;:&quot;2021-12-17&quot;,&quot;store&quot;:{&quot;id&quot;:1,&quot;code&quot;:&quot;DEFAULT&quot;,&quot;name&quot;:&quot;Default store&quot;,&quot;defaultLanguage&quot;:&quot;en&quot;,&quot;currency&quot;:&quot;USD&quot;,&quot;inBusinessSince&quot;:&quot;2019-03-06&quot;,&quot;email&quot;:&quot;john@test.com&quot;,&quot;phone&quot;:&quot;888-888-8888&quot;,&quot;template&quot;:null,&quot;useCache&quot;:false,&quot;currencyFormatNational&quot;:false,&quot;retailer&quot;:true,&quot;dimension&quot;:&quot;IN&quot;,&quot;weight&quot;:&quot;LB&quot;,&quot;currentUserLanguage&quot;:null,&quot;address&quot;:{&quot;stateProvince&quot;:&quot;QC&quot;,&quot;country&quot;:&quot;CA&quot;,&quot;address&quot;:&quot;1234 Street address&quot;,&quot;postalCode&quot;:&quot;H2H-2H2&quot;,&quot;city&quot;:&quot;My city&quot;,&quot;active&quot;:true},&quot;logo&quot;:{&quot;name&quot;:&quot;Vintage-Bags.jpg&quot;,&quot;path&quot;:&quot;http://localhost:8080/static/files/DEFAULT/LOGO/Vintage-Bags.jpg&quot;},&quot;parent&quot;:null,&quot;supportedLanguages&quot;:[{&quot;code&quot;:&quot;en&quot;,&quot;id&quot;:1},{&quot;code&quot;:&quot;fr&quot;,&quot;id&quot;:2}],&quot;readableAudit&quot;:null},&quot;category&quot;:[]}
+1 &lt; Date: Tue, 21 Dec 2021 08:23:55 GMT
+1 &lt; Connection: close
+1 &lt; Set-Cookie: JSESSIONID=370C5850ED8B6A8347D0AEB4102AB0E7; Domain=localhost
+{&quot;errorCode&quot;:&quot;304&quot;,&quot;message&quot;:&quot;Catalog [Leno bags 1010] already exists&quot;}
 </div>   
 
   
@@ -344,13 +343,13 @@
 
   <div class="step-row">
     <div class="step-container" id="0.15">
-      <div class="step-ref passed">15</div>
+      <div class="step-ref failed">15</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell failed">0</div>
   </div>
 
    
@@ -359,7 +358,12 @@
 
   
 
-     
+  <div class="preformatted" data-parent="0.15">13:53:55.378 classpath:karatemaven/Catalog management resource.feature:15
+Then status 200
+status code was: 400, expected: 200, response time in milliseconds: 311, url: http://localhost:8080/api/v1/private/catalog, response: 
+{&quot;errorCode&quot;:&quot;304&quot;,&quot;message&quot;:&quot;Catalog [Leno bags 1010] already exists&quot;}
+classpath:karatemaven/Catalog management resource.feature:15
+</div>   
 
   
 
@@ -372,13 +376,13 @@
 
   <div class="step-row">
     <div class="step-container" id="0.16">
-      <div class="step-ref passed">16</div>
+      <div class="step-ref skipped">16</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def id = response.id</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -400,13 +404,13 @@
 
   <div class="step-row">
     <div class="step-container" id="0.17">
-      <div class="step-ref passed">17</div>
+      <div class="step-ref skipped">17</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def setID = helper.setId(id);</span>
       </div>
     </div>
-    <div class="time-cell passed">6</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -428,13 +432,13 @@
 
   <div class="step-row">
     <div class="step-container" id="0.18">
-      <div class="step-ref passed">18</div>
+      <div class="step-ref skipped">18</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>Then</span>&nbsp;<span>print response</span>
       </div>
     </div>
-    <div class="time-cell passed">8</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -443,58 +447,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.18">18:12:58.051 [print] {
-  &quot;id&quot;: 80,
-  &quot;visible&quot;: true,
-  &quot;defaultCatalog&quot;: true,
-  &quot;code&quot;: &quot;Leno bags 1010&quot;,
-  &quot;creationDate&quot;: &quot;2021-12-17&quot;,
-  &quot;store&quot;: {
-    &quot;id&quot;: 1,
-    &quot;code&quot;: &quot;DEFAULT&quot;,
-    &quot;name&quot;: &quot;Default store&quot;,
-    &quot;defaultLanguage&quot;: &quot;en&quot;,
-    &quot;currency&quot;: &quot;USD&quot;,
-    &quot;inBusinessSince&quot;: &quot;2019-03-06&quot;,
-    &quot;email&quot;: &quot;john@test.com&quot;,
-    &quot;phone&quot;: &quot;888-888-8888&quot;,
-    &quot;template&quot;: null,
-    &quot;useCache&quot;: false,
-    &quot;currencyFormatNational&quot;: false,
-    &quot;retailer&quot;: true,
-    &quot;dimension&quot;: &quot;IN&quot;,
-    &quot;weight&quot;: &quot;LB&quot;,
-    &quot;currentUserLanguage&quot;: null,
-    &quot;address&quot;: {
-      &quot;stateProvince&quot;: &quot;QC&quot;,
-      &quot;country&quot;: &quot;CA&quot;,
-      &quot;address&quot;: &quot;1234 Street address&quot;,
-      &quot;postalCode&quot;: &quot;H2H-2H2&quot;,
-      &quot;city&quot;: &quot;My city&quot;,
-      &quot;active&quot;: true
-    },
-    &quot;logo&quot;: {
-      &quot;name&quot;: &quot;Vintage-Bags.jpg&quot;,
-      &quot;path&quot;: &quot;http://localhost:8080/static/files/DEFAULT/LOGO/Vintage-Bags.jpg&quot;
-    },
-    &quot;parent&quot;: null,
-    &quot;supportedLanguages&quot;: [
-      {
-        &quot;code&quot;: &quot;en&quot;,
-        &quot;id&quot;: 1
-      },
-      {
-        &quot;code&quot;: &quot;fr&quot;,
-        &quot;id&quot;: 2
-      }
-    ],
-    &quot;readableAudit&quot;: null
-  },
-  &quot;category&quot;: [
-  ]
-}
- 
-</div>   
+     
 
   
 
@@ -514,7 +467,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>137</span>
+              <span>ms:</span>&nbsp;<span>273</span>
             </div>
           </div>
           <div class="step-row">
@@ -565,7 +518,7 @@
         <span>*</span>&nbsp;<span>def helper = Java.type(&#39;karatemaven.JavaFunctions&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -621,7 +574,7 @@
         <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">4</div>
   </div>
 
    
@@ -705,7 +658,7 @@
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">133</div>
+    <div class="time-cell passed">248</div>
   </div>
 
    
@@ -714,7 +667,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.26">18:12:58.061 request:
+  <div class="preformatted" data-parent="0.26">13:53:55.404 request:
 1 &gt; POST http://localhost:8080/api/v1/private/catalog
 1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
 1 &gt; Content-Type: application/json; charset=UTF-8
@@ -725,7 +678,7 @@
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;id&quot;:14,&quot;visible&quot;:false,&quot;defaultCatalog&quot;:false,&quot;code&quot;:&quot;desktop desk 14&quot;}
 
-18:12:58.191 response time in milliseconds: 130
+13:53:55.647 response time in milliseconds: 242
 1 &lt; 400
 1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
 1 &lt; Access-Control-Allow-Origin: *
@@ -739,9 +692,9 @@
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Fri, 17 Dec 2021 12:42:58 GMT
+1 &lt; Date: Tue, 21 Dec 2021 08:23:55 GMT
 1 &lt; Connection: close
-1 &lt; Set-Cookie: JSESSIONID=D4BF2CF6D35BDC49B2004D9F762ED76D; Domain=localhost
+1 &lt; Set-Cookie: JSESSIONID=BB263221F0B79384742D046E6D3931B0; Domain=localhost
 {&quot;errorCode&quot;:&quot;304&quot;,&quot;message&quot;:&quot;Catalog [desktop desk 14] already exists&quot;}
 </div>   
 
@@ -790,7 +743,7 @@
         <span>Then</span>&nbsp;<span>print response</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">19</div>
   </div>
 
    
@@ -799,7 +752,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.28">18:12:58.192 [print] {
+  <div class="preformatted" data-parent="0.28">13:53:55.666 [print] {
   &quot;errorCode&quot;: &quot;304&quot;,
   &quot;message&quot;: &quot;Catalog [desktop desk 14] already exists&quot;
 }
@@ -824,7 +777,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>89</span>
+              <span>ms:</span>&nbsp;<span>133</span>
             </div>
           </div>
           <div class="step-row">
@@ -875,7 +828,7 @@
         <span>*</span>&nbsp;<span>def helper = Java.type(&#39;karatemaven.JavaFunctions&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -931,7 +884,7 @@
         <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin.com&#39;, password: &#39;password&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">4</div>
   </div>
 
    
@@ -1015,7 +968,7 @@
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">85</div>
+    <div class="time-cell passed">127</div>
   </div>
 
    
@@ -1024,7 +977,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.36">18:12:58.204 request:
+  <div class="preformatted" data-parent="0.36">13:53:55.684 request:
 1 &gt; POST http://localhost:8080/api/v1/private/catalog
 1 &gt; Authorization: Basic YWRtaW4uY29tOnBhc3N3b3Jk
 1 &gt; Content-Type: application/json; charset=UTF-8
@@ -1035,7 +988,7 @@
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;code&quot;:&quot;desktop desk-2010&quot;}
 
-18:12:58.287 response time in milliseconds: 83
+13:53:55.807 response time in milliseconds: 123
 1 &lt; 401
 1 &lt; WWW-Authenticate: Basic realm=&quot;api-admin-realm&quot;
 1 &lt; X-Content-Type-Options: nosniff
@@ -1046,10 +999,10 @@
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Fri, 17 Dec 2021 12:42:58 GMT
+1 &lt; Date: Tue, 21 Dec 2021 08:23:55 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-{&quot;timestamp&quot;:&quot;2021-12-17T12:42:58.280+0000&quot;,&quot;status&quot;:401,&quot;error&quot;:&quot;Unauthorized&quot;,&quot;path&quot;:&quot;/api/v1/private/catalog&quot;}
+{&quot;timestamp&quot;:&quot;2021-12-21T08:23:55.797+0000&quot;,&quot;status&quot;:401,&quot;error&quot;:&quot;Unauthorized&quot;,&quot;path&quot;:&quot;/api/v1/private/catalog&quot;}
 </div>   
 
   
@@ -1106,8 +1059,8 @@
 
   
 
-  <div class="preformatted" data-parent="0.38">18:12:58.289 [print] {
-  &quot;timestamp&quot;: &quot;2021-12-17T12:42:58.280+0000&quot;,
+  <div class="preformatted" data-parent="0.38">13:53:55.810 [print] {
+  &quot;timestamp&quot;: &quot;2021-12-21T08:23:55.797+0000&quot;,
   &quot;status&quot;: 401,
   &quot;error&quot;: &quot;Unauthorized&quot;,
   &quot;path&quot;: &quot;/api/v1/private/catalog&quot;
@@ -1133,7 +1086,7 @@
               </div>
             </div>
             <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>40</span>
+              <span>ms:</span>&nbsp;<span>47</span>
             </div>
           </div>
           <div class="step-row">
@@ -1296,7 +1249,7 @@
         <span>And</span>&nbsp;<span>request{&quot;code&quot;: &quot;desktop 1010&quot;}</span>
       </div>
     </div>
-    <div class="time-cell failed">36</div>
+    <div class="time-cell failed">42</div>
   </div>
 
    
@@ -1305,7 +1258,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.45">18:12:58.335 classpath:karatemaven/Catalog management resource.feature:45
+  <div class="preformatted" data-parent="0.45">13:53:55.865 classpath:karatemaven/Catalog management resource.feature:45
 And request{&quot;code&quot;: &quot;desktop 1010&quot;}
 js failed:
 &gt;&gt;&gt;&gt;
@@ -1428,7 +1381,7 @@ classpath:karatemaven/Catalog management resource.feature:45
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>153</span>
+              <span>ms:</span>&nbsp;<span>257</span>
             </div>
           </div>
           <div class="step-row">
@@ -1535,7 +1488,7 @@ classpath:karatemaven/Catalog management resource.feature:45
         <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">4</div>
   </div>
 
    
@@ -1619,7 +1572,7 @@ classpath:karatemaven/Catalog management resource.feature:45
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">148</div>
+    <div class="time-cell passed">251</div>
   </div>
 
    
@@ -1628,7 +1581,7 @@ classpath:karatemaven/Catalog management resource.feature:45
 
   
 
-  <div class="preformatted" data-parent="0.56">18:12:58.355 request:
+  <div class="preformatted" data-parent="0.56">13:53:55.882 request:
 1 &gt; POST http://localhost:8080/api/v1/private/cataloG
 1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
 1 &gt; Content-Type: application/json; charset=UTF-8
@@ -1639,7 +1592,7 @@ classpath:karatemaven/Catalog management resource.feature:45
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;code&quot;:&quot;desktop desk-3010&quot;}
 
-18:12:58.499 response time in milliseconds: 144
+13:53:56.129 response time in milliseconds: 246
 1 &lt; 404
 1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
 1 &lt; Access-Control-Allow-Origin: *
@@ -1656,11 +1609,11 @@ classpath:karatemaven/Catalog management resource.feature:45
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Fri, 17 Dec 2021 12:42:58 GMT
+1 &lt; Date: Tue, 21 Dec 2021 08:23:55 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-1 &lt; Set-Cookie: JSESSIONID=0B14E48FDFBB4C073E3E90DDB5AF0D1F; Domain=localhost
-{&quot;timestamp&quot;:&quot;2021-12-17T12:42:58.498+0000&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;path&quot;:&quot;/api/v1/private/cataloG&quot;}
+1 &lt; Set-Cookie: JSESSIONID=EFD02B156442F813E9DEB1546FB3679B; Domain=localhost
+{&quot;timestamp&quot;:&quot;2021-12-21T08:23:56.125+0000&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;path&quot;:&quot;/api/v1/private/cataloG&quot;}
 </div>   
 
   
@@ -1708,7 +1661,7 @@ classpath:karatemaven/Catalog management resource.feature:45
         <span>Then</span>&nbsp;<span>print response</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1717,8 +1670,8 @@ classpath:karatemaven/Catalog management resource.feature:45
 
   
 
-  <div class="preformatted" data-parent="0.58">18:12:58.500 [print] {
-  &quot;timestamp&quot;: &quot;2021-12-17T12:42:58.498+0000&quot;,
+  <div class="preformatted" data-parent="0.58">13:53:56.130 [print] {
+  &quot;timestamp&quot;: &quot;2021-12-21T08:23:56.125+0000&quot;,
   &quot;status&quot;: 404,
   &quot;error&quot;: &quot;Not Found&quot;,
   &quot;path&quot;: &quot;/api/v1/private/cataloG&quot;
@@ -1744,7 +1697,7 @@ classpath:karatemaven/Catalog management resource.feature:45
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>132</span>
+              <span>ms:</span>&nbsp;<span>233</span>
             </div>
           </div>
           <div class="step-row">
@@ -1795,7 +1748,7 @@ classpath:karatemaven/Catalog management resource.feature:45
         <span>*</span>&nbsp;<span>def helper = Java.type(&#39;karatemaven.JavaFunctions&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1851,7 +1804,7 @@ classpath:karatemaven/Catalog management resource.feature:45
         <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -1935,7 +1888,7 @@ classpath:karatemaven/Catalog management resource.feature:45
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">128</div>
+    <div class="time-cell passed">228</div>
   </div>
 
    
@@ -1944,7 +1897,7 @@ classpath:karatemaven/Catalog management resource.feature:45
 
   
 
-  <div class="preformatted" data-parent="0.66">18:12:58.510 request:
+  <div class="preformatted" data-parent="0.66">13:53:56.145 request:
 1 &gt; POST http://localhost:8080/api/v1/private/catalog/kk
 1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
 1 &gt; Content-Type: application/json; charset=UTF-8
@@ -1955,7 +1908,7 @@ classpath:karatemaven/Catalog management resource.feature:45
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;code&quot;:&quot;desktop desk-6010&quot;}
 
-18:12:58.637 response time in milliseconds: 126
+13:53:56.369 response time in milliseconds: 223
 1 &lt; 500
 1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
 1 &lt; Access-Control-Allow-Origin: *
@@ -1969,9 +1922,9 @@ classpath:karatemaven/Catalog management resource.feature:45
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Fri, 17 Dec 2021 12:42:58 GMT
+1 &lt; Date: Tue, 21 Dec 2021 08:23:56 GMT
 1 &lt; Connection: close
-1 &lt; Set-Cookie: JSESSIONID=0CFF1BD081E4C6415CA9E805F3DEDB3B; Domain=localhost
+1 &lt; Set-Cookie: JSESSIONID=29AA2D8B4239F6D5EAC381E9777A80E7; Domain=localhost
 {&quot;errorCode&quot;:null,&quot;message&quot;:&quot;Failed to convert value of type &#39;java.lang.String&#39; to required type &#39;java.lang.Long&#39;; nested exception is java.lang.NumberFormatException: For input string: \&quot;kk\&quot;&quot;}
 </div>   
 
@@ -2020,7 +1973,7 @@ classpath:karatemaven/Catalog management resource.feature:45
         <span>Then</span>&nbsp;<span>print response</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -2029,7 +1982,7 @@ classpath:karatemaven/Catalog management resource.feature:45
 
   
 
-  <div class="preformatted" data-parent="0.68">18:12:58.638 [print] {
+  <div class="preformatted" data-parent="0.68">13:53:56.371 [print] {
   &quot;errorCode&quot;: null,
   &quot;message&quot;: &quot;Failed to convert value of type &#39;java.lang.String&#39; to required type &#39;java.lang.Long&#39;; nested exception is java.lang.NumberFormatException: For input string: \&quot;kk\&quot;&quot;
 }
@@ -2054,7 +2007,7 @@ classpath:karatemaven/Catalog management resource.feature:45
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>143</span>
+              <span>ms:</span>&nbsp;<span>246</span>
             </div>
           </div>
           <div class="step-row">
@@ -2077,7 +2030,7 @@ classpath:karatemaven/Catalog management resource.feature:45
         <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -2105,7 +2058,7 @@ classpath:karatemaven/Catalog management resource.feature:45
         <span>*</span>&nbsp;<span>def helper = Java.type(&#39;karatemaven.JavaFunctions&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -2161,7 +2114,7 @@ classpath:karatemaven/Catalog management resource.feature:45
         <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">6</div>
   </div>
 
    
@@ -2189,7 +2142,7 @@ classpath:karatemaven/Catalog management resource.feature:45
         <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -2217,7 +2170,7 @@ classpath:karatemaven/Catalog management resource.feature:45
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">140</div>
+    <div class="time-cell passed">235</div>
   </div>
 
    
@@ -2226,7 +2179,7 @@ classpath:karatemaven/Catalog management resource.feature:45
 
   
 
-  <div class="preformatted" data-parent="0.76">18:12:58.645 request:
+  <div class="preformatted" data-parent="0.76">13:53:56.399 request:
 1 &gt; GET http://localhost:8080/api/v1/private/catalog/14
 1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
 1 &gt; Content-Type: application/json
@@ -2236,7 +2189,7 @@ classpath:karatemaven/Catalog management resource.feature:45
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-18:12:58.783 response time in milliseconds: 138
+13:53:56.632 response time in milliseconds: 232
 1 &lt; 200
 1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
 1 &lt; Access-Control-Allow-Origin: *
@@ -2250,10 +2203,10 @@ classpath:karatemaven/Catalog management resource.feature:45
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Fri, 17 Dec 2021 12:42:58 GMT
+1 &lt; Date: Tue, 21 Dec 2021 08:23:56 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-1 &lt; Set-Cookie: JSESSIONID=025C5DB5189C0C14DD4153398BFCA463; Domain=localhost
+1 &lt; Set-Cookie: JSESSIONID=1EB4FAE7FCFCB4F4A83EA0C13ECF4B5F; Domain=localhost
 {&quot;id&quot;:14,&quot;visible&quot;:false,&quot;defaultCatalog&quot;:false,&quot;code&quot;:&quot;desktop desk 14&quot;,&quot;creationDate&quot;:&quot;2021-12-11&quot;,&quot;store&quot;:{&quot;id&quot;:1,&quot;code&quot;:&quot;DEFAULT&quot;,&quot;name&quot;:&quot;Default store&quot;,&quot;defaultLanguage&quot;:&quot;en&quot;,&quot;currency&quot;:&quot;USD&quot;,&quot;inBusinessSince&quot;:&quot;2019-03-06&quot;,&quot;email&quot;:&quot;john@test.com&quot;,&quot;phone&quot;:&quot;888-888-8888&quot;,&quot;template&quot;:null,&quot;useCache&quot;:false,&quot;currencyFormatNational&quot;:false,&quot;retailer&quot;:true,&quot;dimension&quot;:&quot;IN&quot;,&quot;weight&quot;:&quot;LB&quot;,&quot;currentUserLanguage&quot;:null,&quot;address&quot;:{&quot;stateProvince&quot;:&quot;QC&quot;,&quot;country&quot;:&quot;CA&quot;,&quot;address&quot;:&quot;1234 Street address&quot;,&quot;postalCode&quot;:&quot;H2H-2H2&quot;,&quot;city&quot;:&quot;My city&quot;,&quot;active&quot;:true},&quot;logo&quot;:{&quot;name&quot;:&quot;Vintage-Bags.jpg&quot;,&quot;path&quot;:&quot;http://localhost:8080/static/files/DEFAULT/LOGO/Vintage-Bags.jpg&quot;},&quot;parent&quot;:null,&quot;supportedLanguages&quot;:[{&quot;code&quot;:&quot;en&quot;,&quot;id&quot;:1},{&quot;code&quot;:&quot;fr&quot;,&quot;id&quot;:2}],&quot;readableAudit&quot;:null},&quot;category&quot;:[]}
 </div>   
 
@@ -2302,7 +2255,7 @@ classpath:karatemaven/Catalog management resource.feature:45
         <span>Then</span>&nbsp;<span>print response</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -2311,7 +2264,7 @@ classpath:karatemaven/Catalog management resource.feature:45
 
   
 
-  <div class="preformatted" data-parent="0.78">18:12:58.785 [print] {
+  <div class="preformatted" data-parent="0.78">13:53:56.635 [print] {
   &quot;id&quot;: 14,
   &quot;visible&quot;: false,
   &quot;defaultCatalog&quot;: false,
@@ -2382,7 +2335,7 @@ classpath:karatemaven/Catalog management resource.feature:45
               </div>
             </div>
             <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>176</span>
+              <span>ms:</span>&nbsp;<span>234</span>
             </div>
           </div>
           <div class="step-row">
@@ -2573,7 +2526,7 @@ classpath:karatemaven/Catalog management resource.feature:45
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">170</div>
+    <div class="time-cell passed">228</div>
   </div>
 
    
@@ -2582,7 +2535,7 @@ classpath:karatemaven/Catalog management resource.feature:45
 
   
 
-  <div class="preformatted" data-parent="0.87">18:12:58.796 request:
+  <div class="preformatted" data-parent="0.87">13:53:56.648 request:
 1 &gt; POST http://localhost:8080/api/v1/private/catalog/2
 1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
 1 &gt; Content-Type: application/json; charset=UTF-8
@@ -2593,7 +2546,7 @@ classpath:karatemaven/Catalog management resource.feature:45
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;catalog&quot;:&quot;rolex555&quot;,&quot;categoryCode&quot;:&quot;rolex123&quot;,&quot;id&quot;:123,&quot;productCode&quot;:&quot;rolout123&quot;,&quot;visible&quot;:true}
 
-18:12:58.964 response time in milliseconds: 167
+13:53:56.873 response time in milliseconds: 225
 1 &lt; 400
 1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
 1 &lt; Access-Control-Allow-Origin: *
@@ -2607,9 +2560,9 @@ classpath:karatemaven/Catalog management resource.feature:45
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Fri, 17 Dec 2021 12:42:58 GMT
+1 &lt; Date: Tue, 21 Dec 2021 08:23:56 GMT
 1 &lt; Connection: close
-1 &lt; Set-Cookie: JSESSIONID=5F3AEF18B06C924D13CD4B69F2F37B01; Domain=localhost
+1 &lt; Set-Cookie: JSESSIONID=BFC2DF410CA5ED6B7022C0827915114D; Domain=localhost
 {&quot;errorCode&quot;:null,&quot;message&quot;:&quot;Error while converting CatalogEntry&quot;}
 </div>   
 
@@ -2639,9 +2592,9 @@ classpath:karatemaven/Catalog management resource.feature:45
 
   
 
-  <div class="preformatted" data-parent="0.88">18:12:58.965 classpath:karatemaven/Catalog management resource.feature:88
+  <div class="preformatted" data-parent="0.88">13:53:56.874 classpath:karatemaven/Catalog management resource.feature:88
 Then status 200
-status code was: 400, expected: 200, response time in milliseconds: 167, url: http://localhost:8080/api/v1/private/catalog/2, response: 
+status code was: 400, expected: 200, response time in milliseconds: 225, url: http://localhost:8080/api/v1/private/catalog/2, response: 
 {&quot;errorCode&quot;:null,&quot;message&quot;:&quot;Error while converting CatalogEntry&quot;}
 classpath:karatemaven/Catalog management resource.feature:88
 </div>   
@@ -2691,8 +2644,8 @@ classpath:karatemaven/Catalog management resource.feature:88
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>195</span>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>230</span>
             </div>
           </div>
           <div class="step-row">
@@ -2715,7 +2668,7 @@ classpath:karatemaven/Catalog management resource.feature:88
         <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -2743,7 +2696,7 @@ classpath:karatemaven/Catalog management resource.feature:88
         <span>*</span>&nbsp;<span>def helper = Java.type(&#39;karatemaven.JavaFunctions&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -2771,7 +2724,7 @@ classpath:karatemaven/Catalog management resource.feature:88
         <span>*</span>&nbsp;<span>def ID = helper.getId();</span>
       </div>
     </div>
-    <div class="time-cell passed">4</div>
+    <div class="time-cell passed">5</div>
   </div>
 
    
@@ -2799,7 +2752,7 @@ classpath:karatemaven/Catalog management resource.feature:88
         <span>Given</span>&nbsp;<span>path &#39;api/v1/private/catalog/&#39;+ID</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -2827,7 +2780,7 @@ classpath:karatemaven/Catalog management resource.feature:88
         <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">5</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -2855,7 +2808,7 @@ classpath:karatemaven/Catalog management resource.feature:88
         <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -2883,7 +2836,7 @@ classpath:karatemaven/Catalog management resource.feature:88
         <span>When</span>&nbsp;<span>method DELETE</span>
       </div>
     </div>
-    <div class="time-cell passed">179</div>
+    <div class="time-cell passed">219</div>
   </div>
 
    
@@ -2892,8 +2845,8 @@ classpath:karatemaven/Catalog management resource.feature:88
 
   
 
-  <div class="preformatted" data-parent="0.98">18:12:58.992 request:
-1 &gt; DELETE http://localhost:8080/api/v1/private/catalog/80
+  <div class="preformatted" data-parent="0.98">13:53:56.891 request:
+1 &gt; DELETE http://localhost:8080/api/v1/private/catalog/0
 1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
 1 &gt; Content-Type: application/json
 1 &gt; Host: localhost:8080
@@ -2902,8 +2855,8 @@ classpath:karatemaven/Catalog management resource.feature:88
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-18:12:59.169 response time in milliseconds: 177
-1 &lt; 200
+13:53:57.107 response time in milliseconds: 215
+1 &lt; 500
 1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
@@ -2914,12 +2867,12 @@ classpath:karatemaven/Catalog management resource.feature:88
 1 &lt; Pragma: no-cache
 1 &lt; Expires: 0
 1 &lt; X-Frame-Options: DENY
-1 &lt; Content-Length: 0
-1 &lt; Date: Fri, 17 Dec 2021 12:42:59 GMT
-1 &lt; Keep-Alive: timeout=60
-1 &lt; Connection: keep-alive
-1 &lt; Set-Cookie: JSESSIONID=4FDBD4E08FC7BCA51C961EEA51075155; Domain=localhost
-
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Tue, 21 Dec 2021 08:23:56 GMT
+1 &lt; Connection: close
+1 &lt; Set-Cookie: JSESSIONID=3233287FB0ABBCEE35035DEDD6E09216; Domain=localhost
+{&quot;errorCode&quot;:null,&quot;message&quot;:&quot;Catalog id cannot be null&quot;}
 </div>   
 
   
@@ -2933,13 +2886,13 @@ classpath:karatemaven/Catalog management resource.feature:88
 
   <div class="step-row">
     <div class="step-container" id="0.99">
-      <div class="step-ref passed">99</div>
+      <div class="step-ref failed">99</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell failed">0</div>
   </div>
 
    
@@ -2948,7 +2901,12 @@ classpath:karatemaven/Catalog management resource.feature:88
 
   
 
-     
+  <div class="preformatted" data-parent="0.99">13:53:57.109 classpath:karatemaven/Catalog management resource.feature:99
+Then status 200
+status code was: 500, expected: 200, response time in milliseconds: 215, url: http://localhost:8080/api/v1/private/catalog/0, response: 
+{&quot;errorCode&quot;:null,&quot;message&quot;:&quot;Catalog id cannot be null&quot;}
+classpath:karatemaven/Catalog management resource.feature:99
+</div>   
 
   
 
@@ -2961,13 +2919,13 @@ classpath:karatemaven/Catalog management resource.feature:88
 
   <div class="step-row">
     <div class="step-container" id="0.100">
-      <div class="step-ref passed">100</div>
+      <div class="step-ref skipped">100</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>Then</span>&nbsp;<span>print response</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -2976,8 +2934,7 @@ classpath:karatemaven/Catalog management resource.feature:88
 
   
 
-  <div class="preformatted" data-parent="0.100">18:12:59.171 [print]  
-</div>   
+     
 
   
 
@@ -2997,7 +2954,7 @@ classpath:karatemaven/Catalog management resource.feature:88
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>197</span>
+              <span>ms:</span>&nbsp;<span>226</span>
             </div>
           </div>
           <div class="step-row">
@@ -3048,7 +3005,7 @@ classpath:karatemaven/Catalog management resource.feature:88
         <span>*</span>&nbsp;<span>def helper = Java.type(&#39;karatemaven.JavaFunctions&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -3104,7 +3061,7 @@ classpath:karatemaven/Catalog management resource.feature:88
         <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -3188,7 +3145,7 @@ classpath:karatemaven/Catalog management resource.feature:88
         <span>When</span>&nbsp;<span>method PATCH</span>
       </div>
     </div>
-    <div class="time-cell passed">192</div>
+    <div class="time-cell passed">221</div>
   </div>
 
    
@@ -3197,7 +3154,7 @@ classpath:karatemaven/Catalog management resource.feature:88
 
   
 
-  <div class="preformatted" data-parent="0.109">18:12:59.180 request:
+  <div class="preformatted" data-parent="0.109">13:53:57.121 request:
 1 &gt; PATCH http://localhost:8080/api/v1/private/catalog/14
 1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
 1 &gt; Content-Type: application/json; charset=UTF-8
@@ -3208,7 +3165,7 @@ classpath:karatemaven/Catalog management resource.feature:88
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;code&quot;:&quot;desktop desk&quot;}
 
-18:12:59.370 response time in milliseconds: 190
+13:53:57.340 response time in milliseconds: 219
 1 &lt; 200
 1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
 1 &lt; Access-Control-Allow-Origin: *
@@ -3221,10 +3178,10 @@ classpath:karatemaven/Catalog management resource.feature:88
 1 &lt; Expires: 0
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Length: 0
-1 &lt; Date: Fri, 17 Dec 2021 12:42:59 GMT
+1 &lt; Date: Tue, 21 Dec 2021 08:23:56 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-1 &lt; Set-Cookie: JSESSIONID=50AA5D39C33CD56A5E4BE0AA8D153A5F; Domain=localhost
+1 &lt; Set-Cookie: JSESSIONID=64B602A6DCB7542A62F9BB50D3C57C1C; Domain=localhost
 
 </div>   
 
@@ -3273,7 +3230,7 @@ classpath:karatemaven/Catalog management resource.feature:88
         <span>Then</span>&nbsp;<span>print response</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -3282,7 +3239,7 @@ classpath:karatemaven/Catalog management resource.feature:88
 
   
 
-  <div class="preformatted" data-parent="0.111">18:12:59.371 [print]  
+  <div class="preformatted" data-parent="0.111">13:53:57.341 [print]  
 </div>   
 
   
@@ -3303,7 +3260,7 @@ classpath:karatemaven/Catalog management resource.feature:88
               </div>
             </div>
             <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>248</span>
+              <span>ms:</span>&nbsp;<span>280</span>
             </div>
           </div>
           <div class="step-row">
@@ -3410,7 +3367,7 @@ classpath:karatemaven/Catalog management resource.feature:88
         <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">4</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -3466,7 +3423,7 @@ classpath:karatemaven/Catalog management resource.feature:88
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">194</div>
+    <div class="time-cell passed">228</div>
   </div>
 
    
@@ -3475,7 +3432,7 @@ classpath:karatemaven/Catalog management resource.feature:88
 
   
 
-  <div class="preformatted" data-parent="0.119">18:12:59.382 request:
+  <div class="preformatted" data-parent="0.119">13:53:57.353 request:
 1 &gt; GET http://localhost:8080/api/v1/private/catalog/2/entry
 1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
 1 &gt; Content-Type: application/json
@@ -3485,7 +3442,7 @@ classpath:karatemaven/Catalog management resource.feature:88
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-18:12:59.574 response time in milliseconds: 192
+13:53:57.578 response time in milliseconds: 225
 1 &lt; 200
 1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
 1 &lt; Access-Control-Allow-Origin: *
@@ -3499,10 +3456,10 @@ classpath:karatemaven/Catalog management resource.feature:88
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Fri, 17 Dec 2021 12:42:59 GMT
+1 &lt; Date: Tue, 21 Dec 2021 08:23:57 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-1 &lt; Set-Cookie: JSESSIONID=E182454D8CFDE333436281484FCAED34; Domain=localhost
+1 &lt; Set-Cookie: JSESSIONID=9A9DE860854E696523AC8567EDFE5D3B; Domain=localhost
 {&quot;totalPages&quot;:0,&quot;number&quot;:0,&quot;recordsTotal&quot;:0,&quot;recordsFiltered&quot;:0,&quot;items&quot;:null}
 </div>   
 
@@ -3551,7 +3508,7 @@ classpath:karatemaven/Catalog management resource.feature:88
         <span>And</span>&nbsp;<span>match response.totalPages != 0</span>
       </div>
     </div>
-    <div class="time-cell failed">48</div>
+    <div class="time-cell failed">46</div>
   </div>
 
    
@@ -3560,7 +3517,7 @@ classpath:karatemaven/Catalog management resource.feature:88
 
   
 
-  <div class="preformatted" data-parent="0.121">18:12:59.623 classpath:karatemaven/Catalog management resource.feature:121
+  <div class="preformatted" data-parent="0.121">13:53:57.626 classpath:karatemaven/Catalog management resource.feature:121
 And match response.totalPages != 0
 match failed: NOT_EQUALS
   $ | is equal (NUMBER:NUMBER)
@@ -3616,7 +3573,7 @@ classpath:karatemaven/Catalog management resource.feature:121
               </div>
             </div>
             <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>206</span>
+              <span>ms:</span>&nbsp;<span>240</span>
             </div>
           </div>
           <div class="step-row">
@@ -3667,7 +3624,7 @@ classpath:karatemaven/Catalog management resource.feature:121
         <span>*</span>&nbsp;<span>def helper = Java.type(&#39;karatemaven.JavaFunctions&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -3695,7 +3652,7 @@ classpath:karatemaven/Catalog management resource.feature:121
         <span>Given</span>&nbsp;<span>path &#39;api/v1/private/catalog/1/entry/14&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -3779,7 +3736,7 @@ classpath:karatemaven/Catalog management resource.feature:121
         <span>When</span>&nbsp;<span>method DELETE</span>
       </div>
     </div>
-    <div class="time-cell passed">203</div>
+    <div class="time-cell passed">236</div>
   </div>
 
    
@@ -3788,7 +3745,7 @@ classpath:karatemaven/Catalog management resource.feature:121
 
   
 
-  <div class="preformatted" data-parent="0.130">18:12:59.631 request:
+  <div class="preformatted" data-parent="0.130">13:53:57.635 request:
 1 &gt; DELETE http://localhost:8080/api/v1/private/catalog/1/entry/14
 1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
 1 &gt; Content-Type: application/json
@@ -3798,7 +3755,7 @@ classpath:karatemaven/Catalog management resource.feature:121
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-18:12:59.832 response time in milliseconds: 200
+13:53:57.868 response time in milliseconds: 233
 1 &lt; 500
 1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
 1 &lt; Access-Control-Allow-Origin: *
@@ -3812,9 +3769,9 @@ classpath:karatemaven/Catalog management resource.feature:121
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Fri, 17 Dec 2021 12:42:59 GMT
+1 &lt; Date: Tue, 21 Dec 2021 08:23:57 GMT
 1 &lt; Connection: close
-1 &lt; Set-Cookie: JSESSIONID=2AA4B41A46CBAD139435737CA3803EDF; Domain=localhost
+1 &lt; Set-Cookie: JSESSIONID=BB59F8BDE2DF79554E37CA0B76237DEB; Domain=localhost
 {&quot;errorCode&quot;:null,&quot;message&quot;:&quot;Unable to find com.salesmanager.core.model.catalog.catalog.CatalogCategoryEntry with id 14&quot;}
 </div>   
 
@@ -3844,9 +3801,9 @@ classpath:karatemaven/Catalog management resource.feature:121
 
   
 
-  <div class="preformatted" data-parent="0.131">18:12:59.833 classpath:karatemaven/Catalog management resource.feature:131
+  <div class="preformatted" data-parent="0.131">13:53:57.869 classpath:karatemaven/Catalog management resource.feature:131
 Then status 200
-status code was: 500, expected: 200, response time in milliseconds: 200, url: http://localhost:8080/api/v1/private/catalog/1/entry/14, response: 
+status code was: 500, expected: 200, response time in milliseconds: 233, url: http://localhost:8080/api/v1/private/catalog/1/entry/14, response: 
 {&quot;errorCode&quot;:null,&quot;message&quot;:&quot;Unable to find com.salesmanager.core.model.catalog.catalog.CatalogCategoryEntry with id 14&quot;}
 classpath:karatemaven/Catalog management resource.feature:131
 </div>   
@@ -3897,7 +3854,7 @@ classpath:karatemaven/Catalog management resource.feature:131
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>206</span>
+              <span>ms:</span>&nbsp;<span>241</span>
             </div>
           </div>
           <div class="step-row">
@@ -3948,7 +3905,7 @@ classpath:karatemaven/Catalog management resource.feature:131
         <span>*</span>&nbsp;<span>def helper = Java.type(&#39;karatemaven.JavaFunctions&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -4004,7 +3961,7 @@ classpath:karatemaven/Catalog management resource.feature:131
         <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -4088,7 +4045,7 @@ classpath:karatemaven/Catalog management resource.feature:131
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">201</div>
+    <div class="time-cell passed">234</div>
   </div>
 
    
@@ -4097,7 +4054,7 @@ classpath:karatemaven/Catalog management resource.feature:131
 
   
 
-  <div class="preformatted" data-parent="0.141">18:12:59.842 request:
+  <div class="preformatted" data-parent="0.141">13:53:57.881 request:
 1 &gt; GET http://localhost:8080/api/v1/private/catalog/unique?code=stringisking
 1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
 1 &gt; Content-Type: application/json
@@ -4107,7 +4064,7 @@ classpath:karatemaven/Catalog management resource.feature:131
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-18:13:00.040 response time in milliseconds: 198
+13:53:58.112 response time in milliseconds: 230
 1 &lt; 200
 1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
 1 &lt; Access-Control-Allow-Origin: *
@@ -4121,10 +4078,10 @@ classpath:karatemaven/Catalog management resource.feature:131
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Fri, 17 Dec 2021 12:42:59 GMT
+1 &lt; Date: Tue, 21 Dec 2021 08:23:57 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-1 &lt; Set-Cookie: JSESSIONID=9A965B1AD96B4045C8656131F08E669A; Domain=localhost
+1 &lt; Set-Cookie: JSESSIONID=F807B98239C3B0A320B41F4EC3A82C05; Domain=localhost
 {&quot;exists&quot;:true}
 </div>   
 
@@ -4201,7 +4158,7 @@ classpath:karatemaven/Catalog management resource.feature:131
         <span>Then</span>&nbsp;<span>print response</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -4210,7 +4167,7 @@ classpath:karatemaven/Catalog management resource.feature:131
 
   
 
-  <div class="preformatted" data-parent="0.144">18:13:00.042 [print] {
+  <div class="preformatted" data-parent="0.144">13:53:58.115 [print] {
   &quot;exists&quot;: true
 }
  
@@ -4234,7 +4191,7 @@ classpath:karatemaven/Catalog management resource.feature:131
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>200</span>
+              <span>ms:</span>&nbsp;<span>250</span>
             </div>
           </div>
           <div class="step-row">
@@ -4285,7 +4242,7 @@ classpath:karatemaven/Catalog management resource.feature:131
         <span>*</span>&nbsp;<span>def helper = Java.type(&#39;karatemaven.JavaFunctions&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -4313,7 +4270,7 @@ classpath:karatemaven/Catalog management resource.feature:131
         <span>Given</span>&nbsp;<span>path &#39;api/v1/private/catalogs&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -4341,7 +4298,7 @@ classpath:karatemaven/Catalog management resource.feature:131
         <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -4397,7 +4354,7 @@ classpath:karatemaven/Catalog management resource.feature:131
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">193</div>
+    <div class="time-cell passed">239</div>
   </div>
 
    
@@ -4406,7 +4363,7 @@ classpath:karatemaven/Catalog management resource.feature:131
 
   
 
-  <div class="preformatted" data-parent="0.152">18:13:00.050 request:
+  <div class="preformatted" data-parent="0.152">13:53:58.124 request:
 1 &gt; GET http://localhost:8080/api/v1/private/catalogs
 1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
 1 &gt; Content-Type: application/json
@@ -4416,7 +4373,7 @@ classpath:karatemaven/Catalog management resource.feature:131
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-18:13:00.239 response time in milliseconds: 189
+13:53:58.358 response time in milliseconds: 234
 1 &lt; 200
 1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
 1 &lt; Access-Control-Allow-Origin: *
@@ -4430,10 +4387,10 @@ classpath:karatemaven/Catalog management resource.feature:131
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Fri, 17 Dec 2021 12:43:00 GMT
+1 &lt; Date: Tue, 21 Dec 2021 08:23:57 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-1 &lt; Set-Cookie: JSESSIONID=FC67E923512C44664D1530AC418E1F62; Domain=localhost
+1 &lt; Set-Cookie: JSESSIONID=B07BE60AE1591A180F96BF88714A7513; Domain=localhost
 {&quot;totalPages&quot;:1,&quot;number&quot;:0,&quot;recordsTotal&quot;:10,&quot;recordsFiltered&quot;:0,&quot;items&quot;:[{&quot;id&quot;:2,&quot;visible&quot;:true,&quot;defaultCatalog&quot;:true,&quot;code&quot;:&quot;stringisking&quot;,&quot;creationDate&quot;:&quot;2021-11-29&quot;,&quot;store&quot;:{&quot;id&quot;:1,&quot;code&quot;:&quot;DEFAULT&quot;,&quot;name&quot;:&quot;Default store&quot;,&quot;defaultLanguage&quot;:&quot;en&quot;,&quot;currency&quot;:&quot;USD&quot;,&quot;inBusinessSince&quot;:&quot;2019-03-06&quot;,&quot;email&quot;:&quot;john@test.com&quot;,&quot;phone&quot;:&quot;888-888-8888&quot;,&quot;template&quot;:null,&quot;useCache&quot;:false,&quot;currencyFormatNational&quot;:false,&quot;retailer&quot;:true,&quot;dimension&quot;:&quot;IN&quot;,&quot;weight&quot;:&quot;LB&quot;,&quot;currentUserLanguage&quot;:null,&quot;address&quot;:{&quot;stateProvince&quot;:&quot;QC&quot;,&quot;country&quot;:&quot;CA&quot;,&quot;address&quot;:&quot;1234 Street address&quot;,&quot;postalCode&quot;:&quot;H2H-2H2&quot;,&quot;city&quot;:&quot;My city&quot;,&quot;active&quot;:true},&quot;logo&quot;:{&quot;name&quot;:&quot;Vintage-Bags.jpg&quot;,&quot;path&quot;:&quot;http://localhost:8080/static/files/DEFAULT/LOGO/Vintage-Bags.jpg&quot;},&quot;parent&quot;:null,&quot;supportedLanguages&quot;:[{&quot;code&quot;:&quot;en&quot;,&quot;id&quot;:1},{&quot;code&quot;:&quot;fr&quot;,&quot;id&quot;:2}],&quot;readableAudit&quot;:null},&quot;category&quot;:[]},{&quot;id&quot;:4,&quot;visible&quot;:true,&quot;defaultCatalog&quot;:true,&quot;code&quot;:&quot;minipro1&quot;,&quot;creationDate&quot;:&quot;2021-11-29&quot;,&quot;store&quot;:{&quot;id&quot;:1,&quot;code&quot;:&quot;DEFAULT&quot;,&quot;name&quot;:&quot;Default store&quot;,&quot;defaultLanguage&quot;:&quot;en&quot;,&quot;currency&quot;:&quot;USD&quot;,&quot;inBusinessSince&quot;:&quot;2019-03-06&quot;,&quot;email&quot;:&quot;john@test.com&quot;,&quot;phone&quot;:&quot;888-888-8888&quot;,&quot;template&quot;:null,&quot;useCache&quot;:false,&quot;currencyFormatNational&quot;:false,&quot;retailer&quot;:true,&quot;dimension&quot;:&quot;IN&quot;,&quot;weight&quot;:&quot;LB&quot;,&quot;currentUserLanguage&quot;:null,&quot;address&quot;:{&quot;stateProvince&quot;:&quot;QC&quot;,&quot;country&quot;:&quot;CA&quot;,&quot;address&quot;:&quot;1234 Street address&quot;,&quot;postalCode&quot;:&quot;H2H-2H2&quot;,&quot;city&quot;:&quot;My city&quot;,&quot;active&quot;:true},&quot;logo&quot;:{&quot;name&quot;:&quot;Vintage-Bags.jpg&quot;,&quot;path&quot;:&quot;http://localhost:8080/static/files/DEFAULT/LOGO/Vintage-Bags.jpg&quot;},&quot;parent&quot;:null,&quot;supportedLanguages&quot;:[{&quot;code&quot;:&quot;en&quot;,&quot;id&quot;:1},{&quot;code&quot;:&quot;fr&quot;,&quot;id&quot;:2}],&quot;readableAudit&quot;:null},&quot;category&quot;:[]},{&quot;id&quot;:5,&quot;visible&quot;:true,&quot;defaultCatalog&quot;:true,&quot;code&quot;:&quot;minipro&quot;,&quot;creationDate&quot;:&quot;2021-11-29&quot;,&quot;store&quot;:{&quot;id&quot;:1,&quot;code&quot;:&quot;DEFAULT&quot;,&quot;name&quot;:&quot;Default store&quot;,&quot;defaultLanguage&quot;:&quot;en&quot;,&quot;currency&quot;:&quot;USD&quot;,&quot;inBusinessSince&quot;:&quot;2019-03-06&quot;,&quot;email&quot;:&quot;john@test.com&quot;,&quot;phone&quot;:&quot;888-888-8888&quot;,&quot;template&quot;:null,&quot;useCache&quot;:false,&quot;currencyFormatNational&quot;:false,&quot;retailer&quot;:true,&quot;dimension&quot;:&quot;IN&quot;,&quot;weight&quot;:&quot;LB&quot;,&quot;currentUserLanguage&quot;:null,&quot;address&quot;:{&quot;stateProvince&quot;:&quot;QC&quot;,&quot;country&quot;:&quot;CA&quot;,&quot;address&quot;:&quot;1234 Street address&quot;,&quot;postalCode&quot;:&quot;H2H-2H2&quot;,&quot;city&quot;:&quot;My city&quot;,&quot;active&quot;:true},&quot;logo&quot;:{&quot;name&quot;:&quot;Vintage-Bags.jpg&quot;,&quot;path&quot;:&quot;http://localhost:8080/static/files/DEFAULT/LOGO/Vintage-Bags.jpg&quot;},&quot;parent&quot;:null,&quot;supportedLanguages&quot;:[{&quot;code&quot;:&quot;en&quot;,&quot;id&quot;:1},{&quot;code&quot;:&quot;fr&quot;,&quot;id&quot;:2}],&quot;readableAudit&quot;:null},&quot;category&quot;:[]},{&quot;id&quot;:7,&quot;visible&quot;:true,&quot;defaultCatalog&quot;:true,&quot;code&quot;:&quot;minipro123&quot;,&quot;creationDate&quot;:&quot;2021-11-30&quot;,&quot;store&quot;:{&quot;id&quot;:1,&quot;code&quot;:&quot;DEFAULT&quot;,&quot;name&quot;:&quot;Default store&quot;,&quot;defaultLanguage&quot;:&quot;en&quot;,&quot;currency&quot;:&quot;USD&quot;,&quot;inBusinessSince&quot;:&quot;2019-03-06&quot;,&quot;email&quot;:&quot;john@test.com&quot;,&quot;phone&quot;:&quot;888-888-8888&quot;,&quot;template&quot;:null,&quot;useCache&quot;:false,&quot;currencyFormatNational&quot;:false,&quot;retailer&quot;:true,&quot;dimension&quot;:&quot;IN&quot;,&quot;weight&quot;:&quot;LB&quot;,&quot;currentUserLanguage&quot;:null,&quot;address&quot;:{&quot;stateProvince&quot;:&quot;QC&quot;,&quot;country&quot;:&quot;CA&quot;,&quot;address&quot;:&quot;1234 Street address&quot;,&quot;postalCode&quot;:&quot;H2H-2H2&quot;,&quot;city&quot;:&quot;My city&quot;,&quot;active&quot;:true},&quot;logo&quot;:{&quot;name&quot;:&quot;Vintage-Bags.jpg&quot;,&quot;path&quot;:&quot;http://localhost:8080/static/files/DEFAULT/LOGO/Vintage-Bags.jpg&quot;},&quot;parent&quot;:null,&quot;supportedLanguages&quot;:[{&quot;code&quot;:&quot;en&quot;,&quot;id&quot;:1},{&quot;code&quot;:&quot;fr&quot;,&quot;id&quot;:2}],&quot;readableAudit&quot;:null},&quot;category&quot;:[]},{&quot;id&quot;:8,&quot;visible&quot;:true,&quot;defaultCatalog&quot;:true,&quot;code&quot;:&quot;Laptop tables&quot;,&quot;creationDate&quot;:&quot;2021-12-10&quot;,&quot;store&quot;:{&quot;id&quot;:1,&quot;code&quot;:&quot;DEFAULT&quot;,&quot;name&quot;:&quot;Default store&quot;,&quot;defaultLanguage&quot;:&quot;en&quot;,&quot;currency&quot;:&quot;USD&quot;,&quot;inBusinessSince&quot;:&quot;2019-03-06&quot;,&quot;email&quot;:&quot;john@test.com&quot;,&quot;phone&quot;:&quot;888-888-8888&quot;,&quot;template&quot;:null,&quot;useCache&quot;:false,&quot;currencyFormatNational&quot;:false,&quot;retailer&quot;:true,&quot;dimension&quot;:&quot;IN&quot;,&quot;weight&quot;:&quot;LB&quot;,&quot;currentUserLanguage&quot;:null,&quot;address&quot;:{&quot;stateProvince&quot;:&quot;QC&quot;,&quot;country&quot;:&quot;CA&quot;,&quot;address&quot;:&quot;1234 Street address&quot;,&quot;postalCode&quot;:&quot;H2H-2H2&quot;,&quot;city&quot;:&quot;My city&quot;,&quot;active&quot;:true},&quot;logo&quot;:{&quot;name&quot;:&quot;Vintage-Bags.jpg&quot;,&quot;path&quot;:&quot;http://localhost:8080/static/files/DEFAULT/LOGO/Vintage-Bags.jpg&quot;},&quot;parent&quot;:null,&quot;supportedLanguages&quot;:[{&quot;code&quot;:&quot;en&quot;,&quot;id&quot;:1},{&quot;code&quot;:&quot;fr&quot;,&quot;id&quot;:2}],&quot;readableAudit&quot;:null},&quot;category&quot;:[]},{&quot;id&quot;:9,&quot;visible&quot;:true,&quot;defaultCatalog&quot;:true,&quot;code&quot;:&quot;desktop desk&quot;,&quot;creationDate&quot;:&quot;2021-12-10&quot;,&quot;store&quot;:{&quot;id&quot;:1,&quot;code&quot;:&quot;DEFAULT&quot;,&quot;name&quot;:&quot;Default store&quot;,&quot;defaultLanguage&quot;:&quot;en&quot;,&quot;currency&quot;:&quot;USD&quot;,&quot;inBusinessSince&quot;:&quot;2019-03-06&quot;,&quot;email&quot;:&quot;john@test.com&quot;,&quot;phone&quot;:&quot;888-888-8888&quot;,&quot;template&quot;:null,&quot;useCache&quot;:false,&quot;currencyFormatNational&quot;:false,&quot;retailer&quot;:true,&quot;dimension&quot;:&quot;IN&quot;,&quot;weight&quot;:&quot;LB&quot;,&quot;currentUserLanguage&quot;:null,&quot;address&quot;:{&quot;stateProvince&quot;:&quot;QC&quot;,&quot;country&quot;:&quot;CA&quot;,&quot;address&quot;:&quot;1234 Street address&quot;,&quot;postalCode&quot;:&quot;H2H-2H2&quot;,&quot;city&quot;:&quot;My city&quot;,&quot;active&quot;:true},&quot;logo&quot;:{&quot;name&quot;:&quot;Vintage-Bags.jpg&quot;,&quot;path&quot;:&quot;http://localhost:8080/static/files/DEFAULT/LOGO/Vintage-Bags.jpg&quot;},&quot;parent&quot;:null,&quot;supportedLanguages&quot;:[{&quot;code&quot;:&quot;en&quot;,&quot;id&quot;:1},{&quot;code&quot;:&quot;fr&quot;,&quot;id&quot;:2}],&quot;readableAudit&quot;:null},&quot;category&quot;:[]},{&quot;id&quot;:12,&quot;visible&quot;:false,&quot;defaultCatalog&quot;:false,&quot;code&quot;:&quot;desktop desk-3&quot;,&quot;creationDate&quot;:&quot;2021-12-11&quot;,&quot;store&quot;:{&quot;id&quot;:1,&quot;code&quot;:&quot;DEFAULT&quot;,&quot;name&quot;:&quot;Default store&quot;,&quot;defaultLanguage&quot;:&quot;en&quot;,&quot;currency&quot;:&quot;USD&quot;,&quot;inBusinessSince&quot;:&quot;2019-03-06&quot;,&quot;email&quot;:&quot;john@test.com&quot;,&quot;phone&quot;:&quot;888-888-8888&quot;,&quot;template&quot;:null,&quot;useCache&quot;:false,&quot;currencyFormatNational&quot;:false,&quot;retailer&quot;:true,&quot;dimension&quot;:&quot;IN&quot;,&quot;weight&quot;:&quot;LB&quot;,&quot;currentUserLanguage&quot;:null,&quot;address&quot;:{&quot;stateProvince&quot;:&quot;QC&quot;,&quot;country&quot;:&quot;CA&quot;,&quot;address&quot;:&quot;1234 Street address&quot;,&quot;postalCode&quot;:&quot;H2H-2H2&quot;,&quot;city&quot;:&quot;My city&quot;,&quot;active&quot;:true},&quot;logo&quot;:{&quot;name&quot;:&quot;Vintage-Bags.jpg&quot;,&quot;path&quot;:&quot;http://localhost:8080/static/files/DEFAULT/LOGO/Vintage-Bags.jpg&quot;},&quot;parent&quot;:null,&quot;supportedLanguages&quot;:[{&quot;code&quot;:&quot;en&quot;,&quot;id&quot;:1},{&quot;code&quot;:&quot;fr&quot;,&quot;id&quot;:2}],&quot;readableAudit&quot;:null},&quot;category&quot;:[]},{&quot;id&quot;:14,&quot;visible&quot;:false,&quot;defaultCatalog&quot;:false,&quot;code&quot;:&quot;desktop desk 14&quot;,&quot;creationDate&quot;:&quot;2021-12-11&quot;,&quot;store&quot;:{&quot;id&quot;:1,&quot;code&quot;:&quot;DEFAULT&quot;,&quot;name&quot;:&quot;Default store&quot;,&quot;defaultLanguage&quot;:&quot;en&quot;,&quot;currency&quot;:&quot;USD&quot;,&quot;inBusinessSince&quot;:&quot;2019-03-06&quot;,&quot;email&quot;:&quot;john@test.com&quot;,&quot;phone&quot;:&quot;888-888-8888&quot;,&quot;template&quot;:null,&quot;useCache&quot;:false,&quot;currencyFormatNational&quot;:false,&quot;retailer&quot;:true,&quot;dimension&quot;:&quot;IN&quot;,&quot;weight&quot;:&quot;LB&quot;,&quot;currentUserLanguage&quot;:null,&quot;address&quot;:{&quot;stateProvince&quot;:&quot;QC&quot;,&quot;country&quot;:&quot;CA&quot;,&quot;address&quot;:&quot;1234 Street address&quot;,&quot;postalCode&quot;:&quot;H2H-2H2&quot;,&quot;city&quot;:&quot;My city&quot;,&quot;active&quot;:true},&quot;logo&quot;:{&quot;name&quot;:&quot;Vintage-Bags.jpg&quot;,&quot;path&quot;:&quot;http://localhost:8080/static/files/DEFAULT/LOGO/Vintage-Bags.jpg&quot;},&quot;parent&quot;:null,&quot;supportedLanguages&quot;:[{&quot;code&quot;:&quot;en&quot;,&quot;id&quot;:1},{&quot;code&quot;:&quot;fr&quot;,&quot;id&quot;:2}],&quot;readableAudit&quot;:null},&quot;category&quot;:[]},{&quot;id&quot;:16,&quot;visible&quot;:false,&quot;defaultCatalog&quot;:false,&quot;code&quot;:&quot;desktop desk-3435&quot;,&quot;creationDate&quot;:&quot;2021-12-11&quot;,&quot;store&quot;:{&quot;id&quot;:1,&quot;code&quot;:&quot;DEFAULT&quot;,&quot;name&quot;:&quot;Default store&quot;,&quot;defaultLanguage&quot;:&quot;en&quot;,&quot;currency&quot;:&quot;USD&quot;,&quot;inBusinessSince&quot;:&quot;2019-03-06&quot;,&quot;email&quot;:&quot;john@test.com&quot;,&quot;phone&quot;:&quot;888-888-8888&quot;,&quot;template&quot;:null,&quot;useCache&quot;:false,&quot;currencyFormatNational&quot;:false,&quot;retailer&quot;:true,&quot;dimension&quot;:&quot;IN&quot;,&quot;weight&quot;:&quot;LB&quot;,&quot;currentUserLanguage&quot;:null,&quot;address&quot;:{&quot;stateProvince&quot;:&quot;QC&quot;,&quot;country&quot;:&quot;CA&quot;,&quot;address&quot;:&quot;1234 Street address&quot;,&quot;postalCode&quot;:&quot;H2H-2H2&quot;,&quot;city&quot;:&quot;My city&quot;,&quot;active&quot;:true},&quot;logo&quot;:{&quot;name&quot;:&quot;Vintage-Bags.jpg&quot;,&quot;path&quot;:&quot;http://localhost:8080/static/files/DEFAULT/LOGO/Vintage-Bags.jpg&quot;},&quot;parent&quot;:null,&quot;supportedLanguages&quot;:[{&quot;code&quot;:&quot;en&quot;,&quot;id&quot;:1},{&quot;code&quot;:&quot;fr&quot;,&quot;id&quot;:2}],&quot;readableAudit&quot;:null},&quot;category&quot;:[]},{&quot;id&quot;:17,&quot;visible&quot;:false,&quot;defaultCatalog&quot;:false,&quot;code&quot;:&quot;desktop desk 15&quot;,&quot;creationDate&quot;:&quot;2021-12-11&quot;,&quot;store&quot;:{&quot;id&quot;:1,&quot;code&quot;:&quot;DEFAULT&quot;,&quot;name&quot;:&quot;Default store&quot;,&quot;defaultLanguage&quot;:&quot;en&quot;,&quot;currency&quot;:&quot;USD&quot;,&quot;inBusinessSince&quot;:&quot;2019-03-06&quot;,&quot;email&quot;:&quot;john@test.com&quot;,&quot;phone&quot;:&quot;888-888-8888&quot;,&quot;template&quot;:null,&quot;useCache&quot;:false,&quot;currencyFormatNational&quot;:false,&quot;retailer&quot;:true,&quot;dimension&quot;:&quot;IN&quot;,&quot;weight&quot;:&quot;LB&quot;,&quot;currentUserLanguage&quot;:null,&quot;address&quot;:{&quot;stateProvince&quot;:&quot;QC&quot;,&quot;country&quot;:&quot;CA&quot;,&quot;address&quot;:&quot;1234 Street address&quot;,&quot;postalCode&quot;:&quot;H2H-2H2&quot;,&quot;city&quot;:&quot;My city&quot;,&quot;active&quot;:true},&quot;logo&quot;:{&quot;name&quot;:&quot;Vintage-Bags.jpg&quot;,&quot;path&quot;:&quot;http://localhost:8080/static/files/DEFAULT/LOGO/Vintage-Bags.jpg&quot;},&quot;parent&quot;:null,&quot;supportedLanguages&quot;:[{&quot;code&quot;:&quot;en&quot;,&quot;id&quot;:1},{&quot;code&quot;:&quot;fr&quot;,&quot;id&quot;:2}],&quot;readableAudit&quot;:null},&quot;category&quot;:[]}]}
 </div>   
 
@@ -4510,7 +4467,7 @@ classpath:karatemaven/Catalog management resource.feature:131
         <span>Then</span>&nbsp;<span>print response</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">5</div>
   </div>
 
    
@@ -4519,7 +4476,7 @@ classpath:karatemaven/Catalog management resource.feature:131
 
   
 
-  <div class="preformatted" data-parent="0.155">18:13:00.245 [print] {
+  <div class="preformatted" data-parent="0.155">13:53:58.368 [print] {
   &quot;totalPages&quot;: 1,
   &quot;number&quot;: 0,
   &quot;recordsTotal&quot;: 10,

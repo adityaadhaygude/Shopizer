@@ -1,0 +1,3194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>karatemaven.User management resource</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">7</div>
+      <div id="nav-fail" class="bg-danger">3</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2021-12-21 12:39:49 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:5]"><span>[1:5]</span> <span>Create a user</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[2:17]"><span>[2:17]</span> <span>Remove a user</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:28]"><span>[3:28]</span> <span>Get Authuser list with valid authentication</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4:40]"><span>[4:40]</span> <span>Get user list with valid authentication</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[5:49]"><span>[5:49]</span> <span>Get a user with id 150765764</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[6:58]"><span>[6:58]</span> <span>Get user with no authentication</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[7:70]"><span>[7:70]</span> <span>Get user list with valid authentication</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[8:79]"><span>[8:79]</span> <span>Get user list with invalid authentication</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[9:90]"><span>[9:90]</span> <span>Update a user</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[10:102]"><span>[10:102]</span> <span>Update a user</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">karatemaven/User management resource.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Shopizer User management resources</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:5]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">getcall1</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:5]</span>
+                <span class="scenario-name">Create a user</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>435</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;http://localhost:8080/api/v1/private/user/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;active&quot;: true,&quot;defaultLanguage&quot;: &quot;en&quot;,&quot;emailAddress&quot;: &quot;Group13343@gmail.com&quot;,&quot;firstName&quot;: &quot;Group453&quot;,&quot;groups&quot;: [{&quot;name&quot;: &quot;ADMIN&quot;,&quot;type&quot;: &quot;DEFAULT&quot;}],&quot;id&quot;: 1866,&quot;lastName&quot;: &quot;teams&quot;,&quot;password&quot;: &quot;Tea@123&quot;,&quot;repeatPassword&quot;: &quot;Tea@123&quot;,&quot;store&quot;: &quot;DEFAULT&quot;,&quot;userName&quot;: &quot;Group12366&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">432</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.11">12:39:48.186 request:
+1 &gt; POST http://localhost:8080/api/v1/private/user/
+1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 263
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;active&quot;:true,&quot;defaultLanguage&quot;:&quot;en&quot;,&quot;emailAddress&quot;:&quot;Group13343@gmail.com&quot;,&quot;firstName&quot;:&quot;Group453&quot;,&quot;groups&quot;:[{&quot;name&quot;:&quot;ADMIN&quot;,&quot;type&quot;:&quot;DEFAULT&quot;}],&quot;id&quot;:1866,&quot;lastName&quot;:&quot;teams&quot;,&quot;password&quot;:&quot;Tea@123&quot;,&quot;repeatPassword&quot;:&quot;Tea@123&quot;,&quot;store&quot;:&quot;DEFAULT&quot;,&quot;userName&quot;:&quot;Group12366&quot;}
+
+12:39:48.614 response time in milliseconds: 428
+1 &lt; 400
+1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Tue, 21 Dec 2021 07:09:48 GMT
+1 &lt; Connection: close
+1 &lt; Set-Cookie: JSESSIONID=42F45CCE189B334B36589B1DE6639E43; Domain=localhost
+{&quot;errorCode&quot;:null,&quot;message&quot;:&quot;User [Group12366] already exists for store [DEFAULT]&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref failed">12</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">12:39:48.615 classpath:karatemaven/User management resource.feature:12
+Then status 200
+status code was: 400, expected: 200, response time in milliseconds: 428, url: http://localhost:8080/api/v1/private/user/, response: 
+{&quot;errorCode&quot;:null,&quot;message&quot;:&quot;User [Group12366] already exists for store [DEFAULT]&quot;}
+classpath:karatemaven/User management resource.feature:12
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref skipped">13</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:17]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:17]</span>
+                <span class="scenario-name">Remove a user</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>5</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;/api/v1/private/user/200&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref failed">22</div>
+      
+      <div class="step-cell failed">
+        <span>When</span>&nbsp;<span>method DELETE</span>
+      </div>
+    </div>
+    <div class="time-cell failed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.22">12:39:48.230 karate.org.apache.http.ProtocolException: Target host is not specified, http call failed after 1 milliseconds for url: /api/v1/private/user/200
+12:39:48.230 classpath:karatemaven/User management resource.feature:22
+When method DELETE
+http call failed after 1 milliseconds for url: /api/v1/private/user/200
+classpath:karatemaven/User management resource.feature:22
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref skipped">23</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref skipped">24</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:28]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:28]</span>
+                <span class="scenario-name">Get Authuser list with valid authentication</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>427</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;http://localhost:8080/api/v1/private/user/profile&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">422</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.33">12:39:48.239 request:
+1 &gt; GET http://localhost:8080/api/v1/private/user/profile
+1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
+1 &gt; Content-Type: application/json
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:39:48.660 response time in milliseconds: 421
+1 &lt; 200
+1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Tue, 21 Dec 2021 07:09:48 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+1 &lt; Set-Cookie: JSESSIONID=FCF728289991AADDAC198707E0D95382; Domain=localhost
+{&quot;id&quot;:1,&quot;firstName&quot;:&quot;Administrator&quot;,&quot;lastName&quot;:&quot;User&quot;,&quot;emailAddress&quot;:&quot;admin@shopizer.com&quot;,&quot;defaultLanguage&quot;:&quot;en&quot;,&quot;userName&quot;:&quot;admin@shopizer.com&quot;,&quot;active&quot;:true,&quot;lastAccess&quot;:&quot;Fri, 17 Dec 2021 17:08:12 +0530&quot;,&quot;loginTime&quot;:null,&quot;merchant&quot;:&quot;DEFAULT&quot;,&quot;permissions&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;STORE_ADMIN&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;SUPERADMIN&quot;},{&quot;id&quot;:3,&quot;name&quot;:&quot;ADMIN&quot;},{&quot;id&quot;:4,&quot;name&quot;:&quot;AUTH&quot;},{&quot;id&quot;:5,&quot;name&quot;:&quot;PRODUCTS&quot;},{&quot;id&quot;:6,&quot;name&quot;:&quot;ORDER&quot;},{&quot;id&quot;:7,&quot;name&quot;:&quot;CONTENT&quot;},{&quot;id&quot;:8,&quot;name&quot;:&quot;STORE&quot;},{&quot;id&quot;:9,&quot;name&quot;:&quot;TAX&quot;},{&quot;id&quot;:10,&quot;name&quot;:&quot;PAYMENT&quot;},{&quot;id&quot;:11,&quot;name&quot;:&quot;CUSTOMER&quot;},{&quot;id&quot;:12,&quot;name&quot;:&quot;SHIPPING&quot;},{&quot;id&quot;:13,&quot;name&quot;:&quot;AUTH_CUSTOMER&quot;}],&quot;groups&quot;:[{&quot;name&quot;:&quot;SUPERADMIN&quot;,&quot;type&quot;:null,&quot;id&quot;:1},{&quot;name&quot;:&quot;ADMIN&quot;,&quot;type&quot;:null,&quot;id&quot;:2},{&quot;name&quot;:&quot;ADMIN_CATALOGUE&quot;,&quot;type&quot;:null,&quot;id&quot;:3},{&quot;name&quot;:&quot;CUSTOMER&quot;,&quot;type&quot;:null,&quot;id&quot;:7}]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.35">12:39:48.661 [print] {
+  &quot;id&quot;: 1,
+  &quot;firstName&quot;: &quot;Administrator&quot;,
+  &quot;lastName&quot;: &quot;User&quot;,
+  &quot;emailAddress&quot;: &quot;admin@shopizer.com&quot;,
+  &quot;defaultLanguage&quot;: &quot;en&quot;,
+  &quot;userName&quot;: &quot;admin@shopizer.com&quot;,
+  &quot;active&quot;: true,
+  &quot;lastAccess&quot;: &quot;Fri, 17 Dec 2021 17:08:12 +0530&quot;,
+  &quot;loginTime&quot;: null,
+  &quot;merchant&quot;: &quot;DEFAULT&quot;,
+  &quot;permissions&quot;: [
+    {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;STORE_ADMIN&quot;
+    },
+    {
+      &quot;id&quot;: 2,
+      &quot;name&quot;: &quot;SUPERADMIN&quot;
+    },
+    {
+      &quot;id&quot;: 3,
+      &quot;name&quot;: &quot;ADMIN&quot;
+    },
+    {
+      &quot;id&quot;: 4,
+      &quot;name&quot;: &quot;AUTH&quot;
+    },
+    {
+      &quot;id&quot;: 5,
+      &quot;name&quot;: &quot;PRODUCTS&quot;
+    },
+    {
+      &quot;id&quot;: 6,
+      &quot;name&quot;: &quot;ORDER&quot;
+    },
+    {
+      &quot;id&quot;: 7,
+      &quot;name&quot;: &quot;CONTENT&quot;
+    },
+    {
+      &quot;id&quot;: 8,
+      &quot;name&quot;: &quot;STORE&quot;
+    },
+    {
+      &quot;id&quot;: 9,
+      &quot;name&quot;: &quot;TAX&quot;
+    },
+    {
+      &quot;id&quot;: 10,
+      &quot;name&quot;: &quot;PAYMENT&quot;
+    },
+    {
+      &quot;id&quot;: 11,
+      &quot;name&quot;: &quot;CUSTOMER&quot;
+    },
+    {
+      &quot;id&quot;: 12,
+      &quot;name&quot;: &quot;SHIPPING&quot;
+    },
+    {
+      &quot;id&quot;: 13,
+      &quot;name&quot;: &quot;AUTH_CUSTOMER&quot;
+    }
+  ],
+  &quot;groups&quot;: [
+    {
+      &quot;name&quot;: &quot;SUPERADMIN&quot;,
+      &quot;type&quot;: null,
+      &quot;id&quot;: 1
+    },
+    {
+      &quot;name&quot;: &quot;ADMIN&quot;,
+      &quot;type&quot;: null,
+      &quot;id&quot;: 2
+    },
+    {
+      &quot;name&quot;: &quot;ADMIN_CATALOGUE&quot;,
+      &quot;type&quot;: null,
+      &quot;id&quot;: 3
+    },
+    {
+      &quot;name&quot;: &quot;CUSTOMER&quot;,
+      &quot;type&quot;: null,
+      &quot;id&quot;: 7
+    }
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:40]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:40]</span>
+                <span class="scenario-name">Get user list with valid authentication</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>456</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.41">
+      <div class="step-ref passed">41</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;http://localhost:8080/api/v1/private/users/150&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.43">
+      <div class="step-ref passed">43</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.45">
+      <div class="step-ref passed">45</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">450</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.45">12:39:48.255 request:
+1 &gt; GET http://localhost:8080/api/v1/private/users/150
+1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
+1 &gt; Content-Type: application/json
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:39:48.703 response time in milliseconds: 448
+1 &lt; 200
+1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Tue, 21 Dec 2021 07:09:48 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+1 &lt; Set-Cookie: JSESSIONID=CD7DCDC597316B615C15C650895AE499; Domain=localhost
+{&quot;id&quot;:150,&quot;firstName&quot;:&quot;test&quot;,&quot;lastName&quot;:&quot;test&quot;,&quot;emailAddress&quot;:&quot;test@shopizer.com&quot;,&quot;defaultLanguage&quot;:&quot;en&quot;,&quot;userName&quot;:&quot;test&quot;,&quot;active&quot;:true,&quot;lastAccess&quot;:&quot;Sun, 12 Dec 2021 12:09:35 +0530&quot;,&quot;loginTime&quot;:null,&quot;merchant&quot;:&quot;DEFAULT&quot;,&quot;permissions&quot;:[],&quot;groups&quot;:[]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.46">
+      <div class="step-ref passed">46</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.47">
+      <div class="step-ref passed">47</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.47">12:39:48.704 [print] {
+  &quot;id&quot;: 150,
+  &quot;firstName&quot;: &quot;test&quot;,
+  &quot;lastName&quot;: &quot;test&quot;,
+  &quot;emailAddress&quot;: &quot;test@shopizer.com&quot;,
+  &quot;defaultLanguage&quot;: &quot;en&quot;,
+  &quot;userName&quot;: &quot;test&quot;,
+  &quot;active&quot;: true,
+  &quot;lastAccess&quot;: &quot;Sun, 12 Dec 2021 12:09:35 +0530&quot;,
+  &quot;loginTime&quot;: null,
+  &quot;merchant&quot;: &quot;DEFAULT&quot;,
+  &quot;permissions&quot;: [
+  ],
+  &quot;groups&quot;: [
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:49]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:49]</span>
+                <span class="scenario-name">Get a user with id 150765764</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>474</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.50">
+      <div class="step-ref passed">50</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;http://localhost:8080/api/v1/private/users/150765764&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.51">
+      <div class="step-ref passed">51</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.52">
+      <div class="step-ref passed">52</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.54">
+      <div class="step-ref passed">54</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">470</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.54">12:39:48.468 request:
+1 &gt; GET http://localhost:8080/api/v1/private/users/150765764
+1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
+1 &gt; Content-Type: application/json
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:39:48.936 response time in milliseconds: 468
+1 &lt; 404
+1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Tue, 21 Dec 2021 07:09:48 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+1 &lt; Set-Cookie: JSESSIONID=2E7D61C1B0F23C22755D0F4E0772A057; Domain=localhost
+{&quot;errorCode&quot;:&quot;404&quot;,&quot;message&quot;:&quot;User [150765764] not found&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.55">
+      <div class="step-ref passed">55</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 404</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.56">
+      <div class="step-ref passed">56</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.56">12:39:48.937 [print] {
+  &quot;errorCode&quot;: &quot;404&quot;,
+  &quot;message&quot;: &quot;User [150765764] not found&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[6:58]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[6:58]</span>
+                <span class="scenario-name">Get user with no authentication</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>218</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.59">
+      <div class="step-ref passed">59</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;http://localhost:8080/api/v1/private/users/150&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.60">
+      <div class="step-ref passed">60</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin123@shopizer.com&#39;, password: &#39;password&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.61">
+      <div class="step-ref passed">61</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.63">
+      <div class="step-ref passed">63</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">215</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.63">12:39:48.468 request:
+1 &gt; GET http://localhost:8080/api/v1/private/users/150
+1 &gt; Authorization: Basic YWRtaW4xMjNAc2hvcGl6ZXIuY29tOnBhc3N3b3Jk
+1 &gt; Content-Type: application/json
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:39:48.681 response time in milliseconds: 213
+1 &lt; 401
+1 &lt; WWW-Authenticate: Basic realm=&quot;api-admin-realm&quot;
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Tue, 21 Dec 2021 07:09:48 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;timestamp&quot;:&quot;2021-12-21T07:09:48.679+0000&quot;,&quot;status&quot;:401,&quot;error&quot;:&quot;Unauthorized&quot;,&quot;path&quot;:&quot;/api/v1/private/users/150&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.64">
+      <div class="step-ref passed">64</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 401</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.65">
+      <div class="step-ref passed">65</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65">12:39:48.682 [print] {
+  &quot;timestamp&quot;: &quot;2021-12-21T07:09:48.679+0000&quot;,
+  &quot;status&quot;: 401,
+  &quot;error&quot;: &quot;Unauthorized&quot;,
+  &quot;path&quot;: &quot;/api/v1/private/users/150&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[7:70]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[7:70]</span>
+                <span class="scenario-name">Get user list with valid authentication</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>402</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.71">
+      <div class="step-ref passed">71</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;http://localhost:8080/api/v1/private/users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.72">
+      <div class="step-ref passed">72</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.73">
+      <div class="step-ref passed">73</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.75">
+      <div class="step-ref passed">75</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">398</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.75">12:39:48.623 request:
+1 &gt; GET http://localhost:8080/api/v1/private/users
+1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
+1 &gt; Content-Type: application/json
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:39:49.019 response time in milliseconds: 395
+1 &lt; 200
+1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Tue, 21 Dec 2021 07:09:48 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+1 &lt; Set-Cookie: JSESSIONID=F0FBFC8E5691A6D130E4D66D74F7ED71; Domain=localhost
+{&quot;totalPages&quot;:1,&quot;number&quot;:20,&quot;recordsTotal&quot;:11,&quot;recordsFiltered&quot;:20,&quot;data&quot;:[{&quot;id&quot;:1,&quot;firstName&quot;:&quot;Administrator&quot;,&quot;lastName&quot;:&quot;User&quot;,&quot;emailAddress&quot;:&quot;admin@shopizer.com&quot;,&quot;defaultLanguage&quot;:&quot;en&quot;,&quot;userName&quot;:&quot;admin@shopizer.com&quot;,&quot;active&quot;:true,&quot;lastAccess&quot;:&quot;Fri, 17 Dec 2021 17:08:12 +0530&quot;,&quot;loginTime&quot;:null,&quot;merchant&quot;:&quot;DEFAULT&quot;,&quot;permissions&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;STORE_ADMIN&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;SUPERADMIN&quot;},{&quot;id&quot;:3,&quot;name&quot;:&quot;ADMIN&quot;},{&quot;id&quot;:4,&quot;name&quot;:&quot;AUTH&quot;},{&quot;id&quot;:5,&quot;name&quot;:&quot;PRODUCTS&quot;},{&quot;id&quot;:6,&quot;name&quot;:&quot;ORDER&quot;},{&quot;id&quot;:7,&quot;name&quot;:&quot;CONTENT&quot;},{&quot;id&quot;:8,&quot;name&quot;:&quot;STORE&quot;},{&quot;id&quot;:9,&quot;name&quot;:&quot;TAX&quot;},{&quot;id&quot;:10,&quot;name&quot;:&quot;PAYMENT&quot;},{&quot;id&quot;:11,&quot;name&quot;:&quot;CUSTOMER&quot;},{&quot;id&quot;:12,&quot;name&quot;:&quot;SHIPPING&quot;},{&quot;id&quot;:13,&quot;name&quot;:&quot;AUTH_CUSTOMER&quot;}],&quot;groups&quot;:[{&quot;name&quot;:&quot;SUPERADMIN&quot;,&quot;type&quot;:null,&quot;id&quot;:1},{&quot;name&quot;:&quot;ADMIN&quot;,&quot;type&quot;:null,&quot;id&quot;:2},{&quot;name&quot;:&quot;ADMIN_CATALOGUE&quot;,&quot;type&quot;:null,&quot;id&quot;:3},{&quot;name&quot;:&quot;CUSTOMER&quot;,&quot;type&quot;:null,&quot;id&quot;:7}]},{&quot;id&quot;:50,&quot;firstName&quot;:&quot;Test&quot;,&quot;lastName&quot;:&quot;User&quot;,&quot;emailAddress&quot;:&quot;testuser@test.com&quot;,&quot;defaultLanguage&quot;:&quot;en&quot;,&quot;userName&quot;:&quot;testuser&quot;,&quot;active&quot;:true,&quot;lastAccess&quot;:null,&quot;loginTime&quot;:null,&quot;merchant&quot;:&quot;DEFAULT&quot;,&quot;permissions&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;STORE_ADMIN&quot;},{&quot;id&quot;:3,&quot;name&quot;:&quot;ADMIN&quot;},{&quot;id&quot;:4,&quot;name&quot;:&quot;AUTH&quot;},{&quot;id&quot;:5,&quot;name&quot;:&quot;PRODUCTS&quot;},{&quot;id&quot;:6,&quot;name&quot;:&quot;ORDER&quot;},{&quot;id&quot;:7,&quot;name&quot;:&quot;CONTENT&quot;},{&quot;id&quot;:8,&quot;name&quot;:&quot;STORE&quot;},{&quot;id&quot;:9,&quot;name&quot;:&quot;TAX&quot;},{&quot;id&quot;:10,&quot;name&quot;:&quot;PAYMENT&quot;},{&quot;id&quot;:11,&quot;name&quot;:&quot;CUSTOMER&quot;},{&quot;id&quot;:12,&quot;name&quot;:&quot;SHIPPING&quot;}],&quot;groups&quot;:[{&quot;name&quot;:&quot;ADMIN&quot;,&quot;type&quot;:null,&quot;id&quot;:2},{&quot;name&quot;:&quot;ADMIN&quot;,&quot;type&quot;:null,&quot;id&quot;:2},{&quot;name&quot;:&quot;ADMIN&quot;,&quot;type&quot;:null,&quot;id&quot;:2},{&quot;name&quot;:&quot;ADMIN&quot;,&quot;type&quot;:null,&quot;id&quot;:2},{&quot;name&quot;:&quot;ADMIN&quot;,&quot;type&quot;:null,&quot;id&quot;:2},{&quot;name&quot;:&quot;ADMIN&quot;,&quot;type&quot;:null,&quot;id&quot;:2},{&quot;name&quot;:&quot;ADMIN&quot;,&quot;type&quot;:null,&quot;id&quot;:2},{&quot;name&quot;:&quot;ADMIN&quot;,&quot;type&quot;:null,&quot;id&quot;:2},{&quot;name&quot;:&quot;ADMIN&quot;,&quot;type&quot;:null,&quot;id&quot;:2},{&quot;name&quot;:&quot;ADMIN&quot;,&quot;type&quot;:null,&quot;id&quot;:2},{&quot;name&quot;:&quot;ADMIN&quot;,&quot;type&quot;:null,&quot;id&quot;:2}]},{&quot;id&quot;:100,&quot;firstName&quot;:&quot;aditya&quot;,&quot;lastName&quot;:&quot;dhaygude&quot;,&quot;emailAddress&quot;:&quot;aditya@gmail.com&quot;,&quot;defaultLanguage&quot;:&quot;en&quot;,&quot;userName&quot;:&quot;aditya&quot;,&quot;active&quot;:true,&quot;lastAccess&quot;:&quot;Fri, 10 Dec 2021 16:38:26 +0530&quot;,&quot;loginTime&quot;:null,&quot;merchant&quot;:&quot;DEFAULT&quot;,&quot;permissions&quot;:[{&quot;id&quot;:4,&quot;name&quot;:&quot;AUTH&quot;},{&quot;id&quot;:8,&quot;name&quot;:&quot;STORE&quot;},{&quot;id&quot;:9,&quot;name&quot;:&quot;TAX&quot;},{&quot;id&quot;:10,&quot;name&quot;:&quot;PAYMENT&quot;},{&quot;id&quot;:11,&quot;name&quot;:&quot;CUSTOMER&quot;},{&quot;id&quot;:12,&quot;name&quot;:&quot;SHIPPING&quot;}],&quot;groups&quot;:[{&quot;name&quot;:&quot;ADMIN_STORE&quot;,&quot;type&quot;:null,&quot;id&quot;:4},{&quot;name&quot;:&quot;ADMIN_STORE&quot;,&quot;type&quot;:null,&quot;id&quot;:4},{&quot;name&quot;:&quot;ADMIN_STORE&quot;,&quot;type&quot;:null,&quot;id&quot;:4},{&quot;name&quot;:&quot;ADMIN_STORE&quot;,&quot;type&quot;:null,&quot;id&quot;:4},{&quot;name&quot;:&quot;ADMIN_STORE&quot;,&quot;type&quot;:null,&quot;id&quot;:4},{&quot;name&quot;:&quot;ADMIN_STORE&quot;,&quot;type&quot;:null,&quot;id&quot;:4}]},{&quot;id&quot;:150,&quot;firstName&quot;:&quot;test&quot;,&quot;lastName&quot;:&quot;test&quot;,&quot;emailAddress&quot;:&quot;test@shopizer.com&quot;,&quot;defaultLanguage&quot;:&quot;en&quot;,&quot;userName&quot;:&quot;test&quot;,&quot;active&quot;:true,&quot;lastAccess&quot;:&quot;Sun, 12 Dec 2021 12:09:35 +0530&quot;,&quot;loginTime&quot;:null,&quot;merchant&quot;:&quot;DEFAULT&quot;,&quot;permissions&quot;:[],&quot;groups&quot;:[]},{&quot;id&quot;:200,&quot;firstName&quot;:&quot;Jimin&quot;,&quot;lastName&quot;:&quot;park&quot;,&quot;emailAddress&quot;:&quot;jimin6745@gmail.com&quot;,&quot;defaultLanguage&quot;:&quot;en&quot;,&quot;userName&quot;:&quot;Jimin123656&quot;,&quot;active&quot;:true,&quot;lastAccess&quot;:null,&quot;loginTime&quot;:null,&quot;merchant&quot;:&quot;DEFAULT&quot;,&quot;permissions&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;STORE_ADMIN&quot;},{&quot;id&quot;:3,&quot;name&quot;:&quot;ADMIN&quot;},{&quot;id&quot;:4,&quot;name&quot;:&quot;AUTH&quot;},{&quot;id&quot;:5,&quot;name&quot;:&quot;PRODUCTS&quot;},{&quot;id&quot;:6,&quot;name&quot;:&quot;ORDER&quot;},{&quot;id&quot;:7,&quot;name&quot;:&quot;CONTENT&quot;},{&quot;id&quot;:8,&quot;name&quot;:&quot;STORE&quot;},{&quot;id&quot;:9,&quot;name&quot;:&quot;TAX&quot;},{&quot;id&quot;:10,&quot;name&quot;:&quot;PAYMENT&quot;},{&quot;id&quot;:11,&quot;name&quot;:&quot;CUSTOMER&quot;},{&quot;id&quot;:12,&quot;name&quot;:&quot;SHIPPING&quot;}],&quot;groups&quot;:[{&quot;name&quot;:&quot;ADMIN&quot;,&quot;type&quot;:null,&quot;id&quot;:2},{&quot;name&quot;:&quot;ADMIN&quot;,&quot;type&quot;:null,&quot;id&quot;:2},{&quot;name&quot;:&quot;ADMIN&quot;,&quot;type&quot;:null,&quot;id&quot;:2},{&quot;name&quot;:&quot;ADMIN&quot;,&quot;type&quot;:null,&quot;id&quot;:2},{&quot;name&quot;:&quot;ADMIN&quot;,&quot;type&quot;:null,&quot;id&quot;:2},{&quot;name&quot;:&quot;ADMIN&quot;,&quot;type&quot;:null,&quot;id&quot;:2},{&quot;name&quot;:&quot;ADMIN&quot;,&quot;type&quot;:null,&quot;id&quot;:2},{&quot;name&quot;:&quot;ADMIN&quot;,&quot;type&quot;:null,&quot;id&quot;:2},{&quot;name&quot;:&quot;ADMIN&quot;,&quot;type&quot;:null,&quot;id&quot;:2},{&quot;name&quot;:&quot;ADMIN&quot;,&quot;type&quot;:null,&quot;id&quot;:2},{&quot;name&quot;:&quot;ADMIN&quot;,&quot;type&quot;:null,&quot;id&quot;:2}]},{&quot;id&quot;:254,&quot;firstName&quot;:&quot;abcd&quot;,&quot;lastName&quot;:&quot;&quot;,&quot;emailAddress&quot;:&quot;abcd@gmail.com&quot;,&quot;defaultLanguage&quot;:&quot;en&quot;,&quot;userName&quot;:&quot;abcd&quot;,&quot;active&quot;:true,&quot;lastAccess&quot;:&quot;Fri, 17 Dec 2021 16:47:52 +0530&quot;,&quot;loginTime&quot;:null,&quot;merchant&quot;:&quot;DEFAULT&quot;,&quot;permissions&quot;:[],&quot;groups&quot;:[]},{&quot;id&quot;:255,&quot;firstName&quot;:&quot;asda&quot;,&quot;lastName&quot;:&quot;&quot;,&quot;emailAddress&quot;:&quot;abbb@gmail.com&quot;,&quot;defaultLanguage&quot;:&quot;en&quot;,&quot;userName&quot;:&quot;abbb&quot;,&quot;active&quot;:true,&quot;lastAccess&quot;:null,&quot;loginTime&quot;:null,&quot;merchant&quot;:&quot;DEFAULT&quot;,&quot;permissions&quot;:[],&quot;groups&quot;:[]},{&quot;id&quot;:256,&quot;firstName&quot;:&quot;team1&quot;,&quot;lastName&quot;:&quot;teams&quot;,&quot;emailAddress&quot;:&quot;Team1@gmail.com&quot;,&quot;defaultLanguage&quot;:&quot;en&quot;,&quot;userName&quot;:&quot;Team123&quot;,&quot;active&quot;:true,&quot;lastAccess&quot;:null,&quot;loginTime&quot;:null,&quot;merchant&quot;:&quot;DEFAULT&quot;,&quot;permissions&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;STORE_ADMIN&quot;},{&quot;id&quot;:3,&quot;name&quot;:&quot;ADMIN&quot;},{&quot;id&quot;:4,&quot;name&quot;:&quot;AUTH&quot;},{&quot;id&quot;:5,&quot;name&quot;:&quot;PRODUCTS&quot;},{&quot;id&quot;:6,&quot;name&quot;:&quot;ORDER&quot;},{&quot;id&quot;:7,&quot;name&quot;:&quot;CONTENT&quot;},{&quot;id&quot;:8,&quot;name&quot;:&quot;STORE&quot;},{&quot;id&quot;:9,&quot;name&quot;:&quot;TAX&quot;},{&quot;id&quot;:10,&quot;name&quot;:&quot;PAYMENT&quot;},{&quot;id&quot;:11,&quot;name&quot;:&quot;CUSTOMER&quot;},{&quot;id&quot;:12,&quot;name&quot;:&quot;SHIPPING&quot;}],&quot;groups&quot;:[{&quot;name&quot;:&quot;ADMIN&quot;,&quot;type&quot;:null,&quot;id&quot;:2},{&quot;name&quot;:&quot;ADMIN&quot;,&quot;type&quot;:null,&quot;id&quot;:2},{&quot;name&quot;:&quot;ADMIN&quot;,&quot;type&quot;:null,&quot;id&quot;:2},{&quot;name&quot;:&quot;ADMIN&quot;,&quot;type&quot;:null,&quot;id&quot;:2},{&quot;name&quot;:&quot;ADMIN&quot;,&quot;type&quot;:null,&quot;id&quot;:2},{&quot;name&quot;:&quot;ADMIN&quot;,&quot;type&quot;:null,&quot;id&quot;:2},{&quot;name&quot;:&quot;ADMIN&quot;,&quot;type&quot;:null,&quot;id&quot;:2},{&quot;name&quot;:&quot;ADMIN&quot;,&quot;type&quot;:null,&quot;id&quot;:2},{&quot;name&quot;:&quot;ADMIN&quot;,&quot;type&quot;:null,&quot;id&quot;:2},{&quot;name&quot;:&quot;ADMIN&quot;,&quot;type&quot;:null,&quot;id&quot;:2},{&quot;name&quot;:&quot;ADMIN&quot;,&quot;type&quot;:null,&quot;id&quot;:2}]},{&quot;id&quot;:257,&quot;firstName&quot;:&quot;raj&quot;,&quot;lastName&quot;:&quot;&quot;,&quot;emailAddress&quot;:&quot;raj@gmail.com&quot;,&quot;defaultLanguage&quot;:&quot;en&quot;,&quot;userName&quot;:&quot;raj&quot;,&quot;active&quot;:true,&quot;lastAccess&quot;:null,&quot;loginTime&quot;:null,&quot;merchant&quot;:&quot;DEFAULT&quot;,&quot;permissions&quot;:[],&quot;groups&quot;:[]},{&quot;id&quot;:258,&quot;firstName&quot;:&quot;sunil&quot;,&quot;lastName&quot;:&quot;&quot;,&quot;emailAddress&quot;:&quot;sunil@gmail.com&quot;,&quot;defaultLanguage&quot;:&quot;en&quot;,&quot;userName&quot;:&quot;sunil&quot;,&quot;active&quot;:true,&quot;lastAccess&quot;:null,&quot;loginTime&quot;:null,&quot;merchant&quot;:&quot;DEFAULT&quot;,&quot;permissions&quot;:[],&quot;groups&quot;:[]},{&quot;id&quot;:259,&quot;firstName&quot;:&quot;Group453&quot;,&quot;lastName&quot;:&quot;teams&quot;,&quot;emailAddress&quot;:&quot;Group13343@gmail.com&quot;,&quot;defaultLanguage&quot;:&quot;en&quot;,&quot;userName&quot;:&quot;Group12366&quot;,&quot;active&quot;:true,&quot;lastAccess&quot;:null,&quot;loginTime&quot;:null,&quot;merchant&quot;:&quot;DEFAULT&quot;,&quot;permissions&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;STORE_ADMIN&quot;},{&quot;id&quot;:3,&quot;name&quot;:&quot;ADMIN&quot;},{&quot;id&quot;:4,&quot;name&quot;:&quot;AUTH&quot;},{&quot;id&quot;:5,&quot;name&quot;:&quot;PRODUCTS&quot;},{&quot;id&quot;:6,&quot;name&quot;:&quot;ORDER&quot;},{&quot;id&quot;:7,&quot;name&quot;:&quot;CONTENT&quot;},{&quot;id&quot;:8,&quot;name&quot;:&quot;STORE&quot;},{&quot;id&quot;:9,&quot;name&quot;:&quot;TAX&quot;},{&quot;id&quot;:10,&quot;name&quot;:&quot;PAYMENT&quot;},{&quot;id&quot;:11,&quot;name&quot;:&quot;CUSTOMER&quot;},{&quot;id&quot;:12,&quot;name&quot;:&quot;SHIPPING&quot;}],&quot;groups&quot;:[{&quot;name&quot;:&quot;ADMIN&quot;,&quot;type&quot;:null,&quot;id&quot;:2},{&quot;name&quot;:&quot;ADMIN&quot;,&quot;type&quot;:null,&quot;id&quot;:2},{&quot;name&quot;:&quot;ADMIN&quot;,&quot;type&quot;:null,&quot;id&quot;:2},{&quot;name&quot;:&quot;ADMIN&quot;,&quot;type&quot;:null,&quot;id&quot;:2},{&quot;name&quot;:&quot;ADMIN&quot;,&quot;type&quot;:null,&quot;id&quot;:2},{&quot;name&quot;:&quot;ADMIN&quot;,&quot;type&quot;:null,&quot;id&quot;:2},{&quot;name&quot;:&quot;ADMIN&quot;,&quot;type&quot;:null,&quot;id&quot;:2},{&quot;name&quot;:&quot;ADMIN&quot;,&quot;type&quot;:null,&quot;id&quot;:2},{&quot;name&quot;:&quot;ADMIN&quot;,&quot;type&quot;:null,&quot;id&quot;:2},{&quot;name&quot;:&quot;ADMIN&quot;,&quot;type&quot;:null,&quot;id&quot;:2},{&quot;name&quot;:&quot;ADMIN&quot;,&quot;type&quot;:null,&quot;id&quot;:2}]}]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.76">
+      <div class="step-ref passed">76</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.77">
+      <div class="step-ref passed">77</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.77">12:39:49.021 [print] {
+  &quot;totalPages&quot;: 1,
+  &quot;number&quot;: 20,
+  &quot;recordsTotal&quot;: 11,
+  &quot;recordsFiltered&quot;: 20,
+  &quot;data&quot;: [
+    {
+      &quot;id&quot;: 1,
+      &quot;firstName&quot;: &quot;Administrator&quot;,
+      &quot;lastName&quot;: &quot;User&quot;,
+      &quot;emailAddress&quot;: &quot;admin@shopizer.com&quot;,
+      &quot;defaultLanguage&quot;: &quot;en&quot;,
+      &quot;userName&quot;: &quot;admin@shopizer.com&quot;,
+      &quot;active&quot;: true,
+      &quot;lastAccess&quot;: &quot;Fri, 17 Dec 2021 17:08:12 +0530&quot;,
+      &quot;loginTime&quot;: null,
+      &quot;merchant&quot;: &quot;DEFAULT&quot;,
+      &quot;permissions&quot;: [
+        {
+          &quot;id&quot;: 1,
+          &quot;name&quot;: &quot;STORE_ADMIN&quot;
+        },
+        {
+          &quot;id&quot;: 2,
+          &quot;name&quot;: &quot;SUPERADMIN&quot;
+        },
+        {
+          &quot;id&quot;: 3,
+          &quot;name&quot;: &quot;ADMIN&quot;
+        },
+        {
+          &quot;id&quot;: 4,
+          &quot;name&quot;: &quot;AUTH&quot;
+        },
+        {
+          &quot;id&quot;: 5,
+          &quot;name&quot;: &quot;PRODUCTS&quot;
+        },
+        {
+          &quot;id&quot;: 6,
+          &quot;name&quot;: &quot;ORDER&quot;
+        },
+        {
+          &quot;id&quot;: 7,
+          &quot;name&quot;: &quot;CONTENT&quot;
+        },
+        {
+          &quot;id&quot;: 8,
+          &quot;name&quot;: &quot;STORE&quot;
+        },
+        {
+          &quot;id&quot;: 9,
+          &quot;name&quot;: &quot;TAX&quot;
+        },
+        {
+          &quot;id&quot;: 10,
+          &quot;name&quot;: &quot;PAYMENT&quot;
+        },
+        {
+          &quot;id&quot;: 11,
+          &quot;name&quot;: &quot;CUSTOMER&quot;
+        },
+        {
+          &quot;id&quot;: 12,
+          &quot;name&quot;: &quot;SHIPPING&quot;
+        },
+        {
+          &quot;id&quot;: 13,
+          &quot;name&quot;: &quot;AUTH_CUSTOMER&quot;
+        }
+      ],
+      &quot;groups&quot;: [
+        {
+          &quot;name&quot;: &quot;SUPERADMIN&quot;,
+          &quot;type&quot;: null,
+          &quot;id&quot;: 1
+        },
+        {
+          &quot;name&quot;: &quot;ADMIN&quot;,
+          &quot;type&quot;: null,
+          &quot;id&quot;: 2
+        },
+        {
+          &quot;name&quot;: &quot;ADMIN_CATALOGUE&quot;,
+          &quot;type&quot;: null,
+          &quot;id&quot;: 3
+        },
+        {
+          &quot;name&quot;: &quot;CUSTOMER&quot;,
+          &quot;type&quot;: null,
+          &quot;id&quot;: 7
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: 50,
+      &quot;firstName&quot;: &quot;Test&quot;,
+      &quot;lastName&quot;: &quot;User&quot;,
+      &quot;emailAddress&quot;: &quot;testuser@test.com&quot;,
+      &quot;defaultLanguage&quot;: &quot;en&quot;,
+      &quot;userName&quot;: &quot;testuser&quot;,
+      &quot;active&quot;: true,
+      &quot;lastAccess&quot;: null,
+      &quot;loginTime&quot;: null,
+      &quot;merchant&quot;: &quot;DEFAULT&quot;,
+      &quot;permissions&quot;: [
+        {
+          &quot;id&quot;: 1,
+          &quot;name&quot;: &quot;STORE_ADMIN&quot;
+        },
+        {
+          &quot;id&quot;: 3,
+          &quot;name&quot;: &quot;ADMIN&quot;
+        },
+        {
+          &quot;id&quot;: 4,
+          &quot;name&quot;: &quot;AUTH&quot;
+        },
+        {
+          &quot;id&quot;: 5,
+          &quot;name&quot;: &quot;PRODUCTS&quot;
+        },
+        {
+          &quot;id&quot;: 6,
+          &quot;name&quot;: &quot;ORDER&quot;
+        },
+        {
+          &quot;id&quot;: 7,
+          &quot;name&quot;: &quot;CONTENT&quot;
+        },
+        {
+          &quot;id&quot;: 8,
+          &quot;name&quot;: &quot;STORE&quot;
+        },
+        {
+          &quot;id&quot;: 9,
+          &quot;name&quot;: &quot;TAX&quot;
+        },
+        {
+          &quot;id&quot;: 10,
+          &quot;name&quot;: &quot;PAYMENT&quot;
+        },
+        {
+          &quot;id&quot;: 11,
+          &quot;name&quot;: &quot;CUSTOMER&quot;
+        },
+        {
+          &quot;id&quot;: 12,
+          &quot;name&quot;: &quot;SHIPPING&quot;
+        }
+      ],
+      &quot;groups&quot;: [
+        {
+          &quot;name&quot;: &quot;ADMIN&quot;,
+          &quot;type&quot;: null,
+          &quot;id&quot;: 2
+        },
+        {
+          &quot;name&quot;: &quot;ADMIN&quot;,
+          &quot;type&quot;: null,
+          &quot;id&quot;: 2
+        },
+        {
+          &quot;name&quot;: &quot;ADMIN&quot;,
+          &quot;type&quot;: null,
+          &quot;id&quot;: 2
+        },
+        {
+          &quot;name&quot;: &quot;ADMIN&quot;,
+          &quot;type&quot;: null,
+          &quot;id&quot;: 2
+        },
+        {
+          &quot;name&quot;: &quot;ADMIN&quot;,
+          &quot;type&quot;: null,
+          &quot;id&quot;: 2
+        },
+        {
+          &quot;name&quot;: &quot;ADMIN&quot;,
+          &quot;type&quot;: null,
+          &quot;id&quot;: 2
+        },
+        {
+          &quot;name&quot;: &quot;ADMIN&quot;,
+          &quot;type&quot;: null,
+          &quot;id&quot;: 2
+        },
+        {
+          &quot;name&quot;: &quot;ADMIN&quot;,
+          &quot;type&quot;: null,
+          &quot;id&quot;: 2
+        },
+        {
+          &quot;name&quot;: &quot;ADMIN&quot;,
+          &quot;type&quot;: null,
+          &quot;id&quot;: 2
+        },
+        {
+          &quot;name&quot;: &quot;ADMIN&quot;,
+          &quot;type&quot;: null,
+          &quot;id&quot;: 2
+        },
+        {
+          &quot;name&quot;: &quot;ADMIN&quot;,
+          &quot;type&quot;: null,
+          &quot;id&quot;: 2
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: 100,
+      &quot;firstName&quot;: &quot;aditya&quot;,
+      &quot;lastName&quot;: &quot;dhaygude&quot;,
+      &quot;emailAddress&quot;: &quot;aditya@gmail.com&quot;,
+      &quot;defaultLanguage&quot;: &quot;en&quot;,
+      &quot;userName&quot;: &quot;aditya&quot;,
+      &quot;active&quot;: true,
+      &quot;lastAccess&quot;: &quot;Fri, 10 Dec 2021 16:38:26 +0530&quot;,
+      &quot;loginTime&quot;: null,
+      &quot;merchant&quot;: &quot;DEFAULT&quot;,
+      &quot;permissions&quot;: [
+        {
+          &quot;id&quot;: 4,
+          &quot;name&quot;: &quot;AUTH&quot;
+        },
+        {
+          &quot;id&quot;: 8,
+          &quot;name&quot;: &quot;STORE&quot;
+        },
+        {
+          &quot;id&quot;: 9,
+          &quot;name&quot;: &quot;TAX&quot;
+        },
+        {
+          &quot;id&quot;: 10,
+          &quot;name&quot;: &quot;PAYMENT&quot;
+        },
+        {
+          &quot;id&quot;: 11,
+          &quot;name&quot;: &quot;CUSTOMER&quot;
+        },
+        {
+          &quot;id&quot;: 12,
+          &quot;name&quot;: &quot;SHIPPING&quot;
+        }
+      ],
+      &quot;groups&quot;: [
+        {
+          &quot;name&quot;: &quot;ADMIN_STORE&quot;,
+          &quot;type&quot;: null,
+          &quot;id&quot;: 4
+        },
+        {
+          &quot;name&quot;: &quot;ADMIN_STORE&quot;,
+          &quot;type&quot;: null,
+          &quot;id&quot;: 4
+        },
+        {
+          &quot;name&quot;: &quot;ADMIN_STORE&quot;,
+          &quot;type&quot;: null,
+          &quot;id&quot;: 4
+        },
+        {
+          &quot;name&quot;: &quot;ADMIN_STORE&quot;,
+          &quot;type&quot;: null,
+          &quot;id&quot;: 4
+        },
+        {
+          &quot;name&quot;: &quot;ADMIN_STORE&quot;,
+          &quot;type&quot;: null,
+          &quot;id&quot;: 4
+        },
+        {
+          &quot;name&quot;: &quot;ADMIN_STORE&quot;,
+          &quot;type&quot;: null,
+          &quot;id&quot;: 4
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: 150,
+      &quot;firstName&quot;: &quot;test&quot;,
+      &quot;lastName&quot;: &quot;test&quot;,
+      &quot;emailAddress&quot;: &quot;test@shopizer.com&quot;,
+      &quot;defaultLanguage&quot;: &quot;en&quot;,
+      &quot;userName&quot;: &quot;test&quot;,
+      &quot;active&quot;: true,
+      &quot;lastAccess&quot;: &quot;Sun, 12 Dec 2021 12:09:35 +0530&quot;,
+      &quot;loginTime&quot;: null,
+      &quot;merchant&quot;: &quot;DEFAULT&quot;,
+      &quot;permissions&quot;: [
+      ],
+      &quot;groups&quot;: [
+      ]
+    },
+    {
+      &quot;id&quot;: 200,
+      &quot;firstName&quot;: &quot;Jimin&quot;,
+      &quot;lastName&quot;: &quot;park&quot;,
+      &quot;emailAddress&quot;: &quot;jimin6745@gmail.com&quot;,
+      &quot;defaultLanguage&quot;: &quot;en&quot;,
+      &quot;userName&quot;: &quot;Jimin123656&quot;,
+      &quot;active&quot;: true,
+      &quot;lastAccess&quot;: null,
+      &quot;loginTime&quot;: null,
+      &quot;merchant&quot;: &quot;DEFAULT&quot;,
+      &quot;permissions&quot;: [
+        {
+          &quot;id&quot;: 1,
+          &quot;name&quot;: &quot;STORE_ADMIN&quot;
+        },
+        {
+          &quot;id&quot;: 3,
+          &quot;name&quot;: &quot;ADMIN&quot;
+        },
+        {
+          &quot;id&quot;: 4,
+          &quot;name&quot;: &quot;AUTH&quot;
+        },
+        {
+          &quot;id&quot;: 5,
+          &quot;name&quot;: &quot;PRODUCTS&quot;
+        },
+        {
+          &quot;id&quot;: 6,
+          &quot;name&quot;: &quot;ORDER&quot;
+        },
+        {
+          &quot;id&quot;: 7,
+          &quot;name&quot;: &quot;CONTENT&quot;
+        },
+        {
+          &quot;id&quot;: 8,
+          &quot;name&quot;: &quot;STORE&quot;
+        },
+        {
+          &quot;id&quot;: 9,
+          &quot;name&quot;: &quot;TAX&quot;
+        },
+        {
+          &quot;id&quot;: 10,
+          &quot;name&quot;: &quot;PAYMENT&quot;
+        },
+        {
+          &quot;id&quot;: 11,
+          &quot;name&quot;: &quot;CUSTOMER&quot;
+        },
+        {
+          &quot;id&quot;: 12,
+          &quot;name&quot;: &quot;SHIPPING&quot;
+        }
+      ],
+      &quot;groups&quot;: [
+        {
+          &quot;name&quot;: &quot;ADMIN&quot;,
+          &quot;type&quot;: null,
+          &quot;id&quot;: 2
+        },
+        {
+          &quot;name&quot;: &quot;ADMIN&quot;,
+          &quot;type&quot;: null,
+          &quot;id&quot;: 2
+        },
+        {
+          &quot;name&quot;: &quot;ADMIN&quot;,
+          &quot;type&quot;: null,
+          &quot;id&quot;: 2
+        },
+        {
+          &quot;name&quot;: &quot;ADMIN&quot;,
+          &quot;type&quot;: null,
+          &quot;id&quot;: 2
+        },
+        {
+          &quot;name&quot;: &quot;ADMIN&quot;,
+          &quot;type&quot;: null,
+          &quot;id&quot;: 2
+        },
+        {
+          &quot;name&quot;: &quot;ADMIN&quot;,
+          &quot;type&quot;: null,
+          &quot;id&quot;: 2
+        },
+        {
+          &quot;name&quot;: &quot;ADMIN&quot;,
+          &quot;type&quot;: null,
+          &quot;id&quot;: 2
+        },
+        {
+          &quot;name&quot;: &quot;ADMIN&quot;,
+          &quot;type&quot;: null,
+          &quot;id&quot;: 2
+        },
+        {
+          &quot;name&quot;: &quot;ADMIN&quot;,
+          &quot;type&quot;: null,
+          &quot;id&quot;: 2
+        },
+        {
+          &quot;name&quot;: &quot;ADMIN&quot;,
+          &quot;type&quot;: null,
+          &quot;id&quot;: 2
+        },
+        {
+          &quot;name&quot;: &quot;ADMIN&quot;,
+          &quot;type&quot;: null,
+          &quot;id&quot;: 2
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: 254,
+      &quot;firstName&quot;: &quot;abcd&quot;,
+      &quot;lastName&quot;: &quot;&quot;,
+      &quot;emailAddress&quot;: &quot;abcd@gmail.com&quot;,
+      &quot;defaultLanguage&quot;: &quot;en&quot;,
+      &quot;userName&quot;: &quot;abcd&quot;,
+      &quot;active&quot;: true,
+      &quot;lastAccess&quot;: &quot;Fri, 17 Dec 2021 16:47:52 +0530&quot;,
+      &quot;loginTime&quot;: null,
+      &quot;merchant&quot;: &quot;DEFAULT&quot;,
+      &quot;permissions&quot;: [
+      ],
+      &quot;groups&quot;: [
+      ]
+    },
+    {
+      &quot;id&quot;: 255,
+      &quot;firstName&quot;: &quot;asda&quot;,
+      &quot;lastName&quot;: &quot;&quot;,
+      &quot;emailAddress&quot;: &quot;abbb@gmail.com&quot;,
+      &quot;defaultLanguage&quot;: &quot;en&quot;,
+      &quot;userName&quot;: &quot;abbb&quot;,
+      &quot;active&quot;: true,
+      &quot;lastAccess&quot;: null,
+      &quot;loginTime&quot;: null,
+      &quot;merchant&quot;: &quot;DEFAULT&quot;,
+      &quot;permissions&quot;: [
+      ],
+      &quot;groups&quot;: [
+      ]
+    },
+    {
+      &quot;id&quot;: 256,
+      &quot;firstName&quot;: &quot;team1&quot;,
+      &quot;lastName&quot;: &quot;teams&quot;,
+      &quot;emailAddress&quot;: &quot;Team1@gmail.com&quot;,
+      &quot;defaultLanguage&quot;: &quot;en&quot;,
+      &quot;userName&quot;: &quot;Team123&quot;,
+      &quot;active&quot;: true,
+      &quot;lastAccess&quot;: null,
+      &quot;loginTime&quot;: null,
+      &quot;merchant&quot;: &quot;DEFAULT&quot;,
+      &quot;permissions&quot;: [
+        {
+          &quot;id&quot;: 1,
+          &quot;name&quot;: &quot;STORE_ADMIN&quot;
+        },
+        {
+          &quot;id&quot;: 3,
+          &quot;name&quot;: &quot;ADMIN&quot;
+        },
+        {
+          &quot;id&quot;: 4,
+          &quot;name&quot;: &quot;AUTH&quot;
+        },
+        {
+          &quot;id&quot;: 5,
+          &quot;name&quot;: &quot;PRODUCTS&quot;
+        },
+        {
+          &quot;id&quot;: 6,
+          &quot;name&quot;: &quot;ORDER&quot;
+        },
+        {
+          &quot;id&quot;: 7,
+          &quot;name&quot;: &quot;CONTENT&quot;
+        },
+        {
+          &quot;id&quot;: 8,
+          &quot;name&quot;: &quot;STORE&quot;
+        },
+        {
+          &quot;id&quot;: 9,
+          &quot;name&quot;: &quot;TAX&quot;
+        },
+        {
+          &quot;id&quot;: 10,
+          &quot;name&quot;: &quot;PAYMENT&quot;
+        },
+        {
+          &quot;id&quot;: 11,
+          &quot;name&quot;: &quot;CUSTOMER&quot;
+        },
+        {
+          &quot;id&quot;: 12,
+          &quot;name&quot;: &quot;SHIPPING&quot;
+        }
+      ],
+      &quot;groups&quot;: [
+        {
+          &quot;name&quot;: &quot;ADMIN&quot;,
+          &quot;type&quot;: null,
+          &quot;id&quot;: 2
+        },
+        {
+          &quot;name&quot;: &quot;ADMIN&quot;,
+          &quot;type&quot;: null,
+          &quot;id&quot;: 2
+        },
+        {
+          &quot;name&quot;: &quot;ADMIN&quot;,
+          &quot;type&quot;: null,
+          &quot;id&quot;: 2
+        },
+        {
+          &quot;name&quot;: &quot;ADMIN&quot;,
+          &quot;type&quot;: null,
+          &quot;id&quot;: 2
+        },
+        {
+          &quot;name&quot;: &quot;ADMIN&quot;,
+          &quot;type&quot;: null,
+          &quot;id&quot;: 2
+        },
+        {
+          &quot;name&quot;: &quot;ADMIN&quot;,
+          &quot;type&quot;: null,
+          &quot;id&quot;: 2
+        },
+        {
+          &quot;name&quot;: &quot;ADMIN&quot;,
+          &quot;type&quot;: null,
+          &quot;id&quot;: 2
+        },
+        {
+          &quot;name&quot;: &quot;ADMIN&quot;,
+          &quot;type&quot;: null,
+          &quot;id&quot;: 2
+        },
+        {
+          &quot;name&quot;: &quot;ADMIN&quot;,
+          &quot;type&quot;: null,
+          &quot;id&quot;: 2
+        },
+        {
+          &quot;name&quot;: &quot;ADMIN&quot;,
+          &quot;type&quot;: null,
+          &quot;id&quot;: 2
+        },
+        {
+          &quot;name&quot;: &quot;ADMIN&quot;,
+          &quot;type&quot;: null,
+          &quot;id&quot;: 2
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: 257,
+      &quot;firstName&quot;: &quot;raj&quot;,
+      &quot;lastName&quot;: &quot;&quot;,
+      &quot;emailAddress&quot;: &quot;raj@gmail.com&quot;,
+      &quot;defaultLanguage&quot;: &quot;en&quot;,
+      &quot;userName&quot;: &quot;raj&quot;,
+      &quot;active&quot;: true,
+      &quot;lastAccess&quot;: null,
+      &quot;loginTime&quot;: null,
+      &quot;merchant&quot;: &quot;DEFAULT&quot;,
+      &quot;permissions&quot;: [
+      ],
+      &quot;groups&quot;: [
+      ]
+    },
+    {
+      &quot;id&quot;: 258,
+      &quot;firstName&quot;: &quot;sunil&quot;,
+      &quot;lastName&quot;: &quot;&quot;,
+      &quot;emailAddress&quot;: &quot;sunil@gmail.com&quot;,
+      &quot;defaultLanguage&quot;: &quot;en&quot;,
+      &quot;userName&quot;: &quot;sunil&quot;,
+      &quot;active&quot;: true,
+      &quot;lastAccess&quot;: null,
+      &quot;loginTime&quot;: null,
+      &quot;merchant&quot;: &quot;DEFAULT&quot;,
+      &quot;permissions&quot;: [
+      ],
+      &quot;groups&quot;: [
+      ]
+    },
+    {
+      &quot;id&quot;: 259,
+      &quot;firstName&quot;: &quot;Group453&quot;,
+      &quot;lastName&quot;: &quot;teams&quot;,
+      &quot;emailAddress&quot;: &quot;Group13343@gmail.com&quot;,
+      &quot;defaultLanguage&quot;: &quot;en&quot;,
+      &quot;userName&quot;: &quot;Group12366&quot;,
+      &quot;active&quot;: true,
+      &quot;lastAccess&quot;: null,
+      &quot;loginTime&quot;: null,
+      &quot;merchant&quot;: &quot;DEFAULT&quot;,
+      &quot;permissions&quot;: [
+        {
+          &quot;id&quot;: 1,
+          &quot;name&quot;: &quot;STORE_ADMIN&quot;
+        },
+        {
+          &quot;id&quot;: 3,
+          &quot;name&quot;: &quot;ADMIN&quot;
+        },
+        {
+          &quot;id&quot;: 4,
+          &quot;name&quot;: &quot;AUTH&quot;
+        },
+        {
+          &quot;id&quot;: 5,
+          &quot;name&quot;: &quot;PRODUCTS&quot;
+        },
+        {
+          &quot;id&quot;: 6,
+          &quot;name&quot;: &quot;ORDER&quot;
+        },
+        {
+          &quot;id&quot;: 7,
+          &quot;name&quot;: &quot;CONTENT&quot;
+        },
+        {
+          &quot;id&quot;: 8,
+          &quot;name&quot;: &quot;STORE&quot;
+        },
+        {
+          &quot;id&quot;: 9,
+          &quot;name&quot;: &quot;TAX&quot;
+        },
+        {
+          &quot;id&quot;: 10,
+          &quot;name&quot;: &quot;PAYMENT&quot;
+        },
+        {
+          &quot;id&quot;: 11,
+          &quot;name&quot;: &quot;CUSTOMER&quot;
+        },
+        {
+          &quot;id&quot;: 12,
+          &quot;name&quot;: &quot;SHIPPING&quot;
+        }
+      ],
+      &quot;groups&quot;: [
+        {
+          &quot;name&quot;: &quot;ADMIN&quot;,
+          &quot;type&quot;: null,
+          &quot;id&quot;: 2
+        },
+        {
+          &quot;name&quot;: &quot;ADMIN&quot;,
+          &quot;type&quot;: null,
+          &quot;id&quot;: 2
+        },
+        {
+          &quot;name&quot;: &quot;ADMIN&quot;,
+          &quot;type&quot;: null,
+          &quot;id&quot;: 2
+        },
+        {
+          &quot;name&quot;: &quot;ADMIN&quot;,
+          &quot;type&quot;: null,
+          &quot;id&quot;: 2
+        },
+        {
+          &quot;name&quot;: &quot;ADMIN&quot;,
+          &quot;type&quot;: null,
+          &quot;id&quot;: 2
+        },
+        {
+          &quot;name&quot;: &quot;ADMIN&quot;,
+          &quot;type&quot;: null,
+          &quot;id&quot;: 2
+        },
+        {
+          &quot;name&quot;: &quot;ADMIN&quot;,
+          &quot;type&quot;: null,
+          &quot;id&quot;: 2
+        },
+        {
+          &quot;name&quot;: &quot;ADMIN&quot;,
+          &quot;type&quot;: null,
+          &quot;id&quot;: 2
+        },
+        {
+          &quot;name&quot;: &quot;ADMIN&quot;,
+          &quot;type&quot;: null,
+          &quot;id&quot;: 2
+        },
+        {
+          &quot;name&quot;: &quot;ADMIN&quot;,
+          &quot;type&quot;: null,
+          &quot;id&quot;: 2
+        },
+        {
+          &quot;name&quot;: &quot;ADMIN&quot;,
+          &quot;type&quot;: null,
+          &quot;id&quot;: 2
+        }
+      ]
+    }
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[8:79]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[8:79]</span>
+                <span class="scenario-name">Get user list with invalid authentication</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>198</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.80">
+      <div class="step-ref passed">80</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;http://localhost:8080/api/v1/private/users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.81">
+      <div class="step-ref passed">81</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin123@shopizer.com&#39;, password: &#39;password&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.82">
+      <div class="step-ref passed">82</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.84">
+      <div class="step-ref passed">84</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">194</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.84">12:39:48.670 request:
+1 &gt; GET http://localhost:8080/api/v1/private/users
+1 &gt; Authorization: Basic YWRtaW4xMjNAc2hvcGl6ZXIuY29tOnBhc3N3b3Jk
+1 &gt; Content-Type: application/json
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:39:48.862 response time in milliseconds: 192
+1 &lt; 401
+1 &lt; WWW-Authenticate: Basic realm=&quot;api-admin-realm&quot;
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Tue, 21 Dec 2021 07:09:48 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;timestamp&quot;:&quot;2021-12-21T07:09:48.859+0000&quot;,&quot;status&quot;:401,&quot;error&quot;:&quot;Unauthorized&quot;,&quot;path&quot;:&quot;/api/v1/private/users&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.85">
+      <div class="step-ref passed">85</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 401</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.86">
+      <div class="step-ref passed">86</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.86">12:39:48.862 [print] {
+  &quot;timestamp&quot;: &quot;2021-12-21T07:09:48.859+0000&quot;,
+  &quot;status&quot;: 401,
+  &quot;error&quot;: &quot;Unauthorized&quot;,
+  &quot;path&quot;: &quot;/api/v1/private/users&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[9:90]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[9:90]</span>
+                <span class="scenario-name">Update a user</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>508</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.91">
+      <div class="step-ref passed">91</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;http://localhost:8080/api/v1/private/user/200&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.92">
+      <div class="step-ref passed">92</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.93">
+      <div class="step-ref passed">93</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.94">
+      <div class="step-ref passed">94</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;active&quot;: true,&quot;defaultLanguage&quot;: &quot;en&quot;,&quot;emailAddress&quot;: &quot;jimin6745@gmail.com&quot;,&quot;firstName&quot;: &quot;Jimin&quot;,&quot;groups&quot;: [{&quot;name&quot;: &quot;ADMIN&quot;,&quot;type&quot;: &quot;DEFAULT&quot;}],&quot;id&quot;: 151,&quot;lastName&quot;: &quot;park&quot;,&quot;password&quot;: &quot;Jimin123@&quot;,&quot;repeatPassword&quot;: &quot;Jimin123@&quot;,&quot;store&quot;: &quot;DEFAULT&quot;,&quot;userName&quot;: &quot;Jimin123656&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.96">
+      <div class="step-ref passed">96</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method PUT</span>
+      </div>
+    </div>
+    <div class="time-cell passed">505</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.96">12:39:48.690 request:
+1 &gt; PUT http://localhost:8080/api/v1/private/user/200
+1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 262
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;active&quot;:true,&quot;defaultLanguage&quot;:&quot;en&quot;,&quot;emailAddress&quot;:&quot;jimin6745@gmail.com&quot;,&quot;firstName&quot;:&quot;Jimin&quot;,&quot;groups&quot;:[{&quot;name&quot;:&quot;ADMIN&quot;,&quot;type&quot;:&quot;DEFAULT&quot;}],&quot;id&quot;:151,&quot;lastName&quot;:&quot;park&quot;,&quot;password&quot;:&quot;Jimin123@&quot;,&quot;repeatPassword&quot;:&quot;Jimin123@&quot;,&quot;store&quot;:&quot;DEFAULT&quot;,&quot;userName&quot;:&quot;Jimin123656&quot;}
+
+12:39:49.192 response time in milliseconds: 502
+1 &lt; 200
+1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Tue, 21 Dec 2021 07:09:48 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+1 &lt; Set-Cookie: JSESSIONID=9BC6CA54D3794D06FDAAE6DD0C129D86; Domain=localhost
+{&quot;id&quot;:200,&quot;firstName&quot;:&quot;Jimin&quot;,&quot;lastName&quot;:&quot;park&quot;,&quot;emailAddress&quot;:&quot;jimin6745@gmail.com&quot;,&quot;defaultLanguage&quot;:&quot;en&quot;,&quot;userName&quot;:&quot;Jimin123656&quot;,&quot;active&quot;:true,&quot;lastAccess&quot;:null,&quot;loginTime&quot;:null,&quot;merchant&quot;:&quot;DEFAULT&quot;,&quot;permissions&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;STORE_ADMIN&quot;},{&quot;id&quot;:3,&quot;name&quot;:&quot;ADMIN&quot;},{&quot;id&quot;:4,&quot;name&quot;:&quot;AUTH&quot;},{&quot;id&quot;:5,&quot;name&quot;:&quot;PRODUCTS&quot;},{&quot;id&quot;:6,&quot;name&quot;:&quot;ORDER&quot;},{&quot;id&quot;:7,&quot;name&quot;:&quot;CONTENT&quot;},{&quot;id&quot;:8,&quot;name&quot;:&quot;STORE&quot;},{&quot;id&quot;:9,&quot;name&quot;:&quot;TAX&quot;},{&quot;id&quot;:10,&quot;name&quot;:&quot;PAYMENT&quot;},{&quot;id&quot;:11,&quot;name&quot;:&quot;CUSTOMER&quot;},{&quot;id&quot;:12,&quot;name&quot;:&quot;SHIPPING&quot;}],&quot;groups&quot;:[{&quot;name&quot;:&quot;ADMIN&quot;,&quot;type&quot;:null,&quot;id&quot;:2}]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.97">
+      <div class="step-ref passed">97</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.98">
+      <div class="step-ref passed">98</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.98">12:39:49.193 [print] {
+  &quot;id&quot;: 200,
+  &quot;firstName&quot;: &quot;Jimin&quot;,
+  &quot;lastName&quot;: &quot;park&quot;,
+  &quot;emailAddress&quot;: &quot;jimin6745@gmail.com&quot;,
+  &quot;defaultLanguage&quot;: &quot;en&quot;,
+  &quot;userName&quot;: &quot;Jimin123656&quot;,
+  &quot;active&quot;: true,
+  &quot;lastAccess&quot;: null,
+  &quot;loginTime&quot;: null,
+  &quot;merchant&quot;: &quot;DEFAULT&quot;,
+  &quot;permissions&quot;: [
+    {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;STORE_ADMIN&quot;
+    },
+    {
+      &quot;id&quot;: 3,
+      &quot;name&quot;: &quot;ADMIN&quot;
+    },
+    {
+      &quot;id&quot;: 4,
+      &quot;name&quot;: &quot;AUTH&quot;
+    },
+    {
+      &quot;id&quot;: 5,
+      &quot;name&quot;: &quot;PRODUCTS&quot;
+    },
+    {
+      &quot;id&quot;: 6,
+      &quot;name&quot;: &quot;ORDER&quot;
+    },
+    {
+      &quot;id&quot;: 7,
+      &quot;name&quot;: &quot;CONTENT&quot;
+    },
+    {
+      &quot;id&quot;: 8,
+      &quot;name&quot;: &quot;STORE&quot;
+    },
+    {
+      &quot;id&quot;: 9,
+      &quot;name&quot;: &quot;TAX&quot;
+    },
+    {
+      &quot;id&quot;: 10,
+      &quot;name&quot;: &quot;PAYMENT&quot;
+    },
+    {
+      &quot;id&quot;: 11,
+      &quot;name&quot;: &quot;CUSTOMER&quot;
+    },
+    {
+      &quot;id&quot;: 12,
+      &quot;name&quot;: &quot;SHIPPING&quot;
+    }
+  ],
+  &quot;groups&quot;: [
+    {
+      &quot;name&quot;: &quot;ADMIN&quot;,
+      &quot;type&quot;: null,
+      &quot;id&quot;: 2
+    }
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[10:102]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[10:102]</span>
+                <span class="scenario-name">Update a user</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>493</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.103">
+      <div class="step-ref passed">103</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;http://localhost:8080/api/v1/private/user/258/password&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.104">
+      <div class="step-ref passed">104</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.105">
+      <div class="step-ref passed">105</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.106">
+      <div class="step-ref passed">106</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;changePassword&quot;: &quot;Rajaram@123&quot;,&quot;password&quot;: &quot;Sunil@123&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.108">
+      <div class="step-ref passed">108</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method PATCH</span>
+      </div>
+    </div>
+    <div class="time-cell passed">489</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.108">12:39:48.712 request:
+1 &gt; PATCH http://localhost:8080/api/v1/private/user/258/password
+1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 55
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;changePassword&quot;:&quot;Rajaram@123&quot;,&quot;password&quot;:&quot;Sunil@123&quot;}
+
+12:39:49.198 response time in milliseconds: 486
+1 &lt; 400
+1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Tue, 21 Dec 2021 07:09:48 GMT
+1 &lt; Connection: close
+1 &lt; Set-Cookie: JSESSIONID=99B3606756E5070B09D469522382E025; Domain=localhost
+{&quot;errorCode&quot;:null,&quot;message&quot;:&quot;Actual password does not match for user [258]&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.109">
+      <div class="step-ref failed">109</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.109">12:39:49.199 classpath:karatemaven/User management resource.feature:109
+Then status 200
+status code was: 400, expected: 200, response time in milliseconds: 486, url: http://localhost:8080/api/v1/private/user/258/password, response: 
+{&quot;errorCode&quot;:null,&quot;message&quot;:&quot;Actual password does not match for user [258]&quot;}
+classpath:karatemaven/User management resource.feature:109
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.110">
+      <div class="step-ref skipped">110</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

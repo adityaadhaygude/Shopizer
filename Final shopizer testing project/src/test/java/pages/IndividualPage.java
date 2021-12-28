@@ -26,11 +26,7 @@ public class IndividualPage {
 	public By productHeader = By.linkText("Vintage laptop bag");
 	public By productTitle = By.cssSelector("h1");
 	public By ratingBtn = By.cssSelector("#productRating > img:nth-child(4)");	
-	
-	//public By ratingbtn = By.cssSelector("#productRating > img:nth-child(4)");
-	//public By addtocart = By.cssSelector(".addToCart");
-	
-	
+		
 	//constructor
 		public IndividualPage(WebDriver driver){
 			this.driver = driver;

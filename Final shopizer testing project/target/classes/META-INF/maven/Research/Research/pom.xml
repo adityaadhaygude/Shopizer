@@ -6,28 +6,28 @@
 	<artifactId>Research</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<dependencies>
-	
+
 		<!-- Web-driver -->
 		<dependency>
 			<groupId>io.github.bonigarcia</groupId>
 			<artifactId>webdrivermanager</artifactId>
 			<version>5.0.3</version>
 		</dependency>
-		
+
 		<!-- selenium-chrome-driver -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-chrome-driver</artifactId>
 			<version>4.1.0</version>
 		</dependency>
-		
+
 		<!-- selenium-firefox-driver -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-firefox-driver</artifactId>
 			<version>4.1.0</version>
 		</dependency>
-		
+
 		<!-- testng -->
 		<dependency>
 			<groupId>org.testng</groupId>
@@ -50,21 +50,21 @@
 			<artifactId>extentreports</artifactId>
 			<version>4.0.0</version>
 		</dependency>
-		
-		<!-- Extent report -->
+
+		<!-- DDT -->
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>
 			<version>3.17</version>
 		</dependency>
-		
-		<!-- Extent report -->
+
+		<!-- DDT -->
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi-ooxml</artifactId>
 			<version>3.17</version>
 		</dependency>
-		
+
 		<!-- karate dependency -->
 		<dependency>
 			<groupId>com.intuit.karate</groupId>
@@ -72,6 +72,6 @@
 			<version>1.2.0.RC1</version>
 			<scope>test</scope>
 		</dependency>
-		
+
 	</dependencies>
 </project>

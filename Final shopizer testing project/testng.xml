@@ -10,13 +10,18 @@
 	<test name="Shopizer ChromeTests">
 		<parameter name="browser" value="chrome" />
 		<classes>
-			
+			<class name="testcases.HomeTest" />
 			<class name="testcases.RegistrationTest"  />
-			
+			<class name="testcases.SigninTest" />
+			<class name="testcases.DashboardTest" />
+			<class name="testcases.CategoryTest" />
+			<class name="testcases.IndividualTest" />
+			<class name="testcases.CartTest" />  
+			<class name="testcases.CheckoutTest"/> 
 		</classes>
 	</test>
 
-	<!--FirefoxTest  
+	<!--FirefoxTest  -->
 	<test name="Shopizer FirefoxTests">
 		<parameter name="browser" value="firefox" />
 		<classes>
@@ -29,6 +34,6 @@
 			<class name="testcases.CartTest" />
 			<class name="testcases.CheckoutTest"/>  
 		</classes>
-	</test> -->
+	</test>
 
 </suite> 

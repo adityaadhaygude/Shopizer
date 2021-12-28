@@ -218,7 +218,7 @@ public class HomeTest extends BaseClass{
 	}	
 	
 	@Test
-	public void verifyCheckoutButton() throws InterruptedException{
+	public void verifyCheckoutButton(){
 		driver.get(objConfigFileReader.getString("homePageURL"));	
 		logger.info("Clicked on cart button");
 		objHomePage.clickBtn(objHomePage.cartBtn);	

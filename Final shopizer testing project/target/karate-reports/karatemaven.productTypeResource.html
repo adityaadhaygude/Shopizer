@@ -22,15 +22,15 @@
       <img src="karate-logo.svg" alt="Karate"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">8</div>
-      <div id="nav-fail" class="bg-danger">1</div>
+      <div id="nav-pass" class="bg-success">6</div>
+      <div id="nav-fail" class="bg-danger">3</div>
     </div>
   </div>
   <div id="nav-type">
     <div>Scenarios</div>
   </div>         
   <div id="nav-date">
-    <div>2021-12-17 06:13:19 PM</div>
+    <div>2021-12-21 01:47:07 PM</div>
   </div>        
 </div>
 
@@ -41,10 +41,10 @@
           <div class="nav-item passed">
             <a href="#[2:19]"><span>[2:19]</span> <span>Get list of product type with valid administrator account</span></a>
           </div>
-          <div class="nav-item passed">
+          <div class="nav-item failed">
             <a href="#[3:29]"><span>[3:29]</span> <span>Update a product type with valid administrator account</span></a>
           </div>
-          <div class="nav-item passed">
+          <div class="nav-item failed">
             <a href="#[4:40]"><span>[4:40]</span> <span>Delete a product type with valid administrator account</span></a>
           </div>
           <div class="nav-item passed">
@@ -86,7 +86,7 @@
               </div>
             </div>
             <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>214</span>
+              <span>ms:</span>&nbsp;<span>261</span>
             </div>
           </div>
           <div class="step-row">
@@ -249,7 +249,7 @@
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">212</div>
+    <div class="time-cell passed">259</div>
   </div>
 
    
@@ -258,7 +258,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.13">18:13:17.547 request:
+  <div class="preformatted" data-parent="0.13">13:47:04.889 request:
 1 &gt; POST http://localhost:8080/api/v1/private/products/type
 1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
 1 &gt; Content-Type: application/json; charset=UTF-8
@@ -269,7 +269,7 @@
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;id&quot;:1,&quot;code&quot;:&quot;GENERAL&quot;,&quot;visible&quot;:false,&quot;allowAddToCart&quot;:false,&quot;description&quot;:null}
 
-18:13:17.758 response time in milliseconds: 211
+13:47:05.146 response time in milliseconds: 257
 1 &lt; 400
 1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
 1 &lt; Access-Control-Allow-Origin: *
@@ -283,9 +283,9 @@
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Fri, 17 Dec 2021 12:43:17 GMT
+1 &lt; Date: Tue, 21 Dec 2021 08:17:05 GMT
 1 &lt; Connection: close
-1 &lt; Set-Cookie: JSESSIONID=B40F1321B0599F75709E5641D5BF30C8; Domain=localhost
+1 &lt; Set-Cookie: JSESSIONID=53422AEEF0539E1D02028D163BBB2621; Domain=localhost
 {&quot;errorCode&quot;:null,&quot;message&quot;:&quot;An exception occured while saving product type&quot;}
 </div>   
 
@@ -315,9 +315,9 @@
 
   
 
-  <div class="preformatted" data-parent="0.14">18:13:17.758 classpath:karatemaven/productTypeResource.feature:14
+  <div class="preformatted" data-parent="0.14">13:47:05.147 classpath:karatemaven/productTypeResource.feature:14
 Then status 200
-status code was: 400, expected: 200, response time in milliseconds: 211, url: http://localhost:8080/api/v1/private/products/type, response: 
+status code was: 400, expected: 200, response time in milliseconds: 257, url: http://localhost:8080/api/v1/private/products/type, response: 
 {&quot;errorCode&quot;:null,&quot;message&quot;:&quot;An exception occured while saving product type&quot;}
 classpath:karatemaven/productTypeResource.feature:14
 </div>   
@@ -368,7 +368,7 @@ classpath:karatemaven/productTypeResource.feature:14
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>196</span>
+              <span>ms:</span>&nbsp;<span>236</span>
             </div>
           </div>
           <div class="step-row">
@@ -503,7 +503,7 @@ classpath:karatemaven/productTypeResource.feature:14
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">194</div>
+    <div class="time-cell passed">234</div>
   </div>
 
    
@@ -512,7 +512,7 @@ classpath:karatemaven/productTypeResource.feature:14
 
   
 
-  <div class="preformatted" data-parent="0.23">18:13:17.764 request:
+  <div class="preformatted" data-parent="0.23">13:47:05.153 request:
 1 &gt; GET http://localhost:8080/api/v1/private/products/type/1
 1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
 1 &gt; Content-Type: application/json
@@ -522,7 +522,7 @@ classpath:karatemaven/productTypeResource.feature:14
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-18:13:17.956 response time in milliseconds: 192
+13:47:05.384 response time in milliseconds: 231
 1 &lt; 200
 1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
 1 &lt; Access-Control-Allow-Origin: *
@@ -536,10 +536,10 @@ classpath:karatemaven/productTypeResource.feature:14
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Fri, 17 Dec 2021 12:43:17 GMT
+1 &lt; Date: Tue, 21 Dec 2021 08:17:05 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-1 &lt; Set-Cookie: JSESSIONID=579C76454AB1015BC84C2F92D53C5920; Domain=localhost
+1 &lt; Set-Cookie: JSESSIONID=D54D037F6F9D2F2F12267A8ECEE1D560; Domain=localhost
 {&quot;id&quot;:1,&quot;code&quot;:&quot;GENERAL&quot;,&quot;visible&quot;:false,&quot;allowAddToCart&quot;:false,&quot;description&quot;:null}
 </div>   
 
@@ -597,7 +597,7 @@ classpath:karatemaven/productTypeResource.feature:14
 
   
 
-  <div class="preformatted" data-parent="0.25">18:13:17.956 [print] {
+  <div class="preformatted" data-parent="0.25">13:47:05.385 [print] {
   &quot;id&quot;: 1,
   &quot;code&quot;: &quot;GENERAL&quot;,
   &quot;visible&quot;: false,
@@ -624,8 +624,8 @@ classpath:karatemaven/productTypeResource.feature:14
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>207</span>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>227</span>
             </div>
           </div>
           <div class="step-row">
@@ -788,7 +788,7 @@ classpath:karatemaven/productTypeResource.feature:14
         <span>When</span>&nbsp;<span>method PUT</span>
       </div>
     </div>
-    <div class="time-cell passed">204</div>
+    <div class="time-cell passed">225</div>
   </div>
 
    
@@ -797,7 +797,7 @@ classpath:karatemaven/productTypeResource.feature:14
 
   
 
-  <div class="preformatted" data-parent="0.34">18:13:17.961 request:
+  <div class="preformatted" data-parent="0.34">13:47:05.390 request:
 1 &gt; PUT http://localhost:8080/api/v1/private/products/type/204
 1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
 1 &gt; Content-Type: application/json; charset=UTF-8
@@ -808,8 +808,8 @@ classpath:karatemaven/productTypeResource.feature:14
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;code&quot;:&quot;102&quot;}
 
-18:13:18.164 response time in milliseconds: 202
-1 &lt; 200
+13:47:05.614 response time in milliseconds: 224
+1 &lt; 400
 1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
@@ -820,12 +820,12 @@ classpath:karatemaven/productTypeResource.feature:14
 1 &lt; Pragma: no-cache
 1 &lt; Expires: 0
 1 &lt; X-Frame-Options: DENY
-1 &lt; Content-Length: 0
-1 &lt; Date: Fri, 17 Dec 2021 12:43:17 GMT
-1 &lt; Keep-Alive: timeout=60
-1 &lt; Connection: keep-alive
-1 &lt; Set-Cookie: JSESSIONID=64717A87A544B77668D34CCBAFB483B5; Domain=localhost
-
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Tue, 21 Dec 2021 08:17:05 GMT
+1 &lt; Connection: close
+1 &lt; Set-Cookie: JSESSIONID=E8C9A2CD6CC4FCA522742B5225B77818; Domain=localhost
+{&quot;errorCode&quot;:null,&quot;message&quot;:&quot;An exception occured while saving product type&quot;}
 </div>   
 
   
@@ -839,13 +839,13 @@ classpath:karatemaven/productTypeResource.feature:14
 
   <div class="step-row">
     <div class="step-container" id="0.35">
-      <div class="step-ref passed">35</div>
+      <div class="step-ref failed">35</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell failed">0</div>
   </div>
 
    
@@ -854,7 +854,12 @@ classpath:karatemaven/productTypeResource.feature:14
 
   
 
-     
+  <div class="preformatted" data-parent="0.35">13:47:05.615 classpath:karatemaven/productTypeResource.feature:35
+Then status 200
+status code was: 400, expected: 200, response time in milliseconds: 224, url: http://localhost:8080/api/v1/private/products/type/204, response: 
+{&quot;errorCode&quot;:null,&quot;message&quot;:&quot;An exception occured while saving product type&quot;}
+classpath:karatemaven/productTypeResource.feature:35
+</div>   
 
   
 
@@ -867,13 +872,13 @@ classpath:karatemaven/productTypeResource.feature:14
 
   <div class="step-row">
     <div class="step-container" id="0.36">
-      <div class="step-ref passed">36</div>
+      <div class="step-ref skipped">36</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>Then</span>&nbsp;<span>print response</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -882,8 +887,7 @@ classpath:karatemaven/productTypeResource.feature:14
 
   
 
-  <div class="preformatted" data-parent="0.36">18:13:18.164 [print]  
-</div>   
+     
 
   
 
@@ -902,8 +906,8 @@ classpath:karatemaven/productTypeResource.feature:14
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>204</span>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>272</span>
             </div>
           </div>
           <div class="step-row">
@@ -1038,7 +1042,7 @@ classpath:karatemaven/productTypeResource.feature:14
         <span>When</span>&nbsp;<span>method DELETE</span>
       </div>
     </div>
-    <div class="time-cell passed">202</div>
+    <div class="time-cell passed">270</div>
   </div>
 
    
@@ -1047,7 +1051,7 @@ classpath:karatemaven/productTypeResource.feature:14
 
   
 
-  <div class="preformatted" data-parent="0.44">18:13:18.169 request:
+  <div class="preformatted" data-parent="0.44">13:47:05.621 request:
 1 &gt; DELETE http://localhost:8080/api/v1/private/products/type/204
 1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
 1 &gt; Content-Type: application/json
@@ -1057,8 +1061,8 @@ classpath:karatemaven/productTypeResource.feature:14
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-18:13:18.371 response time in milliseconds: 202
-1 &lt; 200
+13:47:05.890 response time in milliseconds: 268
+1 &lt; 400
 1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
@@ -1069,12 +1073,12 @@ classpath:karatemaven/productTypeResource.feature:14
 1 &lt; Pragma: no-cache
 1 &lt; Expires: 0
 1 &lt; X-Frame-Options: DENY
-1 &lt; Content-Length: 0
-1 &lt; Date: Fri, 17 Dec 2021 12:43:17 GMT
-1 &lt; Keep-Alive: timeout=60
-1 &lt; Connection: keep-alive
-1 &lt; Set-Cookie: JSESSIONID=B008C94BA634EE17BD7A8F4F795CE70F; Domain=localhost
-
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Tue, 21 Dec 2021 08:17:05 GMT
+1 &lt; Connection: close
+1 &lt; Set-Cookie: JSESSIONID=2028845A67F1F9979A4419003A66ABDB; Domain=localhost
+{&quot;errorCode&quot;:null,&quot;message&quot;:&quot;An exception occured while saving product type&quot;}
 </div>   
 
   
@@ -1088,13 +1092,13 @@ classpath:karatemaven/productTypeResource.feature:14
 
   <div class="step-row">
     <div class="step-container" id="0.45">
-      <div class="step-ref passed">45</div>
+      <div class="step-ref failed">45</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell failed">0</div>
   </div>
 
    
@@ -1103,7 +1107,12 @@ classpath:karatemaven/productTypeResource.feature:14
 
   
 
-     
+  <div class="preformatted" data-parent="0.45">13:47:05.890 classpath:karatemaven/productTypeResource.feature:45
+Then status 200
+status code was: 400, expected: 200, response time in milliseconds: 268, url: http://localhost:8080/api/v1/private/products/type/204, response: 
+{&quot;errorCode&quot;:null,&quot;message&quot;:&quot;An exception occured while saving product type&quot;}
+classpath:karatemaven/productTypeResource.feature:45
+</div>   
 
   
 
@@ -1116,13 +1125,13 @@ classpath:karatemaven/productTypeResource.feature:14
 
   <div class="step-row">
     <div class="step-container" id="0.46">
-      <div class="step-ref passed">46</div>
+      <div class="step-ref skipped">46</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>Then</span>&nbsp;<span>print response</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1131,8 +1140,7 @@ classpath:karatemaven/productTypeResource.feature:14
 
   
 
-  <div class="preformatted" data-parent="0.46">18:13:18.371 [print]  
-</div>   
+     
 
   
 
@@ -1152,7 +1160,7 @@ classpath:karatemaven/productTypeResource.feature:14
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>202</span>
+              <span>ms:</span>&nbsp;<span>328</span>
             </div>
           </div>
           <div class="step-row">
@@ -1315,7 +1323,7 @@ classpath:karatemaven/productTypeResource.feature:14
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">199</div>
+    <div class="time-cell passed">324</div>
   </div>
 
    
@@ -1324,7 +1332,7 @@ classpath:karatemaven/productTypeResource.feature:14
 
   
 
-  <div class="preformatted" data-parent="0.55">18:13:18.376 request:
+  <div class="preformatted" data-parent="0.55">13:47:05.899 request:
 1 &gt; GET http://localhost:8080/api/v1/private/products/type/unique?code=10
 1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
 1 &gt; Content-Type: application/json
@@ -1334,7 +1342,7 @@ classpath:karatemaven/productTypeResource.feature:14
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-18:13:18.574 response time in milliseconds: 198
+13:47:06.220 response time in milliseconds: 321
 1 &lt; 200
 1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
 1 &lt; Access-Control-Allow-Origin: *
@@ -1348,10 +1356,10 @@ classpath:karatemaven/productTypeResource.feature:14
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Fri, 17 Dec 2021 12:43:17 GMT
+1 &lt; Date: Tue, 21 Dec 2021 08:17:06 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-1 &lt; Set-Cookie: JSESSIONID=24643F718F3A7A6FC7F7B4E9254A8FCC; Domain=localhost
+1 &lt; Set-Cookie: JSESSIONID=3A9B20426C845FEADA84F9AFE6A2D67F; Domain=localhost
 {&quot;exists&quot;:true}
 </div>   
 
@@ -1437,7 +1445,7 @@ classpath:karatemaven/productTypeResource.feature:14
 
   
 
-  <div class="preformatted" data-parent="0.58">18:13:18.575 [print] {
+  <div class="preformatted" data-parent="0.58">13:47:06.221 [print] {
   &quot;exists&quot;: true
 }
  
@@ -1461,7 +1469,7 @@ classpath:karatemaven/productTypeResource.feature:14
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>199</span>
+              <span>ms:</span>&nbsp;<span>297</span>
             </div>
           </div>
           <div class="step-row">
@@ -1596,7 +1604,7 @@ classpath:karatemaven/productTypeResource.feature:14
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">196</div>
+    <div class="time-cell passed">294</div>
   </div>
 
    
@@ -1605,7 +1613,7 @@ classpath:karatemaven/productTypeResource.feature:14
 
   
 
-  <div class="preformatted" data-parent="0.66">18:13:18.581 request:
+  <div class="preformatted" data-parent="0.66">13:47:06.229 request:
 1 &gt; GET http://localhost:8080/api/v1/private/products/types
 1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
 1 &gt; Content-Type: application/json
@@ -1615,7 +1623,7 @@ classpath:karatemaven/productTypeResource.feature:14
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-18:13:18.775 response time in milliseconds: 194
+13:47:06.521 response time in milliseconds: 292
 1 &lt; 200
 1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
 1 &lt; Access-Control-Allow-Origin: *
@@ -1629,10 +1637,10 @@ classpath:karatemaven/productTypeResource.feature:14
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Fri, 17 Dec 2021 12:43:18 GMT
+1 &lt; Date: Tue, 21 Dec 2021 08:17:06 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-1 &lt; Set-Cookie: JSESSIONID=55D8BAB117E8CCFD18A9D61D8D8E1E79; Domain=localhost
+1 &lt; Set-Cookie: JSESSIONID=2308A6B262CC57079AC11EAC238BD2C7; Domain=localhost
 {&quot;totalPages&quot;:1,&quot;number&quot;:0,&quot;recordsTotal&quot;:5,&quot;recordsFiltered&quot;:10,&quot;list&quot;:[{&quot;id&quot;:50,&quot;code&quot;:&quot;string342&quot;,&quot;visible&quot;:false,&quot;allowAddToCart&quot;:false,&quot;description&quot;:null},{&quot;id&quot;:100,&quot;code&quot;:&quot;51fsdf&quot;,&quot;visible&quot;:false,&quot;allowAddToCart&quot;:false,&quot;description&quot;:null},{&quot;id&quot;:101,&quot;code&quot;:&quot;51fsfgsg&quot;,&quot;visible&quot;:false,&quot;allowAddToCart&quot;:false,&quot;description&quot;:null},{&quot;id&quot;:150,&quot;code&quot;:&quot;10&quot;,&quot;visible&quot;:false,&quot;allowAddToCart&quot;:false,&quot;description&quot;:null},{&quot;id&quot;:151,&quot;code&quot;:&quot;1007&quot;,&quot;visible&quot;:false,&quot;allowAddToCart&quot;:false,&quot;description&quot;:null}]}
 </div>   
 
@@ -1690,7 +1698,7 @@ classpath:karatemaven/productTypeResource.feature:14
 
   
 
-  <div class="preformatted" data-parent="0.68">18:13:18.775 [print] {
+  <div class="preformatted" data-parent="0.68">13:47:06.522 [print] {
   &quot;totalPages&quot;: 1,
   &quot;number&quot;: 0,
   &quot;recordsTotal&quot;: 5,
@@ -1754,7 +1762,7 @@ classpath:karatemaven/productTypeResource.feature:14
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>101</span>
+              <span>ms:</span>&nbsp;<span>143</span>
             </div>
           </div>
           <div class="step-row">
@@ -1889,7 +1897,7 @@ classpath:karatemaven/productTypeResource.feature:14
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">99</div>
+    <div class="time-cell passed">141</div>
   </div>
 
    
@@ -1898,7 +1906,7 @@ classpath:karatemaven/productTypeResource.feature:14
 
   
 
-  <div class="preformatted" data-parent="0.76">18:13:18.780 request:
+  <div class="preformatted" data-parent="0.76">13:47:06.528 request:
 1 &gt; GET http://localhost:8080/api/v1/private/products/types
 1 &gt; Authorization: Basic dGVzdEBzaG9waXplci5jb206cGFzc3dvcmQ=
 1 &gt; Content-Type: application/json
@@ -1908,7 +1916,7 @@ classpath:karatemaven/productTypeResource.feature:14
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-18:13:18.878 response time in milliseconds: 98
+13:47:06.668 response time in milliseconds: 139
 1 &lt; 401
 1 &lt; WWW-Authenticate: Basic realm=&quot;api-admin-realm&quot;
 1 &lt; X-Content-Type-Options: nosniff
@@ -1919,10 +1927,10 @@ classpath:karatemaven/productTypeResource.feature:14
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Fri, 17 Dec 2021 12:43:18 GMT
+1 &lt; Date: Tue, 21 Dec 2021 08:17:06 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-{&quot;timestamp&quot;:&quot;2021-12-17T12:43:18.878+0000&quot;,&quot;status&quot;:401,&quot;error&quot;:&quot;Unauthorized&quot;,&quot;path&quot;:&quot;/api/v1/private/products/types&quot;}
+{&quot;timestamp&quot;:&quot;2021-12-21T08:17:06.666+0000&quot;,&quot;status&quot;:401,&quot;error&quot;:&quot;Unauthorized&quot;,&quot;path&quot;:&quot;/api/v1/private/products/types&quot;}
 </div>   
 
   
@@ -1979,8 +1987,8 @@ classpath:karatemaven/productTypeResource.feature:14
 
   
 
-  <div class="preformatted" data-parent="0.78">18:13:18.879 [print] {
-  &quot;timestamp&quot;: &quot;2021-12-17T12:43:18.878+0000&quot;,
+  <div class="preformatted" data-parent="0.78">13:47:06.668 [print] {
+  &quot;timestamp&quot;: &quot;2021-12-21T08:17:06.666+0000&quot;,
   &quot;status&quot;: 401,
   &quot;error&quot;: &quot;Unauthorized&quot;,
   &quot;path&quot;: &quot;/api/v1/private/products/types&quot;
@@ -2006,7 +2014,7 @@ classpath:karatemaven/productTypeResource.feature:14
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>201</span>
+              <span>ms:</span>&nbsp;<span>268</span>
             </div>
           </div>
           <div class="step-row">
@@ -2085,7 +2093,7 @@ classpath:karatemaven/productTypeResource.feature:14
         <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -2169,7 +2177,7 @@ classpath:karatemaven/productTypeResource.feature:14
         <span>When</span>&nbsp;<span>method PUT</span>
       </div>
     </div>
-    <div class="time-cell passed">199</div>
+    <div class="time-cell passed">266</div>
   </div>
 
    
@@ -2178,7 +2186,7 @@ classpath:karatemaven/productTypeResource.feature:14
 
   
 
-  <div class="preformatted" data-parent="0.87">18:13:18.885 request:
+  <div class="preformatted" data-parent="0.87">13:47:06.677 request:
 1 &gt; PUT http://localhost:8080/api/v1/private/products/typE/56
 1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
 1 &gt; Content-Type: application/json; charset=UTF-8
@@ -2189,7 +2197,7 @@ classpath:karatemaven/productTypeResource.feature:14
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;code&quot;:&quot;102&quot;}
 
-18:13:19.083 response time in milliseconds: 198
+13:47:06.940 response time in milliseconds: 263
 1 &lt; 404
 1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
 1 &lt; Access-Control-Allow-Origin: *
@@ -2206,11 +2214,11 @@ classpath:karatemaven/productTypeResource.feature:14
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Fri, 17 Dec 2021 12:43:18 GMT
+1 &lt; Date: Tue, 21 Dec 2021 08:17:06 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-1 &lt; Set-Cookie: JSESSIONID=7B2FADC6D50187F7873A2994D3B6E340; Domain=localhost
-{&quot;timestamp&quot;:&quot;2021-12-17T12:43:19.082+0000&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;path&quot;:&quot;/api/v1/private/products/typE/56&quot;}
+1 &lt; Set-Cookie: JSESSIONID=4C62F531BD7DA2164473B62A79A382D1; Domain=localhost
+{&quot;timestamp&quot;:&quot;2021-12-21T08:17:06.939+0000&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;path&quot;:&quot;/api/v1/private/products/typE/56&quot;}
 </div>   
 
   
@@ -2267,8 +2275,8 @@ classpath:karatemaven/productTypeResource.feature:14
 
   
 
-  <div class="preformatted" data-parent="0.89">18:13:19.083 [print] {
-  &quot;timestamp&quot;: &quot;2021-12-17T12:43:19.082+0000&quot;,
+  <div class="preformatted" data-parent="0.89">13:47:06.941 [print] {
+  &quot;timestamp&quot;: &quot;2021-12-21T08:17:06.939+0000&quot;,
   &quot;status&quot;: 404,
   &quot;error&quot;: &quot;Not Found&quot;,
   &quot;path&quot;: &quot;/api/v1/private/products/typE/56&quot;
@@ -2294,7 +2302,7 @@ classpath:karatemaven/productTypeResource.feature:14
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>186</span>
+              <span>ms:</span>&nbsp;<span>262</span>
             </div>
           </div>
           <div class="step-row">
@@ -2429,7 +2437,7 @@ classpath:karatemaven/productTypeResource.feature:14
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">184</div>
+    <div class="time-cell passed">260</div>
   </div>
 
    
@@ -2438,7 +2446,7 @@ classpath:karatemaven/productTypeResource.feature:14
 
   
 
-  <div class="preformatted" data-parent="0.97">18:13:19.088 request:
+  <div class="preformatted" data-parent="0.97">13:47:06.947 request:
 1 &gt; GET http://localhost:8080/api/v1/private/products/type/kk
 1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
 1 &gt; Content-Type: application/json
@@ -2448,7 +2456,7 @@ classpath:karatemaven/productTypeResource.feature:14
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-18:13:19.271 response time in milliseconds: 183
+13:47:07.205 response time in milliseconds: 258
 1 &lt; 500
 1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
 1 &lt; Access-Control-Allow-Origin: *
@@ -2462,9 +2470,9 @@ classpath:karatemaven/productTypeResource.feature:14
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Fri, 17 Dec 2021 12:43:18 GMT
+1 &lt; Date: Tue, 21 Dec 2021 08:17:06 GMT
 1 &lt; Connection: close
-1 &lt; Set-Cookie: JSESSIONID=CA1E86214AE9BE6F1406D20E1C30ECA0; Domain=localhost
+1 &lt; Set-Cookie: JSESSIONID=A554EA9359A311D971C9C4C256F118A7; Domain=localhost
 {&quot;errorCode&quot;:null,&quot;message&quot;:&quot;Failed to convert value of type &#39;java.lang.String&#39; to required type &#39;java.lang.Long&#39;; nested exception is java.lang.NumberFormatException: For input string: \&quot;kk\&quot;&quot;}
 </div>   
 
@@ -2522,7 +2530,7 @@ classpath:karatemaven/productTypeResource.feature:14
 
   
 
-  <div class="preformatted" data-parent="0.99">18:13:19.272 [print] {
+  <div class="preformatted" data-parent="0.99">13:47:07.206 [print] {
   &quot;errorCode&quot;: null,
   &quot;message&quot;: &quot;Failed to convert value of type &#39;java.lang.String&#39; to required type &#39;java.lang.Long&#39;; nested exception is java.lang.NumberFormatException: For input string: \&quot;kk\&quot;&quot;
 }

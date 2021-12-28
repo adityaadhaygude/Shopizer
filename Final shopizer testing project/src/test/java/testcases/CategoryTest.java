@@ -35,7 +35,7 @@ public class CategoryTest extends BaseClass{
 	}
 	//test method to check the product link
 	@Test
-	public void productLink() throws InterruptedException
+	public void productLink() 
 	{
 		driver.get(objConfigFileReader.getString("homePageURL"));
 

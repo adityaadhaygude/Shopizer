@@ -1,20 +1,25 @@
+@parallel=false
+@CustMgmt
 Feature: Shopizer Customer management resource
 
 	Background:
-	* url 'http://localhost:8080'
+	* url 'http://localhost:8080'									
 	* def NonExistID = 1
 	* def helper = Java.type('karatemaven.JavaFunctions')
 	* def ID = helper.getId();
 	* def customerPayload = read('Customer.json')
 	
+
 #Get list of Customers
+@smoke
 Scenario: TC_01:Get list of customers with valid authentication
     Given path '/api/v1/private/customers'   
     * header Authorization = call read('basic-auth.js') { username: 'admin@shopizer.com', password: 'password' }
     When method GET
     Then status 200
-    Then print response
-    Then match response.customers == '#array'
+    And print response
+    And match response.customers == '#array'
+    And assert responseTime < 1000
 
 Scenario: TC_02:Get list of customers with invalid authentication
     Given path '/api/v1/private/customers'   
@@ -34,6 +39,7 @@ Scenario: TC_03:Get list of customers with valid authentication but limited auth
     Then print response
     
 #Create a Customer
+@smoke
 Scenario: TC_04:Create a customer with valid authentication
     Given path '/api/v1/private/customer'   
     * header Authorization = call read('basic-auth.js') { username: 'admin@shopizer.com', password: 'password' }
@@ -70,6 +76,7 @@ Scenario: TC_07:Create a customer with valid authentication but limited authoriz
     Then print response
 
 #Get a Customer
+@smoke
 Scenario: TC_08:Get a customer using id with valid authentication
     Given path '/api/v1/private/customer/'+ID   
     * header Authorization = call read('basic-auth.js') { username: 'admin@shopizer.com', password: 'password' }
@@ -99,6 +106,7 @@ Scenario: TC_11:Get a customer using id with valid authentication but limited au
     Then print response
 
 #Update a customer
+@smoke
 Scenario: TC_12:update a customer using id with valid authentication
     Given path '/api/v1/private/customer/'+ID   
     * header Authorization = call read('basic-auth.js') { username: 'admin@shopizer.com', password: 'password' }
@@ -132,6 +140,7 @@ Scenario: TC_15:update a customer using id with valid authentication but limited
     Then print response
 
 #Update a customers address 
+@smoke
 Scenario: TC_16:update a customers address using id with valid authentication
     Given path '/api/v1/private/customer/'+ID+'/address'   
     * header Authorization = call read('basic-auth.js') { username: 'admin@shopizer.com', password: 'password' }
@@ -165,6 +174,7 @@ Scenario: TC_19:update a customers address with valid authentication but limited
     Then print response
     
 #Delete a Customer
+@smoke
 Scenario: TC_20:Delete a customer using id with valid authentication
     Given path '/api/v1/private/customer/'+ID   
     * header Authorization = call read('basic-auth.js') { username: 'admin@shopizer.com', password: 'password' }
@@ -261,6 +271,7 @@ Scenario: TC_31:Update a logged in customers address with valid authentication b
     Then print response
     
 #Delete a logged in customer
+@cleanup
 Scenario Outline: TC_32:Delete a logged in customer with valid authentication
     Given url 'http://localhost:8080/api/v1/auth/customer/'   
     * header Authorization = call read('basic-auth.js') { username: <user>, password: <pass> }

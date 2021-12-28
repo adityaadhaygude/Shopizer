@@ -22,15 +22,15 @@
       <img src="karate-logo.svg" alt="Karate"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">11</div>
-      <div id="nav-fail" class="bg-danger">1</div>
+      <div id="nav-pass" class="bg-success">9</div>
+      <div id="nav-fail" class="bg-danger">3</div>
     </div>
   </div>
   <div id="nav-type">
     <div>Scenarios</div>
   </div>         
   <div id="nav-date">
-    <div>2021-12-17 06:13:03 PM</div>
+    <div>2021-12-21 01:54:02 PM</div>
   </div>        
 </div>
 
@@ -44,7 +44,7 @@
           <div class="nav-item passed">
             <a href="#[3:26]"><span>[3:26]</span> <span>Check category code is already existing</span></a>
           </div>
-          <div class="nav-item passed">
+          <div class="nav-item failed">
             <a href="#[4:38]"><span>[4:38]</span> <span>Create a new category with valid authentication</span></a>
           </div>
           <div class="nav-item passed">
@@ -65,7 +65,7 @@
           <div class="nav-item passed">
             <a href="#[10:100]"><span>[10:100]</span> <span>Update a category with id 50</span></a>
           </div>
-          <div class="nav-item passed">
+          <div class="nav-item failed">
             <a href="#[11:110]"><span>[11:110]</span> <span>delete a category of given id with valid authentication</span></a>
           </div>
           <div class="nav-item passed">
@@ -95,7 +95,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>13</span>
+              <span>ms:</span>&nbsp;<span>18</span>
             </div>
           </div>
           <div class="step-row">
@@ -146,7 +146,7 @@
         <span>*</span>&nbsp;<span>def codeId = &quot;backpack4&quot;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -230,7 +230,7 @@
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">10</div>
+    <div class="time-cell passed">12</div>
   </div>
 
    
@@ -239,7 +239,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.12">18:13:01.967 request:
+  <div class="preformatted" data-parent="0.12">13:54:00.234 request:
 1 &gt; GET http://localhost:8080/api/v1/category
 1 &gt; Content-Type: application/json
 1 &gt; Host: localhost:8080
@@ -248,7 +248,7 @@
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-18:13:01.974 response time in milliseconds: 7
+13:54:00.242 response time in milliseconds: 8
 1 &lt; 200
 1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
 1 &lt; Access-Control-Allow-Origin: *
@@ -256,10 +256,10 @@
 1 &lt; Access-Control-Allow-Credentials: true
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Fri, 17 Dec 2021 12:43:01 GMT
+1 &lt; Date: Tue, 21 Dec 2021 08:24:00 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-{&quot;totalPages&quot;:1,&quot;number&quot;:8,&quot;recordsTotal&quot;:8,&quot;recordsFiltered&quot;:0,&quot;categories&quot;:[{&quot;id&quot;:2,&quot;code&quot;:&quot;handbags&quot;,&quot;sortOrder&quot;:0,&quot;visible&quot;:true,&quot;featured&quot;:false,&quot;lineage&quot;:&quot;/2&quot;,&quot;depth&quot;:0,&quot;parent&quot;:null,&quot;description&quot;:{&quot;id&quot;:701,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Handbags&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;handbags&quot;,&quot;keyWords&quot;:&quot;&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage Bags - Handbags&quot;},&quot;productCount&quot;:0,&quot;store&quot;:&quot;DEFAULT&quot;,&quot;children&quot;:[]},{&quot;id&quot;:1,&quot;code&quot;:&quot;beachbags&quot;,&quot;sortOrder&quot;:10,&quot;visible&quot;:true,&quot;featured&quot;:false,&quot;lineage&quot;:&quot;/1&quot;,&quot;depth&quot;:0,&quot;parent&quot;:null,&quot;description&quot;:{&quot;id&quot;:700,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Beach bags&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;beach-bags&quot;,&quot;keyWords&quot;:&quot;&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage Bags - Beach bags&quot;},&quot;productCount&quot;:0,&quot;store&quot;:&quot;DEFAULT&quot;,&quot;children&quot;:[]},{&quot;id&quot;:3,&quot;code&quot;:&quot;laptop&quot;,&quot;sortOrder&quot;:20,&quot;visible&quot;:true,&quot;featured&quot;:false,&quot;lineage&quot;:&quot;/3&quot;,&quot;depth&quot;:0,&quot;parent&quot;:null,&quot;description&quot;:{&quot;id&quot;:702,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Laptop Bags&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;laptop-bags&quot;,&quot;keyWords&quot;:&quot;&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage Bags - Laptop bags&quot;},&quot;productCount&quot;:0,&quot;store&quot;:&quot;DEFAULT&quot;,&quot;children&quot;:[]},{&quot;id&quot;:50,&quot;code&quot;:&quot;backpackbags&quot;,&quot;sortOrder&quot;:30,&quot;visible&quot;:false,&quot;featured&quot;:false,&quot;lineage&quot;:&quot;/50/&quot;,&quot;depth&quot;:0,&quot;parent&quot;:null,&quot;description&quot;:{&quot;id&quot;:1,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Backpack Bags&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;backpackbags&quot;,&quot;keyWords&quot;:null,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage Bags - Backpack Bags&quot;},&quot;productCount&quot;:0,&quot;store&quot;:&quot;DEFAULT&quot;,&quot;children&quot;:[]},{&quot;id&quot;:4,&quot;code&quot;:&quot;bags&quot;,&quot;sortOrder&quot;:30,&quot;visible&quot;:true,&quot;featured&quot;:false,&quot;lineage&quot;:&quot;/4&quot;,&quot;depth&quot;:0,&quot;parent&quot;:null,&quot;description&quot;:{&quot;id&quot;:703,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Bags&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;bags&quot;,&quot;keyWords&quot;:&quot;&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage Bags - Bags&quot;},&quot;productCount&quot;:0,&quot;store&quot;:&quot;DEFAULT&quot;,&quot;children&quot;:[]},{&quot;id&quot;:51,&quot;code&quot;:&quot;backpacks2&quot;,&quot;sortOrder&quot;:40,&quot;visible&quot;:true,&quot;featured&quot;:false,&quot;lineage&quot;:&quot;/51/&quot;,&quot;depth&quot;:0,&quot;parent&quot;:null,&quot;description&quot;:{&quot;id&quot;:2,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Backpacks&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;backpacks&quot;,&quot;keyWords&quot;:null,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage Bags - Backpacks&quot;},&quot;productCount&quot;:0,&quot;store&quot;:&quot;DEFAULT&quot;,&quot;children&quot;:[]},{&quot;id&quot;:106,&quot;code&quot;:&quot;backpacks10&quot;,&quot;sortOrder&quot;:40,&quot;visible&quot;:true,&quot;featured&quot;:false,&quot;lineage&quot;:&quot;/106/&quot;,&quot;depth&quot;:0,&quot;parent&quot;:null,&quot;description&quot;:{&quot;id&quot;:14,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Backpacks&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;backpacks&quot;,&quot;keyWords&quot;:null,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage Bags - Backpacks&quot;},&quot;productCount&quot;:0,&quot;store&quot;:&quot;DEFAULT&quot;,&quot;children&quot;:[]},{&quot;id&quot;:107,&quot;code&quot;:&quot;testbag&quot;,&quot;sortOrder&quot;:40,&quot;visible&quot;:true,&quot;featured&quot;:false,&quot;lineage&quot;:&quot;/107/&quot;,&quot;depth&quot;:0,&quot;parent&quot;:null,&quot;description&quot;:{&quot;id&quot;:15,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Backpacks&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;test&quot;,&quot;keyWords&quot;:null,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage Bags - Backpacks&quot;},&quot;productCount&quot;:0,&quot;store&quot;:&quot;DEFAULT&quot;,&quot;children&quot;:[]}]}
+{&quot;totalPages&quot;:1,&quot;number&quot;:8,&quot;recordsTotal&quot;:8,&quot;recordsFiltered&quot;:0,&quot;categories&quot;:[{&quot;id&quot;:2,&quot;code&quot;:&quot;handbags&quot;,&quot;sortOrder&quot;:0,&quot;visible&quot;:true,&quot;featured&quot;:false,&quot;lineage&quot;:&quot;/2&quot;,&quot;depth&quot;:0,&quot;parent&quot;:null,&quot;description&quot;:{&quot;id&quot;:701,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Handbags&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;handbags&quot;,&quot;keyWords&quot;:&quot;&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage Bags - Handbags&quot;},&quot;productCount&quot;:0,&quot;store&quot;:&quot;DEFAULT&quot;,&quot;children&quot;:[]},{&quot;id&quot;:1,&quot;code&quot;:&quot;beachbags&quot;,&quot;sortOrder&quot;:10,&quot;visible&quot;:true,&quot;featured&quot;:false,&quot;lineage&quot;:&quot;/1&quot;,&quot;depth&quot;:0,&quot;parent&quot;:null,&quot;description&quot;:{&quot;id&quot;:700,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Beach bags&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;beach-bags&quot;,&quot;keyWords&quot;:&quot;&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage Bags - Beach bags&quot;},&quot;productCount&quot;:0,&quot;store&quot;:&quot;DEFAULT&quot;,&quot;children&quot;:[]},{&quot;id&quot;:3,&quot;code&quot;:&quot;laptop&quot;,&quot;sortOrder&quot;:20,&quot;visible&quot;:true,&quot;featured&quot;:false,&quot;lineage&quot;:&quot;/3&quot;,&quot;depth&quot;:0,&quot;parent&quot;:null,&quot;description&quot;:{&quot;id&quot;:702,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Laptop Bags&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;laptop-bags&quot;,&quot;keyWords&quot;:&quot;&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage Bags - Laptop bags&quot;},&quot;productCount&quot;:0,&quot;store&quot;:&quot;DEFAULT&quot;,&quot;children&quot;:[]},{&quot;id&quot;:50,&quot;code&quot;:&quot;backpackbags&quot;,&quot;sortOrder&quot;:30,&quot;visible&quot;:false,&quot;featured&quot;:false,&quot;lineage&quot;:&quot;/50/&quot;,&quot;depth&quot;:0,&quot;parent&quot;:null,&quot;description&quot;:{&quot;id&quot;:1,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Backpack Bags&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;backpackbags&quot;,&quot;keyWords&quot;:null,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage Bags - Backpack Bags&quot;},&quot;productCount&quot;:0,&quot;store&quot;:&quot;DEFAULT&quot;,&quot;children&quot;:[]},{&quot;id&quot;:4,&quot;code&quot;:&quot;bags&quot;,&quot;sortOrder&quot;:30,&quot;visible&quot;:true,&quot;featured&quot;:false,&quot;lineage&quot;:&quot;/4&quot;,&quot;depth&quot;:0,&quot;parent&quot;:null,&quot;description&quot;:{&quot;id&quot;:703,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Bags&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;bags&quot;,&quot;keyWords&quot;:&quot;&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage Bags - Bags&quot;},&quot;productCount&quot;:0,&quot;store&quot;:&quot;DEFAULT&quot;,&quot;children&quot;:[]},{&quot;id&quot;:51,&quot;code&quot;:&quot;backpacks2&quot;,&quot;sortOrder&quot;:40,&quot;visible&quot;:true,&quot;featured&quot;:false,&quot;lineage&quot;:&quot;/51/&quot;,&quot;depth&quot;:0,&quot;parent&quot;:null,&quot;description&quot;:{&quot;id&quot;:2,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Backpacks&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;backpacks&quot;,&quot;keyWords&quot;:null,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage Bags - Backpacks&quot;},&quot;productCount&quot;:0,&quot;store&quot;:&quot;DEFAULT&quot;,&quot;children&quot;:[]},{&quot;id&quot;:106,&quot;code&quot;:&quot;backpacks10&quot;,&quot;sortOrder&quot;:40,&quot;visible&quot;:true,&quot;featured&quot;:false,&quot;lineage&quot;:&quot;/106/&quot;,&quot;depth&quot;:0,&quot;parent&quot;:null,&quot;description&quot;:{&quot;id&quot;:14,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Backpacks&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;backpacks&quot;,&quot;keyWords&quot;:null,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage Bags - Backpacks&quot;},&quot;productCount&quot;:0,&quot;store&quot;:&quot;DEFAULT&quot;,&quot;children&quot;:[]},{&quot;id&quot;:108,&quot;code&quot;:&quot;backpacks11&quot;,&quot;sortOrder&quot;:40,&quot;visible&quot;:true,&quot;featured&quot;:false,&quot;lineage&quot;:&quot;/108/&quot;,&quot;depth&quot;:0,&quot;parent&quot;:null,&quot;description&quot;:{&quot;id&quot;:16,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Backpacks&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;backpacks&quot;,&quot;keyWords&quot;:null,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage Bags - Backpacks&quot;},&quot;productCount&quot;:0,&quot;store&quot;:&quot;DEFAULT&quot;,&quot;children&quot;:[]}]}
 </div>   
 
   
@@ -307,7 +307,7 @@
         <span>Then</span>&nbsp;<span>print response</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -316,7 +316,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.14">18:13:01.977 [print] {
+  <div class="preformatted" data-parent="0.14">13:54:00.248 [print] {
   &quot;totalPages&quot;: 1,
   &quot;number&quot;: 8,
   &quot;recordsTotal&quot;: 8,
@@ -498,20 +498,20 @@
       ]
     },
     {
-      &quot;id&quot;: 107,
-      &quot;code&quot;: &quot;testbag&quot;,
+      &quot;id&quot;: 108,
+      &quot;code&quot;: &quot;backpacks11&quot;,
       &quot;sortOrder&quot;: 40,
       &quot;visible&quot;: true,
       &quot;featured&quot;: false,
-      &quot;lineage&quot;: &quot;/107/&quot;,
+      &quot;lineage&quot;: &quot;/108/&quot;,
       &quot;depth&quot;: 0,
       &quot;parent&quot;: null,
       &quot;description&quot;: {
-        &quot;id&quot;: 15,
+        &quot;id&quot;: 16,
         &quot;language&quot;: &quot;en&quot;,
         &quot;name&quot;: &quot;Backpacks&quot;,
         &quot;description&quot;: &quot;&quot;,
-        &quot;friendlyUrl&quot;: &quot;test&quot;,
+        &quot;friendlyUrl&quot;: &quot;backpacks&quot;,
         &quot;keyWords&quot;: null,
         &quot;highlights&quot;: &quot;&quot;,
         &quot;metaDescription&quot;: &quot;&quot;,
@@ -545,7 +545,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>11</span>
+              <span>ms:</span>&nbsp;<span>14</span>
             </div>
           </div>
           <div class="step-row">
@@ -568,7 +568,7 @@
         <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -680,7 +680,7 @@
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">9</div>
+    <div class="time-cell passed">12</div>
   </div>
 
    
@@ -689,7 +689,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.20">18:13:01.983 request:
+  <div class="preformatted" data-parent="0.20">13:54:00.256 request:
 1 &gt; GET http://localhost:8080/api/v1/category/50
 1 &gt; Content-Type: application/json
 1 &gt; Host: localhost:8080
@@ -698,7 +698,7 @@
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-18:13:01.990 response time in milliseconds: 6
+13:54:00.265 response time in milliseconds: 8
 1 &lt; 200
 1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
 1 &lt; Access-Control-Allow-Origin: *
@@ -706,7 +706,7 @@
 1 &lt; Access-Control-Allow-Credentials: true
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Fri, 17 Dec 2021 12:43:01 GMT
+1 &lt; Date: Tue, 21 Dec 2021 08:24:00 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
 {&quot;id&quot;:50,&quot;code&quot;:&quot;backpackbags&quot;,&quot;sortOrder&quot;:30,&quot;visible&quot;:false,&quot;featured&quot;:false,&quot;lineage&quot;:&quot;/50/&quot;,&quot;depth&quot;:0,&quot;parent&quot;:null,&quot;description&quot;:{&quot;id&quot;:1,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Backpack Bags&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;backpackbags&quot;,&quot;keyWords&quot;:null,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage Bags - Backpack Bags&quot;},&quot;productCount&quot;:0,&quot;store&quot;:&quot;DEFAULT&quot;,&quot;children&quot;:[]}
@@ -766,7 +766,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.22">18:13:01.991 [print] {
+  <div class="preformatted" data-parent="0.22">13:54:00.266 [print] {
   &quot;id&quot;: 50,
   &quot;code&quot;: &quot;backpackbags&quot;,
   &quot;sortOrder&quot;: 30,
@@ -812,7 +812,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>233</span>
+              <span>ms:</span>&nbsp;<span>268</span>
             </div>
           </div>
           <div class="step-row">
@@ -975,7 +975,7 @@
         <span>And</span>&nbsp;<span>param code = &#39;handbags&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1003,7 +1003,7 @@
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">224</div>
+    <div class="time-cell passed">258</div>
   </div>
 
    
@@ -1012,7 +1012,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.31">18:13:02.005 request:
+  <div class="preformatted" data-parent="0.31">13:54:00.280 request:
 1 &gt; GET http://localhost:8080/api/v1/private/category/unique?code=handbags
 1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
 1 &gt; Content-Type: application/json
@@ -1022,7 +1022,7 @@
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-18:13:02.227 response time in milliseconds: 221
+13:54:00.535 response time in milliseconds: 254
 1 &lt; 200
 1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
 1 &lt; Access-Control-Allow-Origin: *
@@ -1036,10 +1036,10 @@
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Fri, 17 Dec 2021 12:43:01 GMT
+1 &lt; Date: Tue, 21 Dec 2021 08:24:00 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-1 &lt; Set-Cookie: JSESSIONID=48DE53C14E6518044E6B62170E78D99C; Domain=localhost
+1 &lt; Set-Cookie: JSESSIONID=5767EA47BCAFB926099650F17BFF1E84; Domain=localhost
 {&quot;exists&quot;:true}
 </div>   
 
@@ -1088,7 +1088,7 @@
         <span>And</span>&nbsp;<span>match response.exists == true</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -1116,7 +1116,7 @@
         <span>Then</span>&nbsp;<span>print response</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1125,7 +1125,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.34">18:13:02.230 [print] {
+  <div class="preformatted" data-parent="0.34">13:54:00.539 [print] {
   &quot;exists&quot;: true
 }
  
@@ -1148,8 +1148,8 @@
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>224</span>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>288</span>
             </div>
           </div>
           <div class="step-row">
@@ -1228,7 +1228,7 @@
         <span>Given</span>&nbsp;<span>path &#39;api/v1/private/category&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1256,7 +1256,7 @@
         <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -1312,7 +1312,7 @@
         <span>And</span>&nbsp;<span>request {&quot;children&quot;: [],&quot;code&quot;:&quot;backpacks11&quot; ,&quot;depth&quot;: 0,&quot;descriptions&quot;: [{&quot;description&quot;: &quot;&quot;,&quot;friendlyUrl&quot;: &quot;backpacks&quot;,&quot;highlights&quot;: &quot;&quot;,&quot;id&quot;: 704, &quot;keyWords&quot;: &quot;&quot;,&quot;language&quot;: &quot;en&quot;,&quot;metaDescription&quot;: &quot;&quot;,&quot;name&quot;: &quot;Backpacks&quot;,&quot;title&quot;: &quot;Vintage Bags - Backpacks&quot;}],&quot;featured&quot;: false,&quot;lineage&quot;: &quot;/5&quot;,&quot;parent&quot;: {&quot;code&quot;: null},&quot;sortOrder&quot;: 40,&quot;visible&quot;: true}</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1340,7 +1340,7 @@
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">220</div>
+    <div class="time-cell passed">283</div>
   </div>
 
    
@@ -1349,7 +1349,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.43">18:13:02.239 request:
+  <div class="preformatted" data-parent="0.43">13:54:00.550 request:
 1 &gt; POST http://localhost:8080/api/v1/private/category
 1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
 1 &gt; Content-Type: application/json; charset=UTF-8
@@ -1360,8 +1360,8 @@
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;children&quot;:[],&quot;code&quot;:&quot;backpacks11&quot;,&quot;depth&quot;:0,&quot;descriptions&quot;:[{&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;backpacks&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;id&quot;:704,&quot;keyWords&quot;:&quot;&quot;,&quot;language&quot;:&quot;en&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;name&quot;:&quot;Backpacks&quot;,&quot;title&quot;:&quot;Vintage Bags - Backpacks&quot;}],&quot;featured&quot;:false,&quot;lineage&quot;:&quot;\/5&quot;,&quot;parent&quot;:{&quot;code&quot;:null},&quot;sortOrder&quot;:40,&quot;visible&quot;:true}
 
-18:13:02.456 response time in milliseconds: 217
-1 &lt; 201
+13:54:00.830 response time in milliseconds: 279
+1 &lt; 500
 1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
@@ -1374,11 +1374,10 @@
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Fri, 17 Dec 2021 12:43:01 GMT
-1 &lt; Keep-Alive: timeout=60
-1 &lt; Connection: keep-alive
-1 &lt; Set-Cookie: JSESSIONID=15952CA57BF757BB2BDC1AA3B217D83A; Domain=localhost
-{&quot;id&quot;:108,&quot;code&quot;:&quot;backpacks11&quot;,&quot;sortOrder&quot;:40,&quot;visible&quot;:true,&quot;featured&quot;:false,&quot;lineage&quot;:&quot;/5&quot;,&quot;depth&quot;:0,&quot;parent&quot;:{&quot;id&quot;:0,&quot;code&quot;:null},&quot;descriptions&quot;:[{&quot;id&quot;:704,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Backpacks&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;backpacks&quot;,&quot;keyWords&quot;:&quot;&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage Bags - Backpacks&quot;}],&quot;children&quot;:[]}
+1 &lt; Date: Tue, 21 Dec 2021 08:24:00 GMT
+1 &lt; Connection: close
+1 &lt; Set-Cookie: JSESSIONID=C79ED61C1712BEF44C185A6E5F7A2036; Domain=localhost
+{&quot;errorCode&quot;:null,&quot;message&quot;:&quot;could not execute statement; SQL [n/a]; constraint [\&quot;SALESMANAGER.UK3MQ9I6QMGQUVOIESLX39PEJ6X_INDEX_3 ON SALESMANAGER.CATEGORY(MERCHANT_ID, CODE) VALUES ( /* key:156 */ null, null, null, null, null, null, &#39;backpacks11&#39;, null, null, null, null, null, 1, null)\&quot;; SQL statement:\ninsert into SALESMANAGER.CATEGORY (DATE_CREATED, DATE_MODIFIED, UPDT_ID, CATEGORY_IMAGE, CATEGORY_STATUS, CODE, DEPTH, FEATURED, LINEAGE, MERCHANT_ID, PARENT_ID, SORT_ORDER, VISIBLE, CATEGORY_ID) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [23505-200]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement&quot;}
 </div>   
 
   
@@ -1392,13 +1391,13 @@
 
   <div class="step-row">
     <div class="step-container" id="0.44">
-      <div class="step-ref passed">44</div>
+      <div class="step-ref failed">44</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>Then</span>&nbsp;<span>status 201</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell failed">0</div>
   </div>
 
    
@@ -1407,7 +1406,12 @@
 
   
 
-     
+  <div class="preformatted" data-parent="0.44">13:54:00.831 classpath:karatemaven/Category management resource.feature:44
+Then status 201
+status code was: 500, expected: 201, response time in milliseconds: 279, url: http://localhost:8080/api/v1/private/category, response: 
+{&quot;errorCode&quot;:null,&quot;message&quot;:&quot;could not execute statement; SQL [n/a]; constraint [\&quot;SALESMANAGER.UK3MQ9I6QMGQUVOIESLX39PEJ6X_INDEX_3 ON SALESMANAGER.CATEGORY(MERCHANT_ID, CODE) VALUES ( /* key:156 */ null, null, null, null, null, null, &#39;backpacks11&#39;, null, null, null, null, null, 1, null)\&quot;; SQL statement:\ninsert into SALESMANAGER.CATEGORY (DATE_CREATED, DATE_MODIFIED, UPDT_ID, CATEGORY_IMAGE, CATEGORY_STATUS, CODE, DEPTH, FEATURED, LINEAGE, MERCHANT_ID, PARENT_ID, SORT_ORDER, VISIBLE, CATEGORY_ID) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [23505-200]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement&quot;}
+classpath:karatemaven/Category management resource.feature:44
+</div>   
 
   
 
@@ -1420,13 +1424,13 @@
 
   <div class="step-row">
     <div class="step-container" id="0.45">
-      <div class="step-ref passed">45</div>
+      <div class="step-ref skipped">45</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>Then</span>&nbsp;<span>print response</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1435,36 +1439,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.45">18:13:02.457 [print] {
-  &quot;id&quot;: 108,
-  &quot;code&quot;: &quot;backpacks11&quot;,
-  &quot;sortOrder&quot;: 40,
-  &quot;visible&quot;: true,
-  &quot;featured&quot;: false,
-  &quot;lineage&quot;: &quot;/5&quot;,
-  &quot;depth&quot;: 0,
-  &quot;parent&quot;: {
-    &quot;id&quot;: 0,
-    &quot;code&quot;: null
-  },
-  &quot;descriptions&quot;: [
-    {
-      &quot;id&quot;: 704,
-      &quot;language&quot;: &quot;en&quot;,
-      &quot;name&quot;: &quot;Backpacks&quot;,
-      &quot;description&quot;: &quot;&quot;,
-      &quot;friendlyUrl&quot;: &quot;backpacks&quot;,
-      &quot;keyWords&quot;: &quot;&quot;,
-      &quot;highlights&quot;: &quot;&quot;,
-      &quot;metaDescription&quot;: &quot;&quot;,
-      &quot;title&quot;: &quot;Vintage Bags - Backpacks&quot;
-    }
-  ],
-  &quot;children&quot;: [
-  ]
-}
- 
-</div>   
+     
 
   
 
@@ -1484,7 +1459,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>109</span>
+              <span>ms:</span>&nbsp;<span>135</span>
             </div>
           </div>
           <div class="step-row">
@@ -1591,7 +1566,7 @@
         <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin.com&#39;, password: &#39;password&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -1675,7 +1650,7 @@
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">106</div>
+    <div class="time-cell passed">131</div>
   </div>
 
    
@@ -1684,7 +1659,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.53">18:13:02.464 request:
+  <div class="preformatted" data-parent="0.53">13:54:00.841 request:
 1 &gt; POST http://localhost:8080/api/v1/private/category
 1 &gt; Authorization: Basic YWRtaW4uY29tOnBhc3N3b3Jk
 1 &gt; Content-Type: application/json; charset=UTF-8
@@ -1695,7 +1670,7 @@
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;children&quot;:[],&quot;code&quot;:&quot;backpacks&quot;,&quot;depth&quot;:0,&quot;descriptions&quot;:[{&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;backpacks&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;id&quot;:704,&quot;keyWords&quot;:&quot;&quot;,&quot;language&quot;:&quot;en&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;name&quot;:&quot;Backpacks&quot;,&quot;title&quot;:&quot;Vintage Bags - Backpacks&quot;}],&quot;featured&quot;:false,&quot;id&quot;:50,&quot;lineage&quot;:&quot;\/50&quot;,&quot;parent&quot;:{&quot;code&quot;:null},&quot;sortOrder&quot;:30,&quot;visible&quot;:true}
 
-18:13:02.568 response time in milliseconds: 104
+13:54:00.969 response time in milliseconds: 128
 1 &lt; 401
 1 &lt; WWW-Authenticate: Basic realm=&quot;api-admin-realm&quot;
 1 &lt; X-Content-Type-Options: nosniff
@@ -1706,10 +1681,10 @@
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Fri, 17 Dec 2021 12:43:01 GMT
+1 &lt; Date: Tue, 21 Dec 2021 08:24:00 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-{&quot;timestamp&quot;:&quot;2021-12-17T12:43:02.567+0000&quot;,&quot;status&quot;:401,&quot;error&quot;:&quot;Unauthorized&quot;,&quot;path&quot;:&quot;/api/v1/private/category&quot;}
+{&quot;timestamp&quot;:&quot;2021-12-21T08:24:00.968+0000&quot;,&quot;status&quot;:401,&quot;error&quot;:&quot;Unauthorized&quot;,&quot;path&quot;:&quot;/api/v1/private/category&quot;}
 </div>   
 
   
@@ -1757,7 +1732,7 @@
         <span>Then</span>&nbsp;<span>print response</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1766,8 +1741,8 @@
 
   
 
-  <div class="preformatted" data-parent="0.55">18:13:02.569 [print] {
-  &quot;timestamp&quot;: &quot;2021-12-17T12:43:02.567+0000&quot;,
+  <div class="preformatted" data-parent="0.55">13:54:00.971 [print] {
+  &quot;timestamp&quot;: &quot;2021-12-21T08:24:00.968+0000&quot;,
   &quot;status&quot;: 401,
   &quot;error&quot;: &quot;Unauthorized&quot;,
   &quot;path&quot;: &quot;/api/v1/private/category&quot;
@@ -1793,7 +1768,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>215</span>
+              <span>ms:</span>&nbsp;<span>255</span>
             </div>
           </div>
           <div class="step-row">
@@ -1872,7 +1847,7 @@
         <span>Given</span>&nbsp;<span>path &#39;api/v1/private/category/50&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1900,7 +1875,7 @@
         <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -1984,7 +1959,7 @@
         <span>When</span>&nbsp;<span>method PUT</span>
       </div>
     </div>
-    <div class="time-cell passed">210</div>
+    <div class="time-cell passed">250</div>
   </div>
 
    
@@ -1993,7 +1968,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.64">18:13:02.578 request:
+  <div class="preformatted" data-parent="0.64">13:54:00.982 request:
 1 &gt; PUT http://localhost:8080/api/v1/private/category/50
 1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
 1 &gt; Content-Type: application/json; charset=UTF-8
@@ -2004,7 +1979,7 @@
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;children&quot;:[],&quot;code&quot;:&quot;backpackbags&quot;,&quot;depth&quot;:0,&quot;descriptions&quot;:[{&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;backpackbags&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;id&quot;:703,&quot;keyWords&quot;:&quot;&quot;,&quot;language&quot;:&quot;en&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;name&quot;:&quot;Backpack Bags&quot;,&quot;title&quot;:&quot;Vintage Bags - Backpack Bags&quot;}],&quot;featured&quot;:false,&quot;id&quot;:0,&quot;lineage&quot;:&quot;\/4&quot;,&quot;parent&quot;:{&quot;code&quot;:&quot;string&quot;},&quot;sortOrder&quot;:30,&quot;visible&quot;:true}
 
-18:13:02.786 response time in milliseconds: 207
+13:54:01.229 response time in milliseconds: 247
 1 &lt; 200
 1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
 1 &lt; Access-Control-Allow-Origin: *
@@ -2018,10 +1993,10 @@
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Fri, 17 Dec 2021 12:43:01 GMT
+1 &lt; Date: Tue, 21 Dec 2021 08:24:00 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-1 &lt; Set-Cookie: JSESSIONID=306372A14A4C8434B10B439B3AA7441B; Domain=localhost
+1 &lt; Set-Cookie: JSESSIONID=7E8AB6FB5D0E331D8B6447C4C6777F2E; Domain=localhost
 {&quot;id&quot;:50,&quot;code&quot;:&quot;backpackbags&quot;,&quot;sortOrder&quot;:30,&quot;visible&quot;:true,&quot;featured&quot;:false,&quot;lineage&quot;:&quot;/4&quot;,&quot;depth&quot;:0,&quot;parent&quot;:{&quot;id&quot;:0,&quot;code&quot;:&quot;string&quot;},&quot;descriptions&quot;:[{&quot;id&quot;:703,&quot;language&quot;:&quot;en&quot;,&quot;name&quot;:&quot;Backpack Bags&quot;,&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;backpackbags&quot;,&quot;keyWords&quot;:&quot;&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;title&quot;:&quot;Vintage Bags - Backpack Bags&quot;}],&quot;children&quot;:[]}
 </div>   
 
@@ -2079,7 +2054,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.66">18:13:02.787 [print] {
+  <div class="preformatted" data-parent="0.66">13:54:01.230 [print] {
   &quot;id&quot;: 50,
   &quot;code&quot;: &quot;backpackbags&quot;,
   &quot;sortOrder&quot;: 30,
@@ -2128,7 +2103,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>108</span>
+              <span>ms:</span>&nbsp;<span>127</span>
             </div>
           </div>
           <div class="step-row">
@@ -2235,7 +2210,7 @@
         <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin.com&#39;, password: &#39;password&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -2319,7 +2294,7 @@
         <span>When</span>&nbsp;<span>method PUT</span>
       </div>
     </div>
-    <div class="time-cell passed">104</div>
+    <div class="time-cell passed">124</div>
   </div>
 
    
@@ -2328,7 +2303,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.74">18:13:02.796 request:
+  <div class="preformatted" data-parent="0.74">13:54:01.239 request:
 1 &gt; PUT http://localhost:8080/api/v1/private/category/50
 1 &gt; Authorization: Basic YWRtaW4uY29tOnBhc3N3b3Jk
 1 &gt; Content-Type: application/json; charset=UTF-8
@@ -2339,7 +2314,7 @@
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;children&quot;:[],&quot;code&quot;:&quot;backpackbags&quot;,&quot;depth&quot;:0,&quot;descriptions&quot;:[{&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;backpackbags&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;id&quot;:703,&quot;keyWords&quot;:&quot;&quot;,&quot;language&quot;:&quot;en&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;name&quot;:&quot;Backpack Bags&quot;,&quot;title&quot;:&quot;Vintage Bags - Backpack Bags&quot;}],&quot;featured&quot;:false,&quot;id&quot;:0,&quot;lineage&quot;:&quot;\/4&quot;,&quot;parent&quot;:{&quot;code&quot;:&quot;string&quot;},&quot;sortOrder&quot;:30,&quot;visible&quot;:true}
 
-18:13:02.898 response time in milliseconds: 102
+13:54:01.360 response time in milliseconds: 121
 1 &lt; 401
 1 &lt; WWW-Authenticate: Basic realm=&quot;api-admin-realm&quot;
 1 &lt; X-Content-Type-Options: nosniff
@@ -2350,10 +2325,10 @@
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Fri, 17 Dec 2021 12:43:01 GMT
+1 &lt; Date: Tue, 21 Dec 2021 08:24:01 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-{&quot;timestamp&quot;:&quot;2021-12-17T12:43:02.896+0000&quot;,&quot;status&quot;:401,&quot;error&quot;:&quot;Unauthorized&quot;,&quot;path&quot;:&quot;/api/v1/private/category/50&quot;}
+{&quot;timestamp&quot;:&quot;2021-12-21T08:24:01.358+0000&quot;,&quot;status&quot;:401,&quot;error&quot;:&quot;Unauthorized&quot;,&quot;path&quot;:&quot;/api/v1/private/category/50&quot;}
 </div>   
 
   
@@ -2410,8 +2385,8 @@
 
   
 
-  <div class="preformatted" data-parent="0.76">18:13:02.898 [print] {
-  &quot;timestamp&quot;: &quot;2021-12-17T12:43:02.896+0000&quot;,
+  <div class="preformatted" data-parent="0.76">13:54:01.361 [print] {
+  &quot;timestamp&quot;: &quot;2021-12-21T08:24:01.358+0000&quot;,
   &quot;status&quot;: 401,
   &quot;error&quot;: &quot;Unauthorized&quot;,
   &quot;path&quot;: &quot;/api/v1/private/category/50&quot;
@@ -2437,7 +2412,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>213</span>
+              <span>ms:</span>&nbsp;<span>249</span>
             </div>
           </div>
           <div class="step-row">
@@ -2628,7 +2603,7 @@
         <span>When</span>&nbsp;<span>method PUT</span>
       </div>
     </div>
-    <div class="time-cell passed">210</div>
+    <div class="time-cell passed">245</div>
   </div>
 
    
@@ -2637,7 +2612,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.84">18:13:02.905 request:
+  <div class="preformatted" data-parent="0.84">13:54:01.370 request:
 1 &gt; PUT http://localhost:8080/api/v1/private/Category/50
 1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
 1 &gt; Content-Type: application/json; charset=UTF-8
@@ -2648,7 +2623,7 @@
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;children&quot;:[],&quot;code&quot;:&quot;backpackbags&quot;,&quot;depth&quot;:0,&quot;descriptions&quot;:[{&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;backpackbags&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;id&quot;:703,&quot;keyWords&quot;:&quot;&quot;,&quot;language&quot;:&quot;en&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;name&quot;:&quot;Backpack Bags&quot;,&quot;title&quot;:&quot;Vintage Bags - Backpack Bags&quot;}],&quot;featured&quot;:false,&quot;id&quot;:0,&quot;lineage&quot;:&quot;\/4&quot;,&quot;parent&quot;:{&quot;code&quot;:&quot;string&quot;},&quot;sortOrder&quot;:30,&quot;visible&quot;:true}
 
-18:13:03.113 response time in milliseconds: 208
+13:54:01.612 response time in milliseconds: 242
 1 &lt; 404
 1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
 1 &lt; Access-Control-Allow-Origin: *
@@ -2665,11 +2640,11 @@
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Fri, 17 Dec 2021 12:43:03 GMT
+1 &lt; Date: Tue, 21 Dec 2021 08:24:01 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-1 &lt; Set-Cookie: JSESSIONID=E0A0F6CB3966585E2BA3AB0E1C04D1C9; Domain=localhost
-{&quot;timestamp&quot;:&quot;2021-12-17T12:43:03.110+0000&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;path&quot;:&quot;/api/v1/private/Category/50&quot;}
+1 &lt; Set-Cookie: JSESSIONID=1306A8303AE4239C8453ADB166DE1306; Domain=localhost
+{&quot;timestamp&quot;:&quot;2021-12-21T08:24:01.610+0000&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;path&quot;:&quot;/api/v1/private/Category/50&quot;}
 </div>   
 
   
@@ -2726,8 +2701,8 @@
 
   
 
-  <div class="preformatted" data-parent="0.86">18:13:03.114 [print] {
-  &quot;timestamp&quot;: &quot;2021-12-17T12:43:03.110+0000&quot;,
+  <div class="preformatted" data-parent="0.86">13:54:01.613 [print] {
+  &quot;timestamp&quot;: &quot;2021-12-21T08:24:01.610+0000&quot;,
   &quot;status&quot;: 404,
   &quot;error&quot;: &quot;Not Found&quot;,
   &quot;path&quot;: &quot;/api/v1/private/Category/50&quot;
@@ -2753,7 +2728,7 @@
               </div>
             </div>
             <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>202</span>
+              <span>ms:</span>&nbsp;<span>242</span>
             </div>
           </div>
           <div class="step-row">
@@ -2944,7 +2919,7 @@
         <span>When</span>&nbsp;<span>method PUT</span>
       </div>
     </div>
-    <div class="time-cell passed">199</div>
+    <div class="time-cell passed">239</div>
   </div>
 
    
@@ -2953,7 +2928,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.94">18:13:03.120 request:
+  <div class="preformatted" data-parent="0.94">13:54:01.623 request:
 1 &gt; PUT http://localhost:8080/api/v1/private/category/7
 1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
 1 &gt; Content-Type: application/json; charset=UTF-8
@@ -2964,7 +2939,7 @@
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;children&quot;:[],&quot;code&quot;:&quot;backpackbags&quot;,&quot;depth&quot;:0,&quot;descriptions&quot;:[{&quot;description&quot;:&quot;&quot;,&quot;friendlyUrl&quot;:&quot;backpackbags&quot;,&quot;highlights&quot;:&quot;&quot;,&quot;id&quot;:703,&quot;keyWords&quot;:&quot;&quot;,&quot;language&quot;:&quot;en&quot;,&quot;metaDescription&quot;:&quot;&quot;,&quot;name&quot;:&quot;Backpack Bags&quot;,&quot;title&quot;:&quot;Vintage Bags - Backpack Bags&quot;}],&quot;featured&quot;:false,&quot;id&quot;:0,&quot;lineage&quot;:&quot;\/4&quot;,&quot;parent&quot;:{&quot;code&quot;:&quot;string&quot;},&quot;sortOrder&quot;:30,&quot;visible&quot;:true}
 
-18:13:03.317 response time in milliseconds: 197
+13:54:01.860 response time in milliseconds: 236
 1 &lt; 400
 1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
 1 &lt; Access-Control-Allow-Origin: *
@@ -2978,9 +2953,9 @@
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Fri, 17 Dec 2021 12:43:03 GMT
+1 &lt; Date: Tue, 21 Dec 2021 08:24:01 GMT
 1 &lt; Connection: close
-1 &lt; Set-Cookie: JSESSIONID=478E6070C5E6838279B343CE4F8A12DA; Domain=localhost
+1 &lt; Set-Cookie: JSESSIONID=9A02DAFF42D8E77AC20E0AF328C578FF; Domain=localhost
 {&quot;errorCode&quot;:null,&quot;message&quot;:&quot;com.salesmanager.core.business.exception.ConversionException: javax.persistence.EntityNotFoundException: Unable to find com.salesmanager.core.model.catalog.category.Category with id 7&quot;}
 </div>   
 
@@ -3010,9 +2985,9 @@
 
   
 
-  <div class="preformatted" data-parent="0.95">18:13:03.318 classpath:karatemaven/Category management resource.feature:95
+  <div class="preformatted" data-parent="0.95">13:54:01.860 classpath:karatemaven/Category management resource.feature:95
 Then status 404
-status code was: 400, expected: 404, response time in milliseconds: 197, url: http://localhost:8080/api/v1/private/category/7, response: 
+status code was: 400, expected: 404, response time in milliseconds: 236, url: http://localhost:8080/api/v1/private/category/7, response: 
 {&quot;errorCode&quot;:null,&quot;message&quot;:&quot;com.salesmanager.core.business.exception.ConversionException: javax.persistence.EntityNotFoundException: Unable to find com.salesmanager.core.model.catalog.category.Category with id 7&quot;}
 classpath:karatemaven/Category management resource.feature:95
 </div>   
@@ -3063,7 +3038,7 @@ classpath:karatemaven/Category management resource.feature:95
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>213</span>
+              <span>ms:</span>&nbsp;<span>232</span>
             </div>
           </div>
           <div class="step-row">
@@ -3254,7 +3229,7 @@ classpath:karatemaven/Category management resource.feature:95
         <span>When</span>&nbsp;<span>method PATCH</span>
       </div>
     </div>
-    <div class="time-cell passed">210</div>
+    <div class="time-cell passed">228</div>
   </div>
 
    
@@ -3263,7 +3238,7 @@ classpath:karatemaven/Category management resource.feature:95
 
   
 
-  <div class="preformatted" data-parent="0.105">18:13:03.325 request:
+  <div class="preformatted" data-parent="0.105">13:54:01.867 request:
 1 &gt; PATCH http://localhost:8080/api/v1/private/category/50/visible
 1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
 1 &gt; Content-Type: application/json; charset=UTF-8
@@ -3274,7 +3249,7 @@ classpath:karatemaven/Category management resource.feature:95
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;code&quot;:&quot;bags&quot;}
 
-18:13:03.534 response time in milliseconds: 209
+13:54:02.092 response time in milliseconds: 225
 1 &lt; 200
 1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
 1 &lt; Access-Control-Allow-Origin: *
@@ -3287,10 +3262,10 @@ classpath:karatemaven/Category management resource.feature:95
 1 &lt; Expires: 0
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Length: 0
-1 &lt; Date: Fri, 17 Dec 2021 12:43:03 GMT
+1 &lt; Date: Tue, 21 Dec 2021 08:24:01 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-1 &lt; Set-Cookie: JSESSIONID=2B987537C23FDFAC45FAF39B90E827BA; Domain=localhost
+1 &lt; Set-Cookie: JSESSIONID=E234FBD4C1A6150E6FB3410AA710F8D5; Domain=localhost
 
 </div>   
 
@@ -3339,7 +3314,7 @@ classpath:karatemaven/Category management resource.feature:95
         <span>Then</span>&nbsp;<span>print response</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -3348,7 +3323,7 @@ classpath:karatemaven/Category management resource.feature:95
 
   
 
-  <div class="preformatted" data-parent="0.107">18:13:03.535 [print]  
+  <div class="preformatted" data-parent="0.107">13:54:02.094 [print]  
 </div>   
 
   
@@ -3368,8 +3343,8 @@ classpath:karatemaven/Category management resource.feature:95
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>224</span>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>262</span>
             </div>
           </div>
           <div class="step-row">
@@ -3448,7 +3423,7 @@ classpath:karatemaven/Category management resource.feature:95
         <span>Given</span>&nbsp;<span>path &#39;api/v1/private/category/107&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -3476,7 +3451,7 @@ classpath:karatemaven/Category management resource.feature:95
         <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -3532,7 +3507,7 @@ classpath:karatemaven/Category management resource.feature:95
         <span>When</span>&nbsp;<span>method DELETE</span>
       </div>
     </div>
-    <div class="time-cell passed">220</div>
+    <div class="time-cell passed">259</div>
   </div>
 
    
@@ -3541,7 +3516,7 @@ classpath:karatemaven/Category management resource.feature:95
 
   
 
-  <div class="preformatted" data-parent="0.114">18:13:03.543 request:
+  <div class="preformatted" data-parent="0.114">13:54:02.102 request:
 1 &gt; DELETE http://localhost:8080/api/v1/private/category/107
 1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
 1 &gt; Content-Type: application/json
@@ -3551,8 +3526,8 @@ classpath:karatemaven/Category management resource.feature:95
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-18:13:03.760 response time in milliseconds: 217
-1 &lt; 200
+13:54:02.358 response time in milliseconds: 256
+1 &lt; 500
 1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
@@ -3563,12 +3538,12 @@ classpath:karatemaven/Category management resource.feature:95
 1 &lt; Pragma: no-cache
 1 &lt; Expires: 0
 1 &lt; X-Frame-Options: DENY
-1 &lt; Content-Length: 0
-1 &lt; Date: Fri, 17 Dec 2021 12:43:03 GMT
-1 &lt; Keep-Alive: timeout=60
-1 &lt; Connection: keep-alive
-1 &lt; Set-Cookie: JSESSIONID=7445DCF0E7C69BD1D4346E9047EF7A76; Domain=localhost
-
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Tue, 21 Dec 2021 08:24:01 GMT
+1 &lt; Connection: close
+1 &lt; Set-Cookie: JSESSIONID=3DB474C511746BE797A724473C962492; Domain=localhost
+{&quot;errorCode&quot;:null,&quot;message&quot;:&quot;Unable to find com.salesmanager.core.model.catalog.category.Category with id 107&quot;}
 </div>   
 
   
@@ -3582,13 +3557,13 @@ classpath:karatemaven/Category management resource.feature:95
 
   <div class="step-row">
     <div class="step-container" id="0.115">
-      <div class="step-ref passed">115</div>
+      <div class="step-ref failed">115</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell failed">0</div>
   </div>
 
    
@@ -3597,7 +3572,12 @@ classpath:karatemaven/Category management resource.feature:95
 
   
 
-     
+  <div class="preformatted" data-parent="0.115">13:54:02.359 classpath:karatemaven/Category management resource.feature:115
+Then status 200
+status code was: 500, expected: 200, response time in milliseconds: 256, url: http://localhost:8080/api/v1/private/category/107, response: 
+{&quot;errorCode&quot;:null,&quot;message&quot;:&quot;Unable to find com.salesmanager.core.model.catalog.category.Category with id 107&quot;}
+classpath:karatemaven/Category management resource.feature:115
+</div>   
 
   
 
@@ -3610,13 +3590,13 @@ classpath:karatemaven/Category management resource.feature:95
 
   <div class="step-row">
     <div class="step-container" id="0.116">
-      <div class="step-ref passed">116</div>
+      <div class="step-ref skipped">116</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>Then</span>&nbsp;<span>print response</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -3625,8 +3605,7 @@ classpath:karatemaven/Category management resource.feature:95
 
   
 
-  <div class="preformatted" data-parent="0.116">18:13:03.761 [print]  
-</div>   
+     
 
   
 
@@ -3646,7 +3625,7 @@ classpath:karatemaven/Category management resource.feature:95
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>111</span>
+              <span>ms:</span>&nbsp;<span>145</span>
             </div>
           </div>
           <div class="step-row">
@@ -3809,7 +3788,7 @@ classpath:karatemaven/Category management resource.feature:95
         <span>When</span>&nbsp;<span>method DELETE</span>
       </div>
     </div>
-    <div class="time-cell passed">108</div>
+    <div class="time-cell passed">141</div>
   </div>
 
    
@@ -3818,7 +3797,7 @@ classpath:karatemaven/Category management resource.feature:95
 
   
 
-  <div class="preformatted" data-parent="0.123">18:13:03.768 request:
+  <div class="preformatted" data-parent="0.123">13:54:02.368 request:
 1 &gt; DELETE http://localhost:8080/api/v1/private/category/105
 1 &gt; Authorization: Basic YWRtaW4uY29tOnBhc3N3b3Jk
 1 &gt; Content-Type: application/json
@@ -3828,7 +3807,7 @@ classpath:karatemaven/Category management resource.feature:95
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-18:13:03.874 response time in milliseconds: 106
+13:54:02.507 response time in milliseconds: 139
 1 &lt; 401
 1 &lt; WWW-Authenticate: Basic realm=&quot;api-admin-realm&quot;
 1 &lt; X-Content-Type-Options: nosniff
@@ -3839,10 +3818,10 @@ classpath:karatemaven/Category management resource.feature:95
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Fri, 17 Dec 2021 12:43:03 GMT
+1 &lt; Date: Tue, 21 Dec 2021 08:24:02 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-{&quot;timestamp&quot;:&quot;2021-12-17T12:43:03.873+0000&quot;,&quot;status&quot;:401,&quot;error&quot;:&quot;Unauthorized&quot;,&quot;path&quot;:&quot;/api/v1/private/category/105&quot;}
+{&quot;timestamp&quot;:&quot;2021-12-21T08:24:02.505+0000&quot;,&quot;status&quot;:401,&quot;error&quot;:&quot;Unauthorized&quot;,&quot;path&quot;:&quot;/api/v1/private/category/105&quot;}
 </div>   
 
   
@@ -3899,8 +3878,8 @@ classpath:karatemaven/Category management resource.feature:95
 
   
 
-  <div class="preformatted" data-parent="0.125">18:13:03.875 [print] {
-  &quot;timestamp&quot;: &quot;2021-12-17T12:43:03.873+0000&quot;,
+  <div class="preformatted" data-parent="0.125">13:54:02.508 [print] {
+  &quot;timestamp&quot;: &quot;2021-12-21T08:24:02.505+0000&quot;,
   &quot;status&quot;: 401,
   &quot;error&quot;: &quot;Unauthorized&quot;,
   &quot;path&quot;: &quot;/api/v1/private/category/105&quot;

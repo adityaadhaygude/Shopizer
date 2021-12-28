@@ -154,7 +154,6 @@ public class CategoryPage {
 	//method to sort elements by price and assert
 	public void sortedElementsByPrice()
 	{
-		//driver.findElement(sortDropdown).click();
 		selectSortByPrice();
 		
 		List<Float> sortedList=new ArrayList<Float>();

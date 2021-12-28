@@ -1,6 +1,5 @@
 package pages;
 
-
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 import static org.junit.Assert.assertTrue;
@@ -9,7 +8,6 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
 import utility.ConfigFileReader;
 
 public class RegistrationPage {
@@ -37,64 +35,106 @@ public class RegistrationPage {
 	public By passwordMismatchError=By.id("customer.errors");
 	public By registrationError=By.id("customer.errors");
 
-	//Initializes Registration page and config file reader.
+	/**
+	 * Initializes Registration page and config file reader.
+	 */
 	public RegistrationPage(WebDriver driver)
 	{
 		this.driver=driver;
 		objConfigFileReader = new ConfigFileReader();
 	}
 
-	//Verifies if a field is present by accepting element
-	public void verifyFieldPresent(By elementName)
+	/**
+	 * Verifies if a field is present by accepting element
+	 */
+	public String verifyFieldPresent(By elementName)
 	{
 		List<WebElement> Elements=driver.findElements(elementName);
-		assert(Elements.size() > 0);
+
+		try {
+			assert(Elements.size() > 0);
+		} catch (Exception e) {
+
+			return e.getMessage();
+		}
+		return objConfigFileReader.getString("successMessageForFieldAssertion");
 	}
 
-	// Verifies text from the element
-	public void getTextAndAssert(By elementName,String stringName) {
-		assertThat(getWebElement(elementName).getText(),is(objConfigFileReader.getString(stringName)));
+	/**
+	 * Verifies text from the element
+	 */
+	public String getTextAndAssert(By elementName,String stringName) {
+		try {
+			assertThat(getWebElement(elementName).getText(),is(objConfigFileReader.getString(stringName)));
+		} catch (Exception e) {
+
+			return e.getMessage();
+		}
+		return objConfigFileReader.getString("successMessageForTextAssertion");	 
 	}
 
-	//Returns web element
+	/**
+	 * Returns web element
+	 */
 	public WebElement getWebElement(By elementName) {
 		return driver.findElement(elementName);
 	}
 
-	// Clicks on the element
+	/**
+	 * Clicks on the element
+	 */
 	public void clickBtn(By elementName) {
 		getWebElement(elementName).click();
 	}
 
-	// Enters text in given element
+	/**
+	 * Enters text in given element
+	 */
 	public void inputText(By elementName,String data)
 	{
 		getWebElement(elementName).sendKeys(data);
 	}
 
-	//Passes keyboard inputs to the element
-
+	/**
+	 * Passes keyboard inputs to the element
+	 */
 	public void keyboardInput(By elementName,Keys k)
 	{
 		getWebElement(elementName).sendKeys(k);
 	}
 
-	// Verifies if element is empty
-	public void verifyEmpty(By elementName)
+	/**
+	 * Verifies if element is empty
+	 */
+	public String verifyEmpty(By elementName)
 	{
-		String content=getWebElement(elementName).getAttribute("value");
-		assertTrue(content.isEmpty());
+		try {
+			String content=getWebElement(elementName).getAttribute("value");
+			assertTrue(content.isEmpty());
+		} catch (Exception e) {
+			return e.getMessage();
+		}
+		return objConfigFileReader.getString("emptyFieldMessageForTextAssertion");	 
 	}
 
-	//Selects option from dropdown
+	/**
+	 * Selects option from dropdown
+	 */
 	public void selectFromDropDown(By elementName,String country)
 	{
 		getWebElement(elementName).findElement(By.xpath("//option[. = '"+country+"']")).click();
 	}
 
-	// Verifies if account is logged in for a particular user	 
-	public void verifyAccountLogin(String name)
+	/**
+	 * Verifies if account is logged in for a particular user
+	 */
+	public String verifyAccountLogin(String name)
 	{
-		assertThat(driver.findElement(accountName).getText(),is("Welcome "+name));
+		try {
+			assertThat(driver.findElement(accountName).getText(),is("Welcome "+name));
+		} catch (Exception e) {
+			return e.getMessage();
+		}
+		return objConfigFileReader.getString("accountLoginTextAssertion");	 
 	}
 }

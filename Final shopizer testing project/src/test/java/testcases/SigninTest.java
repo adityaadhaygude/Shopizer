@@ -56,7 +56,7 @@ public class SigninTest extends BaseClass {
 
 	//Test case for verifying the Tab functionality
 	@Test
-	public void TC4_verifyTabFunctionality() throws InterruptedException 
+	public void TC4_verifyTabFunctionality()  
 	{
 		WebElement tab;
 		driver.get(objConfigFileReader.getString("signinPageURL"));
@@ -105,12 +105,6 @@ public class SigninTest extends BaseClass {
 		objSigninPage.clickBtn(objSigninPage.Register);
 		driver.get(objConfigFileReader.getString("registrationPageURL"));
 
-	}
-
-	@Test(dataProvider="signinData")
-	public void ddt(String email,String password)
-	{
-		System.out.println(email+password);
 	}
 
 }

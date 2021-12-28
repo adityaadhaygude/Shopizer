@@ -21,8 +21,7 @@ public class SigninPage {
 			public By password=By.id("signin_password");
 			public By SignIN=By.cssSelector(".login-btn");
 			public By SignInErrors=By.id("loginError");
-			public By Register = By.cssSelector(".login-btn");		
-			
+			public By Register = By.cssSelector(".login-btn");				
 			public By emailTitle=By.cssSelector(".form-group:nth-child(1)");
 			public By passwordTitle = By.cssSelector(".form-group:nth-child(2)");
 			public By signInTitle=By.cssSelector(".login-btn");

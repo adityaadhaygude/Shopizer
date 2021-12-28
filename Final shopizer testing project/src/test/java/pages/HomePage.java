@@ -30,7 +30,6 @@ public class HomePage {
 	public By handBagsText = By.cssSelector(".shop-banner-title");
 	public By myAccount = By.xpath("//li[2]/a/span");
 	public By signInBtn = By.partialLinkText("Sign");
-	//public By signInBtn = By.id("registerLink");
 	public By registerBtn = By.linkText("Register");
 	public By register=By.partialLinkText("Register");
 	public By cartBtn = By.xpath("//li[3]/a/span");
@@ -53,23 +52,17 @@ public class HomePage {
 	public By password = By.id("signin_password");
 	public By loginBtn = By.id("genericLogin-button");
 	public By myAcc = By.linkText("My Account");
-	//	public By logoutBtn = By.linkText("Logout");
 	public By logoutBtn = By.cssSelector(".w-150 > li:nth-child(2) > a:nth-child(1)");
 	public By cartQuantity = By.id("miniCartSummary");
 	public By removeBtn = By.xpath("//*[@id=\"miniCartDetails\"]/li[1]/div/ol/li/div[2]/div/button");
 	public By checkoutBtn = By.xpath("//*[@id=\"miniCartDetails\"]/li[2]/div/a[2]");
 	public By checkoutAssertText = By.tagName("h2");
-	//public By totalText = By.xpath("//thead/tr/th[4]");
 	public By totalText = By.tagName("h2");
 	public By myAccountForLogout = By.xpath("//li[2]/a/span");
-
-	//Avinee elements
 	public By item1=By.cssSelector("#featuredItemsContainer > div:nth-child(1) > div.product-content.text-center > div.store-btn > div > a");
 	public By item2=By.cssSelector("#featuredItemsContainer > div:nth-child(3) > div.product-content.text-center > div.store-btn > div > a");
 	public By shoppingCart=By.xpath("/html/body/nav[1]/div/ul[2]/li[3]/a");
 	public By checkout=By.xpath("/html/body/nav[1]/div/ul[2]/li[3]/ul/span/li[2]/div/a[2]");
-
-	//Aditya jadhav elements
 	public By collection1 = By.cssSelector("div.container:nth-child(19) div.bedroom-all-product-area.ptb-80 div.container div.row div.col-lg-3.col-md-3.col-sm-3.col-xs-12 ul.nav.nav-list:nth-child(4) li:nth-child(2) > a:nth-child(1)");
 	public By checkoutTable = By.xpath("//td");
 
@@ -91,7 +84,7 @@ public class HomePage {
 				WebDriverWait wait = new WebDriverWait(driver, 15);
 				wait.until(ExpectedConditions.presenceOfElementLocated(homePageImage));
 			}
-		}catch(AssertionError e) {
+		}catch(Exception e) {
 			return e.getMessage();
 		}
 		return objConfigFileReader.getString("successMessage");
@@ -102,7 +95,7 @@ public class HomePage {
 		List<WebElement> elements =  driver.findElements(homePageImage);
 		try {
 			assert(elements.size() > 0);
-		}catch(AssertionError e) {
+		}catch(Exception e) {
 			return e.getMessage();
 		}
 		return objConfigFileReader.getString("successMessageForImageAssertion");
@@ -114,7 +107,7 @@ public class HomePage {
 			WebElement element = getWebElement(elementName);
 			Actions builder = new Actions(driver);
 			builder.moveToElement(element).perform();
-		}catch(AssertionError e) {
+		}catch(Exception e) {
 			return e.getMessage();	
 		}
 		return objConfigFileReader.getString("successMessageForMouseHover");
@@ -128,7 +121,7 @@ public class HomePage {
 	public String getTextAndAssert(By elementName,String stringName) {
 		try {
 			assertThat(getWebElement(elementName).getText(),is(objConfigFileReader.getString(stringName)));
-		}catch(AssertionError e) {
+		}catch(Exception e) {
 			return e.getMessage();
 		}
 		return objConfigFileReader.getString("successMessageForTextAssertion");
@@ -152,7 +145,7 @@ public class HomePage {
 		String checkBrocken = getWebElement(elementName).getAttribute(objConfigFileReader.getString(attributeName));
 		try {
 			assert(checkBrocken.equalsIgnoreCase(objConfigFileReader.getString("pageBrockenLink")));
-		}catch(AssertionError  e) {
+		}catch(Exception  e) {
 			return objConfigFileReader.getString("failureMessageForGetAttribute");
 		}
 		return objConfigFileReader.getString("successMessageForGetAttribute");
@@ -171,7 +164,6 @@ public class HomePage {
 		jsExecutor.executeScript("arguments[0].click()", getWebElement(elementName));  
 	}
 
-
 	//To perform logout functionality user must be signed in using this method.
 	public void signIn() {
 		getWebElement(username).sendKeys(objConfigFileReader.getString("user"));
@@ -182,16 +174,5 @@ public class HomePage {
 	public void waitForElementPresent(By elementName) {
 		WebDriverWait wait = new WebDriverWait(driver, 5);
 		wait.until(ExpectedConditions.presenceOfElementLocated(elementName));
-	}
-	//methods by AJ
-	public void clickProduct()
-	{
-		By category1=By.linkText(objConfigFileReader.getString("handbags"));
-		driver.findElement(category1).click();
-	}
-	//method to select chic collection
-	public void clickCollection()
-	{
-		driver.findElement(collection1).click();
 	}
 }

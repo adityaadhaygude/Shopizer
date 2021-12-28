@@ -1,0 +1,5046 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>karatemaven.Catalog management resource</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">9</div>
+      <div id="nav-fail" class="bg-danger">5</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2021-12-21 12:39:37 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:9]"><span>[1:9]</span> <span>Create a new catalog with valid authentication</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:21]"><span>[2:21]</span> <span>Create a new catalog with valid authorization and already existed data</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:31]"><span>[3:31]</span> <span>Create a new catalog with invalid authentication</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[4:41]"><span>[4:41]</span> <span>Create a catalog with limited access authentication</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[5:51]"><span>[5:51]</span> <span>Create a catalog with valid authentication but invalid end point</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[6:61]"><span>[6:61]</span> <span>Create a new catalog with valid authentication but invalid url</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[7:72]"><span>[7:72]</span> <span>Get a catalog with id 14 with valid authentication</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[8:82]"><span>[8:82]</span> <span>Add a catalog entry to catalog</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[9:93]"><span>[9:93]</span> <span>delete a catalog of given id</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[10:104]"><span>[10:104]</span> <span>Update a catalog with id 14</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[11:115]"><span>[11:115]</span> <span>Get catalog entry by catalog</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[12:126]"><span>[12:126]</span> <span>Remove catalog entry from the catalog</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[13:136]"><span>[13:136]</span> <span>Check catalog code already exist</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[14:148]"><span>[14:148]</span> <span>Check catalog code already exist</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">karatemaven/Catalog management resource.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Shopizer catalog management resources</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:9]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">postcall1</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:9]</span>
+                <span class="scenario-name">Create a new catalog with valid authentication</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1799</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:9]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:9]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">114</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:9]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def helper = Java.type(&#39;karatemaven.JavaFunctions&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">69</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/private/catalog&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">164</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;code&quot;: &quot;Leno bags 1010&quot;,&quot;defaultCatalog&quot;: true,&quot;visible&quot;: true}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1435</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.14">12:39:36.403 request:
+1 &gt; POST http://localhost:8080/api/v1/private/catalog
+1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 62
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;code&quot;:&quot;Leno bags 1010&quot;,&quot;defaultCatalog&quot;:true,&quot;visible&quot;:true}
+
+12:39:36.857 response time in milliseconds: 454
+1 &lt; 200
+1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Tue, 21 Dec 2021 07:09:36 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+1 &lt; Set-Cookie: JSESSIONID=2CCE5A163A1626CCD2A1E40E6857853F; Domain=localhost
+{&quot;id&quot;:85,&quot;visible&quot;:true,&quot;defaultCatalog&quot;:true,&quot;code&quot;:&quot;Leno bags 1010&quot;,&quot;creationDate&quot;:&quot;2021-12-21&quot;,&quot;store&quot;:{&quot;id&quot;:1,&quot;code&quot;:&quot;DEFAULT&quot;,&quot;name&quot;:&quot;Default store&quot;,&quot;defaultLanguage&quot;:&quot;en&quot;,&quot;currency&quot;:&quot;USD&quot;,&quot;inBusinessSince&quot;:&quot;2019-03-06&quot;,&quot;email&quot;:&quot;john@test.com&quot;,&quot;phone&quot;:&quot;888-888-8888&quot;,&quot;template&quot;:null,&quot;useCache&quot;:false,&quot;currencyFormatNational&quot;:false,&quot;retailer&quot;:true,&quot;dimension&quot;:&quot;IN&quot;,&quot;weight&quot;:&quot;LB&quot;,&quot;currentUserLanguage&quot;:null,&quot;address&quot;:{&quot;stateProvince&quot;:&quot;QC&quot;,&quot;country&quot;:&quot;CA&quot;,&quot;address&quot;:&quot;1234 Street address&quot;,&quot;postalCode&quot;:&quot;H2H-2H2&quot;,&quot;city&quot;:&quot;My city&quot;,&quot;active&quot;:true},&quot;logo&quot;:{&quot;name&quot;:&quot;Vintage-Bags.jpg&quot;,&quot;path&quot;:&quot;http://localhost:8080/static/files/DEFAULT/LOGO/Vintage-Bags.jpg&quot;},&quot;parent&quot;:null,&quot;supportedLanguages&quot;:[{&quot;code&quot;:&quot;en&quot;,&quot;id&quot;:1},{&quot;code&quot;:&quot;fr&quot;,&quot;id&quot;:2}],&quot;readableAudit&quot;:null},&quot;category&quot;:[]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def id = response.id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def setID = helper.setId(id);</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.18">12:39:36.874 [print] {
+  &quot;id&quot;: 85,
+  &quot;visible&quot;: true,
+  &quot;defaultCatalog&quot;: true,
+  &quot;code&quot;: &quot;Leno bags 1010&quot;,
+  &quot;creationDate&quot;: &quot;2021-12-21&quot;,
+  &quot;store&quot;: {
+    &quot;id&quot;: 1,
+    &quot;code&quot;: &quot;DEFAULT&quot;,
+    &quot;name&quot;: &quot;Default store&quot;,
+    &quot;defaultLanguage&quot;: &quot;en&quot;,
+    &quot;currency&quot;: &quot;USD&quot;,
+    &quot;inBusinessSince&quot;: &quot;2019-03-06&quot;,
+    &quot;email&quot;: &quot;john@test.com&quot;,
+    &quot;phone&quot;: &quot;888-888-8888&quot;,
+    &quot;template&quot;: null,
+    &quot;useCache&quot;: false,
+    &quot;currencyFormatNational&quot;: false,
+    &quot;retailer&quot;: true,
+    &quot;dimension&quot;: &quot;IN&quot;,
+    &quot;weight&quot;: &quot;LB&quot;,
+    &quot;currentUserLanguage&quot;: null,
+    &quot;address&quot;: {
+      &quot;stateProvince&quot;: &quot;QC&quot;,
+      &quot;country&quot;: &quot;CA&quot;,
+      &quot;address&quot;: &quot;1234 Street address&quot;,
+      &quot;postalCode&quot;: &quot;H2H-2H2&quot;,
+      &quot;city&quot;: &quot;My city&quot;,
+      &quot;active&quot;: true
+    },
+    &quot;logo&quot;: {
+      &quot;name&quot;: &quot;Vintage-Bags.jpg&quot;,
+      &quot;path&quot;: &quot;http://localhost:8080/static/files/DEFAULT/LOGO/Vintage-Bags.jpg&quot;
+    },
+    &quot;parent&quot;: null,
+    &quot;supportedLanguages&quot;: [
+      {
+        &quot;code&quot;: &quot;en&quot;,
+        &quot;id&quot;: 1
+      },
+      {
+        &quot;code&quot;: &quot;fr&quot;,
+        &quot;id&quot;: 2
+      }
+    ],
+    &quot;readableAudit&quot;: null
+  },
+  &quot;category&quot;: [
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:21]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">postcall2</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:21]</span>
+                <span class="scenario-name">Create a new catalog with valid authorization and already existed data</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1744</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:21]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:21]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">114</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:21]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def helper = Java.type(&#39;karatemaven.JavaFunctions&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">69</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/private/catalog&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">164</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;id&quot;: 14, &quot;visible&quot;: false,&quot;defaultCatalog&quot;: false,&quot;code&quot;: &quot;desktop desk 14&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1392</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.26">12:39:36.403 request:
+1 &gt; POST http://localhost:8080/api/v1/private/catalog
+1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 73
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;id&quot;:14,&quot;visible&quot;:false,&quot;defaultCatalog&quot;:false,&quot;code&quot;:&quot;desktop desk 14&quot;}
+
+12:39:36.814 response time in milliseconds: 411
+1 &lt; 400
+1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Tue, 21 Dec 2021 07:09:36 GMT
+1 &lt; Connection: close
+1 &lt; Set-Cookie: JSESSIONID=22EF8951BF23AC98794A610FA8E03AA5; Domain=localhost
+{&quot;errorCode&quot;:&quot;304&quot;,&quot;message&quot;:&quot;Catalog [desktop desk 14] already exists&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.28">12:39:36.818 [print] {
+  &quot;errorCode&quot;: &quot;304&quot;,
+  &quot;message&quot;: &quot;Catalog [desktop desk 14] already exists&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:31]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">postcall3</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:31]</span>
+                <span class="scenario-name">Create a new catalog with invalid authentication</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1588</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:31]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:31]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">114</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:31]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def helper = Java.type(&#39;karatemaven.JavaFunctions&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">69</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/private/catalog&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin.com&#39;, password: &#39;password&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">164</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;code&quot;: &quot;desktop desk-2010&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1231</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.36">12:39:36.403 request:
+1 &gt; POST http://localhost:8080/api/v1/private/catalog
+1 &gt; Authorization: Basic YWRtaW4uY29tOnBhc3N3b3Jk
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 28
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;code&quot;:&quot;desktop desk-2010&quot;}
+
+12:39:36.653 response time in milliseconds: 247
+1 &lt; 401
+1 &lt; WWW-Authenticate: Basic realm=&quot;api-admin-realm&quot;
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Tue, 21 Dec 2021 07:09:36 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;timestamp&quot;:&quot;2021-12-21T07:09:36.618+0000&quot;,&quot;status&quot;:401,&quot;error&quot;:&quot;Unauthorized&quot;,&quot;path&quot;:&quot;/api/v1/private/catalog&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref passed">37</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 401</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.38">
+      <div class="step-ref passed">38</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.38">12:39:36.661 [print] {
+  &quot;timestamp&quot;: &quot;2021-12-21T07:09:36.618+0000&quot;,
+  &quot;status&quot;: 401,
+  &quot;error&quot;: &quot;Unauthorized&quot;,
+  &quot;path&quot;: &quot;/api/v1/private/catalog&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:41]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">postcall4</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:41]</span>
+                <span class="scenario-name">Create a catalog with limited access authentication</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>395</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:41]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:41]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">114</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:41]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def helper = Java.type(&#39;karatemaven.JavaFunctions&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">69</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/private/catalog&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.43">
+      <div class="step-ref passed">43</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;test&#39;, password: &#39;test@123&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">164</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.44">
+      <div class="step-ref passed">44</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.45">
+      <div class="step-ref failed">45</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>request{&quot;code&quot;: &quot;desktop 1010&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell failed">47</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.45">12:39:35.470 classpath:karatemaven/Catalog management resource.feature:45
+And request{&quot;code&quot;: &quot;desktop 1010&quot;}
+js failed:
+&gt;&gt;&gt;&gt;
+01: request{&quot;code&quot;: &quot;desktop 1010&quot;}
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:7 Expected ; but found {
+request{&quot;code&quot;: &quot;desktop 1010&quot;}
+       ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1271)
+- com.intuit.karate.ScenarioActions.eval(ScenarioActions.java:388)
+- sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+- sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+
+classpath:karatemaven/Catalog management resource.feature:45
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.46">
+      <div class="step-ref skipped">46</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.47">
+      <div class="step-ref skipped">47</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 403</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.48">
+      <div class="step-ref skipped">48</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:51]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">postcall5</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:51]</span>
+                <span class="scenario-name">Create a catalog with valid authentication but invalid end point</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1708</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5:51]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5:51]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">114</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:51]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def helper = Java.type(&#39;karatemaven.JavaFunctions&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">69</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.52">
+      <div class="step-ref passed">52</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/private/cataloG&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.53">
+      <div class="step-ref passed">53</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">165</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.54">
+      <div class="step-ref passed">54</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.55">
+      <div class="step-ref passed">55</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;code&quot;: &quot;desktop desk-3010&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.56">
+      <div class="step-ref passed">56</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1356</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.56">12:39:36.403 request:
+1 &gt; POST http://localhost:8080/api/v1/private/cataloG
+1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 28
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;code&quot;:&quot;desktop desk-3010&quot;}
+
+12:39:36.773 response time in milliseconds: 361
+1 &lt; 404
+1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Tue, 21 Dec 2021 07:09:36 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+1 &lt; Set-Cookie: JSESSIONID=0F6C3F4D0DEFEEFD4FBCF95983CC58CA; Domain=localhost
+{&quot;timestamp&quot;:&quot;2021-12-21T07:09:36.761+0000&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;path&quot;:&quot;/api/v1/private/cataloG&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.57">
+      <div class="step-ref passed">57</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 404</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.58">
+      <div class="step-ref passed">58</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.58">12:39:36.783 [print] {
+  &quot;timestamp&quot;: &quot;2021-12-21T07:09:36.761+0000&quot;,
+  &quot;status&quot;: 404,
+  &quot;error&quot;: &quot;Not Found&quot;,
+  &quot;path&quot;: &quot;/api/v1/private/cataloG&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[6:61]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">postcall6</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[6:61]</span>
+                <span class="scenario-name">Create a new catalog with valid authentication but invalid url</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1305</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[6:61]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[6:61]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:61]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def helper = Java.type(&#39;karatemaven.JavaFunctions&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.62">
+      <div class="step-ref passed">62</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/private/catalog/kk&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.63">
+      <div class="step-ref passed">63</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.64">
+      <div class="step-ref passed">64</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.65">
+      <div class="step-ref passed">65</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;code&quot;: &quot;desktop desk-6010&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.66">
+      <div class="step-ref passed">66</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1294</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.66">12:39:36.403 request:
+1 &gt; POST http://localhost:8080/api/v1/private/catalog/kk
+1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 28
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;code&quot;:&quot;desktop desk-6010&quot;}
+
+12:39:36.773 response time in milliseconds: 358
+1 &lt; 500
+1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Tue, 21 Dec 2021 07:09:36 GMT
+1 &lt; Connection: close
+1 &lt; Set-Cookie: JSESSIONID=510FDFCA5907B5B6DCD339066E59E21F; Domain=localhost
+{&quot;errorCode&quot;:null,&quot;message&quot;:&quot;Failed to convert value of type &#39;java.lang.String&#39; to required type &#39;java.lang.Long&#39;; nested exception is java.lang.NumberFormatException: For input string: \&quot;kk\&quot;&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.67">
+      <div class="step-ref passed">67</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 500</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.68">
+      <div class="step-ref passed">68</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.68">12:39:36.781 [print] {
+  &quot;errorCode&quot;: null,
+  &quot;message&quot;: &quot;Failed to convert value of type &#39;java.lang.String&#39; to required type &#39;java.lang.Long&#39;; nested exception is java.lang.NumberFormatException: For input string: \&quot;kk\&quot;&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[7:72]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">getcall1</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[7:72]</span>
+                <span class="scenario-name">Get a catalog with id 14 with valid authentication</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>407</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[7:72]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[7:72]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[7:72]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def helper = Java.type(&#39;karatemaven.JavaFunctions&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.73">
+      <div class="step-ref passed">73</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/private/catalog/14&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.74">
+      <div class="step-ref passed">74</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.75">
+      <div class="step-ref passed">75</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.76">
+      <div class="step-ref passed">76</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">395</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.76">12:39:36.682 request:
+1 &gt; GET http://localhost:8080/api/v1/private/catalog/14
+1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
+1 &gt; Content-Type: application/json
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:39:37.073 response time in milliseconds: 391
+1 &lt; 200
+1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Tue, 21 Dec 2021 07:09:36 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+1 &lt; Set-Cookie: JSESSIONID=7EEA76C02206BD188FB1C127772AB754; Domain=localhost
+{&quot;id&quot;:14,&quot;visible&quot;:false,&quot;defaultCatalog&quot;:false,&quot;code&quot;:&quot;desktop desk 14&quot;,&quot;creationDate&quot;:&quot;2021-12-11&quot;,&quot;store&quot;:{&quot;id&quot;:1,&quot;code&quot;:&quot;DEFAULT&quot;,&quot;name&quot;:&quot;Default store&quot;,&quot;defaultLanguage&quot;:&quot;en&quot;,&quot;currency&quot;:&quot;USD&quot;,&quot;inBusinessSince&quot;:&quot;2019-03-06&quot;,&quot;email&quot;:&quot;john@test.com&quot;,&quot;phone&quot;:&quot;888-888-8888&quot;,&quot;template&quot;:null,&quot;useCache&quot;:false,&quot;currencyFormatNational&quot;:false,&quot;retailer&quot;:true,&quot;dimension&quot;:&quot;IN&quot;,&quot;weight&quot;:&quot;LB&quot;,&quot;currentUserLanguage&quot;:null,&quot;address&quot;:{&quot;stateProvince&quot;:&quot;QC&quot;,&quot;country&quot;:&quot;CA&quot;,&quot;address&quot;:&quot;1234 Street address&quot;,&quot;postalCode&quot;:&quot;H2H-2H2&quot;,&quot;city&quot;:&quot;My city&quot;,&quot;active&quot;:true},&quot;logo&quot;:{&quot;name&quot;:&quot;Vintage-Bags.jpg&quot;,&quot;path&quot;:&quot;http://localhost:8080/static/files/DEFAULT/LOGO/Vintage-Bags.jpg&quot;},&quot;parent&quot;:null,&quot;supportedLanguages&quot;:[{&quot;code&quot;:&quot;en&quot;,&quot;id&quot;:1},{&quot;code&quot;:&quot;fr&quot;,&quot;id&quot;:2}],&quot;readableAudit&quot;:null},&quot;category&quot;:[]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.77">
+      <div class="step-ref passed">77</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.78">
+      <div class="step-ref passed">78</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.78">12:39:37.076 [print] {
+  &quot;id&quot;: 14,
+  &quot;visible&quot;: false,
+  &quot;defaultCatalog&quot;: false,
+  &quot;code&quot;: &quot;desktop desk 14&quot;,
+  &quot;creationDate&quot;: &quot;2021-12-11&quot;,
+  &quot;store&quot;: {
+    &quot;id&quot;: 1,
+    &quot;code&quot;: &quot;DEFAULT&quot;,
+    &quot;name&quot;: &quot;Default store&quot;,
+    &quot;defaultLanguage&quot;: &quot;en&quot;,
+    &quot;currency&quot;: &quot;USD&quot;,
+    &quot;inBusinessSince&quot;: &quot;2019-03-06&quot;,
+    &quot;email&quot;: &quot;john@test.com&quot;,
+    &quot;phone&quot;: &quot;888-888-8888&quot;,
+    &quot;template&quot;: null,
+    &quot;useCache&quot;: false,
+    &quot;currencyFormatNational&quot;: false,
+    &quot;retailer&quot;: true,
+    &quot;dimension&quot;: &quot;IN&quot;,
+    &quot;weight&quot;: &quot;LB&quot;,
+    &quot;currentUserLanguage&quot;: null,
+    &quot;address&quot;: {
+      &quot;stateProvince&quot;: &quot;QC&quot;,
+      &quot;country&quot;: &quot;CA&quot;,
+      &quot;address&quot;: &quot;1234 Street address&quot;,
+      &quot;postalCode&quot;: &quot;H2H-2H2&quot;,
+      &quot;city&quot;: &quot;My city&quot;,
+      &quot;active&quot;: true
+    },
+    &quot;logo&quot;: {
+      &quot;name&quot;: &quot;Vintage-Bags.jpg&quot;,
+      &quot;path&quot;: &quot;http://localhost:8080/static/files/DEFAULT/LOGO/Vintage-Bags.jpg&quot;
+    },
+    &quot;parent&quot;: null,
+    &quot;supportedLanguages&quot;: [
+      {
+        &quot;code&quot;: &quot;en&quot;,
+        &quot;id&quot;: 1
+      },
+      {
+        &quot;code&quot;: &quot;fr&quot;,
+        &quot;id&quot;: 2
+      }
+    ],
+    &quot;readableAudit&quot;: null
+  },
+  &quot;category&quot;: [
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[8:82]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">postcall7</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[8:82]</span>
+                <span class="scenario-name">Add a catalog entry to catalog</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>421</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[8:82]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[8:82]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[8:82]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def helper = Java.type(&#39;karatemaven.JavaFunctions&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.83">
+      <div class="step-ref passed">83</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/private/catalog/2&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.84">
+      <div class="step-ref passed">84</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.85">
+      <div class="step-ref passed">85</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.86">
+      <div class="step-ref passed">86</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;catalog&quot;: &quot;rolex555&quot;,&quot;categoryCode&quot;: &quot;rolex123&quot;,&quot;id&quot;: 123,&quot;productCode&quot;: &quot;rolout123&quot;,&quot;visible&quot;: true}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.87">
+      <div class="step-ref passed">87</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">408</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.87">12:39:36.813 request:
+1 &gt; POST http://localhost:8080/api/v1/private/catalog/2
+1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 98
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;catalog&quot;:&quot;rolex555&quot;,&quot;categoryCode&quot;:&quot;rolex123&quot;,&quot;id&quot;:123,&quot;productCode&quot;:&quot;rolout123&quot;,&quot;visible&quot;:true}
+
+12:39:37.212 response time in milliseconds: 397
+1 &lt; 400
+1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Tue, 21 Dec 2021 07:09:36 GMT
+1 &lt; Connection: close
+1 &lt; Set-Cookie: JSESSIONID=C48FD3701B4E411D3809D7D2C74C2B4F; Domain=localhost
+{&quot;errorCode&quot;:null,&quot;message&quot;:&quot;Error while converting CatalogEntry&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.88">
+      <div class="step-ref failed">88</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.88">12:39:37.213 classpath:karatemaven/Catalog management resource.feature:88
+Then status 200
+status code was: 400, expected: 200, response time in milliseconds: 397, url: http://localhost:8080/api/v1/private/catalog/2, response: 
+{&quot;errorCode&quot;:null,&quot;message&quot;:&quot;Error while converting CatalogEntry&quot;}
+classpath:karatemaven/Catalog management resource.feature:88
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.89">
+      <div class="step-ref skipped">89</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[9:93]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">deletecall1</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[9:93]</span>
+                <span class="scenario-name">delete a catalog of given id</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>521</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[9:93]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[9:93]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[9:93]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def helper = Java.type(&#39;karatemaven.JavaFunctions&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.94">
+      <div class="step-ref passed">94</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def ID = helper.getId();</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.95">
+      <div class="step-ref passed">95</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/private/catalog/&#39;+ID</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.96">
+      <div class="step-ref passed">96</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">15</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.97">
+      <div class="step-ref passed">97</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.98">
+      <div class="step-ref passed">98</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method DELETE</span>
+      </div>
+    </div>
+    <div class="time-cell passed">495</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.98">12:39:36.835 request:
+1 &gt; DELETE http://localhost:8080/api/v1/private/catalog/0
+1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
+1 &gt; Content-Type: application/json
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:39:37.324 response time in milliseconds: 488
+1 &lt; 500
+1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Tue, 21 Dec 2021 07:09:36 GMT
+1 &lt; Connection: close
+1 &lt; Set-Cookie: JSESSIONID=888C29C20B34F67F48B0E15A1B0A7EA6; Domain=localhost
+{&quot;errorCode&quot;:null,&quot;message&quot;:&quot;Catalog id cannot be null&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.99">
+      <div class="step-ref failed">99</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.99">12:39:37.328 classpath:karatemaven/Catalog management resource.feature:99
+Then status 200
+status code was: 500, expected: 200, response time in milliseconds: 488, url: http://localhost:8080/api/v1/private/catalog/0, response: 
+{&quot;errorCode&quot;:null,&quot;message&quot;:&quot;Catalog id cannot be null&quot;}
+classpath:karatemaven/Catalog management resource.feature:99
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.100">
+      <div class="step-ref skipped">100</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[10:104]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">patchcall1</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[10:104]</span>
+                <span class="scenario-name">Update a catalog with id 14</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>427</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[10:104]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[10:104]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[10:104]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def helper = Java.type(&#39;karatemaven.JavaFunctions&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.105">
+      <div class="step-ref passed">105</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/private/catalog/14&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.106">
+      <div class="step-ref passed">106</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.107">
+      <div class="step-ref passed">107</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.108">
+      <div class="step-ref passed">108</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;code&quot;: &quot;desktop desk&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.109">
+      <div class="step-ref passed">109</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method PATCH</span>
+      </div>
+    </div>
+    <div class="time-cell passed">416</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.109">12:39:36.837 request:
+1 &gt; PATCH http://localhost:8080/api/v1/private/catalog/14
+1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 23
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;code&quot;:&quot;desktop desk&quot;}
+
+12:39:37.249 response time in milliseconds: 412
+1 &lt; 200
+1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Length: 0
+1 &lt; Date: Tue, 21 Dec 2021 07:09:36 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+1 &lt; Set-Cookie: JSESSIONID=B8BB7C5A949E35F94F9AAA87B9305490; Domain=localhost
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.110">
+      <div class="step-ref passed">110</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.111">
+      <div class="step-ref passed">111</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.111">12:39:37.251 [print]  
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[11:115]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">getcall2</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[11:115]</span>
+                <span class="scenario-name">Get catalog entry by catalog</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>562</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[11:115]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[11:115]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[11:115]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def helper = Java.type(&#39;karatemaven.JavaFunctions&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.116">
+      <div class="step-ref passed">116</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/private/catalog/2/entry&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.117">
+      <div class="step-ref passed">117</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">74</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.118">
+      <div class="step-ref passed">118</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.119">
+      <div class="step-ref passed">119</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">373</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.119">12:39:36.958 request:
+1 &gt; GET http://localhost:8080/api/v1/private/catalog/2/entry
+1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
+1 &gt; Content-Type: application/json
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:39:37.327 response time in milliseconds: 369
+1 &lt; 200
+1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Tue, 21 Dec 2021 07:09:36 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+1 &lt; Set-Cookie: JSESSIONID=0583FAA0632588B65D093AF58D2BC18E; Domain=localhost
+{&quot;totalPages&quot;:0,&quot;number&quot;:0,&quot;recordsTotal&quot;:0,&quot;recordsFiltered&quot;:0,&quot;items&quot;:null}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.120">
+      <div class="step-ref passed">120</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.121">
+      <div class="step-ref failed">121</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>match response.totalPages != 0</span>
+      </div>
+    </div>
+    <div class="time-cell failed">113</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.121">12:39:37.442 classpath:karatemaven/Catalog management resource.feature:121
+And match response.totalPages != 0
+match failed: NOT_EQUALS
+  $ | is equal (NUMBER:NUMBER)
+  0
+  0
+
+classpath:karatemaven/Catalog management resource.feature:121
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.122">
+      <div class="step-ref skipped">122</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[12:126]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">deletecall2</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[12:126]</span>
+                <span class="scenario-name">Remove catalog entry from the catalog</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>440</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[12:126]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[12:126]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[12:126]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def helper = Java.type(&#39;karatemaven.JavaFunctions&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.127">
+      <div class="step-ref passed">127</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/private/catalog/1/entry/14&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.128">
+      <div class="step-ref passed">128</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.129">
+      <div class="step-ref passed">129</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.130">
+      <div class="step-ref passed">130</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method DELETE</span>
+      </div>
+    </div>
+    <div class="time-cell passed">435</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.130">12:39:37.089 request:
+1 &gt; DELETE http://localhost:8080/api/v1/private/catalog/1/entry/14
+1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
+1 &gt; Content-Type: application/json
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:39:37.520 response time in milliseconds: 431
+1 &lt; 500
+1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Tue, 21 Dec 2021 07:09:36 GMT
+1 &lt; Connection: close
+1 &lt; Set-Cookie: JSESSIONID=9F8F20F404F49FED7262A7CCD5AB59FF; Domain=localhost
+{&quot;errorCode&quot;:null,&quot;message&quot;:&quot;Unable to find com.salesmanager.core.model.catalog.catalog.CatalogCategoryEntry with id 14&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.131">
+      <div class="step-ref failed">131</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.131">12:39:37.521 classpath:karatemaven/Catalog management resource.feature:131
+Then status 200
+status code was: 500, expected: 200, response time in milliseconds: 431, url: http://localhost:8080/api/v1/private/catalog/1/entry/14, response: 
+{&quot;errorCode&quot;:null,&quot;message&quot;:&quot;Unable to find com.salesmanager.core.model.catalog.catalog.CatalogCategoryEntry with id 14&quot;}
+classpath:karatemaven/Catalog management resource.feature:131
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.132">
+      <div class="step-ref skipped">132</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[13:136]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">getcall3</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[13:136]</span>
+                <span class="scenario-name">Check catalog code already exist</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>449</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[13:136]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[13:136]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[13:136]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def helper = Java.type(&#39;karatemaven.JavaFunctions&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.137">
+      <div class="step-ref passed">137</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/private/catalog/unique&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.138">
+      <div class="step-ref passed">138</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.139">
+      <div class="step-ref passed">139</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.140">
+      <div class="step-ref passed">140</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param code = &#39;stringisking&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.141">
+      <div class="step-ref passed">141</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">434</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.141">12:39:37.235 request:
+1 &gt; GET http://localhost:8080/api/v1/private/catalog/unique?code=stringisking
+1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
+1 &gt; Content-Type: application/json
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:39:37.663 response time in milliseconds: 428
+1 &lt; 200
+1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Tue, 21 Dec 2021 07:09:37 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+1 &lt; Set-Cookie: JSESSIONID=A53D464BC24781C4CEA3CA2172134CBE; Domain=localhost
+{&quot;exists&quot;:true}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.142">
+      <div class="step-ref passed">142</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.143">
+      <div class="step-ref passed">143</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.exists == true</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.144">
+      <div class="step-ref passed">144</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.144">12:39:37.668 [print] {
+  &quot;exists&quot;: true
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[14:148]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">getcall4</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[14:148]</span>
+                <span class="scenario-name">Check catalog code already exist</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>466</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[14:148]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[14:148]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[14:148]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def helper = Java.type(&#39;karatemaven.JavaFunctions&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.149">
+      <div class="step-ref passed">149</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;api/v1/private/catalogs&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.150">
+      <div class="step-ref passed">150</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;admin@shopizer.com&#39;, password: &#39;password&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.151">
+      <div class="step-ref passed">151</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.152">
+      <div class="step-ref passed">152</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">445</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.152">12:39:37.271 request:
+1 &gt; GET http://localhost:8080/api/v1/private/catalogs
+1 &gt; Authorization: Basic YWRtaW5Ac2hvcGl6ZXIuY29tOnBhc3N3b3Jk
+1 &gt; Content-Type: application/json
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_92)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:39:37.710 response time in milliseconds: 425
+1 &lt; 200
+1 &lt; Access-Control-Allow-Methods: POST, GET, PUT, OPTIONS, DELETE, PATCH
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: X-Auth-Token, Content-Type, Authorization, Cache-Control, X-Requested-With
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Tue, 21 Dec 2021 07:09:37 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+1 &lt; Set-Cookie: JSESSIONID=811A1BC21491DF190FBE4C297768BFB5; Domain=localhost
+{&quot;totalPages&quot;:1,&quot;number&quot;:0,&quot;recordsTotal&quot;:10,&quot;recordsFiltered&quot;:0,&quot;items&quot;:[{&quot;id&quot;:2,&quot;visible&quot;:true,&quot;defaultCatalog&quot;:true,&quot;code&quot;:&quot;stringisking&quot;,&quot;creationDate&quot;:&quot;2021-11-29&quot;,&quot;store&quot;:{&quot;id&quot;:1,&quot;code&quot;:&quot;DEFAULT&quot;,&quot;name&quot;:&quot;Default store&quot;,&quot;defaultLanguage&quot;:&quot;en&quot;,&quot;currency&quot;:&quot;USD&quot;,&quot;inBusinessSince&quot;:&quot;2019-03-06&quot;,&quot;email&quot;:&quot;john@test.com&quot;,&quot;phone&quot;:&quot;888-888-8888&quot;,&quot;template&quot;:null,&quot;useCache&quot;:false,&quot;currencyFormatNational&quot;:false,&quot;retailer&quot;:true,&quot;dimension&quot;:&quot;IN&quot;,&quot;weight&quot;:&quot;LB&quot;,&quot;currentUserLanguage&quot;:null,&quot;address&quot;:{&quot;stateProvince&quot;:&quot;QC&quot;,&quot;country&quot;:&quot;CA&quot;,&quot;address&quot;:&quot;1234 Street address&quot;,&quot;postalCode&quot;:&quot;H2H-2H2&quot;,&quot;city&quot;:&quot;My city&quot;,&quot;active&quot;:true},&quot;logo&quot;:{&quot;name&quot;:&quot;Vintage-Bags.jpg&quot;,&quot;path&quot;:&quot;http://localhost:8080/static/files/DEFAULT/LOGO/Vintage-Bags.jpg&quot;},&quot;parent&quot;:null,&quot;supportedLanguages&quot;:[{&quot;code&quot;:&quot;en&quot;,&quot;id&quot;:1},{&quot;code&quot;:&quot;fr&quot;,&quot;id&quot;:2}],&quot;readableAudit&quot;:null},&quot;category&quot;:[]},{&quot;id&quot;:4,&quot;visible&quot;:true,&quot;defaultCatalog&quot;:true,&quot;code&quot;:&quot;minipro1&quot;,&quot;creationDate&quot;:&quot;2021-11-29&quot;,&quot;store&quot;:{&quot;id&quot;:1,&quot;code&quot;:&quot;DEFAULT&quot;,&quot;name&quot;:&quot;Default store&quot;,&quot;defaultLanguage&quot;:&quot;en&quot;,&quot;currency&quot;:&quot;USD&quot;,&quot;inBusinessSince&quot;:&quot;2019-03-06&quot;,&quot;email&quot;:&quot;john@test.com&quot;,&quot;phone&quot;:&quot;888-888-8888&quot;,&quot;template&quot;:null,&quot;useCache&quot;:false,&quot;currencyFormatNational&quot;:false,&quot;retailer&quot;:true,&quot;dimension&quot;:&quot;IN&quot;,&quot;weight&quot;:&quot;LB&quot;,&quot;currentUserLanguage&quot;:null,&quot;address&quot;:{&quot;stateProvince&quot;:&quot;QC&quot;,&quot;country&quot;:&quot;CA&quot;,&quot;address&quot;:&quot;1234 Street address&quot;,&quot;postalCode&quot;:&quot;H2H-2H2&quot;,&quot;city&quot;:&quot;My city&quot;,&quot;active&quot;:true},&quot;logo&quot;:{&quot;name&quot;:&quot;Vintage-Bags.jpg&quot;,&quot;path&quot;:&quot;http://localhost:8080/static/files/DEFAULT/LOGO/Vintage-Bags.jpg&quot;},&quot;parent&quot;:null,&quot;supportedLanguages&quot;:[{&quot;code&quot;:&quot;en&quot;,&quot;id&quot;:1},{&quot;code&quot;:&quot;fr&quot;,&quot;id&quot;:2}],&quot;readableAudit&quot;:null},&quot;category&quot;:[]},{&quot;id&quot;:5,&quot;visible&quot;:true,&quot;defaultCatalog&quot;:true,&quot;code&quot;:&quot;minipro&quot;,&quot;creationDate&quot;:&quot;2021-11-29&quot;,&quot;store&quot;:{&quot;id&quot;:1,&quot;code&quot;:&quot;DEFAULT&quot;,&quot;name&quot;:&quot;Default store&quot;,&quot;defaultLanguage&quot;:&quot;en&quot;,&quot;currency&quot;:&quot;USD&quot;,&quot;inBusinessSince&quot;:&quot;2019-03-06&quot;,&quot;email&quot;:&quot;john@test.com&quot;,&quot;phone&quot;:&quot;888-888-8888&quot;,&quot;template&quot;:null,&quot;useCache&quot;:false,&quot;currencyFormatNational&quot;:false,&quot;retailer&quot;:true,&quot;dimension&quot;:&quot;IN&quot;,&quot;weight&quot;:&quot;LB&quot;,&quot;currentUserLanguage&quot;:null,&quot;address&quot;:{&quot;stateProvince&quot;:&quot;QC&quot;,&quot;country&quot;:&quot;CA&quot;,&quot;address&quot;:&quot;1234 Street address&quot;,&quot;postalCode&quot;:&quot;H2H-2H2&quot;,&quot;city&quot;:&quot;My city&quot;,&quot;active&quot;:true},&quot;logo&quot;:{&quot;name&quot;:&quot;Vintage-Bags.jpg&quot;,&quot;path&quot;:&quot;http://localhost:8080/static/files/DEFAULT/LOGO/Vintage-Bags.jpg&quot;},&quot;parent&quot;:null,&quot;supportedLanguages&quot;:[{&quot;code&quot;:&quot;en&quot;,&quot;id&quot;:1},{&quot;code&quot;:&quot;fr&quot;,&quot;id&quot;:2}],&quot;readableAudit&quot;:null},&quot;category&quot;:[]},{&quot;id&quot;:7,&quot;visible&quot;:true,&quot;defaultCatalog&quot;:true,&quot;code&quot;:&quot;minipro123&quot;,&quot;creationDate&quot;:&quot;2021-11-30&quot;,&quot;store&quot;:{&quot;id&quot;:1,&quot;code&quot;:&quot;DEFAULT&quot;,&quot;name&quot;:&quot;Default store&quot;,&quot;defaultLanguage&quot;:&quot;en&quot;,&quot;currency&quot;:&quot;USD&quot;,&quot;inBusinessSince&quot;:&quot;2019-03-06&quot;,&quot;email&quot;:&quot;john@test.com&quot;,&quot;phone&quot;:&quot;888-888-8888&quot;,&quot;template&quot;:null,&quot;useCache&quot;:false,&quot;currencyFormatNational&quot;:false,&quot;retailer&quot;:true,&quot;dimension&quot;:&quot;IN&quot;,&quot;weight&quot;:&quot;LB&quot;,&quot;currentUserLanguage&quot;:null,&quot;address&quot;:{&quot;stateProvince&quot;:&quot;QC&quot;,&quot;country&quot;:&quot;CA&quot;,&quot;address&quot;:&quot;1234 Street address&quot;,&quot;postalCode&quot;:&quot;H2H-2H2&quot;,&quot;city&quot;:&quot;My city&quot;,&quot;active&quot;:true},&quot;logo&quot;:{&quot;name&quot;:&quot;Vintage-Bags.jpg&quot;,&quot;path&quot;:&quot;http://localhost:8080/static/files/DEFAULT/LOGO/Vintage-Bags.jpg&quot;},&quot;parent&quot;:null,&quot;supportedLanguages&quot;:[{&quot;code&quot;:&quot;en&quot;,&quot;id&quot;:1},{&quot;code&quot;:&quot;fr&quot;,&quot;id&quot;:2}],&quot;readableAudit&quot;:null},&quot;category&quot;:[]},{&quot;id&quot;:8,&quot;visible&quot;:true,&quot;defaultCatalog&quot;:true,&quot;code&quot;:&quot;Laptop tables&quot;,&quot;creationDate&quot;:&quot;2021-12-10&quot;,&quot;store&quot;:{&quot;id&quot;:1,&quot;code&quot;:&quot;DEFAULT&quot;,&quot;name&quot;:&quot;Default store&quot;,&quot;defaultLanguage&quot;:&quot;en&quot;,&quot;currency&quot;:&quot;USD&quot;,&quot;inBusinessSince&quot;:&quot;2019-03-06&quot;,&quot;email&quot;:&quot;john@test.com&quot;,&quot;phone&quot;:&quot;888-888-8888&quot;,&quot;template&quot;:null,&quot;useCache&quot;:false,&quot;currencyFormatNational&quot;:false,&quot;retailer&quot;:true,&quot;dimension&quot;:&quot;IN&quot;,&quot;weight&quot;:&quot;LB&quot;,&quot;currentUserLanguage&quot;:null,&quot;address&quot;:{&quot;stateProvince&quot;:&quot;QC&quot;,&quot;country&quot;:&quot;CA&quot;,&quot;address&quot;:&quot;1234 Street address&quot;,&quot;postalCode&quot;:&quot;H2H-2H2&quot;,&quot;city&quot;:&quot;My city&quot;,&quot;active&quot;:true},&quot;logo&quot;:{&quot;name&quot;:&quot;Vintage-Bags.jpg&quot;,&quot;path&quot;:&quot;http://localhost:8080/static/files/DEFAULT/LOGO/Vintage-Bags.jpg&quot;},&quot;parent&quot;:null,&quot;supportedLanguages&quot;:[{&quot;code&quot;:&quot;en&quot;,&quot;id&quot;:1},{&quot;code&quot;:&quot;fr&quot;,&quot;id&quot;:2}],&quot;readableAudit&quot;:null},&quot;category&quot;:[]},{&quot;id&quot;:9,&quot;visible&quot;:true,&quot;defaultCatalog&quot;:true,&quot;code&quot;:&quot;desktop desk&quot;,&quot;creationDate&quot;:&quot;2021-12-10&quot;,&quot;store&quot;:{&quot;id&quot;:1,&quot;code&quot;:&quot;DEFAULT&quot;,&quot;name&quot;:&quot;Default store&quot;,&quot;defaultLanguage&quot;:&quot;en&quot;,&quot;currency&quot;:&quot;USD&quot;,&quot;inBusinessSince&quot;:&quot;2019-03-06&quot;,&quot;email&quot;:&quot;john@test.com&quot;,&quot;phone&quot;:&quot;888-888-8888&quot;,&quot;template&quot;:null,&quot;useCache&quot;:false,&quot;currencyFormatNational&quot;:false,&quot;retailer&quot;:true,&quot;dimension&quot;:&quot;IN&quot;,&quot;weight&quot;:&quot;LB&quot;,&quot;currentUserLanguage&quot;:null,&quot;address&quot;:{&quot;stateProvince&quot;:&quot;QC&quot;,&quot;country&quot;:&quot;CA&quot;,&quot;address&quot;:&quot;1234 Street address&quot;,&quot;postalCode&quot;:&quot;H2H-2H2&quot;,&quot;city&quot;:&quot;My city&quot;,&quot;active&quot;:true},&quot;logo&quot;:{&quot;name&quot;:&quot;Vintage-Bags.jpg&quot;,&quot;path&quot;:&quot;http://localhost:8080/static/files/DEFAULT/LOGO/Vintage-Bags.jpg&quot;},&quot;parent&quot;:null,&quot;supportedLanguages&quot;:[{&quot;code&quot;:&quot;en&quot;,&quot;id&quot;:1},{&quot;code&quot;:&quot;fr&quot;,&quot;id&quot;:2}],&quot;readableAudit&quot;:null},&quot;category&quot;:[]},{&quot;id&quot;:12,&quot;visible&quot;:false,&quot;defaultCatalog&quot;:false,&quot;code&quot;:&quot;desktop desk-3&quot;,&quot;creationDate&quot;:&quot;2021-12-11&quot;,&quot;store&quot;:{&quot;id&quot;:1,&quot;code&quot;:&quot;DEFAULT&quot;,&quot;name&quot;:&quot;Default store&quot;,&quot;defaultLanguage&quot;:&quot;en&quot;,&quot;currency&quot;:&quot;USD&quot;,&quot;inBusinessSince&quot;:&quot;2019-03-06&quot;,&quot;email&quot;:&quot;john@test.com&quot;,&quot;phone&quot;:&quot;888-888-8888&quot;,&quot;template&quot;:null,&quot;useCache&quot;:false,&quot;currencyFormatNational&quot;:false,&quot;retailer&quot;:true,&quot;dimension&quot;:&quot;IN&quot;,&quot;weight&quot;:&quot;LB&quot;,&quot;currentUserLanguage&quot;:null,&quot;address&quot;:{&quot;stateProvince&quot;:&quot;QC&quot;,&quot;country&quot;:&quot;CA&quot;,&quot;address&quot;:&quot;1234 Street address&quot;,&quot;postalCode&quot;:&quot;H2H-2H2&quot;,&quot;city&quot;:&quot;My city&quot;,&quot;active&quot;:true},&quot;logo&quot;:{&quot;name&quot;:&quot;Vintage-Bags.jpg&quot;,&quot;path&quot;:&quot;http://localhost:8080/static/files/DEFAULT/LOGO/Vintage-Bags.jpg&quot;},&quot;parent&quot;:null,&quot;supportedLanguages&quot;:[{&quot;code&quot;:&quot;en&quot;,&quot;id&quot;:1},{&quot;code&quot;:&quot;fr&quot;,&quot;id&quot;:2}],&quot;readableAudit&quot;:null},&quot;category&quot;:[]},{&quot;id&quot;:14,&quot;visible&quot;:false,&quot;defaultCatalog&quot;:false,&quot;code&quot;:&quot;desktop desk 14&quot;,&quot;creationDate&quot;:&quot;2021-12-11&quot;,&quot;store&quot;:{&quot;id&quot;:1,&quot;code&quot;:&quot;DEFAULT&quot;,&quot;name&quot;:&quot;Default store&quot;,&quot;defaultLanguage&quot;:&quot;en&quot;,&quot;currency&quot;:&quot;USD&quot;,&quot;inBusinessSince&quot;:&quot;2019-03-06&quot;,&quot;email&quot;:&quot;john@test.com&quot;,&quot;phone&quot;:&quot;888-888-8888&quot;,&quot;template&quot;:null,&quot;useCache&quot;:false,&quot;currencyFormatNational&quot;:false,&quot;retailer&quot;:true,&quot;dimension&quot;:&quot;IN&quot;,&quot;weight&quot;:&quot;LB&quot;,&quot;currentUserLanguage&quot;:null,&quot;address&quot;:{&quot;stateProvince&quot;:&quot;QC&quot;,&quot;country&quot;:&quot;CA&quot;,&quot;address&quot;:&quot;1234 Street address&quot;,&quot;postalCode&quot;:&quot;H2H-2H2&quot;,&quot;city&quot;:&quot;My city&quot;,&quot;active&quot;:true},&quot;logo&quot;:{&quot;name&quot;:&quot;Vintage-Bags.jpg&quot;,&quot;path&quot;:&quot;http://localhost:8080/static/files/DEFAULT/LOGO/Vintage-Bags.jpg&quot;},&quot;parent&quot;:null,&quot;supportedLanguages&quot;:[{&quot;code&quot;:&quot;en&quot;,&quot;id&quot;:1},{&quot;code&quot;:&quot;fr&quot;,&quot;id&quot;:2}],&quot;readableAudit&quot;:null},&quot;category&quot;:[]},{&quot;id&quot;:16,&quot;visible&quot;:false,&quot;defaultCatalog&quot;:false,&quot;code&quot;:&quot;desktop desk-3435&quot;,&quot;creationDate&quot;:&quot;2021-12-11&quot;,&quot;store&quot;:{&quot;id&quot;:1,&quot;code&quot;:&quot;DEFAULT&quot;,&quot;name&quot;:&quot;Default store&quot;,&quot;defaultLanguage&quot;:&quot;en&quot;,&quot;currency&quot;:&quot;USD&quot;,&quot;inBusinessSince&quot;:&quot;2019-03-06&quot;,&quot;email&quot;:&quot;john@test.com&quot;,&quot;phone&quot;:&quot;888-888-8888&quot;,&quot;template&quot;:null,&quot;useCache&quot;:false,&quot;currencyFormatNational&quot;:false,&quot;retailer&quot;:true,&quot;dimension&quot;:&quot;IN&quot;,&quot;weight&quot;:&quot;LB&quot;,&quot;currentUserLanguage&quot;:null,&quot;address&quot;:{&quot;stateProvince&quot;:&quot;QC&quot;,&quot;country&quot;:&quot;CA&quot;,&quot;address&quot;:&quot;1234 Street address&quot;,&quot;postalCode&quot;:&quot;H2H-2H2&quot;,&quot;city&quot;:&quot;My city&quot;,&quot;active&quot;:true},&quot;logo&quot;:{&quot;name&quot;:&quot;Vintage-Bags.jpg&quot;,&quot;path&quot;:&quot;http://localhost:8080/static/files/DEFAULT/LOGO/Vintage-Bags.jpg&quot;},&quot;parent&quot;:null,&quot;supportedLanguages&quot;:[{&quot;code&quot;:&quot;en&quot;,&quot;id&quot;:1},{&quot;code&quot;:&quot;fr&quot;,&quot;id&quot;:2}],&quot;readableAudit&quot;:null},&quot;category&quot;:[]},{&quot;id&quot;:17,&quot;visible&quot;:false,&quot;defaultCatalog&quot;:false,&quot;code&quot;:&quot;desktop desk 15&quot;,&quot;creationDate&quot;:&quot;2021-12-11&quot;,&quot;store&quot;:{&quot;id&quot;:1,&quot;code&quot;:&quot;DEFAULT&quot;,&quot;name&quot;:&quot;Default store&quot;,&quot;defaultLanguage&quot;:&quot;en&quot;,&quot;currency&quot;:&quot;USD&quot;,&quot;inBusinessSince&quot;:&quot;2019-03-06&quot;,&quot;email&quot;:&quot;john@test.com&quot;,&quot;phone&quot;:&quot;888-888-8888&quot;,&quot;template&quot;:null,&quot;useCache&quot;:false,&quot;currencyFormatNational&quot;:false,&quot;retailer&quot;:true,&quot;dimension&quot;:&quot;IN&quot;,&quot;weight&quot;:&quot;LB&quot;,&quot;currentUserLanguage&quot;:null,&quot;address&quot;:{&quot;stateProvince&quot;:&quot;QC&quot;,&quot;country&quot;:&quot;CA&quot;,&quot;address&quot;:&quot;1234 Street address&quot;,&quot;postalCode&quot;:&quot;H2H-2H2&quot;,&quot;city&quot;:&quot;My city&quot;,&quot;active&quot;:true},&quot;logo&quot;:{&quot;name&quot;:&quot;Vintage-Bags.jpg&quot;,&quot;path&quot;:&quot;http://localhost:8080/static/files/DEFAULT/LOGO/Vintage-Bags.jpg&quot;},&quot;parent&quot;:null,&quot;supportedLanguages&quot;:[{&quot;code&quot;:&quot;en&quot;,&quot;id&quot;:1},{&quot;code&quot;:&quot;fr&quot;,&quot;id&quot;:2}],&quot;readableAudit&quot;:null},&quot;category&quot;:[]}]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.153">
+      <div class="step-ref passed">153</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.154">
+      <div class="step-ref passed">154</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.totalPages == 1</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.155">
+      <div class="step-ref passed">155</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.155">12:39:37.724 [print] {
+  &quot;totalPages&quot;: 1,
+  &quot;number&quot;: 0,
+  &quot;recordsTotal&quot;: 10,
+  &quot;recordsFiltered&quot;: 0,
+  &quot;items&quot;: [
+    {
+      &quot;id&quot;: 2,
+      &quot;visible&quot;: true,
+      &quot;defaultCatalog&quot;: true,
+      &quot;code&quot;: &quot;stringisking&quot;,
+      &quot;creationDate&quot;: &quot;2021-11-29&quot;,
+      &quot;store&quot;: {
+        &quot;id&quot;: 1,
+        &quot;code&quot;: &quot;DEFAULT&quot;,
+        &quot;name&quot;: &quot;Default store&quot;,
+        &quot;defaultLanguage&quot;: &quot;en&quot;,
+        &quot;currency&quot;: &quot;USD&quot;,
+        &quot;inBusinessSince&quot;: &quot;2019-03-06&quot;,
+        &quot;email&quot;: &quot;john@test.com&quot;,
+        &quot;phone&quot;: &quot;888-888-8888&quot;,
+        &quot;template&quot;: null,
+        &quot;useCache&quot;: false,
+        &quot;currencyFormatNational&quot;: false,
+        &quot;retailer&quot;: true,
+        &quot;dimension&quot;: &quot;IN&quot;,
+        &quot;weight&quot;: &quot;LB&quot;,
+        &quot;currentUserLanguage&quot;: null,
+        &quot;address&quot;: {
+          &quot;stateProvince&quot;: &quot;QC&quot;,
+          &quot;country&quot;: &quot;CA&quot;,
+          &quot;address&quot;: &quot;1234 Street address&quot;,
+          &quot;postalCode&quot;: &quot;H2H-2H2&quot;,
+          &quot;city&quot;: &quot;My city&quot;,
+          &quot;active&quot;: true
+        },
+        &quot;logo&quot;: {
+          &quot;name&quot;: &quot;Vintage-Bags.jpg&quot;,
+          &quot;path&quot;: &quot;http://localhost:8080/static/files/DEFAULT/LOGO/Vintage-Bags.jpg&quot;
+        },
+        &quot;parent&quot;: null,
+        &quot;supportedLanguages&quot;: [
+          {
+            &quot;code&quot;: &quot;en&quot;,
+            &quot;id&quot;: 1
+          },
+          {
+            &quot;code&quot;: &quot;fr&quot;,
+            &quot;id&quot;: 2
+          }
+        ],
+        &quot;readableAudit&quot;: null
+      },
+      &quot;category&quot;: [
+      ]
+    },
+    {
+      &quot;id&quot;: 4,
+      &quot;visible&quot;: true,
+      &quot;defaultCatalog&quot;: true,
+      &quot;code&quot;: &quot;minipro1&quot;,
+      &quot;creationDate&quot;: &quot;2021-11-29&quot;,
+      &quot;store&quot;: {
+        &quot;id&quot;: 1,
+        &quot;code&quot;: &quot;DEFAULT&quot;,
+        &quot;name&quot;: &quot;Default store&quot;,
+        &quot;defaultLanguage&quot;: &quot;en&quot;,
+        &quot;currency&quot;: &quot;USD&quot;,
+        &quot;inBusinessSince&quot;: &quot;2019-03-06&quot;,
+        &quot;email&quot;: &quot;john@test.com&quot;,
+        &quot;phone&quot;: &quot;888-888-8888&quot;,
+        &quot;template&quot;: null,
+        &quot;useCache&quot;: false,
+        &quot;currencyFormatNational&quot;: false,
+        &quot;retailer&quot;: true,
+        &quot;dimension&quot;: &quot;IN&quot;,
+        &quot;weight&quot;: &quot;LB&quot;,
+        &quot;currentUserLanguage&quot;: null,
+        &quot;address&quot;: {
+          &quot;stateProvince&quot;: &quot;QC&quot;,
+          &quot;country&quot;: &quot;CA&quot;,
+          &quot;address&quot;: &quot;1234 Street address&quot;,
+          &quot;postalCode&quot;: &quot;H2H-2H2&quot;,
+          &quot;city&quot;: &quot;My city&quot;,
+          &quot;active&quot;: true
+        },
+        &quot;logo&quot;: {
+          &quot;name&quot;: &quot;Vintage-Bags.jpg&quot;,
+          &quot;path&quot;: &quot;http://localhost:8080/static/files/DEFAULT/LOGO/Vintage-Bags.jpg&quot;
+        },
+        &quot;parent&quot;: null,
+        &quot;supportedLanguages&quot;: [
+          {
+            &quot;code&quot;: &quot;en&quot;,
+            &quot;id&quot;: 1
+          },
+          {
+            &quot;code&quot;: &quot;fr&quot;,
+            &quot;id&quot;: 2
+          }
+        ],
+        &quot;readableAudit&quot;: null
+      },
+      &quot;category&quot;: [
+      ]
+    },
+    {
+      &quot;id&quot;: 5,
+      &quot;visible&quot;: true,
+      &quot;defaultCatalog&quot;: true,
+      &quot;code&quot;: &quot;minipro&quot;,
+      &quot;creationDate&quot;: &quot;2021-11-29&quot;,
+      &quot;store&quot;: {
+        &quot;id&quot;: 1,
+        &quot;code&quot;: &quot;DEFAULT&quot;,
+        &quot;name&quot;: &quot;Default store&quot;,
+        &quot;defaultLanguage&quot;: &quot;en&quot;,
+        &quot;currency&quot;: &quot;USD&quot;,
+        &quot;inBusinessSince&quot;: &quot;2019-03-06&quot;,
+        &quot;email&quot;: &quot;john@test.com&quot;,
+        &quot;phone&quot;: &quot;888-888-8888&quot;,
+        &quot;template&quot;: null,
+        &quot;useCache&quot;: false,
+        &quot;currencyFormatNational&quot;: false,
+        &quot;retailer&quot;: true,
+        &quot;dimension&quot;: &quot;IN&quot;,
+        &quot;weight&quot;: &quot;LB&quot;,
+        &quot;currentUserLanguage&quot;: null,
+        &quot;address&quot;: {
+          &quot;stateProvince&quot;: &quot;QC&quot;,
+          &quot;country&quot;: &quot;CA&quot;,
+          &quot;address&quot;: &quot;1234 Street address&quot;,
+          &quot;postalCode&quot;: &quot;H2H-2H2&quot;,
+          &quot;city&quot;: &quot;My city&quot;,
+          &quot;active&quot;: true
+        },
+        &quot;logo&quot;: {
+          &quot;name&quot;: &quot;Vintage-Bags.jpg&quot;,
+          &quot;path&quot;: &quot;http://localhost:8080/static/files/DEFAULT/LOGO/Vintage-Bags.jpg&quot;
+        },
+        &quot;parent&quot;: null,
+        &quot;supportedLanguages&quot;: [
+          {
+            &quot;code&quot;: &quot;en&quot;,
+            &quot;id&quot;: 1
+          },
+          {
+            &quot;code&quot;: &quot;fr&quot;,
+            &quot;id&quot;: 2
+          }
+        ],
+        &quot;readableAudit&quot;: null
+      },
+      &quot;category&quot;: [
+      ]
+    },
+    {
+      &quot;id&quot;: 7,
+      &quot;visible&quot;: true,
+      &quot;defaultCatalog&quot;: true,
+      &quot;code&quot;: &quot;minipro123&quot;,
+      &quot;creationDate&quot;: &quot;2021-11-30&quot;,
+      &quot;store&quot;: {
+        &quot;id&quot;: 1,
+        &quot;code&quot;: &quot;DEFAULT&quot;,
+        &quot;name&quot;: &quot;Default store&quot;,
+        &quot;defaultLanguage&quot;: &quot;en&quot;,
+        &quot;currency&quot;: &quot;USD&quot;,
+        &quot;inBusinessSince&quot;: &quot;2019-03-06&quot;,
+        &quot;email&quot;: &quot;john@test.com&quot;,
+        &quot;phone&quot;: &quot;888-888-8888&quot;,
+        &quot;template&quot;: null,
+        &quot;useCache&quot;: false,
+        &quot;currencyFormatNational&quot;: false,
+        &quot;retailer&quot;: true,
+        &quot;dimension&quot;: &quot;IN&quot;,
+        &quot;weight&quot;: &quot;LB&quot;,
+        &quot;currentUserLanguage&quot;: null,
+        &quot;address&quot;: {
+          &quot;stateProvince&quot;: &quot;QC&quot;,
+          &quot;country&quot;: &quot;CA&quot;,
+          &quot;address&quot;: &quot;1234 Street address&quot;,
+          &quot;postalCode&quot;: &quot;H2H-2H2&quot;,
+          &quot;city&quot;: &quot;My city&quot;,
+          &quot;active&quot;: true
+        },
+        &quot;logo&quot;: {
+          &quot;name&quot;: &quot;Vintage-Bags.jpg&quot;,
+          &quot;path&quot;: &quot;http://localhost:8080/static/files/DEFAULT/LOGO/Vintage-Bags.jpg&quot;
+        },
+        &quot;parent&quot;: null,
+        &quot;supportedLanguages&quot;: [
+          {
+            &quot;code&quot;: &quot;en&quot;,
+            &quot;id&quot;: 1
+          },
+          {
+            &quot;code&quot;: &quot;fr&quot;,
+            &quot;id&quot;: 2
+          }
+        ],
+        &quot;readableAudit&quot;: null
+      },
+      &quot;category&quot;: [
+      ]
+    },
+    {
+      &quot;id&quot;: 8,
+      &quot;visible&quot;: true,
+      &quot;defaultCatalog&quot;: true,
+      &quot;code&quot;: &quot;Laptop tables&quot;,
+      &quot;creationDate&quot;: &quot;2021-12-10&quot;,
+      &quot;store&quot;: {
+        &quot;id&quot;: 1,
+        &quot;code&quot;: &quot;DEFAULT&quot;,
+        &quot;name&quot;: &quot;Default store&quot;,
+        &quot;defaultLanguage&quot;: &quot;en&quot;,
+        &quot;currency&quot;: &quot;USD&quot;,
+        &quot;inBusinessSince&quot;: &quot;2019-03-06&quot;,
+        &quot;email&quot;: &quot;john@test.com&quot;,
+        &quot;phone&quot;: &quot;888-888-8888&quot;,
+        &quot;template&quot;: null,
+        &quot;useCache&quot;: false,
+        &quot;currencyFormatNational&quot;: false,
+        &quot;retailer&quot;: true,
+        &quot;dimension&quot;: &quot;IN&quot;,
+        &quot;weight&quot;: &quot;LB&quot;,
+        &quot;currentUserLanguage&quot;: null,
+        &quot;address&quot;: {
+          &quot;stateProvince&quot;: &quot;QC&quot;,
+          &quot;country&quot;: &quot;CA&quot;,
+          &quot;address&quot;: &quot;1234 Street address&quot;,
+          &quot;postalCode&quot;: &quot;H2H-2H2&quot;,
+          &quot;city&quot;: &quot;My city&quot;,
+          &quot;active&quot;: true
+        },
+        &quot;logo&quot;: {
+          &quot;name&quot;: &quot;Vintage-Bags.jpg&quot;,
+          &quot;path&quot;: &quot;http://localhost:8080/static/files/DEFAULT/LOGO/Vintage-Bags.jpg&quot;
+        },
+        &quot;parent&quot;: null,
+        &quot;supportedLanguages&quot;: [
+          {
+            &quot;code&quot;: &quot;en&quot;,
+            &quot;id&quot;: 1
+          },
+          {
+            &quot;code&quot;: &quot;fr&quot;,
+            &quot;id&quot;: 2
+          }
+        ],
+        &quot;readableAudit&quot;: null
+      },
+      &quot;category&quot;: [
+      ]
+    },
+    {
+      &quot;id&quot;: 9,
+      &quot;visible&quot;: true,
+      &quot;defaultCatalog&quot;: true,
+      &quot;code&quot;: &quot;desktop desk&quot;,
+      &quot;creationDate&quot;: &quot;2021-12-10&quot;,
+      &quot;store&quot;: {
+        &quot;id&quot;: 1,
+        &quot;code&quot;: &quot;DEFAULT&quot;,
+        &quot;name&quot;: &quot;Default store&quot;,
+        &quot;defaultLanguage&quot;: &quot;en&quot;,
+        &quot;currency&quot;: &quot;USD&quot;,
+        &quot;inBusinessSince&quot;: &quot;2019-03-06&quot;,
+        &quot;email&quot;: &quot;john@test.com&quot;,
+        &quot;phone&quot;: &quot;888-888-8888&quot;,
+        &quot;template&quot;: null,
+        &quot;useCache&quot;: false,
+        &quot;currencyFormatNational&quot;: false,
+        &quot;retailer&quot;: true,
+        &quot;dimension&quot;: &quot;IN&quot;,
+        &quot;weight&quot;: &quot;LB&quot;,
+        &quot;currentUserLanguage&quot;: null,
+        &quot;address&quot;: {
+          &quot;stateProvince&quot;: &quot;QC&quot;,
+          &quot;country&quot;: &quot;CA&quot;,
+          &quot;address&quot;: &quot;1234 Street address&quot;,
+          &quot;postalCode&quot;: &quot;H2H-2H2&quot;,
+          &quot;city&quot;: &quot;My city&quot;,
+          &quot;active&quot;: true
+        },
+        &quot;logo&quot;: {
+          &quot;name&quot;: &quot;Vintage-Bags.jpg&quot;,
+          &quot;path&quot;: &quot;http://localhost:8080/static/files/DEFAULT/LOGO/Vintage-Bags.jpg&quot;
+        },
+        &quot;parent&quot;: null,
+        &quot;supportedLanguages&quot;: [
+          {
+            &quot;code&quot;: &quot;en&quot;,
+            &quot;id&quot;: 1
+          },
+          {
+            &quot;code&quot;: &quot;fr&quot;,
+            &quot;id&quot;: 2
+          }
+        ],
+        &quot;readableAudit&quot;: null
+      },
+      &quot;category&quot;: [
+      ]
+    },
+    {
+      &quot;id&quot;: 12,
+      &quot;visible&quot;: false,
+      &quot;defaultCatalog&quot;: false,
+      &quot;code&quot;: &quot;desktop desk-3&quot;,
+      &quot;creationDate&quot;: &quot;2021-12-11&quot;,
+      &quot;store&quot;: {
+        &quot;id&quot;: 1,
+        &quot;code&quot;: &quot;DEFAULT&quot;,
+        &quot;name&quot;: &quot;Default store&quot;,
+        &quot;defaultLanguage&quot;: &quot;en&quot;,
+        &quot;currency&quot;: &quot;USD&quot;,
+        &quot;inBusinessSince&quot;: &quot;2019-03-06&quot;,
+        &quot;email&quot;: &quot;john@test.com&quot;,
+        &quot;phone&quot;: &quot;888-888-8888&quot;,
+        &quot;template&quot;: null,
+        &quot;useCache&quot;: false,
+        &quot;currencyFormatNational&quot;: false,
+        &quot;retailer&quot;: true,
+        &quot;dimension&quot;: &quot;IN&quot;,
+        &quot;weight&quot;: &quot;LB&quot;,
+        &quot;currentUserLanguage&quot;: null,
+        &quot;address&quot;: {
+          &quot;stateProvince&quot;: &quot;QC&quot;,
+          &quot;country&quot;: &quot;CA&quot;,
+          &quot;address&quot;: &quot;1234 Street address&quot;,
+          &quot;postalCode&quot;: &quot;H2H-2H2&quot;,
+          &quot;city&quot;: &quot;My city&quot;,
+          &quot;active&quot;: true
+        },
+        &quot;logo&quot;: {
+          &quot;name&quot;: &quot;Vintage-Bags.jpg&quot;,
+          &quot;path&quot;: &quot;http://localhost:8080/static/files/DEFAULT/LOGO/Vintage-Bags.jpg&quot;
+        },
+        &quot;parent&quot;: null,
+        &quot;supportedLanguages&quot;: [
+          {
+            &quot;code&quot;: &quot;en&quot;,
+            &quot;id&quot;: 1
+          },
+          {
+            &quot;code&quot;: &quot;fr&quot;,
+            &quot;id&quot;: 2
+          }
+        ],
+        &quot;readableAudit&quot;: null
+      },
+      &quot;category&quot;: [
+      ]
+    },
+    {
+      &quot;id&quot;: 14,
+      &quot;visible&quot;: false,
+      &quot;defaultCatalog&quot;: false,
+      &quot;code&quot;: &quot;desktop desk 14&quot;,
+      &quot;creationDate&quot;: &quot;2021-12-11&quot;,
+      &quot;store&quot;: {
+        &quot;id&quot;: 1,
+        &quot;code&quot;: &quot;DEFAULT&quot;,
+        &quot;name&quot;: &quot;Default store&quot;,
+        &quot;defaultLanguage&quot;: &quot;en&quot;,
+        &quot;currency&quot;: &quot;USD&quot;,
+        &quot;inBusinessSince&quot;: &quot;2019-03-06&quot;,
+        &quot;email&quot;: &quot;john@test.com&quot;,
+        &quot;phone&quot;: &quot;888-888-8888&quot;,
+        &quot;template&quot;: null,
+        &quot;useCache&quot;: false,
+        &quot;currencyFormatNational&quot;: false,
+        &quot;retailer&quot;: true,
+        &quot;dimension&quot;: &quot;IN&quot;,
+        &quot;weight&quot;: &quot;LB&quot;,
+        &quot;currentUserLanguage&quot;: null,
+        &quot;address&quot;: {
+          &quot;stateProvince&quot;: &quot;QC&quot;,
+          &quot;country&quot;: &quot;CA&quot;,
+          &quot;address&quot;: &quot;1234 Street address&quot;,
+          &quot;postalCode&quot;: &quot;H2H-2H2&quot;,
+          &quot;city&quot;: &quot;My city&quot;,
+          &quot;active&quot;: true
+        },
+        &quot;logo&quot;: {
+          &quot;name&quot;: &quot;Vintage-Bags.jpg&quot;,
+          &quot;path&quot;: &quot;http://localhost:8080/static/files/DEFAULT/LOGO/Vintage-Bags.jpg&quot;
+        },
+        &quot;parent&quot;: null,
+        &quot;supportedLanguages&quot;: [
+          {
+            &quot;code&quot;: &quot;en&quot;,
+            &quot;id&quot;: 1
+          },
+          {
+            &quot;code&quot;: &quot;fr&quot;,
+            &quot;id&quot;: 2
+          }
+        ],
+        &quot;readableAudit&quot;: null
+      },
+      &quot;category&quot;: [
+      ]
+    },
+    {
+      &quot;id&quot;: 16,
+      &quot;visible&quot;: false,
+      &quot;defaultCatalog&quot;: false,
+      &quot;code&quot;: &quot;desktop desk-3435&quot;,
+      &quot;creationDate&quot;: &quot;2021-12-11&quot;,
+      &quot;store&quot;: {
+        &quot;id&quot;: 1,
+        &quot;code&quot;: &quot;DEFAULT&quot;,
+        &quot;name&quot;: &quot;Default store&quot;,
+        &quot;defaultLanguage&quot;: &quot;en&quot;,
+        &quot;currency&quot;: &quot;USD&quot;,
+        &quot;inBusinessSince&quot;: &quot;2019-03-06&quot;,
+        &quot;email&quot;: &quot;john@test.com&quot;,
+        &quot;phone&quot;: &quot;888-888-8888&quot;,
+        &quot;template&quot;: null,
+        &quot;useCache&quot;: false,
+        &quot;currencyFormatNational&quot;: false,
+        &quot;retailer&quot;: true,
+        &quot;dimension&quot;: &quot;IN&quot;,
+        &quot;weight&quot;: &quot;LB&quot;,
+        &quot;currentUserLanguage&quot;: null,
+        &quot;address&quot;: {
+          &quot;stateProvince&quot;: &quot;QC&quot;,
+          &quot;country&quot;: &quot;CA&quot;,
+          &quot;address&quot;: &quot;1234 Street address&quot;,
+          &quot;postalCode&quot;: &quot;H2H-2H2&quot;,
+          &quot;city&quot;: &quot;My city&quot;,
+          &quot;active&quot;: true
+        },
+        &quot;logo&quot;: {
+          &quot;name&quot;: &quot;Vintage-Bags.jpg&quot;,
+          &quot;path&quot;: &quot;http://localhost:8080/static/files/DEFAULT/LOGO/Vintage-Bags.jpg&quot;
+        },
+        &quot;parent&quot;: null,
+        &quot;supportedLanguages&quot;: [
+          {
+            &quot;code&quot;: &quot;en&quot;,
+            &quot;id&quot;: 1
+          },
+          {
+            &quot;code&quot;: &quot;fr&quot;,
+            &quot;id&quot;: 2
+          }
+        ],
+        &quot;readableAudit&quot;: null
+      },
+      &quot;category&quot;: [
+      ]
+    },
+    {
+      &quot;id&quot;: 17,
+      &quot;visible&quot;: false,
+      &quot;defaultCatalog&quot;: false,
+      &quot;code&quot;: &quot;desktop desk 15&quot;,
+      &quot;creationDate&quot;: &quot;2021-12-11&quot;,
+      &quot;store&quot;: {
+        &quot;id&quot;: 1,
+        &quot;code&quot;: &quot;DEFAULT&quot;,
+        &quot;name&quot;: &quot;Default store&quot;,
+        &quot;defaultLanguage&quot;: &quot;en&quot;,
+        &quot;currency&quot;: &quot;USD&quot;,
+        &quot;inBusinessSince&quot;: &quot;2019-03-06&quot;,
+        &quot;email&quot;: &quot;john@test.com&quot;,
+        &quot;phone&quot;: &quot;888-888-8888&quot;,
+        &quot;template&quot;: null,
+        &quot;useCache&quot;: false,
+        &quot;currencyFormatNational&quot;: false,
+        &quot;retailer&quot;: true,
+        &quot;dimension&quot;: &quot;IN&quot;,
+        &quot;weight&quot;: &quot;LB&quot;,
+        &quot;currentUserLanguage&quot;: null,
+        &quot;address&quot;: {
+          &quot;stateProvince&quot;: &quot;QC&quot;,
+          &quot;country&quot;: &quot;CA&quot;,
+          &quot;address&quot;: &quot;1234 Street address&quot;,
+          &quot;postalCode&quot;: &quot;H2H-2H2&quot;,
+          &quot;city&quot;: &quot;My city&quot;,
+          &quot;active&quot;: true
+        },
+        &quot;logo&quot;: {
+          &quot;name&quot;: &quot;Vintage-Bags.jpg&quot;,
+          &quot;path&quot;: &quot;http://localhost:8080/static/files/DEFAULT/LOGO/Vintage-Bags.jpg&quot;
+        },
+        &quot;parent&quot;: null,
+        &quot;supportedLanguages&quot;: [
+          {
+            &quot;code&quot;: &quot;en&quot;,
+            &quot;id&quot;: 1
+          },
+          {
+            &quot;code&quot;: &quot;fr&quot;,
+            &quot;id&quot;: 2
+          }
+        ],
+        &quot;readableAudit&quot;: null
+      },
+      &quot;category&quot;: [
+      ]
+    }
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

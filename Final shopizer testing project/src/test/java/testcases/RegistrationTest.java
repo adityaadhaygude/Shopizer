@@ -6,21 +6,30 @@ import org.openqa.selenium.WebElement;
 import pages.BaseClass;
 
 public class RegistrationTest extends BaseClass{
+	String textAssert;
 	@Test
 	public void TC1_verifyAllFieldsPresent()
 	{
 		driver.get(objConfigFileReader.getString("homePageURL"));
 		logger.info("Navigated to "+objConfigFileReader.getString("homePageURL"));
-		objHomePage.mouseHoverOnElement(objHomePage.myAccount);
+		textAssert=objHomePage.mouseHoverOnElement(objHomePage.myAccount);
+		logger.info(textAssert);
 		objHomePage.clickBtn(objHomePage.register);
 		logger.info("Clicked on Register Button");
-		objRegistrationPage.verifyFieldPresent(objRegistrationPage.firstName);
-		objRegistrationPage.verifyFieldPresent(objRegistrationPage.lastName);
-		objRegistrationPage.verifyFieldPresent(objRegistrationPage.country);
-		objRegistrationPage.verifyFieldPresent(objRegistrationPage.state);
-		objRegistrationPage.verifyFieldPresent(objRegistrationPage.email);
-		objRegistrationPage.verifyFieldPresent(objRegistrationPage.password);
-		objRegistrationPage.verifyFieldPresent(objRegistrationPage.repeatPassword);
+		textAssert=objRegistrationPage.verifyFieldPresent(objRegistrationPage.firstName);
+		logger.info(textAssert);
+		textAssert=objRegistrationPage.verifyFieldPresent(objRegistrationPage.lastName);
+		logger.info(textAssert);
+		textAssert=objRegistrationPage.verifyFieldPresent(objRegistrationPage.country);
+		logger.info(textAssert);
+		textAssert=objRegistrationPage.verifyFieldPresent(objRegistrationPage.state);
+		logger.info(textAssert);
+		textAssert=objRegistrationPage.verifyFieldPresent(objRegistrationPage.email);
+		logger.info(textAssert);
+		textAssert=objRegistrationPage.verifyFieldPresent(objRegistrationPage.password);
+		logger.info(textAssert);
+		textAssert=objRegistrationPage.verifyFieldPresent(objRegistrationPage.repeatPassword);
+		logger.info(textAssert);
 		logger.info("All fields are present");
 	}
 
@@ -29,17 +38,26 @@ public class RegistrationTest extends BaseClass{
 	{
 		driver.get(objConfigFileReader.getString("homePageURL"));
 		logger.info("Navigated to "+objConfigFileReader.getString("homePageURL"));
-		objHomePage.mouseHoverOnElement(objHomePage.myAccount);
+		textAssert=objHomePage.mouseHoverOnElement(objHomePage.myAccount);
+		logger.info(textAssert);
 		objHomePage.clickBtn(objHomePage.register);
 		logger.info("Clicked on Register Button");
-		objRegistrationPage.getTextAndAssert(objRegistrationPage.firstNameTitle, "firstNameTitle");
-		objRegistrationPage.getTextAndAssert(objRegistrationPage.lastNameTitle, "lastNameTitle");
-		objRegistrationPage.getTextAndAssert(objRegistrationPage.countryTitle, "countryTitle");
-		objRegistrationPage.getTextAndAssert(objRegistrationPage.stateTitle, "stateTitle");
-		objRegistrationPage.getTextAndAssert(objRegistrationPage.emailTitle, "emailTitle");
-		objRegistrationPage.getTextAndAssert(objRegistrationPage.passwordTitle, "passwordTitle");
-		objRegistrationPage.getTextAndAssert(objRegistrationPage.repeatPasswordTitle, "repeatPasswordTitle");
-		objRegistrationPage.getTextAndAssert(objRegistrationPage.createAnAccountTitle, "createAccountTitle");
+		textAssert=objRegistrationPage.getTextAndAssert(objRegistrationPage.firstNameTitle, "firstNameTitle");
+		logger.info(textAssert);
+		textAssert=objRegistrationPage.getTextAndAssert(objRegistrationPage.lastNameTitle, "lastNameTitle");
+		logger.info(textAssert);
+		textAssert=objRegistrationPage.getTextAndAssert(objRegistrationPage.countryTitle, "countryTitle");
+		logger.info(textAssert);
+		textAssert=objRegistrationPage.getTextAndAssert(objRegistrationPage.stateTitle, "stateTitle");
+		logger.info(textAssert);
+		textAssert=objRegistrationPage.getTextAndAssert(objRegistrationPage.emailTitle, "emailTitle");
+		logger.info(textAssert);
+		textAssert=objRegistrationPage.getTextAndAssert(objRegistrationPage.passwordTitle, "passwordTitle");
+		logger.info(textAssert);
+		textAssert=objRegistrationPage.getTextAndAssert(objRegistrationPage.repeatPasswordTitle, "repeatPasswordTitle");
+		logger.info(textAssert);
+		textAssert=objRegistrationPage.getTextAndAssert(objRegistrationPage.createAnAccountTitle, "createAccountTitle");
+		logger.info(textAssert);
 		logger.info("All labels are verified");
 	}
 	
@@ -48,15 +66,22 @@ public class RegistrationTest extends BaseClass{
 	{
 		driver.get(objConfigFileReader.getString("homePageURL"));
 		logger.info("Navigated to "+objConfigFileReader.getString("homePageURL"));
-		objHomePage.mouseHoverOnElement(objHomePage.myAccount);
+		textAssert=objHomePage.mouseHoverOnElement(objHomePage.myAccount);
+		logger.info(textAssert);
 		objHomePage.clickBtn(objHomePage.register);
 		logger.info("Clicked on Register Button");
-		objRegistrationPage.verifyEmpty(objRegistrationPage.firstName);
-		objRegistrationPage.verifyEmpty(objRegistrationPage.lastName);
-		objRegistrationPage.verifyEmpty(objRegistrationPage.state);
-		objRegistrationPage.verifyEmpty(objRegistrationPage.email);
-		objRegistrationPage.verifyEmpty(objRegistrationPage.password);
-		objRegistrationPage.verifyEmpty(objRegistrationPage.repeatPassword);
+		textAssert=objRegistrationPage.verifyEmpty(objRegistrationPage.firstName);
+		logger.info(textAssert);
+		textAssert=objRegistrationPage.verifyEmpty(objRegistrationPage.lastName);
+		logger.info(textAssert);
+		textAssert=objRegistrationPage.verifyEmpty(objRegistrationPage.state);
+		logger.info(textAssert);
+		textAssert=objRegistrationPage.verifyEmpty(objRegistrationPage.email);
+		logger.info(textAssert);
+		textAssert=objRegistrationPage.verifyEmpty(objRegistrationPage.password);
+		logger.info(textAssert);
+		textAssert=objRegistrationPage.verifyEmpty(objRegistrationPage.repeatPassword);
+		logger.info(textAssert);
 		logger.info("Page loads without any data");
 	}
 	
@@ -108,8 +133,8 @@ public class RegistrationTest extends BaseClass{
 		logger.info("Inputs given: "+fName+" "+lName+" "+country+" "+state+" "+email+" "+password);
 		objRegistrationPage.clickBtn(objRegistrationPage.createAnAccount);
 		logger.info("Clicked on Create An Account");
-		objRegistrationPage.verifyAccountLogin(fName);
-		logger.info("Account registered for "+fName);
+		textAssert=objRegistrationPage.verifyAccountLogin(fName);
+		logger.info(textAssert+" "+fName);
 	}
 	
 	@Test
@@ -127,15 +152,14 @@ public class RegistrationTest extends BaseClass{
 		logger.info("Input data sent");
 		objRegistrationPage.keyboardInput(objRegistrationPage.repeatPassword, Keys.ENTER);
 		logger.info("Enter key pressed");
-		objRegistrationPage.verifyAccountLogin("TestFN");
-		logger.info("Account registered for TestFN");
+		textAssert=objRegistrationPage.verifyAccountLogin("TestFN");
+		logger.info(textAssert+" TestFN");
 	}
 	
 	@Test
 	public void TC14_verifyPasswordsMismatchError()
 	{
 		driver.get(objConfigFileReader.getString("registrationPageURL"));
-		objHomePage.clickBtn(objHomePage.cockies);
 		logger.info("Navigated to "+objConfigFileReader.getString("registrationPageURL"));
 		objRegistrationPage.inputText(objRegistrationPage.firstName,"TestFN2");
 		objRegistrationPage.inputText(objRegistrationPage.lastName,"TestLN2");

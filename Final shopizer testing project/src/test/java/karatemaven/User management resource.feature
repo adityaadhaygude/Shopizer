@@ -1,5 +1,4 @@
 Feature: Shopizer User management resources
-@getcall1
     
 #Create a user
 Scenario: Create a user
